@@ -529,9 +529,10 @@ peso_g[peso_g &gt; 36]
 
 ```r
 animais  &lt;- c("rato", "gato", "cachorro", "coelho")
-outros_animais &lt;- c("rato", "gato", "pato", "cachorro", "coelho", "ovelha")
+mais_animais &lt;- c("rato", "gato", "pato", "cachorro", "coelho",
+                  "ovelha")
 
-animais %in% outros_animais
+animais %in% mais_animais
 ```
 
 ```
@@ -545,13 +546,14 @@ animais %in% outros_animais
 
 ```r
 animais  &lt;- c("rato", "gato", "cachorro", "coelho")
-outros_animais &lt;- c("rato", "gato", "pato", "cachorro", "coelho", "ovelha")
+mais_animais &lt;- c("rato", "gato", "pato", "cachorro", "coelho",
+                  "ovelha")
 
-animais == outros_animais
+animais == mais_animais
 ```
 
 ```
-## Warning in animais == outros_animais: longer object length is not a multiple of
+## Warning in animais == mais_animais: longer object length is not a multiple of
 ## shorter object length
 ```
 

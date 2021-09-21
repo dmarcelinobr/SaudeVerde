@@ -518,9 +518,10 @@ peso_g[peso_g > 36]
 ```{r recycling}
 
 animais  <- c("rato", "gato", "cachorro", "coelho")
-outros_animais <- c("rato", "gato", "pato", "cachorro", "coelho", "ovelha")
+mais_animais <- c("rato", "gato", "pato", "cachorro", "coelho",
+                  "ovelha")
 
-animais %in% outros_animais
+animais %in% mais_animais
 ```
 
 ---
@@ -529,9 +530,10 @@ animais %in% outros_animais
 <small>
 ```{r recycling2}
 animais  <- c("rato", "gato", "cachorro", "coelho")
-outros_animais <- c("rato", "gato", "pato", "cachorro", "coelho", "ovelha")
+mais_animais <- c("rato", "gato", "pato", "cachorro", "coelho",
+                  "ovelha")
 
-animais == outros_animais
+animais == mais_animais
 ```
 
 + Vetores são comparados __um a um E reciclados__ quando um deles é mais curto, então use `%in%` quando você quiser verificar se um valor  __pertence ao conjunto__
