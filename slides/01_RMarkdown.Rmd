@@ -88,7 +88,7 @@ Na primeira linha estão as configurações do chunk em questão. Entre colchete
   - **'asis'** - apresenta os resultados com configurações textuais inseridas^[por exemplo, modificações textuais como ensinadas no tópico sobre strings (`"\n"`, `"\t"`, entre outros).].
   - **'hide'** - o código será lido, mas os resultados não serão apresentados.
   - **'hold'** - os resultados serão apresentados apenas ao final do código (chunk).
-  
+
 
 Uma lista enorme de outros elementos podem ser usados na configuração do chunk, mas estes acima são os principais. Outros parâmetros podem ser encontrados na sessão 2.6 do [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/r-code.html) e também na [Cheatsheet do R Markdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf). 
 
@@ -258,6 +258,17 @@ A tabela descrita acima teria o seguinte formato:
    Conteúdo   |   Conteúdo    |   Conteúdo
 
 
+## Templates
+
+Há diversos templates, sobretudo para arquivos html, em R Markdown. Seguem alguns exemplos:
+
+- [rmdformats](https://github.com/juba/rmdformats)
+
+- [Notebooks](https://bookdown.org/yihui/rmarkdown/notebook.html)
+
+- [Artigos](https://github.com/rstudio/rticles)
+
+
 ## Equações
 
 Um recurso do markdown que pode ser bastante relevante para alguns é possibilidade de inserir equações que vão representar de forma mais clara as operações que estão sendo realizadas. 
@@ -294,7 +305,7 @@ Visualizando os resultados:
 
 
 
-# Executando o código
+# Compilando o arquivo 
 
 Por fim, com seu arquivo `.Rmd` completo o passo final é gerar seu arquivo. Existem três formas de ler:
 
