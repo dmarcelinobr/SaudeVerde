@@ -315,6 +315,31 @@ knitr::include_graphics("https://media.giphy.com/media/3oriO04qxVReM5rJEA/giphy.
 
 
 ---
+## Ambientes reproduzíveis
+
+`r icons::fontawesome("laptop-code")`
+
++ O pacote __renv__ ajuda a criar ambientes reproduzíveis para seus projetos R 
+
+--
+
++ Use o __renv__ para tornar seus projetos mais isolados
+
+--
+
++ Use o comando `renv::init()` para inicializar o __renv__ com um projeto novo ou no existente
+
+--
++ __renv__ criará uma pasta `renv` e um arquivo `renv.lock` que guardará as alterações
+
+
+<center>
+```{r renv, out.width=125, echo = FALSE}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/logo.svg")
+```
+
+
+---
 class:middle, inverse, center
 # Introdução ao R 
 
