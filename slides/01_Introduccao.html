@@ -295,6 +295,29 @@ Projetos do RStudio cria um arquivo __.Rproj__ na sua pasta de trabalho que pass
 
 
 ---
+## Ambientes reproduzíveis
+
+&lt;svg viewBox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"&gt;&lt;/path&gt;&lt;/svg&gt;
+
++ O pacote __renv__ ajuda a criar ambientes reproduzíveis para seus projetos R 
+
+--
+
++ Use o __renv__ para tornar seus projetos mais isolados
+
+--
+
++ Use o comando `renv::init()` para inicializar o __renv__ com um projeto novo ou no existente
+
+--
++ __renv__ criará uma pasta `renv` e um arquivo `renv.lock` que guardará as alterações
+
+
+&lt;center&gt;
+&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/logo.svg" width="125" /&gt;
+
+
+---
 class:middle, inverse, center
 # Introdução ao R 
 
@@ -649,8 +672,38 @@ _As variáveis contínuas são variáveis numéricas que têm um número infinit
 ---
 class: inverse, middle, center
 
-# Conseguindo ajuda com erros sobre o R
+# Escrita no R: sintaxes e boas práticas
 
+---
+
+## Aceita diferentes sintaxes
+
++ na maior parte do tempo, o modo __pipe__ e o modo __nested__ servirão você muito bem:
+--
+
+
+```r
+# Modo nested
+f5(f4(f3(f2(f1(x)))))
+
+# Modo pipe
+library(magrittr)
+x %&gt;% f1 %&gt;% f2 %&gt;% f3 %&gt;% f4 %&gt;% f5
+```
+
+--
++ você também verá pelo menos outras duas sintaxes: é o modo __formula__ (usando o til `~`) e o modo __prefixo__ (usando a crase "`" )
+
+
+
+???
+_O modo *pipe*,  te permite escrever de forma diferente o *R*, indo da esquerda para a direita, como estamos acostumados a ler no mundo ocidental. Numa das seções deste tópico, entraremos a fundo no pacote *magrittr* e o que você pode alterar no seu código com ele._
+
+
+---
+class: inverse, middle, center
+
+# Conseguindo ajuda com erros sobre o R
 
 ---
 ## Outras fontes de ajuda
