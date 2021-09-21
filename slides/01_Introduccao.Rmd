@@ -616,8 +616,37 @@ _As variáveis contínuas são variáveis numéricas que têm um número infinit
 ---
 class: inverse, middle, center
 
-# Conseguindo ajuda com erros sobre o R
+# Escrita no R: sintaxes e boas práticas
 
+---
+
+## Aceita diferentes sintaxes
+
++ na maior parte do tempo, o modo __pipe__ e o modo __nested__ servirão você muito bem:
+--
+
+```{r, eval = FALSE}
+# Modo nested
+f5(f4(f3(f2(f1(x)))))
+
+# Modo pipe
+library(magrittr)
+x %>% f1 %>% f2 %>% f3 %>% f4 %>% f5
+```
+
+--
++ você também verá pelo menos outras duas sintaxes: é o modo __formula__ (usando o til `~`) e o modo __prefixo__ (usando a crase "`" )
+
+
+
+???
+_O modo *pipe*,  te permite escrever de forma diferente o *R*, indo da esquerda para a direita, como estamos acostumados a ler no mundo ocidental. Numa das seções deste tópico, entraremos a fundo no pacote *magrittr* e o que você pode alterar no seu código com ele._
+
+
+---
+class: inverse, middle, center
+
+# Conseguindo ajuda com erros sobre o R
 
 ---
 ## Outras fontes de ajuda
