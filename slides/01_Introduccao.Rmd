@@ -95,13 +95,12 @@ class: inverse, middle, center
 
 ---
 
-
 .pull-left[
-  __Daniel Marcelino__ é cientista de dados sênior no __JOTA__ em Brasília. É especializado em métodos quantitativos, aprendizado de máquinas e modelos de previsão. Além do JOTA, é professor da disciplina _Análise de Informações e Risco_ na pós-graduação do __Ibmec__. Antes do JOTA, trabalhou em universidades e órgãos de governos: Universidade de York (Toronto, Canadá), Universidade de Montreal (Canadá), IPEA (Instituto de Pesquisa Econômica Aplicada) e Prefeitura de Curitiba. Também é autor/dev de alguns pacotes publicados no __CRAN__ e __Github__, além de contribuíções em R e Python em outros pacotes.
+  __Daniel Marcelino__ é cientista de dados sênior no [__JOTA__](https://jota.info) em Brasília. É especializado em métodos quantitativos, aprendizado de máquinas e modelos de previsão. Além do JOTA, é professor da disciplina _Análise de Informações e Risco_ na pós-graduação do __Ibmec__. Antes do JOTA, trabalhou em universidades e órgãos de governos: Universidade de York (Toronto, Canadá), Universidade de Montreal (Canadá), IPEA (Instituto de Pesquisa Econômica Aplicada) e Prefeitura de Curitiba. Também é autor/dev de alguns pacotes publicados no __CRAN__ e __Github__, além de contribuíções em R e Python em outros pacotes.
 ]
 
 .pull-right[
-![Daniel Marcelino](https://github.com/dmarcelinobr/curso_r-cni/raw/main/figs/00_daniel.jpg)
+![Daniel Marcelino](https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/00_daniel.jpg)
 ]
 
 
@@ -154,12 +153,12 @@ class: inverse, middle, center
 
 --
 
-+ __uma comunidade bastante ativa e receptiva__:  listas de e-mail, Stack Overflow, [RStudio community](community.rstudio.com/), grupos useR, .purple[R-Ladies+] chapters, comunidades no Slack, `r icons::fontawesome("facebook")`, `r icons::fontawesome("linkedin")`, `r icons::fontawesome("telegram")`, `r icons::fontawesome("whatsapp")`, `r icons::fontawesome("twitter")` `#rstats`
++ __uma comunidade bastante ativa e receptiva__:  listas de e-mail, Stack Overflow, [RStudio community](community.rstudio.com/), grupos useR, .purple[R-Ladies+] chapters, comunidades no Slack, `r icons::fontawesome("facebook")`, `r icons::fontawesome("linkedin")`, `r icons::fontawesome("telegram")`, `r icons::fontawesome("discord")`, `r icons::fontawesome("reddit")`, `r icons::fontawesome("whatsapp")`, `r icons::fontawesome("twitter")` `#rstats`
 
 
 <center>
 ```{r remedy001, out.width=125, echo = FALSE}
-knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/figs/00_r-project.png")
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/00_r-project.png")
 ```
 
 ---
@@ -177,7 +176,7 @@ knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-
 + para instalar pacotes diretamente do CRAN: `install.packages("tidyverse")`
 
 ---
-background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/figs/00_r-project-base.png")
+background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/00_r-project-base.png")
 background-size: 60%
 # Projeto R
 
@@ -186,7 +185,7 @@ background-size: 60%
 
 
 ---
-background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/figs/00_r-base.png")
+background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/00_r-base.png")
 background-size: 37%
 # Executando R com R Base
 
@@ -213,6 +212,16 @@ background-size: 60%
 `r icons::fontawesome("laptop-code")`
 
 
+---
+background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/figs/00_rgooglecolab.png")
+background-size: 60%
+# Executando R com Google Colab
+
+
+`r icons::fontawesome("laptop-code")`
+
+???
+_Colab, ou Colaboratory, é um notebook interativo fornecido pelo Google (principalmente) para escrever e executar Python por meio de um navegador. Podemos realizar análises de dados, criar modelos, avaliar esses modelos no Colab. O processamento é feito em servidores de propriedade do Google na nuvem. Precisamos apenas de um navegador e uma conexão de Internet razoavelmente estável._
 
 ---
 class: inverse, middle, center
