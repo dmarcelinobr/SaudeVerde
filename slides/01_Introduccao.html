@@ -158,42 +158,64 @@ class: inverse, middle, center
 + para instalar pacotes diretamente do CRAN: `install.packages("tidyverse")`
 
 ---
-background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/figs/00_r-project-base.png")
+background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/00_r-project-base.png")
 background-size: 60%
-# Projeto R
+background-position: center
 
-
-&lt;svg viewBox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"&gt;&lt;/path&gt;&lt;/svg&gt;
+.pull-left[Projeto R]
 
 
 ---
-background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/figs/00_r-base.png")
-background-size: 37%
-# Executando R com R Base
+background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/00_r-base.png")
+background-size: 45%
+background-position: center
 
-
-&lt;svg viewBox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"&gt;&lt;/path&gt;&lt;/svg&gt;
-
-
----
-background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/figs/00_rstudio.png")
-background-size: 60%
-# Executando R com RStudio
-
-
-&lt;svg viewBox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"&gt;&lt;/path&gt;&lt;/svg&gt;
+.pull-left[Executando R com R Base]
 
 
 
 ---
-background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/figs/00_rstudio-server.png")
+background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/00_rstudio.png")
 background-size: 60%
-# Executando R com RStudio Server
+background-position: center
+
+.pull-left[Executando R com RStudio
+
+&lt;svg viewBox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"&gt;&lt;/path&gt;&lt;/svg&gt;
+
+]
+
+
+
+
+
+
+---
+background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/00_rstudio-server.png")
+background-size: 60%
+background-position: center
+
+.pull-left[Executando R com RStudio Server]
+
+
+---
+background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/00_rgooglecolab.png")
+background-size: 65%
+background-position: right
+
+.pull-left[Executando R com Google Colab
 
 
 &lt;svg viewBox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"&gt;&lt;/path&gt;&lt;/svg&gt;
 
+ - [Google Drive](https://drive.google.com/drive/folders/1WeVErQ4swxiFK_zu3Xtm4ATroLQSKFis)
 
+ - [Google Colab](https://colab.research.google.com/drive/1CTdoQ2xeVDd0TtbvLZr3zNOtWm0gZumG)
+
+]
+
+???
+_Colab, ou Colaboratory, é um notebook interativo fornecido pelo Google (principalmente) para escrever e executar Python por meio de um navegador. Podemos realizar análises de dados, criar modelos, avaliar esses modelos no Colab. O processamento é feito em servidores de propriedade do Google na nuvem. Precisamos apenas de um navegador e uma conexão de Internet razoavelmente estável._
 
 ---
 class: inverse, middle, center
@@ -202,7 +224,7 @@ class: inverse, middle, center
 ---
 ## Diretório de trabalho
 
-+ você precisa dizer ao R onde você irá trabalhar, então ele irá compreender de onde deverá ler os dados, salvar os resultados, gravar as imagens etc: __working directory__ ou __ambiente de trabalho__
++ você precisa dizer ao R onde você irá trabalhar, então ele irá compreender de onde deverá ler os dados, salvar os resultados, gravar as imagens etc: __working directory__ ou __pasta de trabalho__
 
 --
 
@@ -222,25 +244,25 @@ class: inverse, middle, center
 ---
 ## Organização do projeto e melhores práticas 
 
-+ projetos são melhores organizados se nós usarmos __uma pasta por projeto__ e  __subpastas__ dentro de nosso diretório de trabalho 
++ projetos são melhores organizados se nós usarmos __uma pasta por projeto__ e  __subpastas__ dentro do diretório de trabalho 
 
 --
 
-+ nós não deveríamos modificar __arquivos de dados brutos__ mas __salvar versões de dados processados__ (e os scripts correspondentes)
++ nós não deveríamos modificar tabelas e __arquivos de dados brutos__ mas __salvar versões de dados processados__ (e os scripts correspondentes)
 
 --
 
-+ ao invés de usar __caminhos absolutos__ nós deveríamos usar __caminhos relativos__:
++ ao invés de usar __caminhos absolutos__ nós também deveríamos usar __caminhos relativos__:
   + `.` "here"
   + `./dados` uma subpasta chamada `dados`
   + o próximo nível acima `..`
   + dois níveis acima `../..` 
 --
 
-+ evite `C:users/seu_usuário/sua_estrutura_de_arquivo/seu_diretório_de_trabalho`
++ evite: `C:users/seu_usuário/sua_estrutura_de_arquivo/seu_diretório_de_trabalho`
 
 ---
-## Nesta e nas próximas seções tente adotar a seguinte lógica de organização
+## Tente adotar a seguinte lógica de organização, o R vai te amar pra sempre
 
 
 ```
@@ -255,7 +277,7 @@ projeto/
 *    └── README.md
 ```
 
-+ unzip the .zip file into a folder of your preference
++ descompacte o arquivo __.zip__ em uma pasta de sua preferência
 
 &lt;right&gt;
 &lt;svg viewBox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"&gt;&lt;/path&gt;&lt;/svg&gt;
@@ -264,7 +286,7 @@ projeto/
 ---
 ## Projetos do RStudio 
 
-Projetos do RStudio cria um arquivo __.Rproj__ na sua pasta de trabalho que passará a agir como um atalho para o seu projeto.
+Projetos do RStudio cria um arquivo __.Rproj__ na sua pasta de trabalho que passará a agir como um __atalho__ para o seu projeto.
 
 
 --
@@ -274,65 +296,72 @@ Projetos do RStudio cria um arquivo __.Rproj__ na sua pasta de trabalho que pass
 
 ---
 class:middle, inverse, center
-# introduction to R 
-
----
-## introduction to R 
-
-+ `&lt;-` is the assignment operation in R and it does not return output it __creates objects__ that are saved in the workspace
-(`Alt + -`)
-
---
-
-+ overwriting objects __does not affect other objects__ 
-
---
-
-+  __naming object tips__: 
- + don't begin with a number or symbol.
- + there are forbidden words 
- + be consistent with your __coding style__! 
- + avoid dots
- + __name functions as verbs and objects as nouns__
-
---
-
-+ you can see which objects are saved in the workspace by using `ls()`
+# Introdução ao R 
 
 ---
 
-## about the workspace
+## Introdução ao R 
 
-+ R creates __objects__ that occupy RAM memory: the __workspace__
-
---
-
-+ the __workspace__ can be saved and loaded between sessions BUT
++ __R__ é uma linguagem orientada a objetos
 
 --
 
-+ __you can lose track of how you created the objects in the workspace__
++ `&lt;-` é o operador de atribuição no R, ele não retorna a saída apenas __cria objetos__ que são salvos no seu _workspace_  (área de trabalho)
+Windows (`Alt + -`) Mac (`option + -`)
 
 --
 
-+ `#boaspraticas` não salve o seu espaço de trabalho (workspace)
++ reescrever um objeto __não afeta outros objetos__ 
+
+--
+
++  __dicas sobre nomes de objetos__: 
+ + não comece com um número ou símbolo.
+ + existem palavras proibidas 
+ + seja consistente com o seu __estilo de código__! 
+ + evite pontos (.)
+ + chame funções como __verbos__ e objetos como __substantivos__
+
+???
+_help(reserved): if; else; repeat;	while;	function; for;	in;	next;	break;	TRUE; FALSE;	NULL;	Inf;	NaN;	NA_	
+--
+
++ você pode ver quais objetos estão salvos na área de trabalho usando `ls()`
 
 ---
-background-image:url("figs/0a_setup.png")
+
+## Sobre a área de trabalho
+
++ R cria __objetos__ que ocupam a memória RAM do seu computador: a área de trabalho ou __workspace__
+
+--
+
++ a __área de trabalho__ pode ser salva e carregada entre as sessões, MAS
+
+--
+
++ __você pode perder o controle de como criou os objetos na área de trabalho__
+
+--
+
++ `#boaspraticas` não salve a sua área de trabalho
+
+---
+background-image:url("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/0a_setup.png")
 background-size: 60%
 background-position: 100% 100%
 
-.pull-left[in the general options]
+.pull-left[Em opções gerais ou preferências]
 
 ---
 class: inverse, middle, center
-# functions, arguments and understanding the  help
+# Funções, argumentos e compreensão da ajuda
 
 ---
-## functions and arguments
+## Funções e argumentos (parâmetros)
 
 ```
-weight_kg &lt;- sqrt(10)
+peso_kg &lt;- sqrt(10)
 
 round(3.14159)
 
@@ -340,16 +369,16 @@ args(round)
 ```
 
 ---
-## if you know the name of the function
+## Se você sabe o nome de uma função
 ```
-help(function)
-?function
-args(function)
+help(função)
+?função
+args(função)
 ```
 
-+ select the name of the function and click __F1__
++ selecione o nome da função e clique __F1__
 
-Check the structure of the help file:
+Verifique a estrutura do arquivo de ajuda:
 
 + Description
 + Usage
@@ -357,28 +386,28 @@ Check the structure of the help file:
 + Details
 
 ---
-## if you don't know the name of the function
+## Se você não sabe o nome exato da função
 
 ```
 ??kruskal
 ```
 
-(or search it - google it - duckduckgo it)
+(ou pesquise por isto no - google - bing - duckduckgo etc)
 
 ---
-## the structure of a function help
+## A estrutura de uma função (help)
 
-`args(function)`
+`args(função)`
 
-+ The arguments of a function are coded:
-  + in order
-  + with or without default settings
++ Os argumentos de uma função são codificados:
+  + em ordem
+  + com ou sem configurações padrão
   
 --
 
-You can either
-+ use the arguments in order, without naming them
-+ use the first arguments without naming them and then some optional arguments, with name
+Você também pode
++ use os argumentos em ordem, sem nomeá-los
++ use os primeiros argumentos sem nomeá-los e, em seguida, alguns argumentos opcionais, com nome
 
 
 ---
@@ -426,7 +455,7 @@ class: center, middle
 ---
 ## Subconjunto de vetores
 
-+ R é __1-idexado__ e os intervalos são fechados (não meio-abertos)
++ __R__ é __1-idexado__ e os intervalos são fechados (não meio-abertos)
 
 
 ```r
@@ -499,14 +528,14 @@ peso_g[peso_g &gt; 36]
 &lt;small&gt;
 
 ```r
-animals      &lt;- c("mouse", "rat", "dog", "cat")
-more_animals &lt;- c("rat", "cat", "dog", "duck", "goat")
+animais  &lt;- c("rato", "gato", "cachorro", "coelho")
+outros_animais &lt;- c("rato", "gato", "pato", "cachorro", "coelho", "ovelha")
 
-animals %in% more_animals
+animais %in% outros_animais
 ```
 
 ```
-## [1] FALSE  TRUE  TRUE  TRUE
+## [1] TRUE TRUE TRUE TRUE
 ```
 
 ---
@@ -515,22 +544,22 @@ animals %in% more_animals
 &lt;small&gt;
 
 ```r
-animals      &lt;- c("mouse", "rat", "dog", "cat")
-more_animals &lt;- c("rat", "cat", "dog", "duck", "goat")
+animais  &lt;- c("rato", "gato", "cachorro", "coelho")
+outros_animais &lt;- c("rato", "gato", "pato", "cachorro", "coelho", "ovelha")
 
-animals == more_animals
+animais == outros_animais
 ```
 
 ```
-## Warning in animals == more_animals: longer object length is not a multiple of
+## Warning in animais == outros_animais: longer object length is not a multiple of
 ## shorter object length
 ```
 
 ```
-## [1] FALSE FALSE  TRUE FALSE FALSE
+## [1]  TRUE  TRUE FALSE FALSE FALSE FALSE
 ```
 
-+ Vectors are compared __one by one AND recycled__ when one of them is shorter, so use `%in%` when you want to check __belonging to a set__
++ Vetores são comparados __um a um E reciclados__ quando um deles é mais curto, então use `%in%` quando você quiser verificar se um valor  __pertence ao conjunto__
 
 ---
 ## Dados ausentes 
@@ -618,9 +647,8 @@ _As variáveis contínuas são variáveis numéricas que têm um número infinit
 ---
 class: inverse, middle, center
 
-# Conseguindo ajuda com erros e dúvidas sobre o R
+# Conseguindo ajuda com erros sobre o R
 
----
 
 ---
 ## Outras fontes de ajuda
