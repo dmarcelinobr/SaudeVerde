@@ -55,7 +55,7 @@ output:
 
 Caso tente criar um arquivo `.Rmd` no RStudio agora, você receberá um arquivo inicial tal como a imagem abaixo:
 
-![](Imagens/Exemplo - Imagem.png)
+![](https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/modelo_rmarkdown.png)
 
 O texto básico apresentado apresenta alguma sugestõe e explica como inserir alguns elementos que serão explorados mais a frente.
 
@@ -271,7 +271,9 @@ No caso de equações separadas há ainda uma terceira forma, que é usando os c
 Equações na linha: $x=(I-A)^{-1}f$
 
 Equações separadas: $$x=(I-A)^{-1}f$$
+  
 ou
+
   \begin{equation}
   x=(I-A)^{-1}f
   \end{equation}
