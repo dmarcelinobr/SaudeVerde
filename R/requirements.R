@@ -10,10 +10,13 @@ if (!requireNamespace("renv")) {
   remotes::install_github("rstudio/renv")
 }
 
+if (!requireNamespace("countdown")) {
+  remotes::install_github("gadenbuie/countdown")
+}
+
 if (!requireNamespace("datatable")) {
   install.packages("datatable", dependencies = TRUE)
 }
-
 
 if (!requireNamespace("rmarkdown")) {
   install.packages("rmarkdown", dependencies = TRUE)
@@ -70,6 +73,7 @@ if (!requireNamespace("tm")) {
 if (!requireNamespace("crayon")) {
   install.packages("crayon", dependencies = TRUE)
 }
+
 
 if (!requireNamespace("congressbr")) {
   install.packages("congressbr", dependencies = TRUE)
