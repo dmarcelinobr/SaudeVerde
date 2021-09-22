@@ -60,6 +60,7 @@ xaringanExtra::use_share_again()
 
 ---
 
+
 # Apresentação
 
 + Manipulação de dados
@@ -136,6 +137,9 @@ class: inverse, middle, center
 
 + __comunicação__ com outras ferramentas: manuscritos, apresentações,  templates, apps e dashboards.
 
+
+???
+_O que é Linguagem R ? É uma linguagem e ambiente para computação estatística e gráficos. É um projeto GNU que é semelhante ao idioma e ao ambiente S desenvolvido na Bell Laboratories (anteriormente AT&T, agora Lucent Technologies) por John Chambers e colegas. R pode ser considerado uma implementação diferente de S._
 
 ---
 ## Por que aprender __R__?
@@ -307,15 +311,14 @@ projeto/
 Projetos do RStudio cria um arquivo __.Rproj__ na sua pasta de trabalho que passará a agir como um __atalho__ para o seu projeto.
 
 
---
+---
+class: center,middle, inverse
 
-```{r gif, out.width=300, echo = FALSE, fig.align='center'}
-knitr::include_graphics("https://media.giphy.com/media/3oriO04qxVReM5rJEA/giphy.gif")
-```
-
+# Ambientes reproduzíveis
 
 ---
-## Ambientes reproduzíveis
+
+## Pacote renv 
 
 `r icons::fontawesome("laptop-code")`
 
@@ -327,16 +330,44 @@ knitr::include_graphics("https://media.giphy.com/media/3oriO04qxVReM5rJEA/giphy.
 
 --
 
+<small>
+```{r requirements, eval=FALSE}
+source("R/requirements.R")
+```
+
+--
+
 + Use o comando `renv::init()` para inicializar o __renv__ com um projeto novo ou no existente
 
 --
+
 + __renv__ criará uma pasta `renv` e um arquivo `renv.lock` que guardará as alterações
 
 
 <center>
-```{r renv, out.width=125, echo = FALSE}
+```{r renv, out.width=100, echo = FALSE}
 knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/logo.svg")
 ```
+
+
+
+---
+class:middle, inverse, center
+
+# Pausa, respirem, levantem as dúvidas
+
+
+```{r echo=FALSE}
+library(countdown)
+countdown(minutes = 5, seconds = 0, top = 0,
+          right = "30%",
+          padding = "10px",
+          margin = "5%",
+          font_size = "5em")
+
+```
+
+
 
 
 ---

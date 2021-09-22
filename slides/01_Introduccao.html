@@ -4,13 +4,15 @@
     <title>Introducão ao R e RStudio</title>
     <meta charset="utf-8" />
     <meta name="author" content="Daniel Marcelino   Brasília" />
-    <meta name="date" content="2021-09-21" />
+    <meta name="date" content="2021-09-22" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <script src="libs/clipboard/clipboard.min.js"></script>
     <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
     <script src="libs/shareon/shareon.min.js"></script>
     <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="libs/countdown/countdown.css" rel="stylesheet" />
+    <script src="libs/countdown/countdown.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -20,7 +22,7 @@ class: center, middle, inverse, title-slide
 # Introducão ao R e RStudio
 ## Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI
 ### Daniel Marcelino <br> Brasília
-### 2021-09-21
+### 2021-09-22
 
 ---
 
@@ -43,6 +45,7 @@ class: center, middle, inverse, title-slide
     + Versionamento de código no __Github__
 
 ---
+
 
 # Apresentação
 
@@ -120,6 +123,9 @@ class: inverse, middle, center
 
 + __comunicação__ com outras ferramentas: manuscritos, apresentações,  templates, apps e dashboards.
 
+
+???
+_O que é Linguagem R ? É uma linguagem e ambiente para computação estatística e gráficos. É um projeto GNU que é semelhante ao idioma e ao ambiente S desenvolvido na Bell Laboratories (anteriormente AT&amp;T, agora Lucent Technologies) por John Chambers e colegas. R pode ser considerado uma implementação diferente de S._
 
 ---
 ## Por que aprender __R__?
@@ -289,13 +295,14 @@ projeto/
 Projetos do RStudio cria um arquivo __.Rproj__ na sua pasta de trabalho que passará a agir como um __atalho__ para o seu projeto.
 
 
---
+---
+class: center,middle, inverse
 
-&lt;img src="https://media.giphy.com/media/3oriO04qxVReM5rJEA/giphy.gif" width="300" style="display: block; margin: auto;" /&gt;
-
+# Ambientes reproduzíveis
 
 ---
-## Ambientes reproduzíveis
+
+## Pacote renv 
 
 &lt;svg viewBox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"&gt;&lt;/path&gt;&lt;/svg&gt;
 
@@ -307,14 +314,37 @@ Projetos do RStudio cria um arquivo __.Rproj__ na sua pasta de trabalho que pass
 
 --
 
+&lt;small&gt;
+
+```r
+source("R/requirements.R")
+```
+
+--
+
 + Use o comando `renv::init()` para inicializar o __renv__ com um projeto novo ou no existente
 
 --
+
 + __renv__ criará uma pasta `renv` e um arquivo `renv.lock` que guardará as alterações
 
 
 &lt;center&gt;
-&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/logo.svg" width="125" /&gt;
+&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/logo.svg" width="100" /&gt;
+
+
+
+---
+class:middle, inverse, center
+
+# Pausa, respirem, levantem as dúvidas
+
+
+<div class="countdown" id="timer_614b626f" style="top:0;right:30%;margin:5%;padding:10px;font-size:5em;" data-warnwhen="0">
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+
+
 
 
 ---

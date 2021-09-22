@@ -1,0 +1,521 @@
+---
+title: "Iniciando com dados"
+subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
+author: "Daniel Marcelino <br> Brasília"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+      ratio: '16:9'
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, cache=FALSE)
+library(knitr)
+```
+
+```{r xaringanthemer, include = FALSE}
+library(xaringanthemer)
+# #034c87
+xaringanthemer::style_mono_accent(
+  base_color = "#A70000",
+  # primary_color = "#A70000",
+  #secondary_color = "#ff0000",
+  white_color = "white",
+  colors = c(
+    red = "#A70000",
+    purple = "#88398a",
+    orange = "#ff8811",
+    green = "#136f63",
+    blue = "#4B4FFF",
+    white = "#FFFFFF",
+    black = "#181818"
+  ),
+  header_font_google = google_font("Roboto Condensed"),
+  text_font_google   = google_font("Roboto Condensed", "300", "300i"),
+  code_font_google   = google_font("Ubuntu Mono"),
+  text_font_size = "30px",
+  code_font_size = "30px",
+  )
+
+xaringanExtra::use_share_again()
+```
+
+
+
+## No último encontro
+
++ nós vimos como configurar um projeto e sua estrutura de arquivos 
+
++ vimos como iniciar o uso do R dentro do RStudio
+
++ também vimos exemplos de como criar vetores numéricos, characters e lógicos`c()` 
+
++ aprendemos também os primeiros passor para filtrar e obter subconjuntos de vetores usando os colchetes `[]` e outras funcões: `length()`, `:`, `seq(from, to, interval)`
+
++ subconjuntos de vetores podem ser obtidos via teste númerico ou índices lógicos (`TRUE`/`FALSE`)
+
+
+---
+## Estrutura de dados 
+
++ __vector__: matrizes lineares (uma dimensão: apenas comprimento) 
+
+--
+
++ __factors__: vectores (uma dimensão) representando __variáveis categóricas__ e portanto tendo __níveis (levels)__
+
+--
+
++ __matrices__: matrizes de vetores -> de um mesmo tipo (todos numéricos ou todos character, strings (texto), por exemplo) (duas dimensões: largura e comprimento)
+
+--
+
++ __data frames__: arrays ou matrizes bidimensionais, mas podem ser de tipos combinados (como: coluna 1 com nomes ou rótulos, coluna 2 com números)
+
+--
+
++ __arrays__ são similares a matrizes e data frames, mas podem ser objetos tridimensionais, data frame em camadas ("layered" data frames)
+
+--
+
++ __list__: literalmente uma lista de qualquer coisa (uma lista de data frames, ou diferentes objetos)
+
+
+???
+
+_As variáveis categóricas contêm um número finito de categorias ou grupos distintos. Os dados categóricos podem não ter uma ordem lógica. Por exemplo, os preditores categóricos incluem gênero, tipo de material e método de pagamento._
+
+_As cariáveis discretas são variáveis numéricas que têm um número contável de valores entre quaisquer dois valores. Uma variável discreta é sempre numérica. Por exemplo, o número de reclamações de clientes ou o número de falhas ou defeitos._
+
+_As variáveis contínuas são variáveis numéricas que têm um número infinito de valores entre dois valores quaisquer. Uma variável contínua pode ser numérica ou de data/hora. Por exemplo, o comprimento de uma peça ou a data e hora em que um pagamento é recebido._
+
+
+---
+## Matrizes
+
++ dados precisam ser do mesmo tipo
+
+```{r}
+?matrix
+matrix(nrow = 4, ncol = 3)
+```
+
+---
+## Matrizes
+
++ você pode também ajustar vetores com as __dimensões corretas__ 
+
+```{r, eval = TRUE, results='hide'}
+nums <- 1:12
+matrix(data = nums, nrow = 3)
+matrix(data = nums, nrow = 3, byrow = TRUE)
+```
+
+
+---
+## Matrizes 
+
+```{r, results="hide"}
+dim1_nomes <- c("r1", "r2", "r3")
+dim2_nomes <- c("c1", "c2", "c3", "c4")
+nomes_matrix <- list(dim_1 = dim1_nomes, dim_2 = dim2_nomes)
+str(nomes_matrix)
+m <- matrix(data = nums, nrow = 3,
+       dimnames = nomes_matrix)
+dim(m)
+dimnames(m)
+```
+
+--
+
++ você pode converter facilmente entre os mais variados tipos de dados  `data.frame("m")`, `as.data.frame("m")`, `as.vector(m)`.
+(o mesmo se aplica para alterações entre "numeric" e "logical")
+
+
+---
+class: inverse, middle, center
+## Iniciando com data frames 
+
+---
+
+## Dataset de proposições da Câmara dos Deputados
+
++ data frames: uma linha por proposição legislativa (não única), um coluna por variável
+
+```{r columns, eval = T, echo = F, fig.align="center", out.width=740}
+
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/proposicoes_dataset.png")
+```
+
+
+
+---
+class:middle, inverse, center
+
+# Pausa, respirem, levantem as dúvidas
+
+
+```{r echo=FALSE}
+library(countdown)
+countdown(minutes = 5, seconds = 0, top = 0,
+          right = "30%",
+          padding = "10px",
+          margin = "5%",
+          font_size = "5em")
+
+```
+
+
+
+
+---
+## Fazendo download de tabelas estruturadas
+
+Vamos baixar uma tabela de dados diretamente na seguinte subpasta `./dados/brutos`:
+
+```{r, echo = FALSE, eval = TRUE}
+if (!file.exists("../dados/brutos"))
+  dir.create("../dados/brutos", recursive = TRUE)
+
+if (!file.exists("../dados/brutos/proposicoesAutores-2020.csv")) {
+  download.file(url = "https://dadosabertos.camara.leg.br/arquivos/proposicoesAutores/csv/proposicoesAutores-2020.csv", 
+            destfile = "../dados/brutos/proposicoesAutores-2020.csv")
+}
+```
+
+<small>
+```{r, eval = FALSE}
+raiz = "https://dadosabertos.camara.leg.br/"
+caminho = "arquivos/proposicoesAutores/"
+tipo = "csv/"
+arquivo = "proposicoesAutores-2020.csv"
+
+url = paste(raiz, caminho, tipo, arquivo, sep="")
+
+download.file(url = url, 
+              destfile = "../dados/brutos/proposicoesAutores-2020.csv")
+```
+
+
+--
+
+
+```{r, echo=FALSE, eval = TRUE}
+raiz = "https://dadosabertos.camara.leg.br/"
+caminho = "arquivos/proposicoesAutores/"
+tipo = "csv/"
+arquivo = "proposicoesAutores-2020.csv"
+
+url = paste(raiz, caminho, tipo, arquivo, sep="")
+
+print(url)
+```
+
+
+---
+## Lendo arquivo de dados no R
+
+Funcões para ler os dados são importantes para qualquer projeto.
+Para data frames: `read.csv()`, `read.delim()`, `read.table()`
+
+
+```{r}
+
+proposicoes <- read.csv2("../dados/brutos/proposicoesAutores-2020.csv")
+
+proposicoes2 <- read.delim(file =
+                          "../dados/brutos/proposicoesAutores-2020.csv",
+                            sep = ";",
+                            header = TRUE)
+
+identical(proposicoes, proposicoes2)
+
+# remover arquivo da mémoria
+rm(proposicoes2)
+```
+
+
+
+---
+## Lendo arquivo de dados no R
+
++ Pacote __readr__ 
++ Pacote __data.table__ (`data.table::fread()`) geralmente quando vocês precisa abrir um arquivo com volume maior de dados 
++ Planilhas do Excel: `readxl::read_excel()`
++ __Interface Gráfica__
+
+Existem __muitas outras maneiras__ de ler dados no R, algumas são específicas para o tipo de dados (GIS shapefiles ou raster, e pacotes específicos podem vir com suas próprias funções de leitura)
+
+---
+## Examinando objetos do tipo `data.frame`
+
+```{r try, echo = TRUE, eval = FALSE}
+str(proposicoes)
+dim(proposicoes)
+nrow(proposicoes)
+ncol(proposicoes)
+head(proposicoes) # 6 linhas por padrão
+tail(proposicoes)
+names(proposicoes)
+rownames(proposicoes)
+length(proposicoes) # numero de colunas
+summary(proposicoes)
+```
+
+---
+## Examinando objetos do tipo `data.frame`
+
+Baseado no resultado de `str(proposicoes)`, você conseguiria responder as perguntas a seguir?
+
++ Qual é a classe do objeto proposicoes?
+
++ Quantas linhas e quantas colunas há nesse objeto?
+
++ Qual é o tipo de dados nessas colunas?
+
+
+---
+## Indexando e obtendo subconjuntos de data frames
+
++ um vetor tem apenas uma dimensão, então:
+
+  + `length()` refere-se ao número de __elementos__
+  + `dim()`
+  + seleção entre colchetes `[]`
+
+--
+
++ um data frame por outro lado tem __duas__ dimensões: `dim()`, `ncol()`, `nrow()` seleção entre colchetes `[]` __MAS com as duas dimensões separadas por uma vírgula__: `[linhas, colunas]`
+
+--
+
++ vamos tentar nos refeir a essas operações como __selecionar colunas__ e __filtrar linhas__
+
+---
+## Selecionando colunas
+
++ com índices numéricos e vetores 
+
+```{r, eval = FALSE}
+proposicoes[, 8]
+proposicoes[1, ]
+proposicoes[ , 12]
+proposicoes[4, 12]
+proposicoes[1:4, 1:3]
+
+```
+
+---
+## Indexando e obtendo subconjuntos de data frames
+
++ o sinal de menos indica __remover__ o índice de uma coluna ou linha, ou seja, remover aquela coluna ou linha
+
+```{r, eval = FALSE}
+# Todo o data frame, exceto a primeira coluna
+proposicoes[, -1]
+nrow(proposicoes)
+proposicoes[-(7:55540), ] # Equivalente ao comando head(proposicoes)
+```
+
+---
+## Selecionando colunas pelo nome 
+
+```{r subset, eval = FALSE}
+names(proposicoes)
+
+  proposicoes["nomeAutor"]     # Resultado é também um data frame
+* proposicoes[["nomeAutor"]]   # Resultado é um vetor
+* proposicoes[, "nomeAutor"]   # Resultado é um vetor
+* proposicoes$nomeAutor        # Resultado é um vetor
+```
+
+
++ R tem muitas maneiras de fazer a mesma coisa
+
+---
+## Indexando e obtendo subconjuntos de data frames
+
+<small>
+```{r, eval = FALSE, echo = TRUE}
+sub <- proposicoes[1:10,]
+# primeiro elemento na primeira coluna do data frame
+
+# primeiro elemento na 8a coluna
+
+# primeira coluna do data frame (como um vetor)
+
+# primeira coluna do data frame (como um data frame)
+
+# primeiros três elementos da  6a coluna (como um vetor)
+
+# a 3a linha do data frame
+
+# equivalente ao head_proposicoes <- head(proposicoes)
+
+```
+
+
+---
+## Indexando e obtendo subconjuntos de data frames
+
+<small>
+```{r, eval = FALSE, echo = TRUE}
+sub <- proposicoes[1:10,]
+# primeiro elemento na primeira coluna do data frame
+sub[1, 1]
+# primeiro elemento na 8a coluna
+sub[1, 8]
+# primeira coluna do data frame (como um vetor)
+sub[, 1]
+# primeira coluna do data frame (como um data frame)
+sub[1]
+# primeiros três elementos da  6a coluna (como um vetor)
+sub[1:3, 6]
+# a 3a linha do data frame
+sub[3, ]
+# equivalente ao head_proposicoes <- head(proposicoes)
+head_proposicoes <- proposicoes[1:6, ]
+
+```
+
+
+---
+## Desafio
+
+<small>
+
++ Crie um data frame (`proposicoes_500`) contendo apenas os dados da linha 500 da tabela `proposicoes`
+
+--
+
++ Observe como a função `nrow()` retorna pra você o número de linhas no data frame. Use esse número para obter apenas o último registro, a última linha do data frame `proposicoes`
+
+--
+
++ Compare este resultado com o que você vê no último registro usando a função `tail()` para ter certeza
+
+--
+
++ Retire a última linha usando `nrow ()` ao invés do número da linha.
+
+--
+
++ Crie um data frame (`proposicoes_ultima`) a partir da última linha.
+
+--
+
++ Use `nrow ()` para extrair a linha que está no meio do data frame. Armazene o conteúdo desta linha em um objeto chamado `proposicoes_meio`.
+
+
+</small>
+
+```{r challenge2, eval = FALSE, echo = FALSE}
+# Crie um data frame (`proposicoes_500`) contendo apenas os dados da linha 500 da tabela `proposicoes`
+
+# Observe como a função `nrow()` retorna pra você o número de linhas no data frame. Use esse número para obter apenas o último registro, a última linha do data frame `proposicoes`
+
+# Compare este resultado com o que você vê no último registro usando a função `tail()` para ter certeza
+
+# Retire a última linha usando `nrow ()` ao invés do número da linha.
+
+# Crie um data frame (`proposicoes_ultima`) a partir da última linha.
+
+#  Use `nrow ()` para extrair a linha que está no meio do data frame. Armazene o conteúdo desta linha em um objeto chamado `proposicoes_meio`.
+```
+
+
+---
+## Lidando com dados ausentes ou perdidos
+
+```{r, eval=FALSE, results = "hide"}
+sub <- proposicoes[1:10,]
+# str(sub)
+sub$siglaPartidoAutor
+sub$siglaPartidoAutor == NA # o R não pode comparar porque existe NA 
+
+# nós usamos então a função is.na: 
+# is.na(sub$siglaPartidoAutor) # agora sim vai retornar um vetor lógico 
+sub$nomeAutor[ !is.na(sub$siglaPartidoAutor) ]
+```
+
+--
+
++ em algumas funções vamos ter que usar: `na.rm`
+
+
+---
+## Lidando com dados ausentes ou perdidos
+  
+  + Lidando com dados ausentes em data frames: __filtrando linhas que têm NAs__
+
+```{r}
+sem_NA_id <- proposicoes[!is.na(proposicoes$idDeputadoAutor),]
+dim(sem_NA_id)
+
+
+sem_NA <- proposicoes[!is.na(proposicoes$idDeputadoAutor) &
+                        !is.na(proposicoes$siglaPartidoAutor),]
+dim(sem_NA)
+
+```
+
+
+---
+## Lidando NA
+  
+```{r}
+# complete.cases(proposicoes)
+proposicoes1 <- proposicoes[complete.cases(proposicoes) , ]
+proposicoes2 <- na.omit(proposicoes)
+dim(proposicoes1)
+dim(proposicoes2)
+```
+
+
+
+---
+## Gravando o data frame processado no disco (no lugar certo)
+
+```{r}
+if(!dir.exists("../dados/processados"))
+  dir.create("../dados/processados", recursive = T)
+
+write.csv2(proposicoes1, 
+           file = "../dados/processados/proposicoes_mod.csv",
+           row.names = FALSE)
+```
+
+
+#### Lembre-se de nunca reescrever seu arquivo bruto de dados 
+
+---
+## Carrega o csv modificado
+
+```{r,results= "hide"}
+props <- read.delim("../dados/processados/proposicoes_mod.csv", sep = ";")
+
+str(props)
+```
+
+
+---
+class: center, middle
+# Obrigado!
+
+<center>
+`r icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), scale = 1, fill = "#A70000")` [dmarcelino@live.com](mailto:dmarcelino@live.com) 
+
+`r icons::icon_style(icons::fontawesome("twitter", style = "brands"), scale = 1, fill = "#A70000")` [@dmarcelinobr](https://twitter.com/dmarcelinobr) 
+
+`r icons::icon_style(icons::fontawesome("linkedin", style = "brands"), scale = 1, fill = "#A70000")`
+[dmarcelinobr](https://www.linkedin.com/in/dmarcelinobr/) 
+
+`r icons::icon_style(icons::fontawesome("github", style = "brands"), scale = 1, fill = "#A70000")`
+[dmarcelinobr](http://github.com/dmarcelinobr) 
