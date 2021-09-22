@@ -14,7 +14,6 @@ if (!requireNamespace("countdown", quietly = TRUE)) {
   remotes::install_github("gadenbuie/countdown")
 }
 
-
 if (!requireNamespace("xaringanExtra", quietly = TRUE)) {
   remotes::install_github("gadenbuie/xaringan", dependencies = TRUE)
 }
@@ -27,13 +26,16 @@ if (!requireNamespace("rcongresso", quietly = TRUE)) {
   remotes::install_github(repo = 'analytics-ufcg/rcongresso')
 }
 
+
 if (!requireNamespace("DT", quietly = TRUE)) {
   install.packages("DT", dependencies = TRUE)
 }
 
+
 if (!requireNamespace("rmarkdown", quietly = TRUE)) {
   install.packages("rmarkdown", dependencies = TRUE)
 }
+
 
 if (!requireNamespace("shiny", quietly = TRUE)) {
   install.packages("shiny", dependencies = TRUE)
@@ -41,36 +43,43 @@ if (!requireNamespace("shiny", quietly = TRUE)) {
 
 
 if (!requireNamespace("CamaraBR", quietly = TRUE)) {
-  remotes::install_github(repo = '"danielmarcelino/CamaraBR"')
+  remotes::install_github(repo = "danielmarcelino/CamaraBR", dependencies = TRUE)
 }
 
 if (!requireNamespace("data.table", quietly = TRUE)) {
   install.packages("data.table", dependencies = TRUE)
 }
 
+
 if (!requireNamespace("tidyverse", quietly = TRUE)) {
   install.packages("data.table", dependencies = TRUE)
 }
+
 
 if (!requireNamespace("lubridate", quietly = TRUE)) {
   install.packages("lubridate", dependencies = TRUE)
 }
 
+
 if (!requireNamespace("checkmate", quietly = TRUE)) {
   install.packages("checkmate", dependencies = TRUE)
 }
+
 
 if (!requireNamespace("xml2", quietly = TRUE)) {
   install.packages("xml2", dependencies = TRUE)
 }
 
+
 if (!requireNamespace("jsonlite", quietly = TRUE)) {
   install.packages("jsonlite", dependencies = TRUE)
 }
 
+
 if (!requireNamespace("magrittr", quietly = TRUE)) {
   install.packages("magrittr", dependencies = TRUE)
 }
+
 
 if (!requireNamespace("progress", quietly = TRUE)) {
   install.packages("progress", dependencies = TRUE)
