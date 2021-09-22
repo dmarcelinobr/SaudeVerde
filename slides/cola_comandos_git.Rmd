@@ -1,0 +1,128 @@
+---
+title: "Cola rápida de comandos git"
+subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
+author: "Daniel Marcelino <br> Brasília"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+      ratio: '16:9'
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, cache=FALSE)
+library(knitr)
+```
+
+```{r xaringanthemer, include = FALSE}
+xaringanExtra::use_share_again()
+```
+
+
+## Comandos Git para commit
+
++ Para adicionar todos os novos arquivos para a *"staging area"*.
+```{bash, eval = FALSE}
+git add -A
+```
+
+-- 
++ Para adicionar um arquivo específico para a *"staging area"*.
+```{bash, eval = FALSE}
+git add slides/aula1.Rmd
+```
+
+
+--
++ Para dar commit em tudo que está na *"staging area"*
+
+```{bash, eval = FALSE}
+git commit -m "commitando tudo o que está em staging"
+```
+
+--
++ Para adicionar tudo à *"staging area"* e dar commit
+
+```{bash, eval = FALSE}
+git commit -a -m "incluíndo tudo na área de staging e depois commitando"
+```
+
+---
+
+## Comandos git para dar push nas modificações
+ 
+```{bash, eval = FALSE}
+git push <remote> <branch>
+```
+
+Para dar `push` via o terminal, você deve dizer qual é o destino `<remote>`, e qual ramificação `<branch>`, você deseja dar o push.
+
+Assim, se você quer dar o push para origem na ramificação mestre (`master`), basta:
+
+```{bash, eval = FALSE}
+git push origin master
+```
+
+---
+## Comandos para dar commit e push tudo junto
+
+```{bash, eval = FALSE}
+git commit -a -m "Mensagem do commit"
+
+git push origin master
+```
+
+
+---
+
+## Comandos git para criar branchs
+
+```{bash, eval = FALSE}
+git checkout -b <branch_name>
+```
+
+
+---
+
+## Comandos git para deletar branchs
+
++ Deletar o branch localmente
+```{bash, eval = FALSE}
+git branch -d localbranchname
+```
+
+--
+
++ Deletar o branch remotamente
+```{bash, eval = FALSE}
+git push origin --delete remoteBranchName
+```
+ 
++ Muito provavelmente o `remoteBranchName` e o `localbranchname` serão iguais.
+
+
+
+
+
+---
+class: center, middle
+# Obrigado!
+
+<center>
+`r icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), scale = 1, fill = "#A70000")` [dmarcelino@live.com](mailto:dmarcelino@live.com) 
+
+`r icons::icon_style(icons::fontawesome("twitter", style = "brands"), scale = 1, fill = "#A70000")` [@dmarcelinobr](https://twitter.com/dmarcelinobr) 
+
+`r icons::icon_style(icons::fontawesome("linkedin", style = "brands"), scale = 1, fill = "#A70000")`
+[dmarcelinobr](https://www.linkedin.com/in/dmarcelinobr/) 
+
+`r icons::icon_style(icons::fontawesome("github", style = "brands"), scale = 1, fill = "#A70000")`
+[dmarcelinobr](http://github.com/dmarcelinobr) 
+
+
