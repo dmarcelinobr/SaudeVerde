@@ -14,6 +14,7 @@ if (!requireNamespace("countdown", quietly = TRUE)) {
   remotes::install_github("gadenbuie/countdown")
 }
 
+
 if (!requireNamespace("xaringanExtra", quietly = TRUE)) {
   remotes::install_github("gadenbuie/xaringan", dependencies = TRUE)
 }
@@ -43,7 +44,7 @@ if (!requireNamespace("shiny", quietly = TRUE)) {
 
 
 if (!requireNamespace("CamaraBR", quietly = TRUE)) {
-  remotes::install_github(repo = "danielmarcelino/CamaraBR", dependencies = TRUE)
+  remotes::install_github(repo = "dmarcelinobr/CamaraBR", dependencies = TRUE)
 }
 
 if (!requireNamespace("data.table", quietly = TRUE)) {
