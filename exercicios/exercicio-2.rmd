@@ -1,0 +1,83 @@
+---
+title: "Iniciando com dados"
+subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
+author: "Daniel Marcelino <br> Brasília"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+## Questão 1
+
+Crie um banco de dados com três variáveis: nome, sobrenome e data de nascimento de cada membro da sua equipe que está fazendo o curso. Depois de criar o banco, filtre este banco para exibir somente as suas informações. 
+
+
+```{r}
+
+d <- data.frame(name=c("seu nome"), sobrenome=c("seu sobrenome"), aniversario=c("seu aniversario"))
+
+d[d$name=="seu nome",  ]
+
+```
+
+
+
+## Questão 2    
+ 
+Carrege este banco de dados [proposicoesAutores-2020](https://dadosabertos.camara.leg.br/arquivos/proposicoesAutores/csv/proposicoesAutores-2020.csv). Abra ele usando a função `read.csv` ou `read.csv2`, `read.delim`. Depois, descreve a classe de cada coluna deste banco. 
+
+```{r}
+#Responda aqui
+```
+
+## Questão 3
+
+Agora, você vai usar os comandos `dir.create()` para criar o um diretório para guardar o arquivo que você acabou de carregar, mas ao invés de ler na memória você usará o comando `download.file(url, destfile = "...")` para salvar o banco de dados no caminho que você criou. Se você quiser, poderá quebrar a url em partes, assim como eu demonstrei no slide 2.
+
+```{r}
+#Responda aqui
+```
+
+## Questão 4
+
+Agora carrege o banco de dados que você acabou de baixar da pasta que você criou. Abra ele usando a função `read.csv` ou `read.csv2`, `read.delim`.
+
+
+```{r}
+#Responda aqui
+```
+
+
+
+## Questão 5
+
+Limpe a base de dados, mantendo apenas as linhas que não contêm `NA` na coluna `idDeputadoAutor`. 
+
+
+```{r}
+#Responda aqui
+```
+
+
+## Questão 6
+
+Agora crie um novo diretório chamado `processados` e grave/salve a tabela que você limpou.
+
+
+```{r}
+#Responda aqui
+```
+
+
+
+
+#### Até a próxima!
+
+
