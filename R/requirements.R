@@ -14,6 +14,9 @@ if (!requireNamespace("countdown", quietly = TRUE)) {
   remotes::install_github("gadenbuie/countdown")
 }
 
+if (!requireNamespace("htmltools", quietly = TRUE)) {
+  install.packages("htmltools", dependencies = TRUE)
+}
 
 if (!requireNamespace("xaringan", quietly = TRUE)) {
   remotes::install_github("gadenbuie/xaringan", dependencies = TRUE)
