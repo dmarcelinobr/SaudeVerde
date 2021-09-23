@@ -15,7 +15,7 @@ if (!requireNamespace("countdown", quietly = TRUE)) {
 }
 
 
-if (!requireNamespace("xaringanExtra", quietly = TRUE)) {
+if (!requireNamespace("xaringan", quietly = TRUE)) {
   remotes::install_github("gadenbuie/xaringan", dependencies = TRUE)
 }
 
