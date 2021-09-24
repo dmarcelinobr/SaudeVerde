@@ -1,0 +1,106 @@
+---
+title: "Iniciando com dados"
+subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
+author: "Daniel Marcelino <br> Brasília"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
+```
+
+
+## Banco de dados
+
+Neste exercícios, vamos carregar um banco de dados com os parlamentares ativos da Câmara e Senado. Portanto, execute o código abaixo para fazer o download dos bancos de dados. 
+
+```{r}
+library(tidyverse)
+
+congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+
+```
+
+## Questão 1.
+
+Usando o banco de candidatos. 
+
+- Quantos deputados e senadores estão em exercício?
+
+```{r}
+
+# responda aqui.
+
+```
+
+- Quantos partidos diferentes estão representados nas duas Casas ?
+
+```{r}
+
+# responda aqui.
+
+```
+
+- Qual o número de deputados por Estado ?
+
+```{r}
+# responda aqui.
+
+```
+
+
+
+## Questão 2
+
+Qual é a média de idade de deputados e senadores?
+
+```{r}
+# responda aqui
+```
+
+- Quem é o deputado mais novo e o mais velho?
+
+```{r}
+# responda aqui
+```
+
+- Quem é o senador mais novo e o mais velho?
+
+```{r}
+# responda aqui
+```
+
+
+## Questão 3 
+
+- Qual é a composição ideológica do Congresso? Use a variável `ideologia`.
+
+```{r}
+# responda aqui
+```
+
+
+- Qual é a porcentagem de representantes do sexo masculino e feminino em cada Casa?
+
+```{r}
+# responda aqui
+```
+
+
+- E a porcentagem de representantes por cor ou raça em cada Casa?
+
+```{r}
+# responda aqui
+```
+
+
+
+
+
+#### Até a próxima!
+
+
