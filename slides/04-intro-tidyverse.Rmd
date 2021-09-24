@@ -1,0 +1,308 @@
+---
+title: "Intro ao Tidyverse: Manipulação de Banco de Dados"
+subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
+author: "Daniel Marcelino <br> Brasília"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+      ratio: '16:9'
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(message=FALSE, warning = FALSE, error = FALSE, cache = TRUE)
+
+``` 
+
+
+---
+
+## Próximas Semanas
+
+1. Manipulação de Bancos de Dados (dplyr)
+
+2. Dados Tidy (tidyr)
+
+3. Visualização (ggplot)
+
+
+---
+
+# Manipulação de Bancos de Dados
+
+90% do nosso trabalho com dados consiste em colocar nossos dados no formato correto.. este processo envolve...
+
+- manipular variáveis
+
+- juntar bancos de dados
+
+- reformatar dados
+
+- limpeza... 
+
+Para todas esta tarefas, usaremos os pacotes da família `tidyverse`
+
+---
+
+# Tidyverse
+
+O `tidyverse` é uma família de pacotes em R desenvolvidos  de forma integrada e compartilhando uma mesma filosofia de design, gramática e estruturas de dados subjacentes.
+
+O objetivo do `tidyverse` é prover um conjunto integrado de ferramentas para o uso do R como linguagem em Ciência de Dados. Estes são os principais pacotes do `tidyverse`:
+
+- `dplyr`: para manipulação de dados.
+
+- `ggplot2`: para visualização de dados.
+
+- `tidyr`: para preparar seus dados para análise. 
+
+- `purrr`: para otimizar seu código e para programação funcional.
+
+- `readr`: para abrir e organizar os dados. 
+
+- `stringr`: para manipulação de objetos de texto. 
+
+- `forcats`: para manipulação da classe fatores. 
+
+---
+
+# Vantagens do Tidyverse 
+
+- O `tidyverse` facilita substancialmente as tarefas de análise de dados quando comparado com códigos do  R básico. 
+
+- Aumenta substancialmente quão legível seu código parece.
+
+- Manipulação, visualização e modelagem estão integradas no tidyverse. 
+
+- É amplamente utilizado na comunidade de R. Portanto, provavelmente você precisa aprender para ler códigos de outros colegas.
+
+
+
+---
+class:middle, center
+
+# Introdução ao Tidyverse
+
+---
+## Instalação
+
+```{r eval=FALSE}
+
+install.packages("tidyverse")
+
+```
+
+```{r}
+library(tidyverse)
+```
+
+
+---
+
+## Tibbles. 
+
+
+O objeto fundamental do `tidyverse` são bancos de dados.
+
+O `tidyverse` usa objetos da classe "tibbles" para definir seus bancos de dados ao invés do tradicional data.frame que aprendemos semana passada. 
+
+Tibbles são exatamente iguais aos data.frames em sua estrutura básica.  No entanto, tibbles possuem alguns ajustes - mais visuais -  para facilitar seu uso. 
+
+---
+
+## Criando Tibbles. 
+
+--
+.pull-left[
+```{r}
+
+# Classe do Banco de Dados mtcars
+class(mtcars)
+
+# Converte para tibbles
+mtcars_tib <- as_tibble(mtcars)
+mtcars_tib
+```
+]
+
+--
+
+.pull-right[
+```{r}
+tibble(a=c("Daniel", "Marcelino"), 
+       b=c("nome", "sobrenome"))
+```
+
+]
+
+--
+
+---
+
+## Pipe.
+
+.pull-left[
+```{r echo=FALSE, out.width="60%"}
+# knitr::include_graphics("figs/pipe.jpg")
+```
+]
+
+.pull-right[
+
+O uso de pipes `%>%` é uma peça fundamental no funcionamento dos pacotes do `tidyverse`. As principais vantagens do pipe:
+
+- Concatenar as funções do seu código. 
+
+- Evitar objetos intermediários.
+
+- Tornar os códigos mais intuitivos. 
+
+- Evita múltiplos parentesis. 
+]
+---
+
+### O R funciona de dentro para fora:
+
+```{r}
+# R
+x <- c(1:10)
+round(exp(sqrt(mean(x))), 1)
+
+```
+
+### O Pipe
+
+```{r}
+x %>%
+  mean() %>%
+  sqrt() %>%
+  exp() %>%
+  round(1) 
+```
+
+---
+# Notas importantes sobre os pipes. 
+
+**1. Os pipes sempre devem ser usados para conectar funções e seus outputs.**
+
+```{r eval=FALSE}
+
+# Não rode este código.
+x %>%
+  funcao1(arg1=x) %>%
+  funcao2(arg=output_da_funcao1)
+```
+
+**Exemplo:**
+
+```{r out.width="30%"}
+sample(1:1000, 500, replace=TRUE) %>%
+  density() %>% # funcao 1.
+  plot() # função 2. 
+```
+
+---
+
+**2. O input sempre pode ser omitido, ou representados pelo atalho `.`**
+
+```{r}
+sample(1:1000, 500, replace=TRUE) %>%
+  density(.) %>% # funcao 1.
+  plot(.) # função 2. 
+```
+
+---
+
+**3. Os resultados do pipe não são salvos imediatamente. Você precisa atribuir à um novo objeto.** 
+
+```{r}
+grafico <- sample(1:1000, 500, replace=TRUE) %>%
+              density(.) %>% # funcao 1.
+              plot(.) # função 2. 
+```
+
+
+
+
+---
+class: middle, center, inverse
+
+# Manipulação de dados com `dplyr`.
+
+---
+
+## Dados de parlamentares
+
+
+```{r}
+library(tidyverse)
+
+congressistas <- read_delim(
+  "https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
+  delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+
+```
+
+---
+
+## Introdução ao Dplyr. 
+
+O `dplyr` é um dos pacotes mais populares em R. 
+
+Sua lógica é simples: suas funções fazem exatamente o que seus nomes descrevem (**verb based language**).  Estas são as funções mais úteis do `dplyr`:
+
+.pull-left[
+- `select()`: selecionar colunas.
+
+- `filter()`: filtrar o banco de dados por linhas.
+
+- `mutate()`: criar novas variáveis e alterar existentes.
+
+- `arrange()`: ordenar o banco de dados.
+
+- `group_by()`: agrupar e fazer análiser nos subgrupos. 
+
+- `summarize()`: sumariza os dados por subgroups. 
+]
+
+.pull-right[
+
+
+Todas essas funções seguem as mesmas características:
+
+- O input é sempre um banco de dados. 
+
+- O banco de dados é sempre o primeiro argumento. 
+
+- Os argumentos seguintes acessão colunas dos bancos de dados diretamente, sem aspas. 
+
+- O output é sempre um novo banco de dados. 
+
+]
+
+---
+
+**Algumas outras funções menos utilizadas**:
+
+- `count()`: contar número de observações por subgrupos.
+
+- `distinct()`: eliminar repetições.
+
+- `n():` conta quantas observações há em dados agrupados.
+
+- `sample_n():` Selecion n amostras do seu banco de dadosl
+
+- `glimpse():` Fornece um sumário dos seus dados. 
+
+- `top_n():` Seleciona por linhas de acordo com o rank das variáveis.
+
+- `slice()`: filtra seu banco de dados por posições. 
+
+---
