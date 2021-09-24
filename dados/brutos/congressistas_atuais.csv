@@ -1,0 +1,947 @@
+﻿id;casa;sigla_casa;cpf;nome_civil;nome_eleitoral;data_nascimento;uf;sg_partido;partido;ideologia;situacao;condicao_eleitoral;sexo;escolaridade;email;naturalidade;telefone;legislatura;url_foto;total_mandatos;ocupacao;cor_raca;idade
+204554;camara;CD;36607606504;JOSE ABILIO SILVA DE SANTANA;Abílio Santana;1965-02-13;BA;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior Incompleto;dep.abiliosantana@camara.leg.br;Salvador - BA;3215-5531;56;https://www.camara.leg.br/internet/deputado/bandep/204554.jpg;1;EMPRESÁRIO;PARDA;56
+204521;camara;CD;8496582841;PAULO SERGIO ABOU ANNI;Abou Anni;1966-11-06;SP;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.abouanni@camara.leg.br;São Paulo - SP;3215-5339;56;https://www.camara.leg.br/internet/deputado/bandep/204521.jpg;1;POLICIAL MILITAR;BRANCA;54
+204379;camara;CD;74287028287;ACÁCIO DA SILVA FAVACHO NETO;Acácio Favacho;1983-09-28;AP;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Titular;M;Superior;dep.acaciofavacho@camara.leg.br;Macapá - AP;3215-5409;56;https://www.camara.leg.br/internet/deputado/bandep/204379.jpg;1;VEREADOR;BRANCA;37
+204560;camara;CD;80123848504;ADOLFO VIANA DE CASTRO NETO;Adolfo Viana;1981-02-02;BA;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;dep.adolfoviana@camara.leg.br;Salvador - BA;3215-5911;56;https://www.camara.leg.br/internet/deputado/bandep/204560.jpg;1;DEPUTADO;BRANCA;40
+204528;camara;CD;12519851813;ADRIANA MIGUEL VENTURA;Adriana Ventura;1969-03-06;SP;NOVO;Partido Novo;Direita;Exercício;Titular;F;Doutorado;dep.adrianaventura@camara.leg.br;São Paulo - SP;3215-5802;56;https://www.camara.leg.br/internet/deputado/bandep/204528.jpg;1;ADMINISTRADOR;BRANCA;52
+121948;camara;CD;50746553153;ADRIANO ANTÔNIO AVELAR;Adriano do Baldy;1969-09-06;GO;PP;Progressistas;Direita;Exercício;Titular;M;Superior Incompleto;dep.adrianodobaldy@camara.leg.br;Goiás - GO;3215-5419;56;https://www.camara.leg.br/internet/deputado/bandep/121948.jpg;1;OUTROS;BRANCA;52
+74646;camara;CD;66728983791;AÉCIO NEVES DA CUNHA;Aécio Neves;1960-03-10;MG;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;dep.aecioneves@camara.leg.br;Belo Horizonte - MG;3215-5964;56;https://www.camara.leg.br/internet/deputado/bandep/74646.jpg;4;SENADOR;BRANCA;61
+141372;camara;CD;36179140634;AELTON JOSÉ DE FREITAS;Aelton Freitas;1961-12-15;MG;PL;Partido Liberal;Direita;Exercício;Efetivado;M;Superior;dep.aeltonfreitas@camara.leg.br;Iturama - MG;3215-5481;56;https://www.camara.leg.br/internet/deputado/bandep/141372.jpg;3;DEPUTADO;BRANCA;59
+160508;camara;CD;17734150500;AFONSO BANDEIRA FLORENCE;Afonso Florence;1960-10-15;BA;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Mestrado;dep.afonsoflorence@camara.leg.br;Salvador - BA;3215-5305;56;https://www.camara.leg.br/internet/deputado/bandep/160508.jpg;3;DEPUTADO;PARDA;60
+136811;camara;CD;37040642034;JOSÉ ALFONSO EBERT HAMM;Afonso Hamm;1962-04-25;RS;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.afonsohamm@camara.leg.br;Hulha Negra - RS;3215-5604;56;https://www.camara.leg.br/internet/deputado/bandep/136811.jpg;5;DEPUTADO;BRANCA;59
+178835;camara;CD;10777296004;AFONSO ANTUNES DA MOTTA;Afonso Motta;1950-01-08;RS;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.afonsomotta@camara.leg.br;Porto Alegre - RS;3215-5528;56;https://www.camara.leg.br/internet/deputado/bandep/178835.jpg;3;ADVOGADO;BRANCA;71
+160527;camara;CD;51921146400;AGUINALDO VELLOSO BORGES RIBEIRO;Aguinaldo Ribeiro;1969-02-13;PB;PP;Progressistas;Direita;Exercício;Titular;M;Pós-Graduação;dep.aguinaldoribeiro@camara.leg.br;Campina Grande - PB;3215-5735;56;https://www.camara.leg.br/internet/deputado/bandep/160527.jpg;3;DEPUTADO;BRANCA;52
+204495;camara;CD;18836178200;AIRTON LUIZ FALEIRO;Airton Faleiro;1959-03-16;PA;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Ensino Fundamental;dep.airtonfaleiro@camara.leg.br;Tenente Portela - RS;3215-5327;56;https://www.camara.leg.br/internet/deputado/bandep/204495.jpg;1;DEPUTADO;BRANCA;62
+204549;camara;CD;97506060353;ANTONIO JOSE AGUIAR ALBUQUERQUE;AJ Albuquerque;1983-09-26;CE;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.ajalbuquerque@camara.leg.br;Fortaleza - CE;3215-5708;56;https://www.camara.leg.br/internet/deputado/bandep/204549.jpg;1;EMPRESÁRIO;PARDA;37
+178836;camara;CD;44726570234;ALAN RICK MIRANDA;Alan Rick;1976-10-23;AC;DEM;Democratas;Direita;Exercício;Titular;M;Pós-Graduação;dep.alanrick@camara.leg.br;Rio Branco - AC;3215-5650;56;https://www.camara.leg.br/internet/deputado/bandep/178836.jpg;2;JORNALISTA E REDATOR;BRANCA;44
+160559;camara;CD;17968496004;ALCEU MOREIRA DA SILVA;Alceu Moreira;1954-06-04;RS;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior Incompleto;dep.alceumoreira@camara.leg.br;Osório - RS;3215-5238;56;https://www.camara.leg.br/internet/deputado/bandep/160559.jpg;3;DEPUTADO;BRANCA;67
+204413;camara;CD;13620983100;ALCIDES RODRIGUES FILHO;Alcides Rodrigues;1950-10-08;GO;PATRIOTA;Patriota;Direita;Exercício;Titular;M;Superior;dep.alcidesrodrigues@camara.leg.br;Santa Helena de Goiás - GO;3215-5332;56;https://www.camara.leg.br/internet/deputado/bandep/204413.jpg;1;MÉDICO;BRANCA;70
+204545;camara;CD;79875564915;ALESSANDRA DA SILVA;Alê Silva;1974-07-04;MG;PSL;Partido Social Liberal;Direita;Exercício;Titular;F;Pós-Graduação;dep.alesilva@camara.leg.br;Petrópolis - RJ;3215-5462;56;https://www.camara.leg.br/internet/deputado/bandep/204545.jpg;1;ADVOGADO;BRANCA;47
+204501;camara;CD;5544839808;ALENCAR SANTANA BRAGA;Alencar Santana Braga;1976-03-14;SP;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.alencarsantanabraga@camara.leg.br;Guarulhos - SP;3215-5239;56;https://www.camara.leg.br/internet/deputado/bandep/204501.jpg;1;DEPUTADO;BRANCA;45
+160511;camara;CD;1416576770;ALESSANDRO LUCCIOLA MOLON;Alessandro Molon;1971-10-28;RJ;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Mestrado;dep.alessandromolon@camara.leg.br;Belo Horizonte - MG;3215-5304;56;https://www.camara.leg.br/internet/deputado/bandep/160511.jpg;3;ADVOGADO;BRANCA;49
+178972;camara;CD;26838194805;ALEX SPINELLI MANENTE;Alex Manente;1979-08-22;SP;CIDADANIA;Cidadania;Esquerda;Exercício;Titular;M;Superior;dep.alexmanente@camara.leg.br;São Bernardo do Campo - SP;3215-5205;56;https://www.camara.leg.br/internet/deputado/bandep/178972.jpg;2;DEPUTADO;BRANCA;42
+204571;camara;CD;64682420534;ALEX MARCO SANTANA SOUSA;Alex Santana;1972-06-22;BA;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Ensino Médio;dep.alexsantana@camara.leg.br;Salvador - BA;3215-5541;56;https://www.camara.leg.br/internet/deputado/bandep/204571.jpg;1;CORRETOR DE IMÓVEIS, SEGUROS, TÍTULOS E VALORES;BRANCA;49
+204544;camara;CD;75199270753;ALEXANDRE FROTA DE ANDRADE;Alexandre Frota;1963-10-14;SP;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Ensino Médio;dep.alexandrefrota@camara.leg.br;Rio de Janeiro - RJ;3215-5216;56;https://www.camara.leg.br/internet/deputado/bandep/204544.jpg;1;EMPRESÁRIO;BRANCA;57
+160545;camara;CD;22970812860;ALEXANDRE LEITE DA SILVA;Alexandre Leite;1989-04-18;SP;DEM;Democratas;Direita;Exercício;Titular;M;Superior;dep.alexandreleite@camara.leg.br;São Paulo - SP;3215-5841;56;https://www.camara.leg.br/internet/deputado/bandep/160545.jpg;3;DEPUTADO;BRANCA;32
+204503;camara;CD;13192679808;ALEXANDRE ROCHA SANTOS PADILHA;Alexandre Padilha;1971-09-14;SP;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.alexandrepadilha@camara.leg.br;São Paulo - SP;3215-5956;56;https://www.camara.leg.br/internet/deputado/bandep/204503.jpg;1;PROFESSOR DE ENSINO SUPERIOR;BRANCA;50
+204516;camara;CD;6630660854;Alexis Joseph Steverlynck Fonteyne;Alexis Fonteyne;1967-08-19;SP;NOVO;Partido Novo;Direita;Exercício;Titular;M;Pós-Graduação;dep.alexisfonteyne@camara.leg.br;Campinas - SP;3215-5845;56;https://www.camara.leg.br/internet/deputado/bandep/204516.jpg;1;EMPRESÁRIO;BRANCA;54
+74057;camara;CD;12377392504;ALICE MAZZUCO PORTUGAL;Alice Portugal;1959-05-16;BA;PCdoB;Partido Comunista do Brasil;Esquerda;Exercício;Titular;F;Superior;dep.aliceportugal@camara.leg.br;Salvador - BA;3215-5420;56;https://www.camara.leg.br/internet/deputado/bandep/74057.jpg;5;DEPUTADO;PARDA;62
+178927;camara;CD;6908052923;ALIEL MACHADO BARK;Aliel Machado;1989-02-26;PR;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior Incompleto;dep.alielmachado@camara.leg.br;Ponta Grossa - PR;3215-5220;56;https://www.camara.leg.br/internet/deputado/bandep/178927.jpg;2;VEREADOR;BRANCA;32
+204353;camara;CD;51150670215;ALINE PARANHOS VARONIL GURGEL;Aline Gurgel;1980-11-25;AP;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;F;Superior;dep.alinegurgel@camara.leg.br;Macapá - AP;3215-5342;56;https://www.camara.leg.br/internet/deputado/bandep/204353.jpg;1;ADVOGADO;BRANCA;40
+204400;camara;CD;506342913;ALINE SLEUTJES;Aline Sleutjes;1979-07-26;PR;PSL;Partido Social Liberal;Direita;Exercício;Titular;F;Pós-Graduação;dep.alinesleutjes@camara.leg.br;Castro - PR;3215-5550;56;https://www.camara.leg.br/internet/deputado/bandep/204400.jpg;1;AGENTE ADMINISTRATIVO;BRANCA;42
+178937;camara;CD;00007487738;ALTINEU CÔRTES FREITAS COUTINHO;Altineu Côrtes;1968-09-13;RJ;PL;Partido Liberal;Direita;Exercício;Titular;M;Ensino Médio;dep.altineucortes@camara.leg.br;Niterói - RJ;3215-5336;56;https://www.camara.leg.br/internet/deputado/bandep/178937.jpg;2;DEPUTADO;PARDA;53
+178881;camara;CD;66746485749;ALUISIO GUIMARAES MENDES FILHO;Aluisio Mendes;1961-11-11;MA;PSC;Partido Social Cristão;Direita;Exercício;Titular;M;Superior;dep.aluisiomendes@camara.leg.br;Belo Horizonte - MG;3215-5931;56;https://www.camara.leg.br/internet/deputado/bandep/178881.jpg;2;DEPUTADO;BRANCA;59
+204356;camara;CD;6893749767;AMARO ROCHA NASCIMENTO NETO;Amaro Neto;1976-12-04;ES;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.amaroneto@camara.leg.br;Vitória - ES;3215-5515;56;https://www.camara.leg.br/internet/deputado/bandep/204356.jpg;1;DEPUTADO;BRANCA;44
+178831;camara;CD;31601928220;ANDRE DOS SANTOS ABDON;André Abdon;1970-11-10;AP;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.andreabdon@camara.leg.br;Belém - PA;3215-5831;56;https://www.camara.leg.br/internet/deputado/bandep/178831.jpg;2;ENGENHEIRO;PARDA;50
+74471;camara;CD;34148485468;ANDRÉ CARLOS ALVES DE PAULA FILHO;André de Paula;1961-07-22;PE;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.andredepaula@camara.leg.br;Recife - PE;3215-5754;56;https://www.camara.leg.br/internet/deputado/bandep/74471.jpg;6;DEPUTADO;BRANCA;60
+204423;camara;CD;77050363472;ANDRÉ FERREIRA RODRIGUES;André Ferreira;1972-12-10;PE;PSC;Partido Social Cristão;Direita;Exercício;Titular;M;Superior;dep.andreferreira@camara.leg.br;Recife - PE;3215-5450;56;https://www.camara.leg.br/internet/deputado/bandep/204423.jpg;1;OUTROS;BRANCA;48
+133439;camara;CD;25905503320;ANDRÉ PEIXOTO FIGUEIREDO LIMA;André Figueiredo;1966-11-10;CE;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.andrefigueiredo@camara.leg.br;Fortaleza - CE;3215-5940;56;https://www.camara.leg.br/internet/deputado/bandep/133439.jpg;4;ECONOMISTA;BRANCA;54
+178882;camara;CD;3950788301;ANDRE LUIZ CARVALHO RIBEIRO;André Fufuca;1989-08-27;MA;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.andrefufuca@camara.leg.br;Santa Inês - MA;3215-5945;56;https://www.camara.leg.br/internet/deputado/bandep/178882.jpg;2;DEPUTADO;PARDA;32
+204515;camara;CD;6630008669;ANDRE LUIS GASPAR JANONES;André Janones;1984-05-05;MG;AVANTE;Avante;Centro;Exercício;Titular;M;Superior;dep.andrejanones@camara.leg.br;Ituiutaba - MG;3215-5580;56;https://www.camara.leg.br/internet/deputado/bandep/204515.jpg;1;ADVOGADO;BRANCA;37
+73696;camara;CD;29316715920;ANGELA REGINA HEINZEN AMIN HELOU;Angela Amin;1953-12-20;SC;PP;Progressistas;Direita;Exercício;Titular;F;Doutorado;dep.angelaamin@camara.leg.br;Indaial - SC;3215-5252;56;https://www.camara.leg.br/internet/deputado/bandep/73696.jpg;3;SERVIDOR PÚBLICO ESTADUAL;BRANCA;67
+74212;camara;CD;4240952387;ANÍBAL FERREIRA GOMES;Aníbal Gomes;1953-06-07;CE;DEM;Democratas;Direita;Exercício;Suplente;M;Superior;dep.anibalgomes@camara.leg.br;Rio de Janeiro - RJ;3215-5731;56;https://www.camara.leg.br/internet/deputado/bandep/74212.jpg;7;DEPUTADO;PARDA;68
+160553;camara;CD;51488868549;ANTONIO LUIZ PARANHOS RIBEIRO LEITE DE BRITO;Antonio Brito;1969-01-17;BA;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Pós-Graduação;dep.antoniobrito@camara.leg.br;Salvador - BA;3215-5479;56;https://www.camara.leg.br/internet/deputado/bandep/160553.jpg;3;DEPUTADO;PRETA;52
+73433;camara;CD;6821146187;ARLINDO CHIGNALIA JUNIOR;Arlindo Chinaglia;1949-12-24;SP;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.arlindochinaglia@camara.leg.br;Serra Azul - SP;3215-5966;56;https://www.camara.leg.br/internet/deputado/bandep/73433.jpg;7;MÉDICO;BRANCA;71
+141391;camara;CD;4197807856;ARNALDO CALIL PEREIRA JARDIM;Arnaldo Jardim;1955-05-08;SP;CIDADANIA;Cidadania;Esquerda;Exercício;Titular;M;Superior;dep.arnaldojardim@camara.leg.br;Altinópolis - SP;3215-5245;56;https://www.camara.leg.br/internet/deputado/bandep/141391.jpg;4;DEPUTADO;BRANCA;66
+204414;camara;CD;21074844300;JOSE AROLDO SOUZA MARTINS;Aroldo Martins;1961-07-03;PR;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Doutorado;dep.aroldomartins@camara.leg.br;São Paulo - SP;3215-5437;56;https://www.camara.leg.br/internet/deputado/bandep/204414.jpg;1;COMUNICÓLOGO;BRANCA;60
+160541;camara;CD;67821090425;ARTHUR CÉSAR PEREIRA DE LIRA;Arthur Lira;1969-06-25;AL;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.arthurlira@camara.leg.br;Maceió - AL;3215-5942;56;https://www.camara.leg.br/internet/deputado/bandep/160541.jpg;3;DEPUTADO;PARDA;52
+160600;camara;CD;32604637553;ARTHUR DE OLIVEIRA MAIA DA SILVA;Arthur Oliveira Maia;1964-08-17;BA;DEM;Democratas;Direita;Exercício;Titular;M;Mestrado;dep.arthuroliveiramaia@camara.leg.br;Salvador - BA;3215-5830;56;https://www.camara.leg.br/internet/deputado/bandep/160600.jpg;3;DEPUTADO;BRANCA;57
+74090;camara;CD;694584215;ÁTILA SIDNEY LINS ALBUQUERQUE;Átila Lins;1950-11-22;AM;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.atilalins@camara.leg.br;Fonte Boa - AM;3215-5730;56;https://www.camara.leg.br/internet/deputado/bandep/74090.jpg;8;ADVOGADO;BRANCA;70
+74459;camara;CD;13023594600;ÁTILA FREITAS LIRA;Átila Lira;1947-04-07;PI;PP;Progressistas;Direita;Exercício;Titular;M;Pós-Graduação;dep.atilalira@camara.leg.br;Piripiri - PI;3215-5640;56;https://www.camara.leg.br/internet/deputado/bandep/74459.jpg;7;ECONOMISTA;BRANCA;74
+160665;camara;CD;33155623420;AUGUSTO RODRIGUES COUTINHO DE MELO;Augusto Coutinho;1962-10-22;PE;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;M;Superior;dep.augustocoutinho@camara.leg.br;Recife - PE;3215-5314;56;https://www.camara.leg.br/internet/deputado/bandep/160665.jpg;3;DEPUTADO;PARDA;58
+204509;camara;CD;1412895626;ÁUREA CAROLINA DE FREITAS E SILVA;Áurea Carolina;1983-11-20;MG;PSOL;Partido Socialismo e Liberdade;Esquerda;Exercício;Titular;F;Mestrado;dep.aureacarolina@camara.leg.br;Tucuruí - PA;3215-5619;56;https://www.camara.leg.br/internet/deputado/bandep/204509.jpg;1;VEREADOR;PARDA;37
+160512;camara;CD;5355525725;AUREO LIDIO MOREIRA RIBEIRO;Aureo Ribeiro;1979-02-17;RJ;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;M;Superior Incompleto;dep.aureoribeiro@camara.leg.br;Duque de Caxias - RJ;3215-5212;56;https://www.camara.leg.br/internet/deputado/bandep/160512.jpg;3;DEPUTADO;BRANCA;42
+69871;camara;CD;10626409500;JOAO CARLOS BACELAR BATISTA;Bacelar;1957-07-09;BA;PODEMOS;Podemos;Direita;Exercício;Titular;M;Mestrado;dep.bacelar@camara.leg.br;Esplanada - BA;3215-5381;56;https://www.camara.leg.br/internet/deputado/bandep/69871.jpg;2;DEPUTADO;BRANCA;64
+178975;camara;CD;17816724829;LUIZ FELIPE BALEIA TENUTO ROSSI;Baleia Rossi;1972-06-09;SP;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.baleiarossi@camara.leg.br;São Paulo - SP;3215-5829;56;https://www.camara.leg.br/internet/deputado/bandep/178975.jpg;2;DEPUTADO;BRANCA;49
+73701;camara;CD;36293334787;BENEDITA SOUZA DA SILVA SAMPAIO;Benedita da Silva;1942-04-26;RJ;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;F;Superior;dep.beneditadasilva@camara.leg.br;Rio de Janeiro - RJ;3215-5330;56;https://www.camara.leg.br/internet/deputado/bandep/73701.jpg;4;ASSISTENTE SOCIAL;PRETA;79
+109429;camara;CD;40665429487;LUIZ BENES LEOCADIO DE ARAUJO;Benes Leocádio;1966-04-22;RN;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.benesleocadio@camara.leg.br;Santana do Matos - RN;3215-5417;56;https://www.camara.leg.br/internet/deputado/bandep/109429.jpg;1;SERVIDOR PÚBLICO ESTADUAL;BRANCA;55
+141335;camara;CD;40070565287;JOSÉ ROBERTO OLIVEIRA FARO;Beto Faro;1969-06-20;PA;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Ensino Médio;dep.betofaro@camara.leg.br;Bujaru - PA;3215-5723;56;https://www.camara.leg.br/internet/deputado/bandep/141335.jpg;5;AGRICULTOR;PARDA;52
+204358;camara;CD;69380007191;HUMBERTO REZENDE PEREIRA;Beto Pereira;1977-11-14;MS;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;dep.betopereira@camara.leg.br;Campo Grande - MS;3215-5240;56;https://www.camara.leg.br/internet/deputado/bandep/204358.jpg;1;DEPUTADO;PARDA;43
+178948;camara;CD;1195625456;CARLOS ALBERTO DE SOUSA ROSADO SEGUNDO;Beto Rosado;1982-02-01;RN;PP;Progressistas;Direita;Exercício;Titular;M;Pós-Graduação;dep.betorosado@camara.leg.br;Mossoró - RN;3215-5840;56;https://www.camara.leg.br/internet/deputado/bandep/178948.jpg;2;AGRÔNOMO;BRANCA;39
+207176;camara;CD;49200844120;BEATRIZ ROSALIA RIBEIRO CAVASSA DE OLIVEIRA;Bia Cavassa;1969-01-14;MS;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Suplente;F;Superior;dep.biacavassa@camara.leg.br;Corumbá - MS;3215-5448;56;https://www.camara.leg.br/internet/deputado/bandep/207176.jpg;1;SERVIDOR PÚBLICO MUNICIPAL;BRANCA;52
+204374;camara;CD;38567792134;BEATRIZ KICIS TORRENTS DE SORDI;Bia Kicis;1961-09-19;DF;PSL;Partido Social Liberal;Direita;Exercício;Titular;F;Superior;dep.biakicis@camara.leg.br;Resende - RJ;3215-5309;56;https://www.camara.leg.br/internet/deputado/bandep/204374.jpg;1;ADVOGADO;BRANCA;60
+204388;camara;CD;27236056049;ALCIBIO MESQUITA BIBO NUNES;Bibo Nunes;1957-01-09;RS;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior Incompleto;dep.bibonunes@camara.leg.br;Cruz Alta - RS;3215-5518;56;https://www.camara.leg.br/internet/deputado/bandep/204388.jpg;1;JORNALISTA E REDATOR;BRANCA;64
+141513;camara;CD;45561699687;OLAVO BILAC PINTO NETO;Bilac Pinto;1963-06-08;MG;DEM;Democratas;Direita;Exercício;Titular;M;Superior;dep.bilacpinto@camara.leg.br;Rio de Janeiro - RJ;3215-5806;56;https://www.camara.leg.br/internet/deputado/bandep/141513.jpg;4;DEPUTADO;BRANCA;58
+204561;camara;CD;40903974304;UBIRAJARA DO PINDARÉ ALMEIDA SOUSA;Bira do Pindaré;1968-11-01;MA;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Mestrado;dep.biradopindare@camara.leg.br;Pindaré Mirim - MA;3215-5480;56;https://www.camara.leg.br/internet/deputado/bandep/204561.jpg;1;BANCÁRIO E ECONOMIÁRIO;PRETA;52
+160538;camara;CD;12558206249;ELVINO JOSÉ BOHN GASS;Bohn Gass;1962-02-05;RS;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.bohngass@camara.leg.br;Santo Cristo - RS;3215-5873;56;https://www.camara.leg.br/internet/deputado/bandep/160538.jpg;3;DEPUTADO;BRANCA;59
+74052;camara;CD;2235080553;JOÃO BOSCO DA COSTA;Bosco Costa;1950-09-28;SE;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior Incompleto;dep.boscocosta@camara.leg.br;Itabaiana - SE;3215-5742;56;https://www.camara.leg.br/internet/deputado/bandep/74052.jpg;3;PECUARISTA;BRANCA;70
+204551;camara;CD;13717820249;JOÃO BOSCO GOMES SARAIVA;Bosco Saraiva;1959-10-10;AM;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;M;Superior;dep.boscosaraiva@camara.leg.br;Manaus - AM;3215-5404;56;https://www.camara.leg.br/internet/deputado/bandep/204551.jpg;1;SENADOR, DEPUTADO E VEREADOR;PARDA;61
+204502;camara;CD;21883547881;NICOLINO BOZZELLA JUNIOR;Bozzella;1980-08-17;SP;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.bozzella@camara.leg.br;Santos - SP;3215-5582;56;https://www.camara.leg.br/internet/deputado/bandep/204502.jpg;1;EMPRESÁRIO;BRANCA;41
+160589;camara;CD;31516410831;BRUNA DIAS FURLAN;Bruna Furlan;1983-04-28;SP;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;F;Pós-Graduação;dep.brunafurlan@camara.leg.br;Barueri - SP;3215-5836;56;https://www.camara.leg.br/internet/deputado/bandep/160589.jpg;3;DEPUTADO;BRANCA;38
+93083;camara;CD;79753566549;CARLOS FELIPE VAZQUEZ DE SOUZA LEÃO;Cacá Leão;1979-11-03;BA;PP;Progressistas;Direita;Exercício;Titular;M;Pós-Graduação;dep.cacaleao@camara.leg.br;Salvador - BA;3215-5320;56;https://www.camara.leg.br/internet/deputado/bandep/93083.jpg;2;ADMINISTRADOR;BRANCA;41
+204352;camara;CD;38873940200;CARLOS CAMILO GÓES CAPIBERIBE;Camilo Capiberibe;1972-05-23;AP;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;dep.camilocapiberibe@camara.leg.br;Santiago - NA;3215-5209;56;https://www.camara.leg.br/internet/deputado/bandep/204352.jpg;1;ADVOGADO;PARDA;49
+204572;camara;CD;66397545334;ALBERTO BARROS CAVALCANTE NETO;Capitão Alberto Neto;1982-05-05;AM;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Pós-Graduação;dep.capitaoalbertoneto@camara.leg.br;Fortaleza - CE;3215-5933;56;https://www.camara.leg.br/internet/deputado/bandep/204572.jpg;1;POLICIAL MILITAR;PARDA;39
+178829;camara;CD;5750251829;JOSE AUGUSTO ROSA;Capitão Augusto;1966-10-04;SP;PL;Partido Liberal;Direita;Exercício;Titular;M;Mestrado;dep.capitaoaugusto@camara.leg.br;Ourinhos - SP;3215-5358;56;https://www.camara.leg.br/internet/deputado/bandep/178829.jpg;2;POLICIAL MILITAR;BRANCA;54
+178924;camara;CD;48140597368;FABIO ABREU COSTA;Capitão Fábio Abreu;1972-12-31;PI;PL;Partido Liberal;Direita;Exercício;Titular;M;Pós-Graduação;dep.capitaofabioabreu@camara.leg.br;Fortaleza - CE;3215-5202;56;https://www.camara.leg.br/internet/deputado/bandep/178924.jpg;2;DEPUTADO;PARDA;48
+204487;camara;CD;61496880382;WAGNER SOUSA GOMES;Capitão Wagner;1979-01-21;CE;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Titular;M;Superior;dep.capitaowagner@camara.leg.br;SAO PAULO - SP;3215-5711;56;https://www.camara.leg.br/internet/deputado/bandep/204487.jpg;1;DEPUTADO;BRANCA;42
+213762;camara;NA;2336272431;HILKEA CARLA DE SOUZA MEDEIROS LIMA;Carla Dickson;1976-07-02;RN;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Suplente;F;Superior;dep.carladickson@camara.leg.br;Belém - PA;3215-5706;56;https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/213762.jpg;1;VEREADOR;BRANCA;45
+204507;camara;CD;1335594671;CARLA ZAMBELLI SALGADO DE OLIVEIRA;Carla Zambelli;1980-07-03;SP;PSL;Partido Social Liberal;Direita;Exercício;Titular;F;Pós-Graduação;dep.carlazambelli@camara.leg.br;Ribeirão Preto - SP;3215-5482;56;https://www.camara.leg.br/internet/deputado/bandep/204507.jpg;1;GERENTE;BRANCA;41
+204361;camara;CD;503190942;CARLOS ALBERTO CHIODINI;Carlos Chiodini;1982-03-08;SC;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.carloschiodini@camara.leg.br;Jaraguá do Sul - SC;3215-5925;56;https://www.camara.leg.br/internet/deputado/bandep/204361.jpg;1;EMPRESÁRIO;BRANCA;39
+178962;camara;CD;2142743730;ANTONIO CARLOS GOMES DA SILVA;Carlos Gomes;1972-06-13;RS;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior Incompleto;dep.carlosgomes@camara.leg.br;Saúde - BA;3215-5285;56;https://www.camara.leg.br/internet/deputado/bandep/178962.jpg;2;DEPUTADO;BRANCA;49
+178993;camara;CD;21944202153;CARLOS HENRIQUE AMORIM;Carlos Henrique Gaguim;1961-04-21;TO;DEM;Democratas;Direita;Exercício;Titular;M;Pós-Graduação;dep.carloshenriquegaguim@camara.leg.br;Ceres - GO;3215-5214;56;https://www.camara.leg.br/internet/deputado/bandep/178993.jpg;2;EMPRESÁRIO;BRANCA;60
+204460;camara;CD;9650185712;Carlos Roberto Coelho de Mattos Júnior;Carlos Jordy;1982-02-08;RJ;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.carlosjordy@camara.leg.br;Niterói - RJ;3215-5383;56;https://www.camara.leg.br/internet/deputado/bandep/204460.jpg;1;VEREADOR;PARDA;39
+74262;camara;CD;6197277808;CARLOS HENRIQUE FOCESI SAMPAIO;Carlos Sampaio;1963-03-31;SP;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;dep.carlossampaio@camara.leg.br;Campinas - SP;3215-5207;56;https://www.camara.leg.br/internet/deputado/bandep/74262.jpg;5;DEPUTADO;BRANCA;58
+204426;camara;CD;3987461411;JOSÉ CARLOS VERAS DOS SANTOS;Carlos Veras;1981-08-10;PE;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.carlosveras@camara.leg.br;Tabira - PE;3215-5870;56;https://www.camara.leg.br/internet/deputado/bandep/204426.jpg;1;AGRICULTOR;BRANCA;40
+141398;camara;CD;398099863;CARLOS ALBERTO ROLIM ZARATTINI;Carlos Zarattini;1959-06-08;SP;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.carloszarattini@camara.leg.br;São Paulo - SP;3215-5808;56;https://www.camara.leg.br/internet/deputado/bandep/141398.jpg;4;ECONOMISTA;BRANCA;62
+164360;camara;CD;51434245934;CARMEN EMÍLIA BONFÁ ZANOTTO;Carmen Zanotto;1962-10-06;SC;CIDADANIA;Cidadania;Esquerda;Exercício;Titular;F;Superior;dep.carmenzanotto@camara.leg.br;Lages - SC;3215-5418;56;https://www.camara.leg.br/internet/deputado/bandep/164360.jpg;3;ENFERMEIRO;BRANCA;58
+204369;camara;CD;5858392989;CAROLINE RODRIGUES DE TONI;Caroline de Toni;1986-09-01;SC;PSL;Partido Social Liberal;Direita;Exercício;Titular;F;Mestrado;dep.carolinedetoni@camara.leg.br;Chapecó - SC;3215-5476;56;https://www.camara.leg.br/internet/deputado/bandep/204369.jpg;1;ADVOGADO;BRANCA;35
+204499;camara;CD;68490151253;CASSIO COELHO ANDRADE;Cássio Andrade;1981-09-12;PA;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;dep.cassioandrade@camara.leg.br;Salvador - BA;3215-5433;56;https://www.camara.leg.br/internet/deputado/bandep/204499.jpg;1;DEPUTADO;PARDA;40
+204380;camara;CD;79981488100;CELINA LEAO HIZIM FERREIRA;Celina Leão;1977-03-02;DF;PP;Progressistas;Direita;Exercício;Titular;F;Pós-Graduação;dep.celinaleao@camara.leg.br;Goiânia - GO;3215-5260;56;https://www.camara.leg.br/internet/deputado/bandep/204380.jpg;1;DEPUTADO;BRANCA;44
+204370;camara;CD;12364983134;CELIO ALVES DE MOURA;Célio Moura;1953-08-13;TO;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.celiomoura@camara.leg.br;Arapuá - MG;3215-5832;56;https://www.camara.leg.br/internet/deputado/bandep/204370.jpg;1;ADVOGADO;BRANCA;68
+178876;camara;CD;24453706120;CELIO ANTONIO DA SILVEIRA;Célio Silveira;1959-09-19;GO;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;dep.celiosilveira@camara.leg.br;Luziânia - GO;3215-5511;56;https://www.camara.leg.br/internet/deputado/bandep/178876.jpg;2;MÉDICO;BRANCA;62
+204488;camara;CD;1420754343;CELIO STUDART BARBOSA;Célio Studart;1987-06-19;CE;PV;Partido Verde;Esquerda;Exercício;Titular;M;Superior;dep.celiostudart@camara.leg.br;Fortaleza - CE;3215-5519;56;https://www.camara.leg.br/internet/deputado/bandep/204488.jpg;1;ESTUDANTE, BOLSISTA, ESTAGIÁRIO E ASSEMELHADOS;BRANCA;34
+141405;camara;CD;18270522953;CELSO MALDANER;Celso Maldaner;1953-08-30;SC;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Pós-Graduação;dep.celsomaldaner@camara.leg.br;Chapecó - SC;3215-5311;56;https://www.camara.leg.br/internet/deputado/bandep/141405.jpg;4;DEPUTADO;BRANCA;68
+73441;camara;CD;1252958803;CELSO UBIRAJARA RUSSOMANNO;Celso Russomanno;1956-08-20;SP;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.celsorussomanno@camara.leg.br;São Paulo - SP;3215-5960;56;https://www.camara.leg.br/internet/deputado/bandep/73441.jpg;6;JORNALISTA E REDATOR;BRANCA;65
+204496;camara;CD;48992127200;CELSO SABINO DE OLIVEIRA;Celso Sabino;1978-08-29;PA;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Doutorado;dep.celsosabino@camara.leg.br;Belém - PA;3215-5236;56;https://www.camara.leg.br/internet/deputado/bandep/204496.jpg;1;SERVIDOR PÚBLICO ESTADUAL;BRANCA;43
+204504;camara;CD;65188845504;ANTONIO CEZAR CORREIA FREIRE;Cezinha de Madureira;1973-12-12;SP;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.cezinhademadureira@camara.leg.br;Ipiaú - BA;3215-5533;56;https://www.camara.leg.br/internet/deputado/bandep/204504.jpg;1;DEPUTADO;BRANCA;47
+205476;camara;CD;33938903520;CHARLES FERNANDES SILVEIRA SANTANA;Charles Fernandes;1965-03-15;BA;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.charlesfernandes@camara.leg.br;Guanambi - BA;3215-5301;56;https://www.camara.leg.br/internet/deputado/bandep/205476.jpg;1;EMPRESÁRIO;PARDA;56
+204490;camara;CD;6872337630;CHARLLES THOMACELLI EVANGELISTA;Charlles Evangelista;1984-12-27;MG;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.charllesevangelista@camara.leg.br;Juiz de Fora - MG;3215-5517;56;https://www.camara.leg.br/internet/deputado/bandep/204490.jpg;1;SERVIDOR PÚBLICO ESTADUAL;BRANCA;36
+141439;camara;CD;47247436700;FRANCISCO JOSÉ D'ANGELO PINTO;Chico D'Angelo;1953-02-11;RJ;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.chicodangelo@camara.leg.br;Campos dos Goytacazes - RJ;3215-5542;56;https://www.camara.leg.br/internet/deputado/bandep/141439.jpg;4;MÉDICO;BRANCA;68
+204476;camara;CD;75010020700;JOÃO FRANCISCO INÁCIO BRAZÃO;Chiquinho Brazão;1962-02-22;RJ;AVANTE;Avante;Centro;Exercício;Titular;M;Ensino Médio;dep.chiquinhobrazao@camara.leg.br;Rio de Janeiro - RJ;3215-5507;56;https://www.camara.leg.br/internet/deputado/bandep/204476.jpg;1;VEREADOR;BRANCA;59
+204462;camara;CD;10448771705;CHRISTINE NOGUEIRA DOS REIS TONIETTO;Chris Tonietto;1991-05-14;RJ;PSL;Partido Social Liberal;Direita;Exercício;Titular;F;Superior;dep.christonietto@camara.leg.br;Rio de Janeiro - RJ;3215-5446;56;https://www.camara.leg.br/internet/deputado/bandep/204462.jpg;1;ADVOGADO;PARDA;30
+178928;camara;CD;49156470991;CHRISTIANE DE SOUZA YARED;Christiane de Souza Yared;1960-02-23;PR;PL;Partido Liberal;Direita;Exercício;Titular;F;Ensino Médio;dep.christianedesouzayared@camara.leg.br;Curitiba - PR;3215-5201;56;https://www.camara.leg.br/internet/deputado/bandep/178928.jpg;2;EMPRESÁRIO;BRANCA;61
+204440;camara;CD;70542783720;CHRISTINO AUREO DA SILVA;Christino Aureo;1962-04-26;RJ;PP;Progressistas;Direita;Exercício;Titular;M;Pós-Graduação;dep.christinoaureo@camara.leg.br;Macaé - RJ;3215-5227;56;https://www.camara.leg.br/internet/deputado/bandep/204440.jpg;1;DEPUTADO;BRANCA;59
+178939;camara;CD;9598289745;CLARISSA BARROS ASSED MATHEUS DE OLIVEIRA;Clarissa Garotinho;1982-07-02;RJ;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Titular;F;Superior;dep.clarissagarotinho@camara.leg.br;Campos dos Goytacazes - RJ;3215-5714;56;https://www.camara.leg.br/internet/deputado/bandep/178939.jpg;2;DEPUTADO;BRANCA;39
+74537;camara;CD;29474485534;CLÁUDIO CAJADO SAMPAIO;Claudio Cajado;1963-12-01;BA;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.claudiocajado@camara.leg.br;Salvador - BA;3215-5630;56;https://www.camara.leg.br/internet/deputado/bandep/74537.jpg;7;ADVOGADO;BRANCA;57
+141408;camara;CD;48357600344;CLEBER VERDE CORDEIRO MENDES;Cleber Verde;1972-05-10;MA;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.cleberverde@camara.leg.br;Santa Luzia - MA;3215-5710;56;https://www.camara.leg.br/internet/deputado/bandep/141408.jpg;4;ADVOGADO;BRANCA;49
+204376;camara;CD;49906780797;LUIZ ARMANDO SCHROEDER REIS;Coronel Armando;1957-06-23;SC;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Pós-Graduação;dep.coronelarmando@camara.leg.br;Resende - RJ;3215-5268;56;https://www.camara.leg.br/internet/deputado/bandep/204376.jpg;1;MILITAR REFORMADO;BRANCA;64
+204378;camara;CD;70335591787;JOAO CHRISÓSTOMO DE MOURA;Coronel Chrisóstomo;1959-06-23;RO;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.coronelchrisostomo@camara.leg.br;Tefé - AM;3215-5458;56;https://www.camara.leg.br/internet/deputado/bandep/204378.jpg;1;ENGENHEIRO;PARDA;62
+204514;camara;CD;4862780857;MARCIO TADEU ANHAIA DE LEMOS;Coronel Tadeu;1965-09-30;SP;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Mestrado;dep.coroneltadeu@camara.leg.br;SAO PAULO - SP;3215-5756;56;https://www.camara.leg.br/internet/deputado/bandep/204514.jpg;1;OUTROS;BRANCA;55
+178963;camara;CD;1171688075;LUIS ANTONIO FRANCISCATTO COVATTI;Covatti Filho;1987-07-25;RS;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.covattifilho@camara.leg.br;Frederico Westphalen - RS;3215-5228;56;https://www.camara.leg.br/internet/deputado/bandep/178963.jpg;2;OUTROS;BRANCA;34
+135054;camara;CD;33096473234;CRISTIANO DUTRA VALE;Cristiano Vale;1970-04-10;PA;PL;Partido Liberal;Direita;Exercício;Titular;M;Ensino Médio;dep.cristianovale@camara.leg.br;Manhuaçu - MG;3215-5822;56;https://www.camara.leg.br/internet/deputado/bandep/135054.jpg;1;PECUARISTA;BRANCA;51
+204355;camara;CD;98042734700;JOSIAS MARIO DA VITORIA;Da Vitoria;1971-06-02;ES;CIDADANIA;Cidadania;Esquerda;Exercício;Titular;M;Superior;dep.davitoria@camara.leg.br;Colatina - ES;3215-5579;56;https://www.camara.leg.br/internet/deputado/bandep/204355.jpg;1;DEPUTADO;BRANCA;50
+141411;camara;CD;263382893;DAGOBERTO NOGUEIRA FILHO;Dagoberto Nogueira;1955-07-21;MS;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.dagobertonogueira@camara.leg.br;São José do Rio Preto - SP;3215-5522;56;https://www.camara.leg.br/internet/deputado/bandep/141411.jpg;3;ADVOGADO;BRANCA;66
+74467;camara;CD;13932772415;DAMIÃO FELICIANO DA SILVA;Damião Feliciano;1952-04-28;PB;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Mestrado Incompleto;dep.damiaofeliciano@camara.leg.br;Campina Grande - PB;3215-5938;56;https://www.camara.leg.br/internet/deputado/bandep/74467.jpg;6;DEPUTADO;PRETA;69
+74060;camara;CD;7894090549;DANIEL GOMES DE ALMEIDA;Daniel Almeida;1955-01-21;BA;PCdoB;Partido Comunista do Brasil;Esquerda;Exercício;Titular;M;Superior;dep.danielalmeida@camara.leg.br;Mairi - BA;3215-5317;56;https://www.camara.leg.br/internet/deputado/bandep/74060.jpg;5;OUTROS;PARDA;66
+178916;camara;CD;2513878442;DANIEL PIRES COELHO;Daniel Coelho;1978-11-04;PE;CIDADANIA;Cidadania;Esquerda;Exercício;Titular;M;Superior;dep.danielcoelho@camara.leg.br;Recife - PE;3215-5813;56;https://www.camara.leg.br/internet/deputado/bandep/178916.jpg;2;EMPRESÁRIO;BRANCA;42
+204367;camara;CD;3751859926;DANIEL COSTA DE FREITAS;Daniel Freitas;1982-04-03;SC;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.danielfreitas@camara.leg.br;Criciúma - SC;3215-5273;56;https://www.camara.leg.br/internet/deputado/bandep/204367.jpg;1;EMPRESÁRIO;BRANCA;39
+204454;camara;CD;5700923700;DANIEL LUCIO DA SILVEIRA;Daniel Silveira;1982-11-25;RJ;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.danielsilveira@camara.leg.br;Petrópolis - RJ;3215-5403;56;https://www.camara.leg.br/internet/deputado/bandep/204454.jpg;1;POLICIAL MILITAR;BRANCA;38
+204409;camara;CD;1297812077;DANIEL TRZECIAK DUARTE;Daniel Trzeciak;1986-11-04;RS;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;dep.danieltrzeciak@camara.leg.br;Dom Feliciano - RS;3215-5917;56;https://www.camara.leg.br/internet/deputado/bandep/204409.jpg;1;VEREADOR;BRANCA;34
+204459;camara;CD;7973687793;DANIELA MOTE DE SOUZA CARNEIRO;Daniela do Waguinho;1976-02-10;RJ;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;F;Pós-Graduação;dep.danieladowaguinho@camara.leg.br;Rio de Janeiro - RJ;3215-5950;56;https://www.camara.leg.br/internet/deputado/bandep/204459.jpg;1;PROFESSOR DE ENSINO FUNDAMENTAL;BRANCA;45
+160528;camara;CD;50903691434;DANILO JORGE DE BARROS CABRAL;Danilo Cabral;1967-04-21;PE;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.danilocabral@camara.leg.br;Surubim - PE;3215-5423;56;https://www.camara.leg.br/internet/deputado/bandep/160528.jpg;3;DEPUTADO;PARDA;54
+62881;camara;CD;12133728368;FRANCISCO DANILO BASTOS FORTE;Danilo Forte;1958-09-01;CE;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Efetivado;M;Superior;dep.daniloforte@camara.leg.br;Fortaleza - CE;3215-5219;56;https://www.camara.leg.br/internet/deputado/bandep/62881.jpg;2;DEPUTADO;BRANCA;63
+116379;camara;CD;44828624953;DARCI DE MATOS;Darci de Matos;1961-11-08;SC;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.darcidematos@camara.leg.br;Cafelândia - PR;3215-5709;56;https://www.camara.leg.br/internet/deputado/bandep/116379.jpg;1;DEPUTADO;BRANCA;59
+205548;camara;CD;12394073780;DAVID MICHAEL DOS SANTOS MIRANDA;David Miranda;1985-05-10;RJ;PSOL;Partido Socialismo e Liberdade;Esquerda;Exercício;Efetivado;M;Superior;dep.davidmiranda@camara.leg.br;Rio de Janeiro - RJ;3215-5267;56;https://www.camara.leg.br/internet/deputado/bandep/205548.jpg;1;VEREADOR;PRETA;36
+204511;camara;CD;2112481770;DAVID BEZERRA RIBEIRO SOARES;David Soares;1973-12-21;SP;DEM;Democratas;Direita;Exercício;Titular;M;Pós-Graduação;dep.davidsoares@camara.leg.br;Rio de Janeiro - RJ;3215-5741;56;https://www.camara.leg.br/internet/deputado/bandep/204511.jpg;1;VEREADOR;BRANCA;47
+204451;camara;CD;2473048754;ANTÔNIO DA LUZ FURTADO;Delegado Antônio Furtado;1972-01-06;RJ;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.delegadoantoniofurtado@camara.leg.br;Rio de Janeiro - RJ;3215-5602;56;https://www.camara.leg.br/internet/deputado/bandep/204451.jpg;1;SERVIDOR PÚBLICO ESTADUAL;PARDA;49
+178908;camara;CD;13405551234;EDER MAURO CARDOSO BARRA;Delegado Éder Mauro;1960-12-14;PA;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.delegadoedermauro@camara.leg.br;Belém - PA;3215-5586;56;https://www.camara.leg.br/internet/deputado/bandep/178908.jpg;2;DEPUTADO;PARDA;60
+204512;camara;CD;3572972612;MARCELO EDUARDO FREITAS;Delegado Marcelo Freitas;1976-03-04;MG;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Doutorado;dep.delegadomarcelofreitas@camara.leg.br;Montes Claros - MG;3215-5548;56;https://www.camara.leg.br/internet/deputado/bandep/204512.jpg;1;OUTROS;BRANCA;45
+204569;camara;CD;55926169291;PABLO OLIVA SOUZA;Delegado Pablo;1976-07-26;AM;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Mestrado;dep.delegadopablo@camara.leg.br;Manaus - AM;3215-5373;56;https://www.camara.leg.br/internet/deputado/bandep/204569.jpg;1;SERVIDOR PÚBLICO FEDERAL;PARDA;45
+164359;camara;CD;46228357972;WALDIR SOARES DE OLIVEIRA;Delegado Waldir;1962-11-28;GO;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.delegadowaldir@camara.leg.br;Jacarezinho - PR;3215-5645;56;https://www.camara.leg.br/internet/deputado/bandep/164359.jpg;3;POLICIAL CIVIL;BRANCA;58
+204542;camara;CD;62156047391;DENIS ANDERSON DA ROCHA BEZERRA;Denis Bezerra;1980-03-17;CE;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;dep.denisbezerra@camara.leg.br;Fortaleza - CE;3215-5625;56;https://www.camara.leg.br/internet/deputado/bandep/204542.jpg;1;ADVOGADO;BRANCA;41
+160588;camara;CD;99316552672;DIEGO LEONARDO DE ANDRADE CARVALHO;Diego Andrade;1977-08-08;MG;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Pós-Graduação;dep.diegoandrade@camara.leg.br;Belo Horizonte - MG;3215-5307;56;https://www.camara.leg.br/internet/deputado/bandep/160588.jpg;3;DEPUTADO;BRANCA;44
+178929;camara;CD;4702291955;DIEGO ALEXSANDER GONCALO PAULA GARCIA;Diego Garcia;1984-10-10;PR;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior;dep.diegogarcia@camara.leg.br;Bandeirantes - PR;3215-5910;56;https://www.camara.leg.br/internet/deputado/bandep/178929.jpg;2;DEPUTADO;BRANCA;36
+160599;camara;CD;3694339639;DIMAS FABIANO TOLEDO JÚNIOR;Dimas Fabiano;1973-05-23;MG;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.dimasfabiano@camara.leg.br;Macaé - RJ;3215-5736;56;https://www.camara.leg.br/internet/deputado/bandep/160599.jpg;3;DEPUTADO;BRANCA;48
+143632;camara;CD;2827898390;DOMINGOS GOMES DE AGUIAR NETO;Domingos Neto;1988-04-29;CE;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Mestrado Incompleto;dep.domingosneto@camara.leg.br;Fortaleza - CE;3215-5546;56;https://www.camara.leg.br/internet/deputado/bandep/143632.jpg;3;DEPUTADO;BRANCA;33
+160758;camara;CD;22275150668;DOMINGOS SÁVIO CAMPOS RESENDE;Domingos Sávio;1957-03-25;MG;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Pós-Graduação;dep.domingossavio@camara.leg.br;São Tiago - MG;3215-5345;56;https://www.camara.leg.br/internet/deputado/bandep/160758.jpg;3;DEPUTADO;BRANCA;64
+204518;camara;CD;7422257717;FREDERICO DE CASTRO ESCALEIRA;Dr. Frederico;1977-03-24;MG;PATRIOTA;Patriota;Direita;Exercício;Titular;M;Superior;dep.dr.frederico@camara.leg.br;Teresópolis - RJ;3215-5568;56;https://www.camara.leg.br/internet/deputado/bandep/204518.jpg;1;BOMBEIRO MILITAR;BRANCA;44
+204481;camara;CD;35761113368;JAZIEL PEREIRA DE SOUSA;Dr. Jaziel;1961-05-03;CE;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.dr.jaziel@camara.leg.br;Camocim - CE;3215-5705;56;https://www.camara.leg.br/internet/deputado/bandep/204481.jpg;1;MÉDICO;PARDA;60
+204439;camara;CD;2309274917;LEONARDO RIBEIRO ALBUQUERQUE;Dr. Leonardo;1978-06-14;MT;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;M;Pós-Graduação;dep.dr.leonardo@camara.leg.br;Rio Verde - GO;3215-5445;56;https://www.camara.leg.br/internet/deputado/bandep/204439.jpg;1;DEPUTADO;BRANCA;43
+204450;camara;CD;2319953779;LUIZ ANTONIO DE SOUZA TEIXEIRA JÚNIOR;Dr. Luiz Antonio Teixeira Jr.;1973-12-15;RJ;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.dr.luizantonioteixeirajr@camara.leg.br;Nova Iguaçu - RJ;3215-5577;56;https://www.camara.leg.br/internet/deputado/bandep/204450.jpg;1;MÉDICO;BRANCA;47
+204351;camara;CD;5134552134;LUIZ ALBERTO OVANDO;Dr. Luiz Ovando;1949-09-25;MS;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.dr.luizovando@camara.leg.br;Corumbá - MS;3215-5644;56;https://www.camara.leg.br/internet/deputado/bandep/204351.jpg;1;MÉDICO;BRANCA;71
+204412;camara;CD;11833050100;ZACARIAS CALIL HAMU;Dr. Zacharias Calil;1953-11-05;GO;DEM;Democratas;Direita;Exercício;Titular;M;Superior;dep.dr.zachariascalil@camara.leg.br;Goiânia - GO;3215-5616;56;https://www.camara.leg.br/internet/deputado/bandep/204412.jpg;1;MÉDICO;BRANCA;67
+81297;camara;CD;82837147753;SORAYA DE SOUZA MANNATO;Dra. Soraya Manato;1961-03-10;ES;PSL;Partido Social Liberal;Direita;Exercício;Titular;F;Pós-Graduação;dep.dra.sorayamanato@camara.leg.br;Linhares - ES;3215-5313;56;https://www.camara.leg.br/internet/deputado/bandep/81297.jpg;1;MÉDICO;BRANCA;60
+204434;camara;CD;78581850804;VANDA DENIR MILANI NOGUEIRA;Dra. Vanda Milani;1953-09-17;AC;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;F;Superior;dep.dra.vandamilani@camara.leg.br;Cedral - SP;3215-5516;56;https://www.camara.leg.br/internet/deputado/bandep/204434.jpg;1;MEMBRO DO MINISTÉRIO PÚBLICO;BRANCA;68
+178994;camara;CD;30217865100;DULCE FERREIRA PAGANI MIRANDA;Dulce Miranda;1963-12-15;TO;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;F;Superior;dep.dulcemiranda@camara.leg.br;Pocrane - MG;3215-5530;56;https://www.camara.leg.br/internet/deputado/bandep/178994.jpg;2;DONA DE CASA;BRANCA;57
+204562;camara;CD;83762116334;EDILAZIO GOMES DA SILVA JUNIOR;Edilázio Júnior;1981-05-04;MA;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Pós-Graduação;dep.edilaziojunior@camara.leg.br;São Luís - MA;3215-5862;56;https://www.camara.leg.br/internet/deputado/bandep/204562.jpg;1;DEPUTADO;PARDA;40
+141417;camara;CD;77548981872;ÉDIO VIEIRA LOPES;Edio Lopes;1952-01-04;RR;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior Incompleto;dep.ediolopes@camara.leg.br;Presidente Epitácio - SP;3215-5408;56;https://www.camara.leg.br/internet/deputado/bandep/141417.jpg;4;DEPUTADO;PARDA;69
+204421;camara;CD;80482856491;EDNACE ALVES SILVESTRE HENRIQUE;Edna Henrique;1958-09-04;PB;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;F;Superior;dep.ednahenrique@camara.leg.br;Xique-Xique - BA;3215-5962;56;https://www.camara.leg.br/internet/deputado/bandep/204421.jpg;1;SERVIDOR PÚBLICO ESTADUAL;BRANCA;63
+74655;camara;CD;27582400682;EDUARDO LUIZ BARROS BARBOSA;Eduardo Barbosa;1958-08-25;MG;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Pós-Graduação;dep.eduardobarbosa@camara.leg.br;Pará de Minas - MG;3215-5540;56;https://www.camara.leg.br/internet/deputado/bandep/74655.jpg;7;DEPUTADO;BRANCA;63
+204541;camara;CD;61882577353;EDUARDO HENRIQUE MAIA BISMARCK;Eduardo Bismarck;1981-11-14;CE;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.eduardobismarck@camara.leg.br;Fortaleza - CE;3215-5652;56;https://www.camara.leg.br/internet/deputado/bandep/204541.jpg;1;ADVOGADO;BRANCA;39
+92346;camara;CD;10655365770;EDUARDO NANTES BOLSONARO;Eduardo Bolsonaro;1984-07-10;SP;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.eduardobolsonaro@camara.leg.br;Rio de Janeiro - RJ;3215-5350;56;https://www.camara.leg.br/internet/deputado/bandep/92346.jpg;2;SERVIDOR PÚBLICO FEDERAL;BRANCA;37
+204500;camara;CD;26757184249;JOSE EDUARDO PEREIRA DA COSTA;Eduardo Costa;1968-02-16;PA;PTB;Partido Trabalhista Brasileiro;Direita;Exercício;Titular;M;Superior;dep.eduardocosta@camara.leg.br;Belém - PA;3215-5286;56;https://www.camara.leg.br/internet/deputado/bandep/204500.jpg;1;MÉDICO;BRANCA;53
+178977;camara;CD;4909670866;EDUARDO PEDROSA CURY;Eduardo Cury;1963-09-19;SP;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;dep.eduardocury@camara.leg.br;São José dos Campos - SP;3215-5368;56;https://www.camara.leg.br/internet/deputado/bandep/178977.jpg;2;EMPRESÁRIO;BRANCA;58
+141421;camara;CD;53467108415;EDUARDO HENRIQUE DA FONTE DE ALBUQUERQUE SILVA;Eduardo da Fonte;1972-10-17;PE;PP;Progressistas;Direita;Exercício;Titular;M;Ensino Médio;dep.eduardodafonte@camara.leg.br;Recife - PE;3215-5628;56;https://www.camara.leg.br/internet/deputado/bandep/141421.jpg;4;DEPUTADO;BRANCA;48
+141422;camara;CD;770338410;EFRAIM DE ARAÚJO MORAIS FILHO;Efraim Filho;1979-03-18;PB;DEM;Democratas;Direita;Exercício;Titular;M;Pós-Graduação;dep.efraimfilho@camara.leg.br;João Pessoa - PB;3215-5744;56;https://www.camara.leg.br/internet/deputado/bandep/141422.jpg;4;ADVOGADO;BRANCA;42
+74075;camara;CD;605387249;ELCIONE THEREZINHA ZAHLUTH BARBALHO;Elcione Barbalho;1944-10-05;PA;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;F;Pós-Graduação;dep.elcionebarbalho@camara.leg.br;Belém - PA;3215-5206;56;https://www.camara.leg.br/internet/deputado/bandep/74075.jpg;6;DEPUTADO;BRANCA;76
+204364;camara;CD;21821003187;ELI DIAS BORGES;Eli Borges;1960-09-01;TO;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;M;Superior;dep.eliborges@camara.leg.br;Ipameri - GO;3215-5248;56;https://www.camara.leg.br/internet/deputado/bandep/204364.jpg;1;DEPUTADO;PARDA;61
+160532;camara;CD;17610241830;ADRIANO ELI CORRÊA;Eli Corrêa Filho;1976-01-13;SP;DEM;Democratas;Direita;Exercício;Titular;M;Superior;dep.elicorreafilho@camara.leg.br;São Paulo - SP;3215-5850;56;https://www.camara.leg.br/internet/deputado/bandep/160532.jpg;3;DEPUTADO;BRANCA;45
+204389;camara;CD;42289440191;ELIAS VAZ DE ANDRADE;Elias Vaz;1966-07-04;GO;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;dep.eliasvaz@camara.leg.br;Goiânia - GO;3215-5303;56;https://www.camara.leg.br/internet/deputado/bandep/204389.jpg;1;VEREADOR;BRANCA;55
+178854;camara;CD;49465589500;ELMAR JOSE VIEIRA NASCIMENTO;Elmar Nascimento;1970-07-06;BA;DEM;Democratas;Direita;Exercício;Titular;M;Pós-Graduação;dep.elmarnascimento@camara.leg.br;Campo Formoso - BA;3215-5935;56;https://www.camara.leg.br/internet/deputado/bandep/178854.jpg;2;DEPUTADO;BRANCA;51
+198783;camara;CD;558574181;EMANUEL PINHEIRO DA SILVA PRIMO;Emanuel Pinheiro Neto;1995-01-05;MT;PTB;Partido Trabalhista Brasileiro;Direita;Exercício;Titular;M;Superior;dep.emanuelpinheironeto@camara.leg.br;Cuiabá - MT;3215-5374;56;https://www.camara.leg.br/internet/deputado/bandep/198783.jpg;1;EMPRESÁRIO;BRANCA;26
+161550;camara;CD;60433086653;EMIDIO ALVES MADEIRA JUNIOR;Emidinho Madeira;1967-03-10;MG;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Ensino Fundamental;dep.emidinhomadeira@camara.leg.br;Nova Resende - MG;3215-5837;56;https://www.camara.leg.br/internet/deputado/bandep/161550.jpg;1;DEPUTADO;BRANCA;54
+132504;camara;CD;39737705904;ENIO JOSÉ VERRI;Enio Verri;1961-03-27;PR;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Doutorado;dep.enioverri@camara.leg.br;Maringá - PR;3215-5627;56;https://www.camara.leg.br/internet/deputado/bandep/132504.jpg;2;DEPUTADO;BRANCA;60
+204537;camara;CD;43274524832;ENRICO VAN BLARCUM DE GRAAFF MISASI;Enrico Misasi;1994-08-06;SP;PV;Partido Verde;Esquerda;Exercício;Titular;M;Mestrado;dep.enricomisasi@camara.leg.br;São Paulo - SP;3215-5574;56;https://www.camara.leg.br/internet/deputado/bandep/204537.jpg;1;ADVOGADO;BRANCA;27
+160575;camara;CD;22441107100;ÉRIKA JUCÁ KOKAY;Erika Kokay;1957-08-15;DF;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;F;Superior;dep.erikakokay@camara.leg.br;Fortaleza - CE;3215-5203;56;https://www.camara.leg.br/internet/deputado/bandep/160575.jpg;3;DEPUTADO;BRANCA;64
+160640;camara;CD;84470666653;EROS FERREIRA BIONDINI;Eros Biondini;1971-05-20;MG;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Titular;M;Pós-Graduação;dep.erosbiondini@camara.leg.br;Belo Horizonte - MG;3215-5321;56;https://www.camara.leg.br/internet/deputado/bandep/160640.jpg;3;DEPUTADO;BRANCA;50
+204482;camara;CD;6460032670;EUCLYDES MARCOS PETTERSEN NETO;Euclydes Pettersen;1984-08-15;MG;PSC;Partido Social Cristão;Direita;Exercício;Titular;M;Superior;dep.euclydespettersen@camara.leg.br;Governador Valadares - MG;3215-5456;56;https://www.camara.leg.br/internet/deputado/bandep/204482.jpg;1;SERVIDOR PÚBLICO ESTADUAL;BRANCA;37
+178871;camara;CD;2261265794;EVAIR VIEIRA DE MELO;Evair Vieira de Melo;1972-04-02;ES;PP;Progressistas;Direita;Exercício;Titular;M;Pós-Graduação;dep.evairvieirademelo@camara.leg.br;Conceição do Castelo - ES;3215-5443;56;https://www.camara.leg.br/internet/deputado/bandep/178871.jpg;2;TÉCNICO EM AGRONOMIA E AGRIMENSURA;BRANCA;49
+178953;camara;CD;93279493234;EXPEDITO GONCALVES FERREIRA NETTO;Expedito Netto;1988-10-05;RO;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Mestrado Incompleto;dep.expeditonetto@camara.leg.br;Porto Velho - RO;3215-5943;56;https://www.camara.leg.br/internet/deputado/bandep/178953.jpg;2;EMPRESÁRIO;PARDA;32
+68720;camara;CD;41330200578;FABIO HENRIQUE SANTANA DE CARVALHO;Fábio Henrique;1972-06-19;SE;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.fabiohenrique@camara.leg.br;Simão Dias - SE;3215-5475;56;https://www.camara.leg.br/internet/deputado/bandep/68720.jpg;1;DEPUTADO;BRANCA;49
+178969;camara;CD;65242777591;FABIO CRUZ MITIDIERI;Fábio Mitidieri;1977-02-24;SE;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.fabiomitidieri@camara.leg.br;Aracaju - SE;3215-5278;56;https://www.camara.leg.br/internet/deputado/bandep/178969.jpg;2;ADMINISTRADOR;PARDA;44
+141427;camara;CD;54471788604;FÁBIO AUGUSTO RAMALHO DOS SANTOS;Fábio Ramalho;1961-12-22;MG;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.fabioramalho@camara.leg.br;Brasília - DF;3215-5826;56;https://www.camara.leg.br/internet/deputado/bandep/141427.jpg;4;DEPUTADO;PARDA;59
+171623;camara;CD;57126500378;FABIO DE ALMEIDA REIS;Fabio Reis;1977-04-15;SE;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior Incompleto;dep.fabioreis@camara.leg.br;Lagarto - SE;3215-5410;56;https://www.camara.leg.br/internet/deputado/bandep/171623.jpg;3;EMPRESÁRIO;BRANCA;44
+204368;camara;CD;4116230952;FÁBIO LUIZ SCHIOCHET FILHO;Fabio Schiochet;1988-05-31;SC;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior Incompleto;dep.fabioschiochet@camara.leg.br;Jaraguá do Sul - SC;3215-5758;56;https://www.camara.leg.br/internet/deputado/bandep/204368.jpg;1;EMPRESÁRIO;BRANCA;33
+160587;camara;CD;98303651749;FÁBIO RICARDO TRAD;Fábio Trad;1969-08-18;MS;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Mestrado;dep.fabiotrad@camara.leg.br;Campo Grande - MS;3215-5452;56;https://www.camara.leg.br/internet/deputado/bandep/160587.jpg;3;DEPUTADO;BRANCA;52
+66828;camara;CD;28022995819;FAUSTO RUY PINATO;Fausto Pinato;1977-06-01;SP;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.faustopinato@camara.leg.br;Fernandópolis - SP;3215-5562;56;https://www.camara.leg.br/internet/deputado/bandep/66828.jpg;2;ADVOGADO;BRANCA;44
+204477;camara;CD;90982843704;FELÍCIO LATERÇA DE ALMEIDA;Felício Laterça;1967-05-26;RJ;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.feliciolaterca@camara.leg.br;Campos dos Goytacazes - RJ;3215-5275;56;https://www.camara.leg.br/internet/deputado/bandep/204477.jpg;1;SERVIDOR PÚBLICO FEDERAL;BRANCA;54
+72442;camara;CD;86488023420;FELIPE AUGUSTO LYRA CARRERAS;Felipe Carreras;1975-04-16;PE;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior Incompleto;dep.felipecarreras@camara.leg.br;Recife - PE;3215-5318;56;https://www.camara.leg.br/internet/deputado/bandep/72442.jpg;2;EMPRESÁRIO;PARDA;46
+204398;camara;CD;8317508986;LUIS FELIPE BONATTO FRANCISCHINI;Felipe Francischini;1991-10-02;PR;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.felipefrancischini@camara.leg.br;Curitiba - PR;3215-5265;56;https://www.camara.leg.br/internet/deputado/bandep/204398.jpg;1;DEPUTADO;BRANCA;29
+204371;camara;CD;12838182722;FELIPE RIGONI LOPES;Felipe Rigoni;1991-06-13;ES;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Mestrado;dep.feliperigoni@camara.leg.br;Linhares - ES;3215-5846;56;https://www.camara.leg.br/internet/deputado/bandep/204371.jpg;1;OUTROS;BRANCA;30
+160666;camara;CD;24263630530;FELIX DE ALMEIDA MENDONÇA JÚNIOR;Félix Mendonça Júnior;1963-11-29;BA;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.felixmendoncajunior@camara.leg.br;Itabuna - BA;3215-5912;56;https://www.camara.leg.br/internet/deputado/bandep/160666.jpg;3;DEPUTADO;BRANCA;57
+204407;camara;CD;213461005;FERNANDA MELCHIONNA E SILVA;Fernanda Melchionna;1984-02-02;RS;PSOL;Partido Socialismo e Liberdade;Esquerda;Exercício;Titular;F;Superior;dep.fernandamelchionna@camara.leg.br;Alegrete - RS;3215-5621;56;https://www.camara.leg.br/internet/deputado/bandep/204407.jpg;1;VEREADOR;BRANCA;37
+141431;camara;CD;4921093466;FERNANDO BEZERRA DE SOUZA COELHO FILHO;Fernando Coelho Filho;1984-02-28;PE;DEM;Democratas;Direita;Exercício;Titular;M;Superior;dep.fernandocoelhofilho@camara.leg.br;Recife - PE;3215-5662;56;https://www.camara.leg.br/internet/deputado/bandep/141431.jpg;4;DEPUTADO;BRANCA;37
+92699;camara;CD;83146270463;FERNANDO MONTEIRO DE ALBUQUERQUE;Fernando Monteiro;1976-09-17;PE;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.fernandomonteiro@camara.leg.br;Recife - PE;3215-5243;56;https://www.camara.leg.br/internet/deputado/bandep/92699.jpg;2;EMPRESÁRIO;BRANCA;45
+204427;camara;CD;4445225495;FERNANDO RODOLFO TENORIO DE VASCONCELOS;Fernando Rodolfo;1983-11-17;PE;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.fernandorodolfo@camara.leg.br;Garanhuns - PE;3215-5554;56;https://www.camara.leg.br/internet/deputado/bandep/204427.jpg;1;JORNALISTA E REDATOR;PARDA;37
+204411;camara;CD;5825760911;FILIPE BARROS BAPTISTA DE TOLEDO RIBEIRO;Filipe Barros;1991-05-29;PR;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.filipebarros@camara.leg.br;Londrina - PR;3215-5745;56;https://www.camara.leg.br/internet/deputado/bandep/204411.jpg;1;VEREADOR;BRANCA;30
+160598;camara;CD;54779537134;FLÁVIA CARREIRO ALBUQUERQUE MORAIS;Flávia Morais;1969-04-26;GO;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;F;Superior;dep.flaviamorais@camara.leg.br;Belo Horizonte - MG;3215-5738;56;https://www.camara.leg.br/internet/deputado/bandep/160598.jpg;3;DEPUTADO;BRANCA;52
+141434;camara;CD;33251797700;FLAVIANO FLÁVIO BAPTISTA DE MELO;Flaviano Melo;1949-11-17;AC;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.flavianomelo@camara.leg.br;Rio Branco - AC;3215-5224;56;https://www.camara.leg.br/internet/deputado/bandep/141434.jpg;4;DEPUTADO;PARDA;71
+191923;camara;CD;4826604300;FLÁVIO RODRIGUES NOGUEIRA;Flávio Nogueira;1953-02-27;PI;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.flavionogueira@camara.leg.br;Alto Santo - CE;3215-5811;56;https://www.camara.leg.br/internet/deputado/bandep/191923.jpg;2;MÉDICO;PARDA;68
+204392;camara;CD;47594217187;FRANCISCO RODRIGUES VALE JUNIOR;Francisco Jr.;1969-03-15;GO;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Mestrado;dep.franciscojr@camara.leg.br;Goiânia - GO;3215-5643;56;https://www.camara.leg.br/internet/deputado/bandep/204392.jpg;1;DEPUTADO;BRANCA;52
+204510;camara;CD;1583845631;FRANCO CARTAFINA GOMES;Franco Cartafina;1986-11-03;MG;PP;Progressistas;Direita;Exercício;Titular;M;Pós-Graduação;dep.francocartafina@camara.leg.br;Uberaba - MG;3215-5283;56;https://www.camara.leg.br/internet/deputado/bandep/204510.jpg;1;EMPRESÁRIO;BRANCA;34
+204494;camara;CD;2505101620;FREDERICO BORGES DA COSTA;Fred Costa;1977-07-12;MG;PATRIOTA;Patriota;Direita;Exercício;Titular;M;Superior Incompleto;dep.fredcosta@camara.leg.br;Belo Horizonte - MG;3215-5633;56;https://www.camara.leg.br/internet/deputado/bandep/204494.jpg;1;DEPUTADO;BRANCA;44
+204393;camara;CD;13163663400;ANTONIO RIBEIRO;Frei Anastacio Ribeiro;1944-03-03;PB;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.freianastacioribeiro@camara.leg.br;Esperança - PB;3215-5442;56;https://www.camara.leg.br/internet/deputado/bandep/204393.jpg;1;DEPUTADO;BRANCA;77
+74200;camara;CD;1196553300;GASTÃO DIAS VIEIRA;Gastão Vieira;1946-06-15;MA;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Suplente;M;Superior;dep.gastaovieira@camara.leg.br;São Luís - MA;3215-5372;56;https://www.camara.leg.br/internet/deputado/bandep/74200.jpg;6;ADVOGADO;PARDA;75
+115746;camara;CD;84610310759;GELSON DE AZEVEDO ALMEIDA;Gelson Azevedo;1965-01-10;RJ;PL;Partido Liberal;Direita;Exercício;Titular;M;Ensino Médio Incompleto;dep.gelsonazevedo@camara.leg.br;Campos dos Goytacazes - RJ;3215-5369;56;https://www.camara.leg.br/internet/deputado/bandep/115746.jpg;1;EMPRESÁRIO;BRANCA;56
+160669;camara;CD;25630512315;GENECIAS MATEUS NORONHA;Genecias Noronha;1963-03-13;CE;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;M;Ensino Médio;dep.geneciasnoronha@camara.leg.br;Fortaleza - CE;3215-5244;56;https://www.camara.leg.br/internet/deputado/bandep/160669.jpg;3;DEPUTADO;PARDA;58
+204473;camara;CD;45312346772;ELIÉSER GIRÃO MONTEIRO FILHO;General Girão;1955-05-08;RN;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Doutorado;dep.generalgirao@camara.leg.br;Fortaleza - CE;3215-5914;56;https://www.camara.leg.br/internet/deputado/bandep/204473.jpg;1;MEMBRO DAS FORÇAS ARMADAS;BRANCA;66
+204484;camara;CD;91311233849;ROBERTO SEBASTIÃO PETERNELLI JUNIOR;General Peternelli;1954-08-06;SP;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Doutorado;dep.generalpeternelli@camara.leg.br;Ribeirão Preto - SP;3215-5570;56;https://www.camara.leg.br/internet/deputado/bandep/204484.jpg;1;MILITAR REFORMADO;BRANCA;67
+204527;camara;CD;12172894885;EUGENIO JOSÉ ZULIANI;Geninho Zuliani;1976-01-13;SP;DEM;Democratas;Direita;Exercício;Titular;M;Superior;dep.geninhozuliani@camara.leg.br;Ribeirão Pires - SP;3215-5860;56;https://www.camara.leg.br/internet/deputado/bandep/204527.jpg;1;SERVIDOR PÚBLICO ESTADUAL;BRANCA;45
+178966;camara;CD;81095910949;Geovânia de Sá;Geovania de Sá;1972-03-30;SC;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;F;Pós-Graduação;dep.geovaniadesa@camara.leg.br;Criciúma - SC;3215-5606;56;https://www.camara.leg.br/internet/deputado/bandep/178966.jpg;2;DEPUTADO;BRANCA;49
+204394;camara;CD;88623327420;GERVÁSIO AGRIPINO MAIA;Gervásio Maia;1975-04-14;PB;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;dep.gervasiomaia@camara.leg.br;São Paulo - SP;3215-5308;56;https://www.camara.leg.br/internet/deputado/bandep/204394.jpg;1;DEPUTADO;PARDA;46
+74383;camara;CD;71827404949;FERNANDO LÚCIO GIACOBO;Giacobo;1970-12-17;PR;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.giacobo@camara.leg.br;Pato Branco - PR;3215-5762;56;https://www.camara.leg.br/internet/deputado/bandep/74383.jpg;5;DEPUTADO;BRANCA;50
+204575;camara;CD;80405878320;GILLIANO FRED NASCIMENTO CUTRIM;Gil Cutrim;1979-10-26;MA;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.gilcutrim@camara.leg.br;São Luís - MA;3215-5385;56;https://www.camara.leg.br/internet/deputado/bandep/204575.jpg;1;ADVOGADO;BRANCA;41
+204491;camara;CD;8567392861;GILBERTO APARECIDO ABRAMO;Gilberto Abramo;1966-08-06;MG;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.gilbertoabramo@camara.leg.br;Porto Ferreira - SP;3215-5601;56;https://www.camara.leg.br/internet/deputado/bandep/204491.jpg;1;DEPUTADO;BRANCA;55
+74270;camara;CD;64817407891;GILBERTO NASCIMENTO SILVA;Gilberto Nascimento;1956-07-09;SP;PSC;Partido Social Cristão;Direita;Exercício;Titular;M;Superior;dep.gilbertonascimento@camara.leg.br;São Paulo - SP;3215-5834;56;https://www.camara.leg.br/internet/deputado/bandep/74270.jpg;3;ADVOGADO;BRANCA;65
+204365;camara;CD;824207939;GILSON MARQUES VIEIRA;Gilson Marques;1981-04-12;SC;NOVO;Partido Novo;Direita;Exercício;Titular;M;Pós-Graduação;dep.gilsonmarques@camara.leg.br;Rio do Sul - SC;3215-5431;56;https://www.camara.leg.br/internet/deputado/bandep/204365.jpg;1;ADVOGADO;BRANCA;40
+160673;camara;CD;31050778049;GIOVANI CHERINI;Giovani Cherini;1960-06-23;RS;PL;Partido Liberal;Direita;Exercício;Titular;M;Pós-Graduação;dep.giovanicherini@camara.leg.br;Soledade - RS;3215-5872;56;https://www.camara.leg.br/internet/deputado/bandep/160673.jpg;3;DEPUTADO;BRANCA;61
+178996;camara;CD;26586568072;GIOVANI BATISTA FELTES;Giovani Feltes;1957-04-10;RS;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.giovanifeltes@camara.leg.br;São Leopoldo - RS;3215-5376;56;https://www.camara.leg.br/internet/deputado/bandep/178996.jpg;2;EMPRESÁRIO;BRANCA;64
+152605;camara;CD;9740756719;GLAUBER DE MEDEIROS BRAGA;Glauber Braga;1982-06-26;RJ;PSOL;Partido Socialismo e Liberdade;Esquerda;Exercício;Titular;M;Superior;dep.glauberbraga@camara.leg.br;Nova Friburgo - RJ;3215-5362;56;https://www.camara.leg.br/internet/deputado/bandep/152605.jpg;4;ADVOGADO;BRANCA;39
+204419;camara;CD;60751266191;GLAUSKSTON BATISTA RIOS;Glaustin da Fokus;1973-12-22;GO;PSC;Partido Social Cristão;Direita;Exercício;Titular;M;Superior;dep.glaustindafokus@camara.leg.br;Goiânia - GO;3215-5473;56;https://www.camara.leg.br/internet/deputado/bandep/204419.jpg;1;EMPRESÁRIO;BRANCA;47
+107283;camara;CD;67677061915;GLEISI HELENA HOFFMANN;Gleisi Hoffmann;1965-09-06;PR;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;F;Pós-Graduação;dep.gleisihoffmann@camara.leg.br;Curitiba - PR;3215-5232;56;https://www.camara.leg.br/internet/deputado/bandep/107283.jpg;1;SENADOR;BRANCA;56
+74419;camara;CD;1960970453;LUIZ GONZAGA PATRIOTA;Gonzaga Patriota;1946-04-26;PE;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Doutorado;dep.gonzagapatriota@camara.leg.br;Sertânia - PE;3215-5430;56;https://www.camara.leg.br/internet/deputado/bandep/74419.jpg;7;OUTROS;PARDA;75
+198197;camara;CD;5132597670;GREYCE DE QUEIROZ ELIAS;Greyce Elias;1981-12-15;MG;AVANTE;Avante;Centro;Exercício;Titular;F;Superior;dep.greyceelias@camara.leg.br;Patrocínio - MG;3215-5340;56;https://www.camara.leg.br/internet/deputado/bandep/198197.jpg;1;VEREADOR;BRANCA;39
+204513;camara;CD;4434956884;JOSÉ GUILHERME NEGRÃO PEIXOTO;Guiga Peixoto;1961-11-13;SP;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Pós-Graduação;dep.guigapeixoto@camara.leg.br;Tatuí - SP;3215-5333;56;https://www.camara.leg.br/internet/deputado/bandep/204513.jpg;1;ADMINISTRADOR;BRANCA;59
+204531;camara;CD;31200606825;GUILHERME MURARO DERRITE;Guilherme Derrite;1984-10-10;SP;PP;Progressistas;Direita;Exercício;Titular;M;Pós-Graduação;dep.guilhermederrite@camara.leg.br;Sorocaba - SP;3215-5639;56;https://www.camara.leg.br/internet/deputado/bandep/204531.jpg;1;POLICIAL MILITAR;BRANCA;36
+160667;camara;CD;31812472862;GUILHERME MUSSI FERREIRA;Guilherme Mussi;1982-10-14;SP;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.guilhermemussi@camara.leg.br;Curitiba - PR;3215-5712;56;https://www.camara.leg.br/internet/deputado/bandep/160667.jpg;3;EMPRESÁRIO;BRANCA;38
+204442;camara;CD;8632534742;JOÃO CARLOS SOARES GURGEL;Gurgel;1980-12-02;RJ;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Pós-Graduação;dep.gurgel@camara.leg.br;Rio de Janeiro - RJ;3215-5937;56;https://www.camara.leg.br/internet/deputado/bandep/204442.jpg;1;POLICIAL MILITAR;BRANCA;40
+73460;camara;CD;64446379968;GUSTAVO BONATO FRUET;Gustavo Fruet;1963-04-18;PR;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.gustavofruet@camara.leg.br;Curitiba - PR;3215-5827;56;https://www.camara.leg.br/internet/deputado/bandep/73460.jpg;4;ADVOGADO;BRANCA;58
+204408;camara;CD;82706522534;LUIZ AUGUSTO CARVALHO RIBEIRO FILHO;Gustinho Ribeiro;1982-02-16;SE;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;M;Superior;dep.gustinhoribeiro@camara.leg.br;Aracaju - SE;3215-5379;56;https://www.camara.leg.br/internet/deputado/bandep/204408.jpg;1;DEPUTADO;BRANCA;39
+204456;camara;CD;7733341736;GUTEMBERG REIS DE OLIVEIRA;Gutemberg Reis;1979-09-09;RJ;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Ensino Médio;dep.gutembergreis@camara.leg.br;Duque de Caxias - RJ;3215-5856;56;https://www.camara.leg.br/internet/deputado/bandep/204456.jpg;1;OUTROS;BRANCA;42
+204465;camara;CD;11914408691;HAROLDO ALVES CAMPOS;Haroldo Cathedral;1953-05-11;RR;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Pós-Graduação;dep.haroldocathedral@camara.leg.br;Itabira - MG;3215-5280;56;https://www.camara.leg.br/internet/deputado/bandep/204465.jpg;1;EMPRESÁRIO;BRANCA;68
+204548;camara;CD;93008856187;HEITOR RODRIGO PEREIRA FREIRE;Heitor Freire;1981-10-08;CE;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Mestrado;dep.heitorfreire@camara.leg.br;Juazeiro do Norte - CE;3215-5367;56;https://www.camara.leg.br/internet/deputado/bandep/204548.jpg;1;ADMINISTRADOR;BRANCA;39
+178964;camara;CD;45479453068;HEITOR JOSE SCHUCH;Heitor Schuch;1962-03-25;RS;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior Incompleto;dep.heitorschuch@camara.leg.br;Santa Cruz do Sul - RS;3215-5277;56;https://www.camara.leg.br/internet/deputado/bandep/178964.jpg;2;AGRICULTOR;BRANCA;59
+178873;camara;CD;76808742715;HELDER IGNACIO SALOMAO;Helder Salomão;1964-03-08;ES;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.heldersalomao@camara.leg.br;Colatina - ES;3215-5573;56;https://www.camara.leg.br/internet/deputado/bandep/178873.jpg;2;PROFESSOR DE ENSINO SUPERIOR;BRANCA;57
+204373;camara;CD;24633631934;HÉLIO FRANCISCO DA COSTA;Hélio Costa;1954-03-03;SC;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Ensino Médio;dep.heliocosta@camara.leg.br;Florianópolis - SC;3215-5609;56;https://www.camara.leg.br/internet/deputado/bandep/204373.jpg;1;JORNALISTA E REDATOR;PRETA;67
+178909;camara;CD;8575878204;HELIO LEITE DA SILVA;Hélio Leite;1957-12-09;PA;DEM;Democratas;Direita;Exercício;Titular;M;Superior;dep.helioleite@camara.leg.br;Castanhal - PA;3215-5930;56;https://www.camara.leg.br/internet/deputado/bandep/178909.jpg;2;CORRETOR DE IMÓVEIS, SEGUROS, TÍTULOS E VALORES;BRANCA;63
+204444;camara;CD;891743723;HELIO FERNANDO BARBOSA LOPES;Helio Lopes;1969-03-28;RJ;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.heliolopes@camara.leg.br;Queimados - RJ;3215-5405;56;https://www.camara.leg.br/internet/deputado/bandep/204444.jpg;1;MEMBRO DAS FORÇAS ARMADAS;PRETA;52
+217036;camara;NA;34709948895;HENRIQUE STEIN SCIASCIO;Henrique do Paraíso;1985-06-07;SP;REPUBLICANOS;Republicanos;Direita;Exercício;Suplente;M;Superior;dep.henriquedoparaiso@camara.leg.br;Sumaré - SP;3215-5344;56;https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/217036.jpg;1;EMPRESÁRIO;BRANCA;36
+73482;camara;CD;33410518053;HENRIQUE FONTANA JÚNIOR;Henrique Fontana;1960-01-18;RS;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.henriquefontana@camara.leg.br;Porto Alegre - RS;3215-5256;56;https://www.camara.leg.br/internet/deputado/bandep/73482.jpg;6;DEPUTADO;BRANCA;61
+204539;camara;CD;45869820634;HERCÍLIO ARAÚJO DINIZ FILHO;Hercílio Coelho Diniz;1963-09-14;MG;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior Incompleto;dep.herciliocoelhodiniz@camara.leg.br;Governador Valadares - MG;3215-5510;56;https://www.camara.leg.br/internet/deputado/bandep/204539.jpg;1;EMPRESÁRIO;PARDA;58
+178981;camara;CD;551632895;HERCULANO CASTILHO PASSOS JUNIOR;Herculano Passos;1956-08-04;SP;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior Incompleto;dep.herculanopassos@camara.leg.br;Itu - SP;3215-5926;56;https://www.camara.leg.br/internet/deputado/bandep/178981.jpg;2;EMPRESÁRIO;BRANCA;65
+73772;camara;CD;33496315920;HERMES PARCIANELLO;Hermes Parcianello;1958-04-25;PR;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.hermesparcianello@camara.leg.br;Goioerê - PR;3215-5234;56;https://www.camara.leg.br/internet/deputado/bandep/73772.jpg;7;DEPUTADO;BRANCA;63
+178884;camara;CD;17571243300;HILDO AUGUSTO DA ROCHA NETO;Hildo Rocha;1960-04-22;MA;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Pós-Graduação;dep.hildorocha@camara.leg.br;São Luís - MA;3215-5734;56;https://www.camara.leg.br/internet/deputado/bandep/178884.jpg;2;ADMINISTRADOR;BRANCA;61
+178959;camara;CD;14997169234;HIRAN MANUEL GONCALVES DA SILVA;Hiran Gonçalves;1957-06-19;RR;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.hirangoncalves@camara.leg.br;Tefé - AM;3215-5478;56;https://www.camara.leg.br/internet/deputado/bandep/178959.jpg;2;MÉDICO;PARDA;64
+141450;camara;CD;41365585620;HUGO LEAL MELO DA SILVA;Hugo Leal;1962-08-06;RJ;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Pós-Graduação;dep.hugoleal@camara.leg.br;Ouro Fino - MG;3215-5631;56;https://www.camara.leg.br/internet/deputado/bandep/141450.jpg;4;ADVOGADO;BRANCA;59
+160674;camara;CD;4796249419;HUGO MOTTA WANDERLEY DA NÓBREGA;Hugo Motta;1989-09-11;PB;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.hugomotta@camara.leg.br;João Pessoa - PB;3215-5237;56;https://www.camara.leg.br/internet/deputado/bandep/160674.jpg;3;MÉDICO;BRANCA;32
+204533;camara;CD;38167565300;ANTONIO IDILVAN DE LIMA ALENCAR;Idilvan Alencar;1968-09-23;CE;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Mestrado;dep.idilvanalencar@camara.leg.br;Crato - CE;3215-5737;56;https://www.camara.leg.br/internet/deputado/bandep/204533.jpg;1;SERVIDOR PÚBLICO ESTADUAL;BRANCA;52
+204564;camara;CD;1321270593;ANDERSON MACHADO DE JESUS;Igor Kannário;1984-11-29;BA;DEM;Democratas;Direita;Exercício;Titular;M;Ensino Fundamental;dep.igorkannario@camara.leg.br;Salvador - BA;3215-5337;56;https://www.camara.leg.br/internet/deputado/bandep/204564.jpg;1;VEREADOR;PARDA;36
+204508;camara;CD;1374904619;IGOR TARCIANO TIMO;Igor Timo;1982-04-10;MG;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior Incompleto;dep.igortimo@camara.leg.br;Virgem da Lapa - MG;3215-5726;56;https://www.camara.leg.br/internet/deputado/bandep/204508.jpg;1;EMPRESÁRIO;PARDA;39
+67138;camara;CD;37311638372;IRACEMA MARIA PORTELLA NUNES NOGUEIRA LIMA;Iracema Portella;1966-04-23;PI;PP;Progressistas;Direita;Exercício;Titular;F;Superior;dep.iracemaportella@camara.leg.br;Teresina - PI;3215-5924;56;https://www.camara.leg.br/internet/deputado/bandep/67138.jpg;3;DEPUTADO;BRANCA;55
+204436;camara;CD;67766692449;ISNALDO BULHOES BARROS JUNIOR;Isnaldo Bulhões Jr.;1976-10-30;AL;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.isnaldobulhoesjr@camara.leg.br;Maceió - AL;3215-5460;56;https://www.camara.leg.br/internet/deputado/bandep/204436.jpg;1;DEPUTADO;BRANCA;44
+73531;camara;CD;37655582815;IVAN VALENTE;Ivan Valente;1946-07-05;SP;PSOL;Partido Socialismo e Liberdade;Esquerda;Exercício;Titular;M;Superior;dep.ivanvalente@camara.leg.br;São Paulo - SP;3215-5716;56;https://www.camara.leg.br/internet/deputado/bandep/73531.jpg;7;DEPUTADO;BRANCA;75
+74848;camara;CD;43428169700;JANDIRA FEGHALI;Jandira Feghali;1957-05-17;RJ;PCdoB;Partido Comunista do Brasil;Esquerda;Exercício;Titular;F;Pós-Graduação;dep.jandirafeghali@camara.leg.br;Curitiba - PR;3215-5622;56;https://www.camara.leg.br/internet/deputado/bandep/74848.jpg;7;DEPUTADO;BRANCA;64
+108338;camara;CD;35124032200;DIRLAINE JAQUELINE CASSOL;Jaqueline Cassol;1974-12-03;RO;PP;Progressistas;Direita;Exercício;Titular;F;Pós-Graduação;dep.jaquelinecassol@camara.leg.br;São Miguel do Oeste - SC;3215-5242;56;https://www.camara.leg.br/internet/deputado/bandep/108338.jpg;1;ADVOGADO;BRANCA;46
+74273;camara;CD;2684165831;JEFFERSON ALVES DE CAMPOS;Jefferson Campos;1964-10-26;SP;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;dep.jeffersoncampos@camara.leg.br;Ourinhos - SP;3215-5346;56;https://www.camara.leg.br/internet/deputado/bandep/74273.jpg;5;DEPUTADO;BRANCA;56
+160570;camara;CD;73441040082;JERÔNIMO PIZZOLOTTO GOERGEN;Jerônimo Goergen;1976-01-20;RS;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.jeronimogoergen@camara.leg.br;Palmeira das Missões - RS;3215-5316;56;https://www.camara.leg.br/internet/deputado/bandep/160570.jpg;3;DEPUTADO;BRANCA;45
+178839;camara;CD;65595564253;JESSICA ROJAS SALES;Jéssica Sales;1980-11-28;AC;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;F;Superior;dep.jessicasales@camara.leg.br;Cruzeiro do Sul - AC;3215-5952;56;https://www.camara.leg.br/internet/deputado/bandep/178839.jpg;2;DEPUTADO;PARDA;40
+204435;camara;CD;58065083234;JESUS SERGIO DE MENEZES;Jesus Sérgio;1973-06-10;AC;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.jesussergio@camara.leg.br;Tarauacá - AC;3215-5941;56;https://www.camara.leg.br/internet/deputado/bandep/204435.jpg;1;PROFESSOR DE ENSINO MÉDIO;PARDA;48
+160531;camara;CD;74274112268;JOHNATHAN PEREIRA DE JESUS;Jhonatan de Jesus;1983-09-03;RR;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.jhonatandejesus@camara.leg.br;Boa Vista - RR;3215-5535;56;https://www.camara.leg.br/internet/deputado/bandep/160531.jpg;3;DEPUTADO;PARDA;38
+74366;camara;CD;24254401191;JOÃO CAMPOS DE ARAÚJO;João Campos;1962-12-28;GO;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Pós-Graduação;dep.joaocampos@camara.leg.br;Peixe - TO;3215-5315;56;https://www.camara.leg.br/internet/deputado/bandep/74366.jpg;5;DEPUTADO;BRANCA;58
+141458;camara;CD;15345931879;JOÃO CARLOS PAOLILO BACELAR FILHO;João Carlos Bacelar;1972-10-08;BA;PL;Partido Liberal;Direita;Exercício;Titular;M;Pós-Graduação;dep.joaocarlosbacelar@camara.leg.br;Salvador - BA;3215-5928;56;https://www.camara.leg.br/internet/deputado/bandep/141458.jpg;4;EMPRESÁRIO;BRANCA;48
+178970;camara;CD;51625091591;JOAO SOMARIVA DANIEL;João Daniel;1967-08-22;SE;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Ensino Médio;dep.joaodaniel@camara.leg.br;São Lourenço D'Oeste - SC;3215-5605;56;https://www.camara.leg.br/internet/deputado/bandep/178970.jpg;2;DEPUTADO;BRANCA;54
+141459;camara;CD;6662978191;JOÃO DA SILVA MAIA;João Maia;1953-09-20;RN;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.joaomaia@camara.leg.br;Brejo do Cruz - PB;3215-5439;56;https://www.camara.leg.br/internet/deputado/bandep/141459.jpg;3;SERVIDOR PÚBLICO FEDERAL;BRANCA;68
+112437;camara;CD;61956384120;JOÃO MARCELO SANTOS SOUZA;João Marcelo Souza;1973-11-11;MA;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.joaomarcelosouza@camara.leg.br;São Luís - MA;3215-5506;56;https://www.camara.leg.br/internet/deputado/bandep/112437.jpg;2;OUTROS;BRANCA;47
+178910;camara;CD;13606328249;JOAQUIM PASSARINHO PINTO DE SOUZA PORTO;Joaquim Passarinho;1961-12-02;PA;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.joaquimpassarinho@camara.leg.br;Belém - PA;3215-5334;56;https://www.camara.leg.br/internet/deputado/bandep/178910.jpg;2;ARQUITETO;BRANCA;59
+204468;camara;CD;32326998200;JOENIA BATISTA DE CARVALHO;Joenia Wapichana;1973-04-20;RR;REDE;Rede Sustentabilidade;Esquerda;Exercício;Titular;F;Mestrado;dep.joeniawapichana@camara.leg.br;Boa Vista - RR;3215-5231;56;https://www.camara.leg.br/internet/deputado/bandep/204468.jpg;1;ADVOGADO;INDÍGENA;48
+204546;camara;CD;85655732149;JOICE CRISTINA HASSELMANN;Joice Hasselmann;1978-01-29;SP;PSL;Partido Social Liberal;Direita;Exercício;Titular;F;Superior;dep.joicehasselmann@camara.leg.br;Ponta Grossa - PR;3215-5825;56;https://www.camara.leg.br/internet/deputado/bandep/204546.jpg;1;JORNALISTA E REDATOR;BRANCA;43
+205550;camara;CD;35201487734;JORGE BRAZ DE OLIVEIRA;Jorge Braz;1953-07-13;RJ;REPUBLICANOS;Republicanos;Direita;Exercício;Efetivado;M;Superior Incompleto;dep.jorgebraz@camara.leg.br;Palma - MG;3215-5213;56;https://www.camara.leg.br/internet/deputado/bandep/205550.jpg;1;OUTROS;PARDA;68
+178857;camara;CD;19530773587;JORGE JOSE SANTOS PEREIRA SOLLA;Jorge Solla;1961-04-11;BA;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Doutorado;dep.jorgesolla@camara.leg.br;Salvador - BA;3215-5571;56;https://www.camara.leg.br/internet/deputado/bandep/178857.jpg;2;DEPUTADO;PARDA;60
+141464;camara;CD;9257357368;JOSÉ AIRTON FÉLIX CIRILO DA SILVA;José Airton Félix Cirilo;1957-02-21;CE;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Mestrado;dep.joseairtonfelixcirilo@camara.leg.br;Aracati - CE;3215-5319;56;https://www.camara.leg.br/internet/deputado/bandep/141464.jpg;4;DEPUTADO;PRETA;64
+141470;camara;CD;9324577387;JOSÉ NOBRE GUIMARÃES;José Guimarães;1957-02-13;CE;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.joseguimaraes@camara.leg.br;Quixeramobim - CE;3215-5306;56;https://www.camara.leg.br/internet/deputado/bandep/141470.jpg;4;DEPUTADO;BRANCA;64
+204386;camara;CD;41877004987;JOSE MARIO SCHREINER;Jose Mario Schreiner;1961-02-08;GO;DEM;Democratas;Direita;Exercício;Titular;M;Ensino Técnico;dep.josemarioschreiner@camara.leg.br;Porto União - SC;3215-5970;56;https://www.camara.leg.br/internet/deputado/bandep/204386.jpg;1;TÉCNICO EM AGRONOMIA E AGRIMENSURA;BRANCA;60
+204472;camara;CD;42442540134;JOSE ANTONIO DOS SANTOS MEDEIROS;José Medeiros;1970-03-19;MT;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior;dep.josemedeiros@camara.leg.br;Caicó - RN;3215-5335;56;https://www.camara.leg.br/internet/deputado/bandep/204472.jpg;1;SERVIDOR PÚBLICO FEDERAL;BRANCA;51
+204391;camara;CD;22002570159;JOSÉ NELTO LAGARES DAS MERCEZ;José Nelto;1960-09-19;GO;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior;dep.josenelto@camara.leg.br;Tiros - MG;3215-5703;56;https://www.camara.leg.br/internet/deputado/bandep/204391.jpg;1;DEPUTADO;BRANCA;61
+217480;camara;CD;03366890711;JONES BARBOSA DE MOURA;Jones Moura;1974-06-16;RJ;PSD;Partido Social Democrático;Centro;Exercício;Suplente;M;Ensino Fundamental;dep.jonesmoura@camara.leg.br;;3215-5287;56;https://www.camara.leg.br/internet/deputado/bandep/217480.jpg;1;VEREADOR;BRANCA;47
+160619;camara;CD;4653580553;JOSÉ NUNES SOARES;José Nunes;1950-12-18;BA;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.josenunes@camara.leg.br;Belém de São Francisco - PE;3215-5728;56;https://www.camara.leg.br/internet/deputado/bandep/160619.jpg;3;DEPUTADO;BRANCA;70
+74079;camara;CD;17293618204;JOSÉ BENITO PRIANTE JÚNIOR;José Priante;1963-12-02;PA;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.josepriante@camara.leg.br;Belém - PA;3215-5752;56;https://www.camara.leg.br/internet/deputado/bandep/74079.jpg;6;DEPUTADO;BRANCA;57
+204555;camara;CD;18660037200;JOSÉ RICARDO WENDLING;José Ricardo;1964-06-23;AM;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.josericardo@camara.leg.br;Montenegro - RS;3215-5411;56;https://www.camara.leg.br/internet/deputado/bandep/204555.jpg;1;DEPUTADO;BRANCA;57
+74554;camara;CD;4789113515;JOSÉ ALVES ROCHA;José Rocha;1948-08-18;BA;PL;Partido Liberal;Direita;Exercício;Titular;M;Pós-Graduação;dep.joserocha@camara.leg.br;Coribe - BA;3215-5908;56;https://www.camara.leg.br/internet/deputado/bandep/74554.jpg;7;MÉDICO;BRANCA;73
+209189;camara;CD;15963330572;JOSEILDO RIBEIRO RAMOS;Joseildo Ramos;1957-08-23;BA;PT;Partido dos Trabalhadores;Esquerda;Exercício;Suplente;M;Superior;dep.joseildoramos@camara.leg.br;Alagoinhas - BA;3215-5642;56;https://www.camara.leg.br/internet/deputado/bandep/209189.jpg;1;AGRÔNOMO;PARDA;64
+204563;camara;CD;50980351200;JOSIMAR CUNHA RODRIGUES;Josimar Maranhãozinho;1976-11-13;MA;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.josimarmaranhaozinho@camara.leg.br;Várzea Alegre - CE;3215-5715;56;https://www.camara.leg.br/internet/deputado/bandep/204563.jpg;1;DEPUTADO;PARDA;44
+215043;camara;NA;63253313387;JOSIVALDO DOS SANTOS MELO;Josivaldo JP;1983-11-29;MA;PODEMOS;Podemos;Direita;Exercício;Efetivado;M;Ensino Médio;dep.josivaldojp@camara.leg.br;Jacundá - PA;3215-5578;56;https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/215043.jpg;1;COMERCIÁRIO;PRETA;37
+204474;camara;CD;47843080910;JUAREZ ALVES DA COSTA;Juarez Costa;1960-01-20;MT;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Ensino Médio Incompleto;dep.juarezcosta@camara.leg.br;Londrina - PR;3215-5472;56;https://www.camara.leg.br/internet/deputado/bandep/204474.jpg;1;EMPRESÁRIO;PARDA;61
+204420;camara;CD;61927686172;GULLIEM CHARLES BEZERRA LEMOS;Julian Lemos;1976-01-05;PB;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.julianlemos@camara.leg.br;Campina Grande - PB;3215-5272;56;https://www.camara.leg.br/internet/deputado/bandep/204420.jpg;1;EMPRESÁRIO;PARDA;45
+74317;camara;CD;1102125334;JÚLIO CÉSAR DE CARVALHO LIMA;Júlio Cesar;1948-08-25;PI;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.juliocesar@camara.leg.br;Guadalupe - PI;3215-5944;56;https://www.camara.leg.br/internet/deputado/bandep/74317.jpg;6;DEPUTADO;BRANCA;73
+204372;camara;CD;15791563809;JULIO CESAR RIBEIRO;Julio Cesar Ribeiro;1975-02-24;DF;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.juliocesarribeiro@camara.leg.br;São Bernardo do Campo - SP;3215-5587;56;https://www.camara.leg.br/internet/deputado/bandep/204372.jpg;1;DEPUTADO;BRANCA;46
+73586;camara;CD;81993358668;JÚLIO CÉSAR DELGADO;Júlio Delgado;1966-11-18;MG;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.juliodelgado@camara.leg.br;Juiz de Fora - MG;3215-5323;56;https://www.camara.leg.br/internet/deputado/bandep/73586.jpg;6;ADVOGADO;BRANCA;54
+74253;camara;CD;59245220753;JULIO LUIZ BAPTISTA LOPES;Julio Lopes;1959-04-06;RJ;PP;Progressistas;Direita;Exercício;Suplente;M;Superior;dep.juliolopes@camara.leg.br;Rio de Janeiro - RJ;3215-5429;56;https://www.camara.leg.br/internet/deputado/bandep/74253.jpg;3;DEPUTADO;BRANCA;62
+204520;camara;CD;7554049631;GERALDO JUNIO DO AMARAL;Junio Amaral;1987-06-30;MG;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior Incompleto;dep.junioamaral@camara.leg.br;Belo Horizonte - MG;3215-5302;56;https://www.camara.leg.br/internet/deputado/bandep/204520.jpg;1;POLICIAL MILITAR;BRANCA;34
+204497;camara;CD;23211253220;JOÃO FERRARI JÚNIOR;Júnior Ferrari;1967-07-13;PA;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.juniorferrari@camara.leg.br;Oriximiná - PA;3215-5919;56;https://www.camara.leg.br/internet/deputado/bandep/204497.jpg;1;DEPUTADO;PARDA;54
+204574;camara;CD;78247128349;JOSE LOURENÇO BOMFIM JUNIOR;Junior Lourenço;1978-10-18;MA;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.juniorlourenco@camara.leg.br;São Luís - MA;3215-5513;56;https://www.camara.leg.br/internet/deputado/bandep/204574.jpg;1;EMPRESÁRIO;PARDA;42
+204550;camara;CD;97891231320;ANTÔNIO LUIZ RODRIGUES MANO JÚNIOR;Júnior Mano;1985-04-16;CE;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.juniormano@camara.leg.br;Nova Russas - CE;3215-5807;56;https://www.camara.leg.br/internet/deputado/bandep/204550.jpg;1;EMPRESÁRIO;PARDA;36
+178886;camara;CD;85290211349;JOSE JUSCELINO DOS SANTOS REZENDE FILHO;Juscelino Filho;1984-11-06;MA;DEM;Democratas;Direita;Exercício;Titular;M;Superior;dep.juscelinofilho@camara.leg.br;São Luís - MA;3215-5222;56;https://www.camara.leg.br/internet/deputado/bandep/178886.jpg;2;MÉDICO;BRANCA;36
+204536;camara;CD;39313495864;KIM PATROCA KATAGUIRI;Kim Kataguiri;1996-01-28;SP;DEM;Democratas;Direita;Exercício;Titular;M;Superior Incompleto;dep.kimkataguiri@camara.leg.br;Salto - SP;3215-5421;56;https://www.camara.leg.br/internet/deputado/bandep/204536.jpg;1;ESCRITOR E CRÍTICO;AMARELA;25
+151208;camara;CD;16853881400;LAERCIO JOSÉ DE OLIVEIRA;Laercio Oliveira;1959-04-15;SE;PP;Progressistas;Direita;Exercício;Titular;M;Pós-Graduação;dep.laerciooliveira@camara.leg.br;Recife - PE;3215-5629;56;https://www.camara.leg.br/internet/deputado/bandep/151208.jpg;4;DIRETOR DE EMPRESAS;BRANCA;62
+141478;camara;CD;9511172115;LAERTE RODRIGUES DE BESSA;Laerte Bessa;1954-05-01;DF;PL;Partido Liberal;Direita;Exercício;Suplente;M;Pós-Graduação;dep.laertebessa@camara.leg.br;Goiânia - GO;3215-5646;56;https://www.camara.leg.br/internet/deputado/bandep/141478.jpg;2;POLICIAL CIVIL;BRANCA;67
+98057;camara;CD;38105195100;LAFAYETTE LUIZ DOORGAL DE ANDRADA;Lafayette de Andrada;1966-10-17;MG;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Doutorado Incompleto;dep.lafayettedeandrada@camara.leg.br;Belo Horizonte - MG;3215-5208;56;https://www.camara.leg.br/internet/deputado/bandep/98057.jpg;1;DEPUTADO;BRANCA;54
+160534;camara;CD;974976733;LAURIETE RODRIGUES DE JESUS;Lauriete;1970-02-23;ES;PSC;Partido Social Cristão;Direita;Exercício;Titular;F;Ensino Médio;dep.lauriete@camara.leg.br;Vila Velha - ES;3215-5223;56;https://www.camara.leg.br/internet/deputado/bandep/160534.jpg;2;MÚSICO;BRANCA;51
+178832;camara;CD;80635083949;LEANDRE DAL PONTE;Leandre;1975-12-20;PR;PV;Partido Verde;Esquerda;Exercício;Titular;F;Superior;dep.leandre@camara.leg.br;Pato Branco - PR;3215-5454;56;https://www.camara.leg.br/internet/deputado/bandep/178832.jpg;2;ENGENHEIRO;BRANCA;45
+204375;camara;CD;43025900253;LEDA MARIA SADALA BRITO;Leda Sadala;1966-06-11;AP;AVANTE;Avante;Centro;Exercício;Titular;F;Superior;dep.ledasadala@camara.leg.br;Almeirim - PA;3215-5611;56;https://www.camara.leg.br/internet/deputado/bandep/204375.jpg;1;CONTADOR;PARDA;55
+178825;camara;CD;63182246291;LEONARDO CUNHA DE BRITO;LEO DE BRITO;1979-04-13;AC;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Mestrado;dep.leodebrito@camara.leg.br;Rio Branco - AC;3215-5572;56;https://www.camara.leg.br/internet/deputado/bandep/178825.jpg;1;ADVOGADO;BRANCA;42
+204359;camara;CD;4333073901;LEONARDO BARRETO DE MORAES;Léo Moraes;1984-01-11;RO;PODEMOS;Podemos;Direita;Exercício;Titular;M;Mestrado Incompleto;dep.leomoraes@camara.leg.br;Foz do Iguaçu - PR;3215-5503;56;https://www.camara.leg.br/internet/deputado/bandep/204359.jpg;1;EMPRESÁRIO;BRANCA;37
+204547;camara;CD;85702609620;ELIEL MÁRCIO DO CARMO;Léo Motta;1973-10-26;MG;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior Incompleto;dep.leomotta@camara.leg.br;Contagem - MG;3215-5724;56;https://www.camara.leg.br/internet/deputado/bandep/204547.jpg;1;VEREADOR;PRETA;47
+74156;camara;CD;20811845672;JOSÉ LEONARDO COSTA MONTEIRO;Leonardo Monteiro;1951-10-09;MG;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.leonardomonteiro@camara.leg.br;Governador Valadares - MG;3215-5922;56;https://www.camara.leg.br/internet/deputado/bandep/74156.jpg;5;DEPUTADO;PRETA;69
+74254;camara;CD;8436066731;LEONARDO CARNEIRO MONTEIRO PICCIANI;Leonardo Picciani;1979-11-06;RJ;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Suplente;M;Superior;dep.leonardopicciani@camara.leg.br;Nilópolis - RJ;3215-5641;56;https://www.camara.leg.br/internet/deputado/bandep/74254.jpg;4;DEPUTADO;BRANCA;41
+74299;camara;CD;12105961304;JOSÉ LEÔNIDAS DE MENEZES CRISTINO;Leônidas Cristino;1957-06-03;CE;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.leonidascristino@camara.leg.br;Coreaú - CE;3215-5948;56;https://www.camara.leg.br/internet/deputado/bandep/74299.jpg;4;DEPUTADO;BRANCA;64
+92102;camara;CD;87594749120;LEUR ANTONIO DE BRITTO LOMANTO JUNIOR;Leur Lomanto Júnior;1976-10-28;BA;DEM;Democratas;Direita;Exercício;Titular;M;Superior;dep.leurlomantojunior@camara.leg.br;Salvador - BA;3215-5406;56;https://www.camara.leg.br/internet/deputado/bandep/92102.jpg;1;DEPUTADO;PARDA;44
+139285;camara;CD;14672049515;LÍDICE DA MATA E SOUZA;Lídice da Mata;1956-03-12;BA;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;F;Superior;dep.lidicedamata@camara.leg.br;Cachoeira - BA;3215-5913;56;https://www.camara.leg.br/internet/deputado/bandep/139285.jpg;2;DEPUTADO;PARDA;65
+74585;camara;CD;10254730191;LINCOLN DINIZ PORTELA;Lincoln Portela;1953-11-03;MG;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.lincolnportela@camara.leg.br;Belo Horizonte - MG;3215-5615;56;https://www.camara.leg.br/internet/deputado/bandep/74585.jpg;6;DEPUTADO;BRANCA;67
+204405;camara;CD;1738506002;LIZIANE BAYER DA COSTA;Liziane Bayer;1981-01-24;RS;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;F;Superior Incompleto;dep.lizianebayer@camara.leg.br;São Pedro do Sul - RS;3215-5538;56;https://www.camara.leg.br/internet/deputado/bandep/204405.jpg;1;DEPUTADO;BRANCA;40
+204382;camara;CD;95486100191;LOESTER CARLOS GOMES DE SOUZA;Loester Trutis;1982-09-21;MS;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.loestertrutis@camara.leg.br;Campo Grande - MS;3215-5380;56;https://www.camara.leg.br/internet/deputado/bandep/204382.jpg;1;EMPRESÁRIO;PARDA;39
+196358;camara;CD;42310580759;LOURIVAL GOMES DE ALMEIDA;Lourival Gomes;1955-07-22;RJ;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Ensino Fundamental;dep.lourivalgomes@camara.leg.br;Rio de Janeiro - RJ;3215-5636;56;https://www.camara.leg.br/internet/deputado/bandep/196358.jpg;2;COMERCIANTE;PARDA;66
+204523;camara;CD;9557484616;LUCAS DE VASCONCELOS GONZALEZ;Lucas Gonzalez;1988-12-21;MG;NOVO;Partido Novo;Direita;Exercício;Titular;M;Pós-Graduação;dep.lucasgonzalez@camara.leg.br;Belo Horizonte - MG;3215-5581;56;https://www.camara.leg.br/internet/deputado/bandep/204523.jpg;1;EMPRESÁRIO;BRANCA;32
+204404;camara;CD;71471278115;LUCAS BELLO REDECKER;Lucas Redecker;1981-05-26;RS;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior Incompleto;dep.lucasredecker@camara.leg.br;Novo Hamburgo - RS;3215-5905;56;https://www.camara.leg.br/internet/deputado/bandep/204404.jpg;1;DEPUTADO;BRANCA;40
+178879;camara;CD;1745455175;LUCAS DE CASTRO SANTOS;Lucas Vergilio;1987-04-08;GO;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;M;Superior;dep.lucasvergilio@camara.leg.br;Goiânia - GO;3215-5816;56;https://www.camara.leg.br/internet/deputado/bandep/178879.jpg;2;CORRETOR DE IMÓVEIS, SEGUROS, TÍTULOS E VALORES;PARDA;34
+74478;camara;CD;1818961415;LUCIANO CALDAS BIVAR;Luciano Bivar;1944-11-29;PE;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.lucianobivar@camara.leg.br;Recife - PE;3215-5215;56;https://www.camara.leg.br/internet/deputado/bandep/74478.jpg;3;EMPRESÁRIO;BRANCA;76
+178931;camara;CD;20732376068;LUCIANO DUCCI;Luciano Ducci;1955-03-23;PR;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;dep.lucianoducci@camara.leg.br;Curitiba - PR;3215-5427;56;https://www.camara.leg.br/internet/deputado/bandep/178931.jpg;2;MÉDICO;BRANCA;66
+178954;camara;CD;28649923291;LUCIO ANTONIO MOSQUINI;Lucio Mosquini;1969-07-23;RO;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Pós-Graduação;dep.luciomosquini@camara.leg.br;Rondonópolis - MT;3215-5918;56;https://www.camara.leg.br/internet/deputado/bandep/178954.jpg;2;ENGENHEIRO;BRANCA;52
+204381;camara;CD;90218647115;LUIS CLAUDIO FERNANDES MIRANDA;Luis Miranda;1980-03-27;DF;DEM;Democratas;Direita;Exercício;Titular;M;Ensino Médio;dep.luismiranda@camara.leg.br;Brasília - DF;3215-5241;56;https://www.camara.leg.br/internet/deputado/bandep/204381.jpg;1;EMPRESÁRIO;BRANCA;41
+160510;camara;CD;81460910672;LUIS HENRIQUE DE OLIVEIRA RESENDE;Luis Tibé;1971-07-23;MG;AVANTE;Avante;Centro;Exercício;Titular;M;Superior Incompleto;dep.luistibe@camara.leg.br;Belo Horizonte - MG;3215-5632;56;https://www.camara.leg.br/internet/deputado/bandep/160510.jpg;3;DEPUTADO;BRANCA;50
+204410;camara;CD;5823529910;LUISA CANZIANI DOS SANTOS SILVEIRA;Luisa Canziani;1996-04-11;PR;PTB;Partido Trabalhista Brasileiro;Direita;Exercício;Titular;F;Superior;dep.luisacanziani@camara.leg.br;Londrina - PR;3215-5842;56;https://www.camara.leg.br/internet/deputado/bandep/204410.jpg;1;ESTUDANTE, BOLSISTA, ESTAGIÁRIO E ASSEMELHADOS;BRANCA;25
+204448;camara;CD;1563114704;LUIZ ANTONIO C. C. CORRÊA DA SILVA;Luiz Antônio Corrêa;1940-12-27;RJ;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.luizantoniocorrea@camara.leg.br;Rio de Janeiro - RJ;3215-5610;56;https://www.camara.leg.br/internet/deputado/bandep/204448.jpg;1;OUTROS;BRANCA;80
+204485;camara;CD;3035521824;LUIZ CARLOS MOTTA;Luiz Carlos Motta;1959-04-24;SP;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.luizcarlosmotta@camara.leg.br;Ribeirão Preto - SP;3215-5415;56;https://www.camara.leg.br/internet/deputado/bandep/204485.jpg;1;COMERCIÁRIO;BRANCA;62
+204455;camara;CD;7616393730;LUIZ EDUARDO CARNEIRO DA SILVA DE SOUZA LIMA;Luiz Lima;1977-12-10;RJ;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.luizlima@camara.leg.br;Rio de Janeiro - RJ;3215-5504;56;https://www.camara.leg.br/internet/deputado/bandep/204455.jpg;1;EMPRESÁRIO;PARDA;43
+162332;camara;CD;8781460910;LUIZ HILOSHI NISHIMORI;Luiz Nishimori;1949-04-09;PR;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.luiznishimori@camara.leg.br;Marialva - PR;3215-5907;56;https://www.camara.leg.br/internet/deputado/bandep/162332.jpg;3;DEPUTADO;BRANCA;72
+204526;camara;CD;11844856828;LUIZ PHILIPPE DE ORLEANS BRAGANÇA;Luiz Philippe de Orleans e Bragança;1969-04-03;SP;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Mestrado;dep.luizphilippedeorleansebraganca@camara.leg.br;Rio de Janeiro - RJ;3215-5719;56;https://www.camara.leg.br/internet/deputado/bandep/204526.jpg;1;EMPRESÁRIO;BRANCA;52
+74784;camara;CD;480584400;LUIZA ERUNDINA DE SOUSA;Luiza Erundina;1934-11-30;SP;PSOL;Partido Socialismo e Liberdade;Esquerda;Exercício;Titular;F;Mestrado;dep.luizaerundina@camara.leg.br;Uiraúna - PB;3215-5620;56;https://www.camara.leg.br/internet/deputado/bandep/74784.jpg;6;DEPUTADO;BRANCA;86
+204418;camara;CD;53601106949;LUIZ GOULARTE ALVES;Luizão Goulart;1962-06-06;PR;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.luizaogoulart@camara.leg.br;Jandaia do Sul - PR;3215-5218;56;https://www.camara.leg.br/internet/deputado/bandep/204418.jpg;1;PROFESSOR DE ENSINO SUPERIOR;BRANCA;59
+178866;camara;CD;38208563315;LUIZIANNE DE OLIVEIRA LINS;Luizianne Lins;1968-11-18;CE;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;F;Mestrado Incompleto;dep.luiziannelins@camara.leg.br;Fortaleza - CE;3215-5713;56;https://www.camara.leg.br/internet/deputado/bandep/178866.jpg;2;PROFESSOR DE ENSINO SUPERIOR;BRANCA;52
+166402;camara;CD;13205285115;MAGDA MOFATTO HON;Magda Mofatto;1948-10-26;GO;PL;Partido Liberal;Direita;Exercício;Titular;F;Ensino Fundamental;dep.magdamofatto@camara.leg.br;Limeira - SP;3215-5934;56;https://www.camara.leg.br/internet/deputado/bandep/166402.jpg;3;DEPUTADO;BRANCA;72
+204458;camara;CD;7862227786;FABIANA SILVA DE SOUZA POUBEL;Major Fabiana;1980-01-09;RJ;PSL;Partido Social Liberal;Direita;Exercício;Titular;F;Superior;dep.majorfabiana@camara.leg.br;Rio de Janeiro - RJ;3215-5509;56;https://www.camara.leg.br/internet/deputado/bandep/204458.jpg;1;POLICIAL MILITAR;BRANCA;41
+204471;camara;CD;41186273291;CYLMARA FERNANDES DA ROCHA GRIPP;Mara Rocha;1973-09-04;AC;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;F;Superior;dep.mararocha@camara.leg.br;Rio Branco - AC;3215-5607;56;https://www.camara.leg.br/internet/deputado/bandep/204471.jpg;1;EMPRESÁRIO;BRANCA;48
+156190;camara;CD;731302060;MARCEL VAN HATTEM;Marcel van Hattem;1985-11-08;RS;NOVO;Partido Novo;Direita;Exercício;Titular;M;Mestrado;dep.marcelvanhattem@camara.leg.br;São Leopoldo - RS;3215-5958;56;https://www.camara.leg.br/internet/deputado/bandep/156190.jpg;1;CIENTISTA POLÍTICO;BRANCA;35
+179000;camara;CD;649039661;MARCELO HENRIQUE TEIXEIRA DIAS;Marcelo Álvaro Antônio;1974-02-16;MG;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.marceloalvaroantonio@camara.leg.br;Belo Horizonte - MG;3215-5824;56;https://www.camara.leg.br/internet/deputado/bandep/179000.jpg;2;EMPRESÁRIO;BRANCA;47
+146788;camara;CD;6305588686;MARCELO GUILHERME DE ARO FERREIRA;Marcelo Aro;1987-06-12;MG;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.marceloaro@camara.leg.br;Belo Horizonte - MG;3215-5821;56;https://www.camara.leg.br/internet/deputado/bandep/146788.jpg;2;VEREADOR;BRANCA;34
+205863;camara;CD;73324507049;MARCELO DE BRUM DA COSTA;Marcelo Brum;1972-11-25;RS;PSL;Partido Social Liberal;Direita;Exercício;Suplente;M;Ensino Médio Incompleto;dep.marcelobrum@camara.leg.br;Santiago - RS;3215-5828;56;https://www.camara.leg.br/internet/deputado/bandep/205863.jpg;1;LOCUTOR E COMENTARISTA DE RÁDIO E TELEVISÃO E RADIALISTA;BRANCA;48
+76874;camara;CD;95622780772;MARCELO RIBEIRO FREIXO;Marcelo Freixo;1967-04-12;RJ;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;dep.marcelofreixo@camara.leg.br;Niterói - RJ;3215-5725;56;https://www.camara.leg.br/internet/deputado/bandep/76874.jpg;1;DEPUTADO;BRANCA;54
+133810;camara;CD;96520418072;MARCELO PIRES MORAES;Marcelo Moraes;1979-08-07;RS;PTB;Partido Trabalhista Brasileiro;Direita;Exercício;Titular;M;Superior Incompleto;dep.marcelomoraes@camara.leg.br;Porto Alegre - RS;3215-5258;56;https://www.camara.leg.br/internet/deputado/bandep/133810.jpg;1;DEPUTADO;BRANCA;42
+204558;camara;CD;11875194568;JOSÉ MARCELO DO NASCIMENTO NILO;Marcelo Nilo;1955-04-26;BA;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;dep.marcelonilo@camara.leg.br;Antas - BA;3215-5520;56;https://www.camara.leg.br/internet/deputado/bandep/204558.jpg;1;DEPUTADO;BRANCA;66
+204556;camara;CD;43634745215;MARCELO RAMOS RODRIGUES;Marcelo Ramos;1973-08-29;AM;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.marceloramos@camara.leg.br;Manaus - AM;3215-5805;56;https://www.camara.leg.br/internet/deputado/bandep/204556.jpg;1;ADVOGADO;PARDA;48
+178983;camara;CD;10115711880;MARCIO LUIZ ALVINO DE SOUZA;Marcio Alvino;1969-06-14;SP;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.marcioalvino@camara.leg.br;São Paulo - SP;3215-5331;56;https://www.camara.leg.br/internet/deputado/bandep/178983.jpg;2;ADMINISTRADOR;BRANCA;52
+179001;camara;CD;80686958004;MARCIO DELLA VALLE BIOLCHI;Márcio Biolchi;1979-05-23;RS;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.marciobiolchi@camara.leg.br;Carazinho - RS;3215-5843;56;https://www.camara.leg.br/internet/deputado/bandep/179001.jpg;2;DEPUTADO;BRANCA;42
+204452;camara;CD;3394588790;MÁRCIO DA SILVEIRA LABRE;Márcio Labre;1974-02-27;RJ;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Ensino Técnico;dep.marciolabre@camara.leg.br;Rio de Janeiro - RJ;3215-5325;56;https://www.camara.leg.br/internet/deputado/bandep/204452.jpg;1;EMPRESÁRIO;PARDA;47
+150418;camara;CD;1895263786;MÁRCIO CARLOS MARINHO;Márcio Marinho;1970-12-12;BA;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.marciomarinho@camara.leg.br;Cabo Frio - RJ;3215-5326;56;https://www.camara.leg.br/internet/deputado/bandep/150418.jpg;4;DEPUTADO;PRETA;50
+204522;camara;CD;9420275825;MARCO AURELIO BERTAIOLLI;Marco Bertaiolli;1968-04-30;SP;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Mestrado;dep.marcobertaiolli@camara.leg.br;Mogi das Cruzes - SP;3215-5401;56;https://www.camara.leg.br/internet/deputado/bandep/204522.jpg;1;ADMINISTRADOR;BRANCA;53
+160535;camara;CD;43434339000;DIONILSO MATEUS MARCON;Marcon;1964-09-21;RS;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Ensino Fundamental Incompleto;dep.marcon@camara.leg.br;Ronda Alta - RS;3215-5569;56;https://www.camara.leg.br/internet/deputado/bandep/160535.jpg;3;AGRICULTOR;BRANCA;57
+204431;camara;CD;1742564348;MARCOS AURÉLIO  PÁDUA RIBEIRO GONÇALVES DE SAMPAIO;Marcos Aurélio Sampaio;1991-09-19;PI;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.marcosaureliosampaio@camara.leg.br;Teresina - PI;3215-5565;56;https://www.camara.leg.br/internet/deputado/bandep/204431.jpg;1;ADVOGADO;BRANCA;30
+204506;camara;CD;963578782;MARCOS ANTONIO PEREIRA;Marcos Pereira;1972-04-04;SP;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Pós-Graduação;dep.marcospereira@camara.leg.br;Linhares - ES;3215-5523;56;https://www.camara.leg.br/internet/deputado/bandep/204506.jpg;1;ADVOGADO;BRANCA;49
+178943;camara;CD;5217856777;MARCOS BEZERRA RIBEIRO SOARES;Marcos Soares;1978-05-16;RJ;DEM;Democratas;Direita;Exercício;Suplente;M;Superior;dep.marcossoares@camara.leg.br;Rio de Janeiro - RJ;3215-5727;56;https://www.camara.leg.br/internet/deputado/bandep/178943.jpg;2;DEPUTADO;BRANCA;43
+204430;camara;CD;18341160315;MARGARETE DE CASTRO COELHO;Margarete Coelho;1961-03-12;PI;PP;Progressistas;Direita;Exercício;Titular;F;Doutorado Incompleto;dep.margaretecoelho@camara.leg.br;São Raimundo Nonato - PI;3215-5210;56;https://www.camara.leg.br/internet/deputado/bandep/204430.jpg;1;SERVIDOR PÚBLICO ESTADUAL;BRANCA;60
+74398;camara;CD;48989371015;MARIA DO ROSÁRIO NUNES;Maria do Rosário;1966-11-22;RS;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;F;Pós-Graduação;dep.mariadorosario@camara.leg.br;Veranópolis - RS;3215-5312;56;https://www.camara.leg.br/internet/deputado/bandep/74398.jpg;5;PROFESSOR DE ENSINO MÉDIO;BRANCA;54
+204540;camara;CD;61433934787;MARIA DO PARTO MENDES ROSAS;Maria Rosas;1965-10-01;SP;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;F;Superior;dep.mariarosas@camara.leg.br;Angra dos Reis - RJ;3215-5436;56;https://www.camara.leg.br/internet/deputado/bandep/204540.jpg;1;ADMINISTRADOR;BRANCA;55
+178956;camara;CD;83577572272;MARIANA FONSECA RIBEIRO CARVALHO DE MORAES;Mariana Carvalho;1986-11-26;RO;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;F;Superior;dep.marianacarvalho@camara.leg.br;São Paulo - SP;3215-5508;56;https://www.camara.leg.br/internet/deputado/bandep/178956.jpg;2;MÉDICO;BRANCA;34
+204428;camara;CD;5161704497;MARÍLIA VALENÇA ROCHA ARRAES DE ALENCAR;Marília Arraes;1984-04-12;PE;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;F;Superior;dep.mariliaarraes@camara.leg.br;Recife - PE;3215-5654;56;https://www.camara.leg.br/internet/deputado/bandep/204428.jpg;1;ADVOGADO;BRANCA;37
+204432;camara;CD;3258745498;MARINA SANTOS BATISTA DIAS;Marina Santos;1980-09-13;PI;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;F;Superior;dep.marinasantos@camara.leg.br;Picos - PI;3215-5434;56;https://www.camara.leg.br/internet/deputado/bandep/204432.jpg;1;MÉDICO;BRANCA;41
+74158;camara;CD;28539249634;MÁRIO LÚCIO HERINGER;Mário Heringer;1954-09-30;MG;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.marioheringer@camara.leg.br;Manhumirim - MG;3215-5211;56;https://www.camara.leg.br/internet/deputado/bandep/74158.jpg;5;DEPUTADO;BRANCA;66
+178858;camara;CD;31226540;MARIO S. M. NEGROMONTE JR.;Mário Negromonte Jr.;1980-08-31;BA;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.marionegromontejr@camara.leg.br;Paulo Afonso - BA;3215-5424;56;https://www.camara.leg.br/internet/deputado/bandep/178858.jpg;2;DEPUTADO;BRANCA;41
+204403;camara;CD;89718925015;MARLON ARATOR SANTOS DA ROSA;Marlon Santos;1975-09-25;RS;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.marlonsantos@camara.leg.br;Cachoeira do Sul - RS;3215-5760;56;https://www.camara.leg.br/internet/deputado/bandep/204403.jpg;1;ESCRITOR E CRÍTICO;BRANCA;45
+204566;camara;CD;4168850390;ANTONIO DA CRUZ FILGUEIRA NETO;Marreca Filho;1992-04-25;MA;PATRIOTA;Patriota;Direita;Exercício;Titular;M;Superior Incompleto;dep.marrecafilho@camara.leg.br;São Luís - MA;3215-5537;56;https://www.camara.leg.br/internet/deputado/bandep/204566.jpg;1;OUTROS;BRANCA;29
+178843;camara;CD;2696564485;MARX BELTRÃO LIMA SIQUEIRA;Marx Beltrão;1979-11-28;AL;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.marxbeltrao@camara.leg.br;Maceió - AL;3215-5722;56;https://www.camara.leg.br/internet/deputado/bandep/178843.jpg;2;ADVOGADO;BRANCA;41
+75431;camara;CD;95887105020;MAURÍCIO ALEXANDRE DZIEDRICKI;Maurício Dziedricki;1979-07-26;RS;PTB;Partido Trabalhista Brasileiro;Direita;Exercício;Titular;M;Superior;dep.mauriciodziedricki@camara.leg.br;Curitiba - PR;3215-5576;56;https://www.camara.leg.br/internet/deputado/bandep/75431.jpg;2;DEPUTADO;BRANCA;42
+74749;camara;CD;10901906620;MAURO RIBEIRO LOPES;Mauro Lopes;1936-05-24;MG;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.maurolopes@camara.leg.br;Entre Folhas - MG;3215-5844;56;https://www.camara.leg.br/internet/deputado/bandep/74749.jpg;7;DEPUTADO;BRANCA;85
+141508;camara;CD;70162000782;MAURO NAZIF RASUL;Mauro Nazif;1959-01-30;RO;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;dep.mauronazif@camara.leg.br;Barra do Piraí - RJ;3215-5818;56;https://www.camara.leg.br/internet/deputado/bandep/141508.jpg;3;MÉDICO;BRANCA;62
+188097;camara;CD;13891820372;MERLONG SOLANO NOGUEIRA;Merlong Solano;1958-09-17;PI;PT;Partido dos Trabalhadores;Esquerda;Exercício;Efetivado;M;Mestrado;dep.merlongsolano@camara.leg.br;Valença do Piauí - PI;3215-5909;56;https://www.camara.leg.br/internet/deputado/bandep/188097.jpg;2;PROFESSOR DE ENSINO SUPERIOR;BRANCA;63
+178985;camara;CD;5209979806;MIGUEL LOMBARDI;Miguel Lombardi;1964-01-29;SP;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.miguellombardi@camara.leg.br;Limeira - SP;3215-5835;56;https://www.camara.leg.br/internet/deputado/bandep/178985.jpg;2;CORRETOR DE IMÓVEIS, SEGUROS, TÍTULOS E VALORES;BRANCA;57
+92172;camara;NA;42003270400;MILTON COELHO DA SILVA NETO;Milton Coelho;1964-12-21;PE;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Efetivado;M;Superior;dep.miltoncoelho@camara.leg.br;Codó - MA;3215-5282;56;https://www.camara.leg.br/internet/deputado/bandep/214445.jpgmaior.jpg;1;EMPRESÁRIO;BRANCA;56
+178895;camara;CD;28492803649;MISAEL ARTUR FERREIRA VARELLA;Misael Varella;1959-11-27;MG;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Pós-Graduação;dep.misaelvarella@camara.leg.br;Muriaé - MG;3215-5721;56;https://www.camara.leg.br/internet/deputado/bandep/178895.jpg;2;EMPRESÁRIO;BRANCA;61
+178997;camara;CD;47721740363;MOSES HAENDEL MELO RODRIGUES;Moses Rodrigues;1978-06-06;CE;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Doutorado;dep.mosesrodrigues@camara.leg.br;Sobral - CE;3215-5809;56;https://www.camara.leg.br/internet/deputado/bandep/178997.jpg;2;EMPRESÁRIO;BRANCA;43
+204453;camara;CD;5352897400;NATÁLIA BASTOS BONAVIDES;Natália Bonavides;1988-06-15;RN;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;F;Mestrado;dep.nataliabonavides@camara.leg.br;Natal - RN;3215-5748;56;https://www.camara.leg.br/internet/deputado/bandep/204453.jpg;1;ADVOGADO;BRANCA;33
+204449;camara;CD;1862797870;NELSON NED PREVIDENTE;Nelson Barbudo;1960-02-14;MT;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Ensino Médio;dep.nelsonbarbudo@camara.leg.br;Poloni - SP;3215-5635;56;https://www.camara.leg.br/internet/deputado/bandep/204449.jpg;1;PRODUTOR AGROPECUÁRIO;BRANCA;61
+204415;camara;CD;36247740000;NEREU CRISPIM;Nereu Crispim;1963-07-21;RS;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.nereucrispim@camara.leg.br;Porto Alegre - RS;3215-5483;56;https://www.camara.leg.br/internet/deputado/bandep/204415.jpg;1;EMPRESÁRIO;BRANCA;58
+146307;camara;CD;41190335115;NERI GELLER;Neri Geller;1968-11-07;MT;PP;Progressistas;Direita;Exercício;Titular;M;Ensino Médio;dep.nerigeller@camara.leg.br;Selbach - RS;3215-5658;56;https://www.camara.leg.br/internet/deputado/bandep/146307.jpg;3;EMPRESÁRIO;BRANCA;52
+74165;camara;CD;81824726791;NEUCIMAR FERREIRA FRAGA;Neucimar Fraga;1966-06-26;ES;PSD;Partido Social Democrático;Centro;Exercício;Efetivado;M;Superior Incompleto;dep.neucimarfraga@camara.leg.br;Itanhém - BA;3215-5375;56;https://www.camara.leg.br/internet/deputado/bandep/74165.jpg;2;EMPRESÁRIO;PARDA;55
+178896;camara;CD;1266637699;NEWTON CARDOSO JUNIOR;Newton Cardoso Jr;1979-11-11;MG;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Pós-Graduação;dep.newtoncardosojr@camara.leg.br;Contagem - MG;3215-5932;56;https://www.camara.leg.br/internet/deputado/bandep/178896.jpg;2;DEPUTADO;BRANCA;41
+204479;camara;CD;99445700015;ANTONIO CARLOS NICOLETTI;Nicoletti;1981-07-21;RR;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Superior;dep.nicoletti@camara.leg.br;Ijuí - RS;3215-5746;56;https://www.camara.leg.br/internet/deputado/bandep/204479.jpg;1;SERVIDOR PÚBLICO FEDERAL;BRANCA;40
+74352;camara;CD;2875900200;NILSON PINTO DE OLIVEIRA;Nilson Pinto;1952-03-25;PA;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Doutorado;dep.nilsonpinto@camara.leg.br;Belém - PA;3215-5527;56;https://www.camara.leg.br/internet/deputado/bandep/74352.jpg;6;DEPUTADO;PARDA;69
+178986;camara;CD;3380916889;NILTO IGNACIO TATTO;Nilto Tatto;1963-07-31;SP;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.niltotatto@camara.leg.br;Frederico Westphalen - RS;3215-5502;56;https://www.camara.leg.br/internet/deputado/bandep/178986.jpg;2;DEPUTADO;BRANCA;58
+194260;camara;CD;6923503493;NIVALDO FERREIRA DE ALBUQUERQUE NETO;Nivaldo Albuquerque;1988-01-07;AL;PTB;Partido Trabalhista Brasileiro;Direita;Exercício;Titular;M;Superior Incompleto;dep.nivaldoalbuquerque@camara.leg.br;Maceió - AL;3215-5425;56;https://www.camara.leg.br/internet/deputado/bandep/194260.jpg;2;PECUARISTA;BRANCA;33
+66179;camara;CD;28008901187;NORMA AYUB ALVES;Norma Ayub;1959-09-07;ES;DEM;Democratas;Direita;Exercício;Titular;F;Superior;dep.normaayub@camara.leg.br;Vitória - ES;3215-5732;56;https://www.camara.leg.br/internet/deputado/bandep/66179.jpg;2;SERVIDOR PÚBLICO ESTADUAL;BRANCA;62
+74159;camara;CD;94892393649;ODAIR JOSÉ DA CUNHA;Odair Cunha;1976-06-18;MG;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.odaircunha@camara.leg.br;Piedade - SP;3215-5556;56;https://www.camara.leg.br/internet/deputado/bandep/74159.jpg;5;ADVOGADO;BRANCA;45
+204498;camara;CD;66514010253;OLIVAL HENRIQUE MARQUES DE SOUZA;Olival Marques;1982-01-09;PA;DEM;Democratas;Direita;Exercício;Titular;M;Superior;dep.olivalmarques@camara.leg.br;Belém - PA;3215-5382;56;https://www.camara.leg.br/internet/deputado/bandep/204498.jpg;1;OUTROS;PARDA;39
+178987;camara;CD;56524455568;ORLANDO SILVA DE JESUS JUNIOR;Orlando Silva;1971-05-27;SP;PCdoB;Partido Comunista do Brasil;Esquerda;Exercício;Titular;M;Superior Incompleto;dep.orlandosilva@camara.leg.br;Salvador - BA;3215-5923;56;https://www.camara.leg.br/internet/deputado/bandep/178987.jpg;2;OUTROS;PRETA;50
+204363;camara;CD;27848280187;OSIRES RODRIGUES DAMASO;Osires Damaso;1963-04-16;TO;PSC;Partido Social Cristão;Direita;Exercício;Titular;M;Ensino Médio;dep.osiresdamaso@camara.leg.br;Campinorte - GO;3215-5474;56;https://www.camara.leg.br/internet/deputado/bandep/204363.jpg;1;EMPRESÁRIO;PARDA;58
+73463;camara;CD;1773852949;OSMAR JOSÉ SERRAGLIO;Osmar Serraglio;1948-05-23;PR;PP;Progressistas;Direita;Exercício;Efetivado;M;Mestrado;dep.osmarserraglio@camara.leg.br;Erechim - RS;3215-5384;56;https://www.camara.leg.br/internet/deputado/bandep/73463.jpg;5;ADVOGADO;BRANCA;73
+73692;camara;CD;19971478072;OSMAR GASPARINI TERRA;Osmar Terra;1950-02-18;RS;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Pós-Graduação;dep.osmarterra@camara.leg.br;Porto Alegre - RS;3215-5927;56;https://www.camara.leg.br/internet/deputado/bandep/73692.jpg;6;MÉDICO;BRANCA;71
+204422;camara;CD;39806464753;OSSESIO JOSE DA SILVA;Ossesio Silva;1954-12-09;PE;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior Incompleto;dep.ossesiosilva@camara.leg.br;Rio de Janeiro - RJ;3215-5328;56;https://www.camara.leg.br/internet/deputado/bandep/204422.jpg;1;OUTROS;PRETA;66
+141515;camara;CD;20163452504;OTAVIO SANTOS SILVA LEITE;Otavio Leite;1961-07-29;RJ;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Suplente;M;Mestrado Incompleto;dep.otavioleite@camara.leg.br;Aracaju - SE;3215-5939;56;https://www.camara.leg.br/internet/deputado/bandep/141515.jpg;3;DEPUTADO;BRANCA;60
+204441;camara;CD;7217877709;OTONI MOURA DE PAULO JUNIOR;Otoni de Paula;1976-11-22;RJ;PSC;Partido Social Cristão;Direita;Exercício;Titular;M;Superior Incompleto;dep.otonidepaula@camara.leg.br;Rio de Janeiro - RJ;3215-5484;56;https://www.camara.leg.br/internet/deputado/bandep/204441.jpg;1;OUTROS;PARDA;44
+204475;camara;CD;63445557268;JOSE OTACI BARROSO DO NASCIMENTO;Ottaci Nascimento;1977-08-18;RR;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;M;Ensino Médio;dep.ottacinascimento@camara.leg.br;Eirunepé - AM;3215-5521;56;https://www.camara.leg.br/internet/deputado/bandep/204475.jpg;1;SERVIDOR PÚBLICO MUNICIPAL;PARDA;44
+204573;camara;CD;67871224549;OTTO ROBERTO MENDONÇA DE ALENCAR FILHO;Otto Alencar Filho;1977-07-07;BA;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Pós-Graduação;dep.ottoalencarfilho@camara.leg.br;Salvador - BA;3215-5444;56;https://www.camara.leg.br/internet/deputado/bandep/204573.jpg;1;ADMINISTRADOR;BRANCA;44
+160556;camara;CD;72425610600;JOÃO CARLOS SIQUEIRA;Padre João;1967-02-28;MG;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.padrejoao@camara.leg.br;Urucânia - MG;3215-5743;56;https://www.camara.leg.br/internet/deputado/bandep/160556.jpg;3;DEPUTADO;BRANCA;54
+160642;camara;CD;23340541434;FRANCISCO EURICO DA SILVA;Pastor Eurico;1962-09-12;PE;PATRIOTA;Patriota;Direita;Exercício;Titular;M;Superior Incompleto;dep.pastoreurico@camara.leg.br;Presidente Prudente - SP;3215-5906;56;https://www.camara.leg.br/internet/deputado/bandep/160642.jpg;3;OUTROS;PARDA;59
+204570;camara;CD;57088071304;GILDENEMIR DE LIMA SOUSA;Pastor Gil;1971-11-08;MA;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.pastorgil@camara.leg.br;São Luís - MA;3215-5660;56;https://www.camara.leg.br/internet/deputado/bandep/204570.jpg;1;SACERDOTE OU MEMBRO DE ORDEM OU SEITA RELIGIOSA;PARDA;49
+204553;camara;CD;22977040544;MANOEL ISIDORIO DE SANTANA JUNIOR;Pastor Sargento Isidório;1962-07-28;BA;AVANTE;Avante;Centro;Exercício;Titular;M;Superior Incompleto;dep.pastorsargentoisidorio@camara.leg.br;Salvador - BA;3215-5817;56;https://www.camara.leg.br/internet/deputado/bandep/204553.jpg;1;DEPUTADO;PRETA;59
+74160;camara;CD;17486440687;PATRUS ANANIAS DE SOUZA;Patrus Ananias;1952-01-26;MG;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Mestrado;dep.patrusananias@camara.leg.br;Bocaiúva - MG;3215-5720;56;https://www.camara.leg.br/internet/deputado/bandep/74160.jpg;3;SERVIDOR PÚBLICO ESTADUAL;BRANCA;69
+204377;camara;CD;57867100172;PAULA MORENO PARO BELMONTE;Paula Belmonte;1973-06-23;DF;CIDADANIA;Cidadania;Esquerda;Exercício;Titular;F;Superior;dep.paulabelmonte@camara.leg.br;SAO PAULO - SP;3215-5440;56;https://www.camara.leg.br/internet/deputado/bandep/204377.jpg;1;EMPRESÁRIO;BRANCA;48
+171617;camara;CD;14433290459;PAULO FERNANDO DOS SANTOS;Paulão;1957-09-15;AL;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.paulao@camara.leg.br;Maceió - AL;3215-5366;56;https://www.camara.leg.br/internet/deputado/bandep/171617.jpg;3;DEPUTADO;PRETA;64
+141516;camara;CD;30825628172;PAULO ABI-ACKEL;Paulo Abi-Ackel;1963-06-21;MG;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Mestrado;dep.pauloabiackel@camara.leg.br;Belo Horizonte - MG;3215-5718;56;https://www.camara.leg.br/internet/deputado/bandep/141516.jpg;4;ADVOGADO;BRANCA;58
+178860;camara;CD;28870646572;PAULO VELLOSO DANTAS AZI;Paulo Azi;1963-01-14;BA;DEM;Democratas;Direita;Exercício;Titular;M;Superior;dep.pauloazi@camara.leg.br;Salvador - BA;3215-5422;56;https://www.camara.leg.br/internet/deputado/bandep/178860.jpg;2;DEPUTADO;BRANCA;58
+204538;camara;CD;45417202215;PAULO EDUARDO MAESTRI BENGTSON;Paulo Bengtson;1974-01-06;PA;PTB;Partido Trabalhista Brasileiro;Direita;Exercício;Titular;M;Superior;dep.paulobengtson@camara.leg.br;Vitória da Conquista - BA;3215-5505;56;https://www.camara.leg.br/internet/deputado/bandep/204538.jpg;1;VETERINÁRIO;BRANCA;47
+193726;camara;CD;28192122808;PAULO EDUARDO LIMA MARTINS;Paulo Eduardo Martins;1981-04-20;PR;PSC;Partido Social Cristão;Direita;Exercício;Titular;M;Superior;dep.pauloeduardomartins@camara.leg.br;Presidente Venceslau - SP;3215-5233;56;https://www.camara.leg.br/internet/deputado/bandep/193726.jpg;2;EMPRESÁRIO;BRANCA;40
+160558;camara;CD;93876912849;PAULO ROBERTO FREIRE DA COSTA;Paulo Freire Costa;1955-02-14;SP;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.paulofreirecosta@camara.leg.br;São Paulo - SP;3215-5416;56;https://www.camara.leg.br/internet/deputado/bandep/160558.jpg;3;OUTROS;BRANCA;66
+204461;camara;CD;9911967751;PAULO GUSTAVO GANIME ALVES TEIXEIRA;Paulo Ganime;1983-04-19;RJ;NOVO;Partido Novo;Direita;Exercício;Titular;M;Pós-Graduação;dep.pauloganime@camara.leg.br;Rio de Janeiro - RJ;3215-5230;56;https://www.camara.leg.br/internet/deputado/bandep/204461.jpg;1;ENGENHEIRO;BRANCA;38
+204492;camara;CD;86753991620;PAULO JOSE CARLOS GUEDES;Paulo Guedes;1970-10-01;MG;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior Incompleto;dep.pauloguedes@camara.leg.br;Manga - MG;3215-5833;56;https://www.camara.leg.br/internet/deputado/bandep/204492.jpg;1;DEPUTADO;PARDA;50
+74574;camara;CD;6015530553;PAULO SÉRGIO PARANHOS DE MAGALHÃES;Paulo Magalhães;1952-11-28;BA;PSD;Partido Social Democrático;Centro;Exercício;Suplente;M;Superior;dep.paulomagalhaes@camara.leg.br;Salvador - BA;3215-5903;56;https://www.camara.leg.br/internet/deputado/bandep/74574.jpg;6;DEPUTADO;BRANCA;68
+141518;camara;CD;21006768904;PAULO PEREIRA DA SILVA;Paulo Pereira da Silva;1956-02-24;SP;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;M;Ensino Médio;dep.paulopereiradasilva@camara.leg.br;Porecatu - PR;3215-5217;56;https://www.camara.leg.br/internet/deputado/bandep/141518.jpg;4;OUTROS;BRANCA;65
+74400;camara;CD;42844924034;PAULO ROBERTO SEVERO PIMENTA;Paulo Pimenta;1965-03-19;RS;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.paulopimenta@camara.leg.br;Santa Maria - RS;3215-5552;56;https://www.camara.leg.br/internet/deputado/bandep/74400.jpg;5;DEPUTADO;BRANCA;56
+133968;camara;CD;3273970715;Paulo Sérgio Ramos Barboza;Paulo Ramos;1944-10-18;RJ;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.pauloramos@camara.leg.br;Rio de Janeiro - RJ;3215-5804;56;https://www.camara.leg.br/internet/deputado/bandep/133968.jpg;2;ADVOGADO;BRANCA;76
+141488;camara;CD;2441369806;LUIZ PAULO TEIXEIRA FERREIRA;Paulo Teixeira;1961-05-06;SP;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Mestrado;dep.pauloteixeira@camara.leg.br;Águas da Prata - SP;3215-5281;56;https://www.camara.leg.br/internet/deputado/bandep/141488.jpg;4;ADVOGADO;BRANCA;60
+216544;camara;NA;6812201049;PAULO VICENTE CALEFFI;Paulo Vicente Caleffi;1948-08-17;RS;PSD;Partido Social Democrático;Centro;Exercício;Suplente;M;Superior;dep.paulovicentecaleffi@camara.leg.br;Bento Gonçalves - RS;3215-5971;56;https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/216544.jpg;1;ADVOGADO;BRANCA;73
+90201;camara;CD;87850885368;PEDRO AUGUSTO GEROMEL BEZERRA DE MENEZES;Pedro Augusto Bezerra;1980-10-11;CE;PTB;Partido Trabalhista Brasileiro;Direita;Exercício;Titular;M;Pós-Graduação;dep.pedroaugustobezerra@camara.leg.br;Juazeiro do Norte - CE;3215-5413;56;https://www.camara.leg.br/internet/deputado/bandep/90201.jpg;1;SOCIÓLOGO;BRANCA;40
+215045;camara;NA;4547437858;PEDRO AUGUSTO PALARETI;Pedro Augusto Palareti;1963-05-08;RJ;PSD;Partido Social Democrático;Centro;Exercício;Efetivado;M;Ensino Médio;dep.pedroaugustopalareti@camara.leg.br;Ribeirão Preto - SP;3215-5284;56;https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/215045.jpg;1;LOCUTOR E COMENTARISTA DE RÁDIO E TELEVISÃO E RADIALISTA;BRANCA;58
+178912;camara;CD;8430005463;PEDRO OLIVEIRA CUNHA LIMA;Pedro Cunha Lima;1988-08-15;PB;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Mestrado;dep.pedrocunhalima@camara.leg.br;Campina Grande - PB;3215-5810;56;https://www.camara.leg.br/internet/deputado/bandep/178912.jpg;2;ADVOGADO;BRANCA;33
+217330;camara;NA;51172593272;PEDRO DOS SANTOS MARTINS;Pedro Dalua;1977-06-07;AP;PSC;Partido Social Cristão;Direita;Exercício;Suplente;M;Ensino Médio;dep.pedrodalua@camara.leg.br;Belém - PA;3215-5512;56;https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/217330.jpg;1;DEPUTADO;PARDA;44
+122974;camara;CD;82994684349;PEDRO LUCAS ANDRADE FERNANDES RIBEIRO;Pedro Lucas Fernandes;1979-11-01;MA;PTB;Partido Trabalhista Brasileiro;Direita;Exercício;Titular;M;Superior;dep.pedrolucasfernandes@camara.leg.br;São Luís - MA;3215-5814;56;https://www.camara.leg.br/internet/deputado/bandep/122974.jpg;1;VEREADOR;BRANCA;41
+204395;camara;CD;4328943901;PEDRO DEBONI LUPION MELLO;Pedro Lupion;1983-06-04;PR;DEM;Democratas;Direita;Exercício;Titular;M;Mestrado;dep.pedrolupion@camara.leg.br;Curitiba - PR;3215-5812;56;https://www.camara.leg.br/internet/deputado/bandep/204395.jpg;1;DEPUTADO;BRANCA;38
+160604;camara;CD;47721855934;PEDRO FRANCISCO UCZAI;Pedro Uczai;1963-03-10;SC;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Mestrado;dep.pedrouczai@camara.leg.br;Descanso - SC;3215-5229;56;https://www.camara.leg.br/internet/deputado/bandep/160604.jpg;3;PROFESSOR DE ENSINO SUPERIOR;BRANCA;58
+178844;camara;CD;1055737448;PEDRO TORRES BRANDÃO VILELA;Pedro Vilela;1985-05-01;AL;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Efetivado;M;Superior;dep.pedrovilela@camara.leg.br;Maceió - AL;3215-5271;56;https://www.camara.leg.br/internet/deputado/bandep/178844.jpg;1;ADVOGADO;BRANCA;36
+204406;camara;CD;20040954072;PEDRO BANDARRA WESTPHALEN;Pedro Westphalen;1950-12-19;RS;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.pedrowestphalen@camara.leg.br;Cruz Alta - RS;3215-5526;56;https://www.camara.leg.br/internet/deputado/bandep/204406.jpg;1;DEPUTADO;BRANCA;70
+73943;camara;CD;21644063204;MARIA PERPÉTUA DE ALMEIDA;Perpétua Almeida;1964-12-28;AC;PCdoB;Partido Comunista do Brasil;Esquerda;Exercício;Titular;F;Superior Incompleto;dep.perpetuaalmeida@camara.leg.br;Porto Walter - AC;3215-5310;56;https://www.camara.leg.br/internet/deputado/bandep/73943.jpg;4;PROFESSOR DE ENSINO FUNDAMENTAL;BRANCA;56
+204524;camara;CD;10627817670;ANTÔNIO PINHEIRO NETO;Pinheirinho;1991-05-30;MG;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.pinheirinho@camara.leg.br;Belo Horizonte - MG;3215-5584;56;https://www.camara.leg.br/internet/deputado/bandep/204524.jpg;1;EMPRESÁRIO;BRANCA;30
+204529;camara;CD;18753977874;KATIA DA SILVA SASTRE;Policial Katia Sastre;1976-04-04;SP;PL;Partido Liberal;Direita;Exercício;Titular;F;Pós-Graduação;dep.policialkatiasastre@camara.leg.br;São Paulo - SP;3215-5428;56;https://www.camara.leg.br/internet/deputado/bandep/204529.jpg;1;POLICIAL MILITAR;BRANCA;45
+73486;camara;CD;28346890087;DARCI POMPEO DE MATTOS;Pompeo de Mattos;1958-07-12;RS;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.pompeodemattos@camara.leg.br;Santo Augusto - RS;3215-5704;56;https://www.camara.leg.br/internet/deputado/bandep/73486.jpg;5;BANCÁRIO E ECONOMIÁRIO;BRANCA;63
+160601;camara;CD;13117532811;MARCO ANTÔNIO FELICIANO;Pr. Marco Feliciano;1972-10-12;SP;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.pr.marcofeliciano@camara.leg.br;Orlândia - SP;3215-5254;56;https://www.camara.leg.br/internet/deputado/bandep/160601.jpg;3;DEPUTADO;BRANCA;48
+204390;camara;CD;9242643149;ALCIDES RIBEIRO FILHO;Professor Alcides;1953-10-25;GO;PP;Progressistas;Direita;Exercício;Titular;M;Mestrado;dep.professoralcides@camara.leg.br;Remanso - BA;3215-5441;56;https://www.camara.leg.br/internet/deputado/bandep/204390.jpg;1;PROFESSOR DE ENSINO DE PRIMEIRO E SEGUNDO GRAUS;BRANCA;67
+204383;camara;CD;96311380110;ISRAEL MATOS BATISTA;Professor Israel Batista;1982-05-02;DF;PV;Partido Verde;Esquerda;Exercício;Titular;M;Superior;dep.professorisraelbatista@camara.leg.br;Brasília - DF;3215-5854;56;https://www.camara.leg.br/internet/deputado/bandep/204383.jpg;1;PROFESSOR DE ENSINO MÉDIO;BRANCA;39
+204446;camara;CD;413473740;JOZIEL FERREIRA CARLOS;Professor Joziel;1966-04-22;RJ;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Pós-Graduação;dep.professorjoziel@camara.leg.br;Duque de Caxias - RJ;3215-5929;56;https://www.camara.leg.br/internet/deputado/bandep/204446.jpg;1;MILITAR REFORMADO;PRETA;55
+204565;camara;CD;2159737550;DAYANE JAMILLE CARNEIRO DOS SANTOS PIMENTEL;Professora Dayane Pimentel;1986-01-30;BA;PSL;Partido Social Liberal;Direita;Exercício;Titular;F;Pós-Graduação;dep.professoradayanepimentel@camara.leg.br;Feira de Santana - BA;3215-5348;56;https://www.camara.leg.br/internet/deputado/bandep/204565.jpg;1;PROFESSOR DE ENSINO SUPERIOR;BRANCA;35
+160639;camara;CD;43196926168;MARIA AUXILIADORA SEABRA REZENDE;Professora Dorinha Seabra Rezende;1964-10-01;TO;DEM;Democratas;Direita;Exercício;Titular;F;Mestrado;dep.professoradorinhaseabrarezende@camara.leg.br;Goiânia - GO;3215-5432;56;https://www.camara.leg.br/internet/deputado/bandep/160639.jpg;3;DEPUTADO;BRANCA;56
+160641;camara;CD;32770553291;MARCIVANIA DO SOCORRO DA ROCHA FLEXA;Professora Marcivania;1973-06-21;AP;PCdoB;Partido Comunista do Brasil;Esquerda;Exercício;Titular;F;Superior;dep.professoramarcivania@camara.leg.br;Macapá - AP;3215-5338;56;https://www.camara.leg.br/internet/deputado/bandep/160641.jpg;3;PROFESSOR DE ENSINO MÉDIO;PARDA;48
+204467;camara;CD;29586372120;ROSA NEIDE SANDES DE ALMEIDA;Professora Rosa Neide;1963-08-08;MT;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;F;Mestrado;dep.professorarosaneide@camara.leg.br;Amargosa - BA;3215-5371;56;https://www.camara.leg.br/internet/deputado/bandep/204467.jpg;1;SERVIDOR PÚBLICO ESTADUAL;BRANCA;58
+178951;camara;CD;5582056408;RAFAEL HUETE DA MOTTA;Rafael Motta;1986-08-15;RN;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;dep.rafaelmotta@camara.leg.br;Natal - RN;3215-5626;56;https://www.camara.leg.br/internet/deputado/bandep/178951.jpg;2;VEREADOR;BRANCA;35
+204567;camara;CD;17672538500;RAIMUNDO MAGALHÃES COSTA;Raimundo Costa;1961-03-09;BA;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.raimundocosta@camara.leg.br;Valença - BA;3215-5226;56;https://www.camara.leg.br/internet/deputado/bandep/204567.jpg;1;PESCADOR;PARDA;60
+141523;camara;CD;45877475487;RAUL JEAN LOUIS HENRY JÚNIOR;Raul Henry;1964-06-06;PE;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Mestrado;dep.raulhenry@camara.leg.br;Recife - PE;3215-5707;56;https://www.camara.leg.br/internet/deputado/bandep/141523.jpg;3;SERVIDOR PÚBLICO ESTADUAL;BRANCA;57
+74161;camara;CD;90330862634;REGINALDO LÁZARO DE OLIVEIRA LOPES;Reginaldo Lopes;1973-04-02;MG;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.reginaldolopes@camara.leg.br;Bom Sucesso - MG;3215-5426;56;https://www.camara.leg.br/internet/deputado/bandep/74161.jpg;5;DEPUTADO;BRANCA;48
+205865;camara;CD;55194770944;REINHOLD STEPHANES JUNIOR;Reinhold Stephanes Junior;1965-07-26;PR;PSD;Partido Social Democrático;Centro;Exercício;Suplente;M;Superior;dep.reinholdstephanesjunior@camara.leg.br;Curitiba - PR;3215-5221;56;https://www.camara.leg.br/internet/deputado/bandep/205865.jpg;1;ECONOMISTA;BRANCA;56
+178925;camara;CD;42105560334;REJANE RIBEIRO SOUSA DIAS;Rejane Dias;1972-09-04;PI;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;F;Superior;dep.rejanedias@camara.leg.br;Teresina - PI;3215-5624;56;https://www.camara.leg.br/internet/deputado/bandep/178925.jpg;2;DEPUTADO;PARDA;49
+178989;camara;CD;30669688800;RENATA HELLMEISTER DE ABREU;Renata Abreu;1982-04-15;SP;PODEMOS;Podemos;Direita;Exercício;Titular;F;Superior;dep.renataabreu@camara.leg.br;São Paulo - SP;3215-5717;56;https://www.camara.leg.br/internet/deputado/bandep/178989.jpg;2;EMPRESÁRIO;BRANCA;39
+73801;camara;CD;20936079487;RENILDO VASCONCELOS CALHEIROS;Renildo Calheiros;1959-04-20;PE;PCdoB;Partido Comunista do Brasil;Esquerda;Exercício;Titular;M;Superior;dep.renildocalheiros@camara.leg.br;Murici - AL;3215-5915;56;https://www.camara.leg.br/internet/deputado/bandep/73801.jpg;4;DEPUTADO;BRANCA;62
+73788;camara;CD;42478979934;RICARDO JOSÉ MAGALHÃES BARROS;Ricardo Barros;1959-11-15;PR;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.ricardobarros@camara.leg.br;Maringá - PR;3215-5412;56;https://www.camara.leg.br/internet/deputado/bandep/73788.jpg;6;ENGENHEIRO;BRANCA;61
+215042;camara;NA;59611456700;RICARDO CORREA DE BARROS;Ricardo da Karol;1959-10-27;RJ;PSC;Partido Social Cristão;Direita;Exercício;Efetivado;M;Ensino Médio;dep.ricardodakarol@camara.leg.br;Magé - RJ;3215-5274;56;https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/215042.jpg;1;EMPRESÁRIO;PARDA;61
+204362;camara;CD;95128140997;RICARDO ZANATTA GUIDI;Ricardo Guidi;1977-09-28;SC;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Pós-Graduação;dep.ricardoguidi@camara.leg.br;Criciúma - SC;3215-5407;56;https://www.camara.leg.br/internet/deputado/bandep/204362.jpg;1;EMPRESÁRIO;BRANCA;43
+160655;camara;CD;10553705873;RICARDO IZAR JUNIOR;Ricardo Izar;1968-08-01;SP;PP;Progressistas;Direita;Exercício;Titular;M;Superior;dep.ricardoizar@camara.leg.br;São Paulo - SP;3215-5634;56;https://www.camara.leg.br/internet/deputado/bandep/160655.jpg;3;OUTROS;BRANCA;53
+213274;camara;NA;34663733875;RICARDO AUGUSTO MACHADO DA SILVA;Ricardo Silva;1985-09-01;SP;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Efetivado;M;Superior;dep.ricardosilva@camara.leg.br;Ribeirão Preto - SP;3215-5904;56;https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/213274.jpg;1;SERVIDOR PÚBLICO ESTADUAL;BRANCA;36
+178920;camara;CD;47329980463;RICARDO TEOBALDO CAVALCANTI;Ricardo Teobaldo;1965-10-18;PE;PODEMOS;Podemos;Direita;Exercício;Titular;M;Ensino Médio;dep.ricardoteobaldo@camara.leg.br;Limoeiro - PE;3215-5603;56;https://www.camara.leg.br/internet/deputado/bandep/178920.jpg;2;EMPRESÁRIO;BRANCA;55
+204489;camara;CD;37788566349;MARCOS ROBERIO RIBEIRO MONTEIRO;Robério Monteiro;1970-02-15;CE;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Ensino Fundamental;dep.roberiomonteiro@camara.leg.br;Itarema - CE;3215-5733;56;https://www.camara.leg.br/internet/deputado/bandep/204489.jpg;1;EMPRESÁRIO;PARDA;51
+152610;camara;CD;2621206824;BENEDITO ROBERTO ALVES FERREIRA;Roberto Alves;1960-05-27;SP;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.robertoalves@camara.leg.br;Taubaté - SP;3215-5946;56;https://www.camara.leg.br/internet/deputado/bandep/152610.jpg;3;VEREADOR;BRANCA;61
+160653;camara;CD;5781727809;ROBERTO ALVES DE LUCENA;Roberto de Lucena;1966-04-18;SP;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior;dep.robertodelucena@camara.leg.br;Santa Isabel - SP;3215-5235;56;https://www.camara.leg.br/internet/deputado/bandep/160653.jpg;3;DEPUTADO;PARDA;55
+204530;camara;CD;26742283858;RODRIGO ANTONIO DE AGOSTINHO MENDONÇA;Rodrigo Agostinho;1977-12-12;SP;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Mestrado;dep.rodrigoagostinho@camara.leg.br;Cafelândia - SP;3215-5801;56;https://www.camara.leg.br/internet/deputado/bandep/204530.jpg;1;ADVOGADO;BRANCA;43
+204366;camara;CD;3000053930;RODRIGO COELHO;Rodrigo Coelho;1980-06-29;SC;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.rodrigocoelho@camara.leg.br;Joinville - SC;3215-5329;56;https://www.camara.leg.br/internet/deputado/bandep/204366.jpg;1;ADVOGADO;BRANCA;41
+141531;camara;CD;83035605653;RODRIGO BATISTA DE CASTRO;Rodrigo de Castro;1971-07-15;MG;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Mestrado;dep.rodrigodecastro@camara.leg.br;Viçosa - MG;3215-5701;56;https://www.camara.leg.br/internet/deputado/bandep/141531.jpg;4;ADVOGADO;BRANCA;50
+204480;camara;CD;47102500653;ROGÉRIO CORREIA DE MOURA BAPTISTA;Rogério Correia;1958-01-11;MG;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.rogeriocorreia@camara.leg.br;Belo Horizonte - MG;3215-5614;56;https://www.camara.leg.br/internet/deputado/bandep/204480.jpg;1;DEPUTADO;BRANCA;63
+160651;camara;CD;16513703034;ROGÉRIO MENDONÇA;Rogério Peninha Mendonça;1953-01-27;SC;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;dep.rogeriopeninhamendonca@camara.leg.br;Nova Trento - SC;3215-5656;56;https://www.camara.leg.br/internet/deputado/bandep/160651.jpg;3;DEPUTADO;BRANCA;68
+178930;camara;CD;86979728920;EVANDRO ROGERIO ROMAN;Roman;1973-03-03;PR;PATRIOTA;Patriota;Direita;Exercício;Suplente;M;Doutorado;dep.roman@camara.leg.br;Erval Grande - RS;3215-5575;56;https://www.camara.leg.br/internet/deputado/bandep/178930.jpg;2;DEPUTADO;BRANCA;48
+178861;camara;CD;56041896772;RONALDO CARLETTO;Ronaldo Carletto;1960-01-05;BA;PP;Progressistas;Direita;Exercício;Titular;M;Ensino Médio;dep.ronaldocarletto@camara.leg.br;Conceição da Barra - ES;3215-5262;56;https://www.camara.leg.br/internet/deputado/bandep/178861.jpg;2;EMPRESÁRIO;PARDA;61
+204525;camara;CD;10851776884;ROSANA DE OLIVEIRA VALLE;Rosana Valle;1969-05-08;SP;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;F;Superior;dep.rosanavalle@camara.leg.br;Santos - SP;3215-5529;56;https://www.camara.leg.br/internet/deputado/bandep/204525.jpg;1;JORNALISTA E REDATOR;BRANCA;52
+178945;camara;CD;82863989715;ROSANGELA DE SOUZA GOMES;Rosangela Gomes;1966-12-27;RJ;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;F;Pós-Graduação;dep.rosangelagomes@camara.leg.br;Rio de Janeiro - RJ;3215-5438;56;https://www.camara.leg.br/internet/deputado/bandep/178945.jpg;2;DEPUTADO;PRETA;54
+204357;camara;CD;93132620106;ROSIANE MODESTO  DE OLIVEIRA;Rose Modesto;1978-02-20;MS;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;F;Superior;dep.rosemodesto@camara.leg.br;Fátima do Sul - MS;3215-5414;56;https://www.camara.leg.br/internet/deputado/bandep/204357.jpg;1;"SERVIDOR PÚBLICO ESTADUAL
+";PARDA;43
+178935;camara;CD;21471037991;VALDIR LUIZ ROSSONI;Rossoni;1952-11-23;PR;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Efetivado;M;Superior;dep.rossoni@camara.leg.br;Bituruna - PR;3215-5612;56;https://www.camara.leg.br/internet/deputado/bandep/178935.jpg;1;EMPRESÁRIO;BRANCA;68
+73466;camara;CD;18746420959;RUBENS BUENO;Rubens Bueno;1948-05-23;PR;CIDADANIA;Cidadania;Esquerda;Exercício;Titular;M;Superior;dep.rubensbueno@camara.leg.br;Sertanópolis - PR;3215-5916;56;https://www.camara.leg.br/internet/deputado/bandep/73466.jpg;5;DEPUTADO;BRANCA;73
+74371;camara;CD;13334727149;RUBENS OTONI GOMIDE;Rubens Otoni;1956-02-06;GO;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.rubensotoni@camara.leg.br;Goianésia - GO;3215-5501;56;https://www.camara.leg.br/internet/deputado/bandep/74371.jpg;5;DEPUTADO;BRANCA;65
+178887;camara;CD;441514383;RUBENS PEREIRA E SILVA JUNIOR;Rubens Pereira Júnior;1984-03-16;MA;PCdoB;Partido Comunista do Brasil;Esquerda;Exercício;Titular;M;Superior;dep.rubenspereirajunior@camara.leg.br;São Luís - MA;3215-5370;56;https://www.camara.leg.br/internet/deputado/bandep/178887.jpg;2;DEPUTADO;BRANCA;37
+73604;camara;CD;61464686815;RUI GOETHE DA COSTA FALCÃO;Rui Falcão;1943-11-26;SP;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.ruifalcao@camara.leg.br;Pitangui - MG;3215-5819;56;https://www.camara.leg.br/internet/deputado/bandep/73604.jpg;2;APOSENTADO (EXCETO SERVIDOR PÚBLICO);BRANCA;77
+160635;camara;CD;1859237711;RUY MANUEL CARNEIRO BARBOSA DE ACA BELCHIOR;Ruy Carneiro;1970-08-17;PB;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;dep.ruycarneiro@camara.leg.br;João Pessoa - PB;3215-5536;56;https://www.camara.leg.br/internet/deputado/bandep/160635.jpg;2;OUTROS;BRANCA;51
+204535;camara;CD;39154732867;SAMIA DE SOUZA BOMFIM;Sâmia Bomfim;1989-08-22;SP;PSOL;Partido Socialismo e Liberdade;Esquerda;Exercício;Titular;F;Superior;dep.samiabomfim@camara.leg.br;Presidente Prudente - SP;3215-5623;56;https://www.camara.leg.br/internet/deputado/bandep/204535.jpg;1;OUTROS;BRANCA;32
+178990;camara;CD;6613343846;SAMUEL MOREIRA DA SILVA JUNIOR;Samuel Moreira;1963-02-09;SP;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;dep.samuelmoreira@camara.leg.br;Governador Valadares - MG;3215-5921;56;https://www.camara.leg.br/internet/deputado/bandep/178990.jpg;2;DEPUTADO;BRANCA;58
+204416;camara;CD;49941720053;UBIRATAN ANTUNES SANDERSON;Sanderson;1969-12-01;RS;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Pós-Graduação;dep.sanderson@camara.leg.br;Erechim - RS;3215-5354;56;https://www.camara.leg.br/internet/deputado/bandep/204416.jpg;1;SERVIDOR PÚBLICO FEDERAL;BRANCA;51
+204387;camara;CD;53447468904;GILSON CARDOSO FAHUR;Sargento Fahur;1963-11-06;PR;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Ensino Fundamental;dep.sargentofahur@camara.leg.br;Londrina - PR;3215-5858;56;https://www.camara.leg.br/internet/deputado/bandep/204387.jpg;1;SERVIDOR PÚBLICO ESTADUAL;BRANCA;57
+178921;camara;CD;73387789491;SEBASTIAO IGNACIO DE OLIVEIRA JUNIOR;Sebastião Oliveira;1968-08-31;PE;AVANTE;Avante;Centro;Exercício;Titular;M;Superior;dep.sebastiaooliveira@camara.leg.br;Recife - PE;3215-5225;56;https://www.camara.leg.br/internet/deputado/bandep/178921.jpg;2;DEPUTADO;PARDA;53
+73808;camara;CD;18635458591;SÉRGIO LUÍS LACERDA BRITO;Sérgio Brito;1961-06-08;BA;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.sergiobrito@camara.leg.br;Vitória da Conquista - BA;3215-5638;56;https://www.camara.leg.br/internet/deputado/bandep/73808.jpg;5;DEPUTADO;PARDA;60
+178933;camara;CD;75687658904;SERGIO DE SOUZA;Sergio Souza;1971-03-13;PR;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Pós-Graduação;dep.sergiosouza@camara.leg.br;Ivaiporã - PR;3215-5702;56;https://www.camara.leg.br/internet/deputado/bandep/178933.jpg;2;SENADOR;BRANCA;50
+204438;camara;CD;33205302400;SERGIO TOLEDO DE ALBUQUERQUE;Sergio Toledo;1962-01-29;AL;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.sergiotoledo@camara.leg.br;Maceió - AL;3215-5539;56;https://www.camara.leg.br/internet/deputado/bandep/204438.jpg;1;DEPUTADO;BRANCA;59
+204437;camara;CD;66256070453;SEVERINO DE LIRA PESSÔA;Severino Pessoa;1970-02-06;AL;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Ensino Médio;dep.severinopessoa@camara.leg.br;Arapiraca - AL;3215-5871;56;https://www.camara.leg.br/internet/deputado/bandep/204437.jpg;1;DEPUTADO;PARDA;51
+178961;camara;CD;75096102220;SHÉRIDAN ESTÉRFANY OLIVEIRA;Shéridan;1984-04-11;RR;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;F;Superior;dep.sheridan@camara.leg.br;Boa Vista - RR;3215-5246;56;https://www.camara.leg.br/internet/deputado/bandep/178961.jpg;2;DEPUTADO;BRANCA;37
+204557;camara;CD;24067857268;SIDNEY RICARDO DE OLIVEIRA LEITE;Sidney Leite;1967-04-08;AM;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.sidneyleite@camara.leg.br;Manaus - AM;3215-5266;56;https://www.camara.leg.br/internet/deputado/bandep/204557.jpg;1;DEPUTADO;PARDA;54
+74356;camara;CD;13512951287;SILAS CÂMARA;Silas Câmara;1962-12-15;AM;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.silascamara@camara.leg.br;Rio Branco - AC;3215-5532;56;https://www.camara.leg.br/internet/deputado/bandep/74356.jpg;6;DEPUTADO;PARDA;58
+204360;camara;CD;1739396782;SILVIA CRISTINA AMANCIO CHAGAS;Silvia Cristina;1974-01-15;RO;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;F;Superior;dep.silviacristina@camara.leg.br;Ji-Paraná - RO;3215-5524;56;https://www.camara.leg.br/internet/deputado/bandep/204360.jpg;1;JORNALISTA E REDATOR;PRETA;47
+204425;camara;CD;3500720439;SILVIO SERAFIM COSTA FILHO;Silvio Costa Filho;1982-03-05;PE;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.silviocostafilho@camara.leg.br;Recife - PE;3215-5402;56;https://www.camara.leg.br/internet/deputado/bandep/204425.jpg;1;DEPUTADO;BRANCA;39
+178946;camara;CD;49125290797;SORAYA ALENCAR DOS SANTOS;Soraya Santos;1958-12-04;RJ;PL;Partido Liberal;Direita;Exercício;Titular;F;Superior;dep.sorayasantos@camara.leg.br;Macaé - RJ;3215-5324;56;https://www.camara.leg.br/internet/deputado/bandep/178946.jpg;2;ADVOGADO;BRANCA;62
+178947;camara;CD;95188100606;SOSTENES SILVA CAVALCANTE;Sóstenes Cavalcante;1975-01-16;RJ;DEM;Democratas;Direita;Exercício;Titular;M;Superior;dep.sostenescavalcante@camara.leg.br;Maceió - AL;3215-5560;56;https://www.camara.leg.br/internet/deputado/bandep/178947.jpg;2;DEPUTADO;BRANCA;46
+92776;camara;CD;1608657;STEFANO AGUIAR DOS SANTOS;Stefano Aguiar;1976-03-03;MG;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.stefanoaguiar@camara.leg.br;Belo Horizonte - MG;3215-5341;56;https://www.camara.leg.br/internet/deputado/bandep/92776.jpg;3;SACERDOTE OU MEMBRO DE ORDEM OU SEITA RELIGIOSA;BRANCA;45
+177282;camara;CD;41864883634;LUIZ GONZAGA RIBEIRO;Subtenente Gonzaga;1962-05-31;MG;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.subtenentegonzaga@camara.leg.br;Manhuaçu - MG;3215-5750;56;https://www.camara.leg.br/internet/deputado/bandep/177282.jpg;3;DEPUTADO;BRANCA;59
+204534;camara;CD;38848319840;TABATA CLAUDIA AMARAL DE PONTES;Tabata Amaral;1993-11-14;SP;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;F;Superior;dep.tabataamaral@camara.leg.br;São Paulo - SP;3215-5848;56;https://www.camara.leg.br/internet/deputado/bandep/204534.jpg;1;CIENTISTA POLÍTICO;BRANCA;27
+178922;camara;CD;35284420420;FRANCISCO TADEU BARBOSA DE ALENCAR;Tadeu Alencar;1963-04-08;PE;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;dep.tadeualencar@camara.leg.br;Juazeiro do Norte - CE;3215-5820;56;https://www.camara.leg.br/internet/deputado/bandep/178922.jpg;2;OUTROS;PARDA;58
+204464;camara;CD;11138295752;TALIRIA PETRONE SOARES;Talíria Petrone;1985-04-09;RJ;PSOL;Partido Socialismo e Liberdade;Esquerda;Exercício;Titular;F;Mestrado Incompleto;dep.taliriapetrone@camara.leg.br;Niterói - RJ;3215-5617;56;https://www.camara.leg.br/internet/deputado/bandep/204464.jpg;1;VEREADOR;PRETA;36
+206231;camara;CD;81336357720;JOÃO BATISTA CONTI;Ted Conti;1964-12-28;ES;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Suplente;M;Superior;dep.tedconti@camara.leg.br;Muqui - ES;3215-5839;56;https://www.camara.leg.br/internet/deputado/bandep/206231.jpg;1;JORNALISTA E REDATOR;BRANCA;56
+204466;camara;CD;13626167453;TEREZA NELMA DA SILVA PORTO VIANA SOARES;Tereza Nelma;1957-10-07;AL;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;F;Pós-Graduação;dep.terezanelma@camara.leg.br;Maceió - AL;3215-5322;56;https://www.camara.leg.br/internet/deputado/bandep/204466.jpg;1;VEREADOR;BRANCA;63
+178862;camara;CD;66858933549;ERONILDES VASCONCELOS CARVALHO;Tia Eron;1972-06-02;BA;REPUBLICANOS;Republicanos;Direita;Exercício;Suplente;F;Superior;dep.tiaeron@camara.leg.br;Salvador - BA;3215-5276;56;https://www.camara.leg.br/internet/deputado/bandep/178862.jpg;1;VEREADOR;PRETA;49
+143084;camara;CD;1657051161;Tiago Dimas Braga Pereira;Tiago Dimas;1988-08-04;TO;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;M;Superior Incompleto;dep.tiagodimas@camara.leg.br;Uberaba - MG;3215-5269;56;https://www.camara.leg.br/internet/deputado/bandep/143084.jpg;1;OUTROS;BRANCA;33
+204519;camara;CD;7529510681;TIAGO LIMA MITRAUD DE CASTRO LEITE;Tiago Mitraud;1986-08-15;MG;NOVO;Partido Novo;Direita;Exercício;Titular;M;Pós-Graduação;dep.tiagomitraud@camara.leg.br;Brasília - DF;3215-5544;56;https://www.camara.leg.br/internet/deputado/bandep/204519.jpg;1;ADMINISTRADOR;BRANCA;35
+160976;camara;CD;44833881349;FRANCISCO EVERARDO TIRIRICA OLIVEIRA SILVA;Tiririca;1965-05-01;SP;PL;Partido Liberal;Direita;Exercício;Titular;M;Ensino Fundamental;dep.tiririca@camara.leg.br;Itapipoca - CE;3215-5343;56;https://www.camara.leg.br/internet/deputado/bandep/160976.jpg;3;DEPUTADO;PARDA;56
+197438;camara;CD;71762477572;CARLOS TITO MARQUES CORDEIRO;Tito;1976-11-17;BA;AVANTE;Avante;Centro;Exercício;Titular;M;Mestrado;dep.tito@camara.leg.br;Santa Maria da Vitória - BA;3215-5352;56;https://www.camara.leg.br/internet/deputado/bandep/197438.jpg;1;ADVOGADO;BRANCA;44
+178934;camara;CD;18591035968;ANTONIO WANDSCHEER;Toninho Wandscheer;1950-08-31;PR;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Titular;M;Superior;dep.toninhowandscheer@camara.leg.br;Foz do Iguaçu - PR;3215-5902;56;https://www.camara.leg.br/internet/deputado/bandep/178934.jpg;2;EMPRESÁRIO;BRANCA;71
+157130;camara;CD;6016298417;TÚLIO GADÊLHA SALES DE MELO;Túlio Gadêlha;1987-11-12;PE;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;dep.tuliogadelha@camara.leg.br;Recife - PE;3215-5360;56;https://www.camara.leg.br/internet/deputado/bandep/157130.jpg;1;SERVIDOR PÚBLICO FEDERAL;BRANCA;33
+178863;camara;CD;3746803101;ULDURICO ALENCAR PINTO;Uldurico Junior;1992-01-30;BA;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Titular;M;Superior;dep.ulduricojunior@camara.leg.br;Brasília - DF;3215-5729;56;https://www.camara.leg.br/internet/deputado/bandep/178863.jpg;2;AGRICULTOR;PARDA;29
+195866;camara;CD;56571739291;FRANCISCO VAIDON OLIVEIRA;Vaidon Oliveira;1975-04-02;CE;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Titular;M;Ensino Médio;dep.vaidonoliveira@camara.leg.br;Acaraú - CE;3215-5545;56;https://www.camara.leg.br/internet/deputado/bandep/195866.jpg;2;COMERCIANTE;BRANCA;46
+204385;camara;CD;51752840534;José Valdevan de Jesus Santos;Valdevan Noventa;1969-06-20;SE;PL;Partido Liberal;Direita;Exercício;Titular;M;Ensino Médio;dep.valdevannoventa@camara.leg.br;Estância - SE;3215-5637;56;https://www.camara.leg.br/internet/deputado/bandep/204385.jpg;1;MOTORISTA DE VEÍCULOS DE TRANSPORTE COLETIVO;PARDA;52
+160610;camara;CD;2333314842;VALMIR CARLOS DA ASSUNÇÃO;Valmir Assunção;1964-12-17;BA;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Ensino Fundamental;dep.valmirassuncao@camara.leg.br;Itamaraju - BA;3215-5739;56;https://www.camara.leg.br/internet/deputado/bandep/160610.jpg;3;DEPUTADO;PRETA;56
+141552;camara;CD;34358099149;VALTENIR LUIZ PEREIRA;Valtenir Pereira;1971-11-24;MT;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Suplente;M;Superior;dep.valtenirpereira@camara.leg.br;Jaciara - MT;3215-5815;56;https://www.camara.leg.br/internet/deputado/bandep/141552.jpg;4;DEPUTADO;PARDA;49
+74376;camara;CD;32247753191;VANDER LUIZ DOS SANTOS LOUBET;Vander Loubet;1964-01-22;MS;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.vanderloubet@camara.leg.br;Porto Murtinho - MS;3215-5838;56;https://www.camara.leg.br/internet/deputado/bandep/74376.jpg;5;DEPUTADO;BRANCA;57
+141553;camara;CD;19044690868;VANDERLEI MACRIS;Vanderlei Macris;1950-05-20;SP;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;dep.vanderleimacris@camara.leg.br;Americana - SP;3215-5618;56;https://www.camara.leg.br/internet/deputado/bandep/141553.jpg;4;DEPUTADO;BRANCA;71
+204505;camara;CD;19863098;WAGNER BACH MARTINS;Vavá Martins;1982-06-03;PA;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;dep.vavamartins@camara.leg.br;Pelotas - RS;3215-5901;56;https://www.camara.leg.br/internet/deputado/bandep/204505.jpg;1;OUTROS;PARDA;39
+204396;camara;CD;33286957968;NELSI COGUETTO MARIA;Vermelho;1959-03-01;PR;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;dep.vermelho@camara.leg.br;Francisco Beltrão - PR;3215-5920;56;https://www.camara.leg.br/internet/deputado/bandep/204396.jpg;1;ADVOGADO;BRANCA;62
+74283;camara;CD;12995398404;VICENTE PAULO DA SILVA;Vicentinho;1956-04-08;SP;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.vicentinho@camara.leg.br;Santa Cruz - RN;3215-5740;56;https://www.camara.leg.br/internet/deputado/bandep/74283.jpg;5;OUTROS;PRETA;65
+137070;camara;CD;99898659149;VICENTE ALVES DE OLIVEIRA JUNIOR;Vicentinho Júnior;1985-04-11;TO;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior Incompleto;dep.vicentinhojunior@camara.leg.br;Goiânia - GO;3215-5204;56;https://www.camara.leg.br/internet/deputado/bandep/137070.jpg;2;EMPRESÁRIO;BRANCA;36
+204483;camara;CD;36137847934;VILSON LUIZ DA SILVA;Vilson da Fetaemg;1957-05-01;MG;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Ensino Médio;dep.vilsondafetaemg@camara.leg.br;Cláudio - MG;3215-5648;56;https://www.camara.leg.br/internet/deputado/bandep/204483.jpg;1;AGRICULTOR;BRANCA;64
+141555;camara;CD;82286019720;VINICIUS RAPOZO DE CARVALHO;Vinicius Carvalho;1966-01-07;SP;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Mestrado Incompleto;dep.viniciuscarvalho@camara.leg.br;Rio de Janeiro - RJ;3215-5356;56;https://www.camara.leg.br/internet/deputado/bandep/141555.jpg;3;ADVOGADO;BRANCA;55
+160591;camara;CD;51004224249;VINICIUS DE AZEVEDO GURGEL;Vinicius Gurgel;1978-07-31;AP;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.viniciusgurgel@camara.leg.br;Macapá - AP;3215-5852;56;https://www.camara.leg.br/internet/deputado/bandep/160591.jpg;3;EMPRESÁRIO;BRANCA;43
+204532;camara;CD;34806872881;VINICIUS LAZZER POIT;Vinicius Poit;1986-01-31;SP;NOVO;Partido Novo;Direita;Exercício;Titular;M;Superior;dep.viniciuspoit@camara.leg.br;São Bernardo do Campo - SP;3215-5558;56;https://www.camara.leg.br/internet/deputado/bandep/204532.jpg;1;ADMINISTRADOR;BRANCA;35
+179587;camara;CD;7063842706;VITOR HUGO DE ARAUJO ALMEIDA;Vitor Hugo;1977-05-31;GO;PSL;Partido Social Liberal;Direita;Exercício;Titular;M;Mestrado;dep.vitorhugo@camara.leg.br;Salvador - BA;3215-5803;56;https://www.camara.leg.br/internet/deputado/bandep/179587.jpg;1;SERVIDOR PÚBLICO FEDERAL;PARDA;44
+178992;camara;CD;168780860;VITOR LIPPI;Vitor Lippi;1959-05-18;SP;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;dep.vitorlippi@camara.leg.br;São Paulo - SP;3215-5823;56;https://www.camara.leg.br/internet/deputado/bandep/178992.jpg;2;MÉDICO;BRANCA;62
+215044;camara;NA;1141871262;VIVIANE DA COSTA REIS;Vivi Reis;1991-08-05;PA;PSOL;Partido Socialismo e Liberdade;Esquerda;Exercício;Efetivado;F;Superior;dep.vivireis@camara.leg.br;Belém - PA;3215-5471;56;https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/215044.jpg;1;FISIOTERAPEUTA E TERAPEUTA OCUPACIONAL;PRETA;30
+160569;camara;CD;10866655549;WALDENOR ALVES PEREIRA FILHO;Waldenor Pereira;1954-03-08;BA;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Doutorado Incompleto;dep.waldenorpereira@camara.leg.br;Caculé - BA;3215-5954;56;https://www.camara.leg.br/internet/deputado/bandep/160569.jpg;3;DEPUTADO;PARDA;67
+178952;camara;CD;3200380411;WALTER PEREIRA ALVES;Walter Alves;1980-02-27;RN;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Mestrado Incompleto;dep.walteralves@camara.leg.br;Natal - RN;3215-5435;56;https://www.camara.leg.br/internet/deputado/bandep/178952.jpg;2;DEPUTADO;BRANCA;41
+160518;camara;CD;84719850634;WELITON FERNANDES PRADO;Weliton Prado;1975-08-24;MG;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Titular;M;Superior;dep.welitonprado@camara.leg.br;Uberlândia - MG;3215-5250;56;https://www.camara.leg.br/internet/deputado/bandep/160518.jpg;3;DEPUTADO;BRANCA;46
+74043;camara;CD;26254166453;JOSÉ WELLINGTON ROBERTO;Wellington Roberto;1959-05-19;PB;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior Incompleto;dep.wellingtonroberto@camara.leg.br;São José de Piranhas - PB;3215-5514;56;https://www.camara.leg.br/internet/deputado/bandep/74043.jpg;5;EMPRESÁRIO;PARDA;62
+74044;camara;CD;16159977415;JOSÉ WILSON SANTIAGO;Wilson Santiago;1957-06-10;PB;PTB;Partido Trabalhista Brasileiro;Direita;Exercício;Titular;M;Superior;dep.wilsonsantiago@camara.leg.br;Uiraúna - PB;3215-5534;56;https://www.camara.leg.br/internet/deputado/bandep/74044.jpg;3;SERVIDOR PÚBLICO ESTADUAL;PARDA;64
+74439;camara;CD;74989910478;WOLNEY QUEIROZ MACIEL;Wolney Queiroz;1972-12-12;PE;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior Incompleto;dep.wolneyqueiroz@camara.leg.br;Caruaru - PE;3215-5936;56;https://www.camara.leg.br/internet/deputado/bandep/74439.jpg;6;EMPRESÁRIO;PARDA;48
+191945;camara;CD;36847950706;JOSÉ AUGUSTO NALIN;Zé Augusto Nalin;1956-05-06;RJ;DEM;Democratas;Direita;Exercício;Suplente;M;Superior;dep.zeaugustonalin@camara.leg.br;Cachoeiro de Itapemirim - ES;3215-5975;56;https://www.camara.leg.br/internet/deputado/bandep/191945.jpg;1;ADMINISTRADOR;PARDA;65
+178889;camara;CD;10009728368;JOSÉ CARLOS NUNES JÚNIOR;Zé Carlos;1955-05-26;MA;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.zecarlos@camara.leg.br;São Luís - MA;3215-5543;56;https://www.camara.leg.br/internet/deputado/bandep/178889.jpg;2;ENGENHEIRO;PARDA;66
+204559;camara;CD;38247186500;JOSÉ CERQUEIRA DE SANTANA NETO;Zé Neto;1964-03-30;BA;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Pós-Graduação;dep.zeneto@camara.leg.br;Feira de Santana - BA;3215-5585;56;https://www.camara.leg.br/internet/deputado/bandep/204559.jpg;1;DEPUTADO;BRANCA;57
+160632;camara;CD;43422780653;JOSÉ SILVA SOARES;Zé Silva;1963-05-11;MG;SOLIDARIEDADE;Solidariedade;Centro;Exercício;Titular;M;Pós-Graduação;dep.zesilva@camara.leg.br;Iturama - MG;3215-5608;56;https://www.camara.leg.br/internet/deputado/bandep/160632.jpg;3;DEPUTADO;BRANCA;58
+204517;camara;CD;7284044608;JOSE VITOR DE RESENDE AGUIAR;Zé Vitor;1984-11-01;MG;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;dep.zevitor@camara.leg.br;Araguari - MG;3215-5525;56;https://www.camara.leg.br/internet/deputado/bandep/204517.jpg;1;ENGENHEIRO;BRANCA;36
+160592;camara;CD;3098871946;JOSÉ CARLOS BECKER DE OLIVEIRA E SILVA;Zeca Dirceu;1978-06-21;PR;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;dep.zecadirceu@camara.leg.br;Umuarama - PR;3215-5613;56;https://www.camara.leg.br/internet/deputado/bandep/160592.jpg;3;DEPUTADO;BRANCA;43
+4981;senado;SF;44435630915;ACIR MARCOS GURGACZ;Acir Gurgacz;1962-02-25;RO;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior Incompleto;sen.acirgurgacz@senado.leg.br;Cascavel - PR;3303-3131;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador4981.jpg;2;SENADOR;BRANCA;59
+5982;senado;SF;71943790582;ALESSANDRO VIEIRA;Alessandro Vieira;1975-04-03;SE;CIDADANIA;Cidadania;Esquerda;Exercício;Titular;M;Superior;sen.alessandrovieira@senado.leg.br;Passo Fundo - RS;3303-9011;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5982.jpg;1;POLICIAL CIVIL;PARDA;46
+945;senado;SF;274003953;ALVARO FERNANDES DIAS;Alvaro Dias;1944-12-07;PR;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior;sen.alvarodias@senado.leg.br;Quatá - SP;3303-4059;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador945.jpg;4;SENADOR;BRANCA;76
+5967;senado;SF;77865111568;ANGELO MARIO CORONEL DE AZEVEDO MARTINS;Angelo Coronel;1958-05-03;BA;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;sen.angelocoronel@senado.leg.br;Coração de Maria - BA;3303-6103;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5967.jpg;1;DEPUTADO;BRANCA;63
+5529;senado;SF;47555882604;ANTONIO AUGUSTO JUNHO ANASTASIA;Antonio Anastasia;1961-05-09;MG;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;sen.antonioanastasia@senado.leg.br;Belo Horizonte - MG;3303-5717;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5529.jpg;2;SERVIDOR PÚBLICO ESTADUAL;BRANCA;60
+6295;senado;SF;62918311987;CARLOS HENRIQUE BAQUETA FÁVARO;Carlos Fávaro;1969-10-19;MT;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Ensino Médio;sen.carlosfavaro@senado.leg.br;Bela Vista do Paraiso - PR;3303-6408;56;https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6295.jpg;1;"PRODUTOR AGROPECUÁRIO
+";BRANCA;51
+5936;senado;SF;02522911740;CARLOS FRANCISCO PORTINHO;Carlos Portinho;1973-07-02;RJ;PL;Partido Liberal;Direita;Exercício;1º Suplente;M;Superior;sen.carlosportinho@senado.leg.br;Rio de Janeiro - RJ;3303-6640;56;https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5936.jpg;1;ADVOGADO;BRANCA;48
+5990;senado;SF;40890708649;CARLOS ALBERTO DIAS VIANA;Carlos Viana;1963-03-22;MG;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;sen.carlosviana@senado.leg.br;Braunas - MG;3303-3100;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5990.jpg;1;JORNALISTA E REDATOR;PARDA;58
+470;senado;SF;7654871449;FRANCISCO DE ASSIS RODRIGUES;Chico Rodrigues;1951-04-23;RR;DEM;Democratas;Direita;Exercício;Titular;M;Superior;sen.chicorodrigues@senado.leg.br;Recife - PE;3303-2281;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador470.jpg;1;ENGENHEIRO;PARDA;70
+5973;senado;SF;20912013320;CID FERREIRA GOMES;Cid Gomes;1963-04-27;CE;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;sen.cidgomes@senado.leg.br;Sobral - CE;3303-6460;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5973.jpg;1;ENGENHEIRO;BRANCA;58
+475;senado;SF;03733831187;CONFÚCIO AIRES MOURA;Confúcio Moura;1948-05-16;RO;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;sen.confuciomoura@senado.leg.br;Dianópolis - TO;3303-2470;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador475.jpg;1;MÉDICO;PARDA;73
+5998;senado;SF;82671400420;DANIELLA VELLOSO BORGES RIBEIRO;Daniella Ribeiro;1972-03-26;PB;PP;Progressistas;Direita;Exercício;Titular;F;Superior;sen.daniellaribeiro@senado.leg.br;Campina Grande - PB;3303-6788;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5998.jpg;1;PEDAGOGO;BRANCA;49
+3830;senado;SF;50900226234;DAVID SAMUEL ALCOLUMBRE TOBELEM;Davi Alcolumbre;1977-06-19;AP;DEM;Democratas;Direita;Exercício;Titular;M;Superior Incompleto;sen.davialcolumbre@senado.leg.br;Macapá - AP;3303-6717;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador3830.jpg;1;COMERCIANTE;PARDA;44
+5537;senado;SF;34195491991;DÁRIO ELIAS BERGER;Dário Berger;1956-12-07;SC;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;sen.darioberger@senado.leg.br;Bom Retiro - SC;3303-5947;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5537.jpg;1;ADMINISTRADOR;BRANCA;64
+4994;senado;SF;07810423215;CARLOS EDUARDO DE SOUZA BRAGA;Eduardo Braga;1960-12-06;AM;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;sen.eduardobraga@senado.leg.br;Belém - PA;3303-6230;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador4994.jpg;2;ENGENHEIRO;BRANCA;60
+5976;senado;SF;31966810334;LUIS EDUARDO GRANGEIRO GIRÃO;Eduardo Girão;1972-09-25;CE;PODEMOS;Podemos;Direita;Exercício;Titular;M;Ensino Médio;sen.eduardogirao@senado.leg.br;Fortaleza - CE;3303-6677;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5976.jpg;1;EMPRESÁRIO;PARDA;48
+3777;senado;SF;31340261120;CARLOS EDUARDO TORRES GOMES;Eduardo Gomes;1966-04-28;TO;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior Incompleto;sen.eduardogomes@senado.leg.br;Estância - SE;3303-6349;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador3777.jpg;1;DEPUTADO;BRANCA;55
+5898;senado;SF;13143000325;ELIANE E SILVA NOGUEIRA LIMA;Eliane Nogueira;1949-07-03;PI;PP;Progressistas;Direita;Exercício;1º Suplente;F;Ensino Médio;sen.elianenogueira@senado.leg.br;Teresina - PI;3303-6187;56;https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5898.jpg;1;ADMINISTRADOR;BRANCA;72
+5718;senado;SF;75242788372;ELIZIANE PEREIRA GAMA MELO;Eliziane Gama;1977-02-27;MA;CIDADANIA;Cidadania;Esquerda;Exercício;Titular;F;Superior;sen.elizianegama@senado.leg.br;Monção - MA;3303-6741;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5718.jpg;1;DEPUTADO;PARDA;44
+5531;senado;SF;135968372;ELMANO FÉRRER DE ALMEIDA;Elmano Férrer;1942-08-01;PI;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior;sen.elmanoferrer@senado.leg.br;Lavras da Mangabeira - CE;3303-2415;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5531.jpg;1;ADVOGADO;BRANCA;79
+22;senado;SF;11268786934;ESPERIDIÃO AMIN HELOU FILHO;Esperidião Amin;1947-12-21;SC;PP;Progressistas;Direita;Exercício;Titular;M;Superior;sen.esperidiaoamin@senado.leg.br;Florianópolis - SC;3303-6446;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador22.jpg;2;DEPUTADO;BRANCA;73
+5953;senado;SF;86364561772;FABIANO CONTARATO;Fabiano Contarato;1966-06-20;ES;REDE;Rede Sustentabilidade;Esquerda;Exercício;Titular;M;Superior;sen.fabianocontarato@senado.leg.br;Nova Venécia - ES;3303-9049;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5953.jpg;1;POLICIAL CIVIL;BRANCA;55
+5540;senado;SF;1077887809;FERNANDO BEZERRA DE SOUZA COELHO;Fernando Bezerra Coelho;1957-12-07;PE;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;sen.fernandobezerracoelho@senado.leg.br;Petrolina - PE;3303-2182;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5540.jpg;1;ADMINISTRADOR;BRANCA;63
+4525;senado;SF;2906287172;FERNANDO AFFONSO COLLOR DE MELLO;Fernando Collor;1949-08-12;AL;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Titular;M;Superior;Sen.fernandocollor@senado.leg.br;Rio de Janeiro - RJ;3303-5783;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador4525.jpg;2;ECONOMISTA;BRANCA;72
+345;senado;SF;18516440915;FLÁVIO JOSÉ ARNS;Flávio Arns;1950-11-09;PR;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior;sen.flavioarns@senado.leg.br;Curitiba - PR;3303-6301;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador345.jpg;2;SENADOR, DEPUTADO E VEREADOR;BRANCA;70
+5894;senado;SF;8701122797;FLÁVIO NANTES BOLSONARO;Flávio Bolsonaro;1981-04-30;RJ;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;sen.flaviobolsonaro@senado.leg.br;Rio de Janeiro - RJ;3303-1717;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5894.jpg;1;DEPUTADO;BRANCA;40
+6008;senado;SF;22401662820;ALEXANDRE LUIZ GIORDANO;Giordano;1973-06-26;SP;PSL;Partido Social Liberal;Direita;Exercício;1º Suplente;M;Superior;sen.giordano@senado.leg.br;São Paulo - SP;3303-4177;56;https://www.senado.leg.br/senadores/img/fotos-oficiais/senador6008.jpg;1;EMPRESÁRIO;BRANCA;48
+5008;senado;SF;15288455449;HUMBERTO SÉRGIO COSTA LIMA;Humberto Costa;1957-07-07;PE;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;sen.humbertocosta@senado.leg.br;Campinas - SP;3303-6285;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5008.jpg;2;SENADOR;PARDA;64
+5385;senado;SF;60507306104;IRAJÁ SILVESTRE FILHO;Irajá;1983-02-03;TO;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;sen.iraja@senado.leg.br;Goiânia - GO;3303-6469;56;https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5385.jpg;1;EMPRESÁRIO;BRANCA;38
+4770;senado;SF;6801480197;IZALCI LUCAS FERREIRA;Izalci Lucas;1956-04-07;DF;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;sen.izalcilucas@senado.leg.br;Araújos - MG;3303-6049;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador4770.jpg;1;DEPUTADO;BRANCA;65
+35;senado;SF;00018031234;JADER FONTENELLE BARBALHO;Jader Barbalho;1944-10-27;PA;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;sen.jaderbarbalho@senado.leg.br;Belém - PA;3303-9831;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador35.jpg;3;SENADOR;PARDA;76
+581;senado;SF;26471620772;JAQUES WAGNER;Jaques Wagner;1951-03-16;BA;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior Incompleto;sen.jaqueswagner@senado.leg.br;Rio de Janeiro - RJ;3303-6390;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador581.jpg;1;INDUSTRIAL;BRANCA;70
+4545;senado;SF;105457434;JARBAS DE ANDRADE VASCONCELOS;Jarbas Vasconcelos;1942-08-23;PE;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;sen.jarbasvasconcelos@senado.leg.br;Vicencia - PE;3303-3522;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador4545.jpg;2;ADVOGADO;BRANCA;79
+4531;senado;SF;04881044168;JAYME VERÍSSIMO DE CAMPOS;Jayme Campos;1951-09-13;MT;DEM;Democratas;Direita;Exercício;Titular;M;Ensino Médio;Sen.JaymeCampos@senado.leg.br;Varzea Grande - MT;3303-2390;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador4531.jpg;2;EMPRESÁRIO;PARDA;70
+5627;senado;SF;66501539072;JEAN PAUL TERRA PRATES;Jean Paul Prates;1968-06-19;RN;PT;Partido dos Trabalhadores;Esquerda;Exercício;1º Suplente;M;Superior Incompleto;sen.jeanpaulprates@senado.leg.br;Rio de Janeiro - RJ;3303-1777;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5627.jpg;1;MÚSICO;BRANCA;53
+5895;senado;SF;21840571187;JORGE KAJURU REIS DA COSTA NASSER;Jorge Kajuru;1961-01-20;GO;CIDADANIA;Cidadania;Esquerda;Exercício;Titular;M;Ensino Fundamental Incompleto;sen.jorgekajuru@senado.leg.br;Cajuru - SP;3303-2844;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5895.jpg;1;JORNALEIRO;BRANCA;60
+5350;senado;SF;25084119904;JORGINHO DOS SANTOS MELLO;Jorginho Mello;1956-07-15;SC;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;sen.jorginhomello@senado.leg.br;Ibicaré - SC;3303-2200;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5350.jpg;1;DEPUTADO;PARDA;65
+878;senado;SF;10662952200;JOSÉ ANÍBAL PERES DE PONTES;José Aníbal;1947-08-09;SP;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;1º Suplente;M;Superior;sen.joseanibal@senado.leg.br;Guajará Mirim - RO;3303-6651;56;https://www.senado.leg.br/senadores/img/fotos-oficiais/senador878.jpg;1;ECONOMISTA;BRANCA;74
+1249;senado;SF;61330345134;KÁTIA REGINA DE ABREU;Kátia Abreu;1962-02-02;TO;PP;Progressistas;Direita;Exercício;Titular;F;Superior;sen.katiaabreu@senado.leg.br;Goiânia - GO;3303-2464;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador1249.jpg;2;DEPUTADO;BRANCA;59
+5533;senado;SF;1124552049;LASIER COSTA MARTINS;Lasier Martins;1942-04-14;RS;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior;sen.lasiermartins@senado.leg.br;General Camara - RS;3303-2323;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5533.jpg;1;JORNALISTA E REDATOR;BRANCA;79
+5979;senado;SF;85632406687;LEILA GOMES DE BARROS RÊGO;Leila Barros;1971-09-30;DF;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;F;Superior Incompleto;sen.leilabarros@senado.leg.br;Brasília - DF;3303-6427;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5979.jpg;1;ATLETA PROFISSIONAL E TÉCNICO EM DESPORTOS;BRANCA;49
+5926;senado;SF;20912340282;LUIZ CANTUÁRIA BARRETO;Lucas Barreto;1964-11-10;AP;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Ensino Médio;sen.lucasbarreto@senado.leg.br;Macapa - AP;3303-4851;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5926.jpg;1;TÉCNICO DE ELETRICIDADE, ELETRÔNICA E TELECOMUNICAÇÕES;BRANCA;56
+1186;senado;SF;14272954091;LUIS CARLOS HEINZE;Luis Carlos Heinze;1950-09-14;RS;PP;Progressistas;Direita;Exercício;Titular;M;Superior;sen.luiscarlosheinze@senado.leg.br;Candelária - RS;3303-4124;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador1186.jpg;1;DEPUTADO;BRANCA;71
+5585;senado;SF;19864159100;LUIZ CARLOS DO CARMO;Luiz do Carmo;1958-04-02;GO;MDB;Movimento Democrático Brasileiro;Centro;Exercício;1º Suplente;M;Ensino Médio;sen.luizcarlosdocarmo@senado.leg.br;Palminópolis - GO;3303-6439;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5585.jpg;1;EMPRESÁRIO;BRANCA;63
+5557;senado;SF;61280178272;MAILZA ASSIS DA SILVA;Mailza Gomes;1976-12-10;AC;PP;Progressistas;Direita;Exercício;1º Suplente;F;Ensino Médio;sen.mailzagomes@senado.leg.br;Mundo Novo - MS;3303-1357;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5557.jpg;1;DONA DE CASA;BRANCA;44
+5376;senado;SF;24731270855;MARA CRISTINA GABRILLI;Mara Gabrilli;1967-09-28;SP;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;F;Superior;sen.maragabrilli@senado.leg.br;São Paulo - SP;3303-2191;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5376.jpg;1;DEPUTADO;BRANCA;53
+742;senado;SF;2382091304;MARCELO COSTA E CASTRO;Marcelo Castro;1950-06-09;PI;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;sen.marcelocastro@senado.leg.br;São Raimundo Nonato - PI;3303-4078;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador742.jpg;1;DEPUTADO;BRANCA;71
+285;senado;SF;23796332153;MÁRCIO MIGUEL BITTAR;Marcio Bittar;1963-06-28;AC;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;sen.marciobittar@senado.leg.br;Franca - SP;3303-2115;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador285.jpg;1;HISTORIADOR;BRANCA;58
+5422;senado;SF;60232064253;MARCOS ROGÉRIO DA SILVA BRITO;Marcos Rogério;1978-07-07;RO;DEM;Democratas;Direita;Exercício;Titular;M;Superior;sen.marcosrogerio@senado.leg.br;Ji Paraná - RO;3303-6148;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5422.jpg;1;JORNALISTA E REDATOR;BRANCA;43
+5942;senado;SF;1720486727;MARCOS RIBEIRO DO VAL;Marcos do Val;1971-06-15;ES;PODEMOS;Podemos;Direita;Exercício;Titular;M;Ensino Médio;sen.marcosdoval@senado.leg.br;Vitória - ES;3303-6747;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5942.jpg;1;OUTROS;BRANCA;50
+1023;senado;SF;15523870544;MARIA DO CARMO DO NASCIMENTO ALVES;Maria do Carmo Alves;1941-08-23;SE;DEM;Democratas;Direita;Exercício;Titular;F;Superior;sen.mariadocarmoalves@senado.leg.br;Cedro de São João - SE;3303-1306;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador1023.jpg;3;ADVOGADO;BRANCA;80
+6027;senado;SF;11218789204;ANTÔNIO MECIAS PEREIRA DE JESUS;Mecias de Jesus;1962-02-08;RR;REPUBLICANOS;Republicanos;Direita;Exercício;Titular;M;Superior;sen.meciasdejesus@senado.leg.br;Graça Aranha - MA;3303-5291;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador6027.jpg;1;ADMINISTRADOR;PRETA;59
+5985;senado;SF;40448118149;NELSON TRAD FILHO;Nelsinho Trad;1961-09-05;MS;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;sen.nelsinhotrad@senado.leg.br;Campo Grande - MS;3303-6767;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5985.jpg;1;MÉDICO;BRANCA;60
+5281;senado;SF;89287037434;OZANILDA GONDIM VITAL DO REGO;Nilda Gondim;1946-03-30;PB;MDB;Movimento Democrático Brasileiro;Centro;Exercício;1º Suplente;F;Ensino Médio incompleto;sen.nildagondim@senado.leg.br;João Pessoa - PB;3303-6490;56;https://www.senado.leg.br/senadores/img/fotos-oficiais/senador5525.jpg;1;DEPUTADO;BRANCA;75
+5525;senado;SF;07588615249;OMAR JOSÉ ABDEL AZIZ;Omar Aziz;1958-08-13;AM;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;sen.omaraziz@senado.leg.br;Garça - SP;3303-6579;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5525.jpg;1;SENADOR;BRANCA;63
+5924;senado;SF;31662625987;ORIOVISTO GUIMARAES;Oriovisto Guimarães;1945-08-12;PR;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior;sen.oriovistoguimaraes@senado.leg.br;Batatais - SP;3303-1635;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5924.jpg;1;EMPRESÁRIO;BRANCA;76
+5523;senado;SF;67871224549;OTTO ROBERTO MENDONÇA DE ALENCAR;Otto Alencar;1947-08-28;BA;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Superior;sen.ottoalencar@senado.leg.br;Ruy Barbosa - BA;3303-1464;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5523.jpg;1;ADMINISTRADOR;BRANCA;74
+825;senado;SF;11062975049;PAULO RENATO PAIM;Paulo Paim;1950-03-15;RS;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Ensino Médio;sen.paulopaim@senado.leg.br;Caxias do Sul - RS;3303-5232;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador825.jpg;3;SENADOR;PRETA;71
+374;senado;SF;02366010249;PAULO ROBERTO GALVÃO DA ROCHA;Paulo Rocha;1951-04-01;PA;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Ensino Médio;sen.paulorocha@senado.leg.br;Curuçá - PA;3303-3800;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador374.jpg;1;SENADOR;BRANCA;70
+5502;senado;SF;03537250215;FRANCISCO PLÍNIO VALÉRIO TOMAZ;Plínio Valério;1955-01-31;AM;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;sen.pliniovalerio@senado.leg.br;Eirunepé - AM;3303-2833;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5502.jpg;1;VEREADOR;BRANCA;66
+5012;senado;SF;43187943268;RANDOLPH FREDERICH RODRIGUES ALVES;Randolfe Rodrigues;1972-11-06;AP;REDE;Rede Sustentabilidade;Esquerda;Exercício;Titular;M;Superior;sen.randolferodrigues@senado.leg.br;Garanhuns - PE;3303-6777;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5012.jpg;2;SENADOR;BRANCA;48
+5236;senado;SF;78229766134;JOSÉ ANTÔNIO MACHADO REGUFFE;Reguffe;1972-09-05;DF;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior;sen.reguffe@senado.leg.br;Rio de Janeiro - RJ;3303-6355;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5236.jpg;1;DEPUTADO;BRANCA;49
+70;senado;SF;11078685487;JOSÉ RENAN VASCONCELOS CALHEIROS;Renan Calheiros;1955-09-16;AL;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;M;Superior;sen.renancalheiros@senado.leg.br;Murici - AL;3303-2261;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador70.jpg;4;SENADOR;BRANCA;66
+677;senado;SF;25056956368;ROBERTO COELHO ROCHA;Roberto Rocha;1965-08-04;MA;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;sen.robertorocha@senado.leg.br;São Luís - MA;3303-1437;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador677.jpg;1;OUTROS;BRANCA;56
+5905;senado;SF;987752430;RODRIGO SANTOS CUNHA;Rodrigo Cunha;1981-05-11;AL;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;sen.rodrigocunha@senado.leg.br;Arapiraca - AL;3303-6083;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5905.jpg;1;ADVOGADO;PARDA;40
+5732;senado;SF;445689676;RODRIGO OTAVIO SOARES PACHECO;Rodrigo Pacheco;1976-11-03;MG;DEM;Democratas;Direita;Exercício;Titular;M;Superior;sen.rodrigopacheco@senado.leg.br;Porto Velho - RO;3303-2794;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5732.jpg;1;ADVOGADO;BRANCA;44
+5352;senado;SF;41168720591;ROGÉRIO CARVALHO SANTOS;Rogério Carvalho;1968-08-02;SE;PT;Partido dos Trabalhadores;Esquerda;Exercício;Titular;M;Superior;sen.rogeriocarvalho@senado.leg.br;Aracaju - SE;3303-2201;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5352.jpg;1;DEPUTADO;BRANCA;53
+5322;senado;SF;90671953753;ROMARIO DE SOUZA FARIA;Romário;1966-01-29;RJ;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior;sen.romario@senado.leg.br;Rio de Janeiro - RJ;3303-6519;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5322.jpg;1;DEPUTADO;PARDA;55
+2331;senado;SF;37967517768;ROSILDA DE FREITAS;Rose de Freitas;1949-01-23;ES;PODEMOS;Podemos;Direita;Exercício;Titular;F;Superior Incompleto;sen.rosedefreitas@senado.leg.br;Caratinga - MG;3303-1156;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador2331.jpg;1;DEPUTADO;BRANCA;72
+5527;senado;SF;1099561760;SIMONE NASSAR TEBET;Simone Tebet;1970-02-22;MS;MDB;Movimento Democrático Brasileiro;Centro;Exercício;Titular;F;Superior;sen.simonetebet@senado.leg.br;Três Lagoas - MS;3303-1128;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5527.jpg;1;OUTROS;BRANCA;51
+5988;senado;SF;60838965172;SORAYA VIEIRA THRONICKE;Soraya Thronicke;1973-06-01;MS;PSL;Partido Social Liberal;Direita;Exercício;Titular;F;Superior;sen.sorayathronicke@senado.leg.br;Dourados - MS;3303-1775;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5988.jpg;1;ADVOGADO;BRANCA;48
+5959;senado;SF;1195796420;EANN STYVENSON VALENTIM MENDES;Styvenson Valentim;1977-02-07;RN;PODEMOS;Podemos;Direita;Exercício;Titular;M;Superior;sen.styvensonvalentim@senado.leg.br;Rio Branco - AC;3303-1148;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5959.jpg;1;POLICIAL MILITAR;BRANCA;44
+4560;senado;SF;9604332287;SÉRGIO DE OLIVEIRA CUNHA;Sérgio Petecão;1960-04-20;AC;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Ensino Médio;sen.sergiopetecao@senado.leg.br;Rio Branco - AC;3303-4086;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador4560.jpg;2;SENADOR;BRANCA;61
+3396;senado;SF;1032852372;TASSO RIBEIRO JEREISSATI;Tasso Jereissati;1948-12-15;CE;PSDB;Partido da Social Democracia Brasileira;Centro;Exercício;Titular;M;Superior;sen.tassojereissati@senado.leg.br;Fortaleza - CE;3303-4502;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador3396.jpg;2;EMPRESÁRIO;BRANCA;72
+5535;senado;SF;4273230291;TELMÁRIO MOTA DE OLIVEIRA;Telmário Mota;1958-02-15;RR;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Titular;M;Superior;sen.telmariomota@senado.leg.br;Normandia - RR;3303-6315;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5535.jpg;1;CONTADOR;PARDA;63
+5899;senado;SF;14464969291;VANDERLAN VIEIRA CARDOSO;Vanderlan Cardoso;1962-11-15;GO;PSD;Partido Social Democrático;Centro;Exercício;Titular;M;Ensino Médio;sen.vanderlancardoso@senado.leg.br;Iporá - GO;3303-2092;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5899.jpg;1;EMPRESÁRIO;BRANCA;58
+5748;senado;SF;71346376468;VENEZIANO VITAL DO RÊGO SEGUNDO NETO;Veneziano Vital do Rêgo;1970-07-17;PB;PSB;Partido Socialista Brasileiro;Esquerda;Exercício;Titular;M;Superior;sen.venezianovitaldorego@senado.leg.br;Campina Grande - PB;3303-2252;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5748.jpg;1;DEPUTADO;BRANCA;51
+1173;senado;SF;23019093104;WELLINGTON ANTONIO FAGUNDES;Wellington Fagundes;1957-06-01;MT;PL;Partido Liberal;Direita;Exercício;Titular;M;Superior;sen.wellingtonfagundes@senado.leg.br;Rondonópolis - MT;3303-6219;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador1173.jpg;1;DEPUTADO;BRANCA;64
+5411;senado;SF;62929399368;WEVERTON ROCHA MARQUES DE SOUSA;Weverton;1979-10-08;MA;PDT;Partido Democrático Trabalhista;Esquerda;Exercício;Titular;M;Superior;sen.wevertonrocha@senado.leg.br;Imperatriz - MA;3303-4161;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5411.jpg;1;DEPUTADO;PRETA;41
+5783;senado;SF;12352993415;ZENAIDE MAIA CALADO PEREIRA DOS SANTOS;Zenaide Maia;1954-11-27;RN;PROS;Partido Republicano da Ordem Social;Centro;Exercício;Titular;F;Superior;sen.zenaidemaia@senado.leg.br;Brejo do Cruz - PB;3303-2371;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5783.jpg;1;DEPUTADO;BRANCA;66
+3806;senado;SF;6651127268;JOSÉ DA CRUZ MARINHO;Zequinha Marinho;1959-09-18;PA;PSC;Partido Social Cristão;Direita;Exercício;Titular;M;Superior;sen.zequinhamarinho@senado.leg.br;Araguacema - TO;3303-6623;56;http://www.senado.leg.br/senadores/img/fotos-oficiais/senador3806.jpg;1;PEDAGOGO;BRANCA;62
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
