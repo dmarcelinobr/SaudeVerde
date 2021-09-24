@@ -1,0 +1,82 @@
+---
+title: "Iniciando com dados"
+subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
+author: "Daniel Marcelino <br> Brasília"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+## Questão 1
+
+
+Descubra qual versão do R você está utilizando usando `R.version.string`
+
+
+```{r}
+#Responda aqui
+```
+
+
+
+## Questão 2    
+
+Verifique também quais os pacotes que já estão instalados no seu sistema usando `installed.packages()`. Em seguida, caso não tenha instalado o ecosistema `tidyverse`, instale-o por meio do comando `install.packages("tidyverse")`
+
+```{r}
+#Responda aqui
+```
+
+## Questão 3
+
+Agora vamos verificar em qual diretório de trabalho estamos por meio do comando `getwd()`. Em seguida, vamos aproveitar e carregada a biblioteca `tidyverse` usando `library()` ou `require()`
+
+
+```{r}
+#Responda aqui
+```
+
+## Questão 4
+
+Vamos verificar quais objetos temos na área de trabalho com o comando listar objetos `ls()`
+
+```{r}
+#Responda aqui
+```
+
+
+## Questão 5
+
+Agora vamos ler um banco de dados diretamente de uma `url` usando a função `read.csv`. Esse banco de dados está usando ponto e vírgula (;) como delimitador de colunas, então você precisará indicar para o R que os dados estão separados com ";":  `sep = ";"`
+# Ler arquivo de dados diretamente da web
+
+ 
+
+```{r}
+ url =  "https://dadosabertos.camara.leg.br/arquivos/proposicoesAutores/csv/proposicoesAutores-2021.csv"
+
+```
+
+
+## Questão 6
+
+Quantas linhas (dim 1) e quantas colunas (dim 2) esse banco de dados possui? Dica, ao invés de olhar para tabela no RStudio Viewer, você pode usar o comando `dim()`
+
+
+```{r}
+#Responda aqui
+```
+
+
+
+
+#### Até a próxima!
+
+
