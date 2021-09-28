@@ -37,7 +37,7 @@ Usando o banco de candidatos.
 
 ```
 
-- Quantos partidos diferentes estão representados nas duas Casas ?
+- Quantos partidos diferentes estão representados nas duas Casas?
 
 ```{r}
 
@@ -45,7 +45,7 @@ Usando o banco de candidatos.
 
 ```
 
-- Qual o número de deputados por Estado ?
+- Qual o número de deputados por Estado?
 
 ```{r}
 # responda aqui.
