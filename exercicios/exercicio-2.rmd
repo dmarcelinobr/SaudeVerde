@@ -21,10 +21,12 @@ Crie um banco de dados com três variáveis: nome, sobrenome e data de nasciment
 
 ```{r}
 
-d <- data.frame(name=c("seu nome"), sobrenome=c("seu sobrenome"), aniversario=c("seu aniversario"))
+d <- data.frame(name=c("seu nome"), 
+                sobrenome=c("seu sobrenome"), 
+                aniversario=c("seu aniversario"))
+
 
 d[d$name=="seu nome",  ]
-
 ```
 
 
@@ -34,7 +36,10 @@ d[d$name=="seu nome",  ]
 Carrege este banco de dados [proposicoesAutores-2020](https://dadosabertos.camara.leg.br/arquivos/proposicoesAutores/csv/proposicoesAutores-2020.csv). Abra ele usando a função `read.csv` ou `read.csv2`, `read.delim`. Depois, descreve a classe de cada coluna deste banco. 
 
 ```{r}
-#Responda aqui
+
+proposicoes <- read.csv("https://dadosabertos.camara.leg.br/arquivos/proposicoesAutores/csv/proposicoesAutores-2020.csv", sep = ";")
+
+
 ```
 
 ## Questão 3
@@ -42,7 +47,13 @@ Carrege este banco de dados [proposicoesAutores-2020](https://dadosabertos.camar
 Agora, você vai usar os comandos `dir.create()` para criar o um diretório para guardar o arquivo que você acabou de carregar, mas ao invés de ler na memória você usará o comando `download.file(url, destfile = "...")` para salvar o banco de dados no caminho que você criou. Se você quiser, poderá quebrar a url em partes, assim como eu demonstrei no slide 2.
 
 ```{r}
-#Responda aqui
+dir.create("../dados/brutos/", recursive = TRUE)
+
+url = "https://dadosabertos.camara.leg.br/arquivos/proposicoesAutores/csv/proposicoesAutores-2020.csv"
+
+ 
+download.file(url, destfile = "../dados/brutos/proposicoesAutores-2020.csv")
+
 ```
 
 ## Questão 4
@@ -51,7 +62,12 @@ Agora carrege o banco de dados que você acabou de baixar da pasta que você cri
 
 
 ```{r}
-#Responda aqui
+
+path = "../dados/brutos/proposicoesAutores-2020.csv"
+
+
+proposicoes2 <-  read.csv2(path, sep=";")
+
 ```
 
 
@@ -68,7 +84,7 @@ Limpe a base de dados, mantendo apenas as linhas que não contêm `NA` na coluna
 
 ## Questão 6
 
-Agora crie um novo diretório chamado `processados` e grave/salve a tabela que você limpou.
+Agora crie um novo diretório chamado `processados` e salve a tabela que você limpou lá nesse novo diretório.
 
 
 ```{r}

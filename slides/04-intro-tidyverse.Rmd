@@ -23,7 +23,7 @@ knitr::opts_chunk$set(message=FALSE, warning = FALSE, error = FALSE, cache = TRU
 
 ---
 
-## Próximas Semanas
+## Expectativa para a semana
 
 1. Manipulação de Bancos de Dados (dplyr)
 
@@ -31,16 +31,26 @@ knitr::opts_chunk$set(message=FALSE, warning = FALSE, error = FALSE, cache = TRU
 
 3. Visualização (ggplot)
 
+---
+
+## O problema dos 80%
+80% do nosso trabalho com dados consiste em colocar nossos dados no formato correto...
+
+```{r preblema80, eval = T, echo = F, fig.align="center", out.width=540}
+
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/80-problem.png")
+```
+
 
 ---
 
-# Manipulação de Bancos de Dados
+## Manipulação de bancos de dados
 
-90% do nosso trabalho com dados consiste em colocar nossos dados no formato correto.. este processo envolve...
+ Este processo envolve...
 
 - manipular variáveis
 
-- juntar bancos de dados
+- juntar diferentes bancos de dados
 
 - reformatar dados
 
@@ -50,11 +60,11 @@ Para todas esta tarefas, usaremos os pacotes da família `tidyverse`
 
 ---
 
-# Tidyverse
+## Tidyverse
 
-O `tidyverse` é uma família de pacotes em R desenvolvidos  de forma integrada e compartilhando uma mesma filosofia de design, gramática e estruturas de dados subjacentes.
+O `tidyverse` é uma família de pacotes desenvolvidosde forma integrada e compartilhando uma mesma filosofia de design, gramática e estruturas de dados subjacentes.
 
-O objetivo do `tidyverse` é prover um conjunto integrado de ferramentas para o uso do R como linguagem em Ciência de Dados. Estes são os principais pacotes do `tidyverse`:
+O objetivo do `tidyverse` é prover um conjunto integrado de funções para uso em Ciência de Dados. Estes são os principais pacotes do `tidyverse`:
 
 - `dplyr`: para manipulação de dados.
 
@@ -72,15 +82,15 @@ O objetivo do `tidyverse` é prover um conjunto integrado de ferramentas para o 
 
 ---
 
-# Vantagens do Tidyverse 
+## Vantagens do Tidyverse 
 
-- O `tidyverse` facilita substancialmente as tarefas de análise de dados quando comparado com códigos do  R básico. 
+- O `tidyverse` facilita substancialmente as tarefas de análise de dados quando comparado com códigos do R básico. 
 
 - Aumenta substancialmente quão legível seu código parece.
 
 - Manipulação, visualização e modelagem estão integradas no tidyverse. 
 
-- É amplamente utilizado na comunidade de R. Portanto, provavelmente você precisa aprender para ler códigos de outros colegas.
+- É amplamente utilizado. Portanto, você precisá aprender para ler códigos de outros colegas.
 
 
 
@@ -105,7 +115,7 @@ library(tidyverse)
 
 ---
 
-## Tibbles. 
+## Tibbles
 
 
 O objeto fundamental do `tidyverse` são bancos de dados.
@@ -116,7 +126,7 @@ Tibbles são exatamente iguais aos data.frames em sua estrutura básica.  No ent
 
 ---
 
-## Criando Tibbles. 
+## Criando Tibbles
 
 --
 .pull-left[
@@ -141,15 +151,15 @@ tibble(a=c("Daniel", "Marcelino"),
 
 ]
 
---
 
 ---
 
-## Pipe.
+## Pipe
 
 .pull-left[
 ```{r echo=FALSE, out.width="60%"}
-# knitr::include_graphics("figs/pipe.jpg")
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/pipe.jpg")
+
 ```
 ]
 
@@ -187,9 +197,9 @@ x %>%
 ```
 
 ---
-# Notas importantes sobre os pipes. 
+## Notas importantes sobre os pipes
 
-**1. Os pipes sempre devem ser usados para conectar funções e seus outputs.**
+**1. Os pipes sempre devem ser usados para conectar funções e seus outputs**
 
 ```{r eval=FALSE}
 
@@ -201,10 +211,10 @@ x %>%
 
 **Exemplo:**
 
-```{r out.width="30%"}
+```{r eval=FALSE, out.width="30%"}
 sample(1:1000, 500, replace=TRUE) %>%
-  density() %>% # funcao 1.
-  plot() # função 2. 
+  density() %>% # funcao 1
+  plot() # função 2 
 ```
 
 ---
@@ -219,7 +229,7 @@ sample(1:1000, 500, replace=TRUE) %>%
 
 ---
 
-**3. Os resultados do pipe não são salvos imediatamente. Você precisa atribuir à um novo objeto.** 
+**3. Os resultados do pipe não são salvos imediatamente. Você precisa atribuir à um novo objeto** 
 
 ```{r}
 grafico <- sample(1:1000, 500, replace=TRUE) %>%
@@ -229,35 +239,17 @@ grafico <- sample(1:1000, 500, replace=TRUE) %>%
 
 
 
-
 ---
 class: middle, center, inverse
 
-# Manipulação de dados com `dplyr`.
+# Manipulação de dados com dplyr
 
 ---
 
-## Dados de parlamentares
+## Introdução ao dplyr
 
-
-```{r}
-library(tidyverse)
-
-congressistas <- read_delim(
-  "https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
-  delim = ";", escape_double = FALSE, trim_ws = TRUE)
-
-
-```
-
----
-
-## Introdução ao Dplyr. 
-
-O `dplyr` é um dos pacotes mais populares em R. 
-
-Sua lógica é simples: suas funções fazem exatamente o que seus nomes descrevem (**verb based language**).  Estas são as funções mais úteis do `dplyr`:
-
+Sua lógica é simples: suas funções fazem exatamente o que seus nomes descrevem (**verb based language**). Estas são as funções mais úteis do `dplyr`:
+<small>
 .pull-left[
 - `select()`: selecionar colunas.
 
@@ -274,7 +266,6 @@ Sua lógica é simples: suas funções fazem exatamente o que seus nomes descrev
 
 .pull-right[
 
-
 Todas essas funções seguem as mesmas características:
 
 - O input é sempre um banco de dados. 
@@ -284,7 +275,6 @@ Todas essas funções seguem as mesmas características:
 - Os argumentos seguintes acessão colunas dos bancos de dados diretamente, sem aspas. 
 
 - O output é sempre um novo banco de dados. 
-
 ]
 
 ---
@@ -297,7 +287,7 @@ Todas essas funções seguem as mesmas características:
 
 - `n():` conta quantas observações há em dados agrupados.
 
-- `sample_n():` Selecion n amostras do seu banco de dadosl
+- `sample_n():` Seleciona n amostras do seu banco de dadosl
 
 - `glimpse():` Fornece um sumário dos seus dados. 
 
@@ -306,3 +296,35 @@ Todas essas funções seguem as mesmas características:
 - `slice()`: filtra seu banco de dados por posições. 
 
 ---
+
+
+
+---
+## Dados de parlamentares
+
+<small>
+```{r}
+library(tidyverse)
+
+congressistas <- read_delim(
+  "https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
+  delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+```
+
+
+
+---
+class: center, middle
+# Obrigado!
+
+<center>
+`r icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), scale = 1, fill = "#A70000")` [dmarcelino@live.com](mailto:dmarcelino@live.com) 
+
+`r icons::icon_style(icons::fontawesome("twitter", style = "brands"), scale = 1, fill = "#A70000")` [@dmarcelinobr](https://twitter.com/dmarcelinobr) 
+
+`r icons::icon_style(icons::fontawesome("linkedin", style = "brands"), scale = 1, fill = "#A70000")`
+[dmarcelinobr](https://www.linkedin.com/in/dmarcelinobr/) 
+
+`r icons::icon_style(icons::fontawesome("github", style = "brands"), scale = 1, fill = "#A70000")`
+[dmarcelinobr](http://github.com/dmarcelinobr) 

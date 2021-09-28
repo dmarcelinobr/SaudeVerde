@@ -1,5 +1,5 @@
 ---
-title: "Iniciando com dados"
+title: "Iniciando com o tidyverse"
 subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
 author: "Daniel Marcelino <br> Brasília"
 output: html_document
