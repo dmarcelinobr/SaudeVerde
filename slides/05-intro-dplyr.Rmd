@@ -21,10 +21,47 @@ knitr::opts_chunk$set(message=FALSE, warning = FALSE, error = FALSE, cache = TRU
 ``` 
 
 
-## Uso básico
+```{r xaringanthemer, include = FALSE}
+library(xaringanthemer)
+# #034c87
+xaringanthemer::style_mono_accent(
+  base_color = "#272822",
+  # primary_color = "#A70000",
+  #secondary_color = "#ff0000",
+  white_color = "white",
+  colors = c(
+    red = "#A70000",
+    purple = "#88398a",
+    orange = "#ff8811",
+    green = "#136f63",
+    blue = "#4B4FFF",
+    white = "#FFFFFF",
+    black = "#181818"
+  ),
+  header_font_google = google_font("Roboto Condensed"),
+  text_font_google   = google_font("Roboto Condensed", "300", "300i"),
+  code_font_google   = google_font("Ubuntu Mono"),
+  text_font_size = "30px",
+  code_font_size = "30px",
+  )
 
+xaringanExtra::use_share_again()
+```
+
+
+
+# Select: seleciona colunas 
+
+```{r echo=FALSE, out.width="60%"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/select.png")
+```
+---
+
+
+## Uso básico
+      select(coluna 1, coluna 2, ...)
 <small>
-```{r}
+```{r, eval= TRUE, include=FALSE}
 library(dplyr)
 library(readr)
 
@@ -36,7 +73,7 @@ congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curs
 
 ```{r}
 congressistas %>% # Dados
-  select(sigla_casa, nome_eleitoral, uf, sg_partido) # colunas
+  select(sg_casa, nome_eleitoral, uf, sg_partido) # colunas
 ```
 
 
@@ -47,7 +84,7 @@ congressistas %>% # Dados
 ```{r}
 congressistas %>% # Dados
   # seleciona colunas
-  select(uf, nome_eleitoral, sg_partido, sigla_casa) # colunas
+  select(uf, nome_eleitoral, sg_partido, sg_casa) # colunas
 ```
 
 ---
@@ -117,28 +154,238 @@ congressistas %>%
   select(ends_with("eleitoral"), everything())
 ```
 
+---
+
+
+# Filter: filtra linhas seguindo condições lógicas 
+
+```{r echo=FALSE, out.width="60%"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/filter.png")
+```
+---
+
+
+## Uso Básico
+       filter(data, coluna=="a")
+<small>
+```{r}
+congressistas %>%
+  # filtra casos ondem partido igual a 17.
+  filter(total_mandatos==4) %>%
+  # seleciona
+  select(casa, nome_eleitoral, sg_partido, uf)
+```
+
+
+---
+
+## Multiplas condições
+<small>
+```{r}
+congressistas %>%
+  # filtra usando or
+  filter(total_mandatos==4 | total_mandatos==3, # ou
+  #filtra usando e
+         sg_casa=="CD") %>% # e
+  #seleciona
+  select(nome_eleitoral, sg_partido, uf)
+```
+
+
+---
+
+# Arrange: ordena linhas por colunas
+
+```{r echo=FALSE, out.width="60%"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/arrange.png")
+```
+---
+
+
+## Uso básico
+      arrange(data, coluna)
+<small>
+```{r}
+congressistas %>%
+  # filtra pelas linhas
+  filter(total_mandatos >= 3) %>% 
+  # seleciona
+  select(sg_casa, nome_eleitoral, sg_partido, uf, idade) %>%
+  # ordena de forma crescente
+  arrange(idade)
+```
+
+
+---
+
+## Arrange: decrescente    
+<small>
+```{r}
+congressistas %>%
+  # filtra pelas linhas
+  filter(total_mandatos>=3) %>% 
+  # seleciona
+  select(sg_casa, nome_eleitoral, sg_partido, uf, idade) %>%
+  # ordena em valores descrecentes
+  arrange(desc(idade))
+
+```
+
+---
+
+
+## Mutate: adiciona uma nova coluna 
+
+```{r echo=FALSE,out.width="60%"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/mutate.png")
+```
+
+---
+
+## Uso básico
+    mutate(data, nome_nova_coluna=valores_nova_coluna)
+<small>
+```{r}
+congressistas %>%
+  # cria variável com nome, partido e uf
+  mutate(parlamentar = paste(nome_eleitoral, " ", "(", sg_partido, "/", uf, ")", sep = "")) %>%
+  #seleciona para visualizar
+  select(casa, parlamentar) 
+```
+
+---
+
+## Condicionais
+<small>
+```{r}
+congressistas %>%
+  # cria variável usando condicionais
+  mutate(status = ifelse(total_mandatos >= 2, "reeleito", "novato"), 
+  # concatena nova variável com cidade
+         parlamentar = paste(nome_eleitoral, " ", "(", sg_partido, "/", uf, ")",
+                             sep = "")) %>%
+  #selectiona
+  select(casa, parlamentar, status, everything())
+```
+
+## Operações Matemáticas. 
+
+```{r}
+congressistas %>%
+  # média da idade 
+  mutate(media_idade=mean(idade)) %>%
+  # seleciona
+  select(idade, media_idade)
+```
+
+
+---
+
+# Group_by + Summarize. 
+
+```{r echo=FALSE, out.width="60%"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/group_by.png")
+```
+---
+
+
+## Group_by
+
+O **primeiro passo** é agrupar o banco de dados de acordo com a variável de nosso interesse. 
+<small>
+```{r}
+congressistas %>%
+  # agrupando por casa do congresso 
+  group_by(casa) 
+```
+
+**IMPORTANTE**: 0 `group_by` somente agrupa o banco de dados. É como se tivéssemos diversos mini-bancos de dados na memória do R. 
+
+A partir disso, podemos usar `summarize` para calcular valores de nosso interesse neste subgrupos. 
+
+---
+
+# Summarize.
+
+```{r echo=FALSE, out.width="60%"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/summarize.png")
+```
+
+---
+
+
+## Uso básico
+    summarize(dados_agrupados, nome_nova_variavel=valores_calculados)
+<small>
+```{r}
+congressistas %>%
+  # Somente congressistas titulares da vaga 
+  filter(condicao_eleitoral=="Titular") %>%
+  # agrupando por ideologia
+  group_by(ideologia) %>%
+  # Somando os mandatos .
+  summarise(qtd_mandatos = sum(total_mandatos))
+```
+    
+Perceba: **o `summarize` transforma múltiplas linhas em uma para cada subgrupo**
+
+
+---
+
+## Exemplos de operações com summarize
+
+- min(x) - minimo de x.
+- max(x) - máximo de x.
+- mean(x) - média de x.
+- median(x) - mediana de x.
+- quantile(x, p) - quantile de x.
+- sd(x) - desvio padrão de x.
+- var(x) - variancia de x.
+- n(x) - número de casos de x
+
+Tem muitas outras...
 
 
 
 ---
-## Dados de parlamentares
+class: inverse, middle, center
+# Outras funções úteis
 
-`r icons::icon_style(icons::fontawesome("laptop-code"), scale = 3)`
+---
 
-<small>
+
+## Count: contar por grupos 
+
 ```{r}
-library(tidyverse)
+congressistas %>%
+  # Quantas entradas para cada partido
+  count(sg_partido)
+```
 
-congressistas <- read_delim(
-  "https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
-  delim = ";", escape_double = FALSE, trim_ws = TRUE)
+---
 
+## Slice: selecionar por posição das linhas 
+
+```{r}
+congressistas %>%
+  slice(1:9)
+```
+
+---
+
+## rowid_to_column() : criar id para linhas
+
+```{r}
+congressistas %>% 
+  rowid_to_column() %>%
+  select(1:2, 4:6)
 ```
 
 
 
+
 ---
-class: center, middle
+class: middle, center
 # Obrigado!
 
 <center>

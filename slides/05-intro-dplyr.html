@@ -6,6 +6,11 @@
     <meta name="author" content="Daniel Marcelino   Brasília" />
     <meta name="date" content="2021-09-29" />
     <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -23,39 +28,42 @@ class: center, middle, inverse, title-slide
 
 
 
-## Uso básico
 
+
+
+
+# Select: seleciona colunas 
+
+&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/select.png" width="60%" /&gt;
+---
+
+
+## Uso básico
+      select(coluna 1, coluna 2, ...)
 &lt;small&gt;
 
-```r
-library(dplyr)
-library(readr)
-
-congressistas &lt;- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
-    delim = ";", escape_double = FALSE, trim_ws = TRUE)
-```
 
 
 
 ```r
 congressistas %&gt;% # Dados
-  select(sigla_casa, nome_eleitoral, uf, sg_partido) # colunas
+  select(sg_casa, nome_eleitoral, uf, sg_partido) # colunas
 ```
 
 ```
 ## # A tibble: 594 × 4
-##    sigla_casa nome_eleitoral   uf    sg_partido
-##    &lt;chr&gt;      &lt;chr&gt;            &lt;chr&gt; &lt;chr&gt;     
-##  1 CD         Abílio Santana   BA    PL        
-##  2 CD         Abou Anni        SP    PSL       
-##  3 CD         Acácio Favacho   AP    PROS      
-##  4 CD         Adolfo Viana     BA    PSDB      
-##  5 CD         Adriana Ventura  SP    NOVO      
-##  6 CD         Adriano do Baldy GO    PP        
-##  7 CD         Aécio Neves      MG    PSDB      
-##  8 CD         Aelton Freitas   MG    PL        
-##  9 CD         Afonso Florence  BA    PT        
-## 10 CD         Afonso Hamm      RS    PP        
+##    sg_casa nome_eleitoral   uf    sg_partido
+##    &lt;chr&gt;   &lt;chr&gt;            &lt;chr&gt; &lt;chr&gt;     
+##  1 CD      Abílio Santana   BA    PL        
+##  2 CD      Abou Anni        SP    PSL       
+##  3 CD      Acácio Favacho   AP    PROS      
+##  4 CD      Adolfo Viana     BA    PSDB      
+##  5 CD      Adriana Ventura  SP    NOVO      
+##  6 CD      Adriano do Baldy GO    PP        
+##  7 CD      Aécio Neves      MG    PSDB      
+##  8 CD      Aelton Freitas   MG    PL        
+##  9 CD      Afonso Florence  BA    PT        
+## 10 CD      Afonso Hamm      RS    PP        
 ## # … with 584 more rows
 ```
 
@@ -68,23 +76,23 @@ congressistas %&gt;% # Dados
 ```r
 congressistas %&gt;% # Dados
   # seleciona colunas
-  select(uf, nome_eleitoral, sg_partido, sigla_casa) # colunas
+  select(uf, nome_eleitoral, sg_partido, sg_casa) # colunas
 ```
 
 ```
 ## # A tibble: 594 × 4
-##    uf    nome_eleitoral   sg_partido sigla_casa
-##    &lt;chr&gt; &lt;chr&gt;            &lt;chr&gt;      &lt;chr&gt;     
-##  1 BA    Abílio Santana   PL         CD        
-##  2 SP    Abou Anni        PSL        CD        
-##  3 AP    Acácio Favacho   PROS       CD        
-##  4 BA    Adolfo Viana     PSDB       CD        
-##  5 SP    Adriana Ventura  NOVO       CD        
-##  6 GO    Adriano do Baldy PP         CD        
-##  7 MG    Aécio Neves      PSDB       CD        
-##  8 MG    Aelton Freitas   PL         CD        
-##  9 BA    Afonso Florence  PT         CD        
-## 10 RS    Afonso Hamm      PP         CD        
+##    uf    nome_eleitoral   sg_partido sg_casa
+##    &lt;chr&gt; &lt;chr&gt;            &lt;chr&gt;      &lt;chr&gt;  
+##  1 BA    Abílio Santana   PL         CD     
+##  2 SP    Abou Anni        PSL        CD     
+##  3 AP    Acácio Favacho   PROS       CD     
+##  4 BA    Adolfo Viana     PSDB       CD     
+##  5 SP    Adriana Ventura  NOVO       CD     
+##  6 GO    Adriano do Baldy PP         CD     
+##  7 MG    Aécio Neves      PSDB       CD     
+##  8 MG    Aelton Freitas   PL         CD     
+##  9 BA    Afonso Florence  PT         CD     
+## 10 RS    Afonso Hamm      PP         CD     
 ## # … with 584 more rows
 ```
 
@@ -97,8 +105,7 @@ congressistas %&gt;% # Dados
 ```r
 congressistas %&gt;% 
   # seleciona colunas com novos nomes. 
-  select(ID=cpf,
-         NAME=nome_civil,
+  select(NAME=nome_civil,
          AGE=idade, 
          PROFISSAO=ocupacao, 
          DISTRICT=uf, 
@@ -106,19 +113,19 @@ congressistas %&gt;%
 ```
 
 ```
-## # A tibble: 594 × 6
-##    ID          NAME                           AGE PROFISSAO      DISTRICT GENDER
-##    &lt;chr&gt;       &lt;chr&gt;                        &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;    &lt;chr&gt; 
-##  1 36607606504 JOSE ABILIO SILVA DE SANTANA    56 EMPRESÁRIO     BA       M     
-##  2 8496582841  PAULO SERGIO ABOU ANNI          54 POLICIAL MILI… SP       M     
-##  3 74287028287 ACÁCIO DA SILVA FAVACHO NETO    37 VEREADOR       AP       M     
-##  4 80123848504 ADOLFO VIANA DE CASTRO NETO     40 DEPUTADO       BA       M     
-##  5 12519851813 ADRIANA MIGUEL VENTURA          52 ADMINISTRADOR  SP       F     
-##  6 50746553153 ADRIANO ANTÔNIO AVELAR          52 OUTROS         GO       M     
-##  7 66728983791 AÉCIO NEVES DA CUNHA            61 SENADOR        MG       M     
-##  8 36179140634 AELTON JOSÉ DE FREITAS          59 DEPUTADO       MG       M     
-##  9 17734150500 AFONSO BANDEIRA FLORENCE        60 DEPUTADO       BA       M     
-## 10 37040642034 JOSÉ ALFONSO EBERT HAMM         59 DEPUTADO       RS       M     
+## # A tibble: 594 × 5
+##    NAME                           AGE PROFISSAO        DISTRICT GENDER
+##    &lt;chr&gt;                        &lt;dbl&gt; &lt;chr&gt;            &lt;chr&gt;    &lt;chr&gt; 
+##  1 JOSE ABILIO SILVA DE SANTANA    56 EMPRESÁRIO       BA       M     
+##  2 PAULO SERGIO ABOU ANNI          54 POLICIAL MILITAR SP       M     
+##  3 ACÁCIO DA SILVA FAVACHO NETO    37 VEREADOR         AP       M     
+##  4 ADOLFO VIANA DE CASTRO NETO     40 DEPUTADO         BA       M     
+##  5 ADRIANA MIGUEL VENTURA          52 ADMINISTRADOR    SP       F     
+##  6 ADRIANO ANTÔNIO AVELAR          52 OUTROS           GO       M     
+##  7 AÉCIO NEVES DA CUNHA            61 SENADOR          MG       M     
+##  8 AELTON JOSÉ DE FREITAS          59 DEPUTADO         MG       M     
+##  9 AFONSO BANDEIRA FLORENCE        60 DEPUTADO         BA       M     
+## 10 JOSÉ ALFONSO EBERT HAMM         59 DEPUTADO         RS       M     
 ## # … with 584 more rows
 ```
 
@@ -132,8 +139,7 @@ congressistas %&gt;%
 ```r
 congressistas_sub &lt;- congressistas %&gt;% # Dados
                   # seleciona colunas com novos nomes. 
-                  select(ID=cpf,
-                         NAME=nome_civil,
+                  select(NAME=nome_civil,
                          AGE=idade, 
                          PROFISSAO=ocupacao, 
                          DISTRICT=uf, 
@@ -166,21 +172,25 @@ congressistas %&gt;%
 ```
 
 ```
-## # A tibble: 594 × 1
-##    sg_partido
-##    &lt;chr&gt;     
-##  1 PL        
-##  2 PSL       
-##  3 PROS      
-##  4 PSDB      
-##  5 NOVO      
-##  6 PP        
-##  7 PSDB      
-##  8 PL        
-##  9 PT        
-## 10 PP        
+## # A tibble: 594 × 2
+##    sg_casa sg_partido
+##    &lt;chr&gt;   &lt;chr&gt;     
+##  1 CD      PL        
+##  2 CD      PSL       
+##  3 CD      PROS      
+##  4 CD      PSDB      
+##  5 CD      NOVO      
+##  6 CD      PP        
+##  7 CD      PSDB      
+##  8 CD      PL        
+##  9 CD      PT        
+## 10 CD      PP        
 ## # … with 584 more rows
 ```
+
+
+---
+**Exemplos**
 
 
 ```r
@@ -192,18 +202,18 @@ congressistas %&gt;%
 
 ```
 ## # A tibble: 594 × 24
-##    nome_eleitoral   condicao_eleitoral     id casa   sigla_casa cpf   nome_civil
-##    &lt;chr&gt;            &lt;chr&gt;               &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;     
-##  1 Abílio Santana   Titular            204554 camara CD         3660… JOSE ABIL…
-##  2 Abou Anni        Titular            204521 camara CD         8496… PAULO SER…
-##  3 Acácio Favacho   Titular            204379 camara CD         7428… ACÁCIO DA…
-##  4 Adolfo Viana     Titular            204560 camara CD         8012… ADOLFO VI…
-##  5 Adriana Ventura  Titular            204528 camara CD         1251… ADRIANA M…
-##  6 Adriano do Baldy Titular            121948 camara CD         5074… ADRIANO A…
-##  7 Aécio Neves      Titular             74646 camara CD         6672… AÉCIO NEV…
-##  8 Aelton Freitas   Efetivado          141372 camara CD         3617… AELTON JO…
-##  9 Afonso Florence  Titular            160508 camara CD         1773… AFONSO BA…
-## 10 Afonso Hamm      Titular            136811 camara CD         3704… JOSÉ ALFO…
+##    nome_eleitoral   condicao_eleitoral     id casa   sg_casa cpf         nome_civil
+##    &lt;chr&gt;            &lt;chr&gt;               &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt;     
+##  1 Abílio Santana   Titular            204554 camara CD      36607606504 JOSE ABIL…
+##  2 Abou Anni        Titular            204521 camara CD      8496582841  PAULO SER…
+##  3 Acácio Favacho   Titular            204379 camara CD      74287028287 ACÁCIO DA…
+##  4 Adolfo Viana     Titular            204560 camara CD      80123848504 ADOLFO VI…
+##  5 Adriana Ventura  Titular            204528 camara CD      12519851813 ADRIANA M…
+##  6 Adriano do Baldy Titular            121948 camara CD      50746553153 ADRIANO A…
+##  7 Aécio Neves      Titular             74646 camara CD      66728983791 AÉCIO NEV…
+##  8 Aelton Freitas   Efetivado          141372 camara CD      36179140634 AELTON JO…
+##  9 Afonso Florence  Titular            160508 camara CD      17734150500 AFONSO BA…
+## 10 Afonso Hamm      Titular            136811 camara CD      37040642034 JOSÉ ALFO…
 ## # … with 584 more rows, and 17 more variables: data_nascimento &lt;date&gt;,
 ## #   uf &lt;chr&gt;, sg_partido &lt;chr&gt;, partido &lt;chr&gt;, ideologia &lt;chr&gt;, situacao &lt;chr&gt;,
 ## #   sexo &lt;chr&gt;, escolaridade &lt;chr&gt;, email &lt;chr&gt;, naturalidade &lt;chr&gt;,
@@ -211,28 +221,447 @@ congressistas %&gt;%
 ## #   ocupacao &lt;chr&gt;, cor_raca &lt;chr&gt;, idade &lt;dbl&gt;
 ```
 
+---
+
+
+# Filter: filtra linhas seguindo condições lógicas 
+
+&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/filter.png" width="60%" /&gt;
+---
+
+
+## Uso Básico
+       filter(data, coluna=="a")
+&lt;small&gt;
+
+```r
+congressistas %&gt;%
+  # filtra casos ondem partido igual a 17.
+  filter(total_mandatos==4) %&gt;%
+  # seleciona
+  select(casa, nome_eleitoral, sg_partido, uf)
+```
+
+```
+## # A tibble: 35 × 4
+##    casa   nome_eleitoral    sg_partido   uf   
+##    &lt;chr&gt;  &lt;chr&gt;             &lt;chr&gt;        &lt;chr&gt;
+##  1 camara Aécio Neves       PSDB         MG   
+##  2 camara André Figueiredo  PDT          CE   
+##  3 camara Arnaldo Jardim    CIDADANIA    SP   
+##  4 camara Benedita da Silva PT           RJ   
+##  5 camara Bilac Pinto       DEM          MG   
+##  6 camara Carlos Zarattini  PT           SP   
+##  7 camara Celso Maldaner    MDB          SC   
+##  8 camara Chico D'Angelo    PDT          RJ   
+##  9 camara Cleber Verde      REPUBLICANOS MA   
+## 10 camara Edio Lopes        PL           RR   
+## # … with 25 more rows
+```
+
+
+---
+
+## Multiplas condições
+&lt;small&gt;
+
+```r
+congressistas %&gt;%
+  # filtra usando or
+  filter(total_mandatos==4 | total_mandatos==3, # ou
+  #filtra usando e
+         sg_casa=="CD") %&gt;% # e
+  #seleciona
+  select(nome_eleitoral, sg_partido, uf)
+```
+
+```
+## # A tibble: 108 × 3
+##    nome_eleitoral    sg_partido uf   
+##    &lt;chr&gt;             &lt;chr&gt;      &lt;chr&gt;
+##  1 Aécio Neves       PSDB       MG   
+##  2 Aelton Freitas    PL         MG   
+##  3 Afonso Florence   PT         BA   
+##  4 Afonso Motta      PDT        RS   
+##  5 Aguinaldo Ribeiro PP         PB   
+##  6 Alceu Moreira     MDB        RS   
+##  7 Alessandro Molon  PSB        RJ   
+##  8 Alexandre Leite   DEM        SP   
+##  9 André Figueiredo  PDT        CE   
+## 10 Angela Amin       PP         SC   
+## # … with 98 more rows
+```
+
+
+---
+
+# Arrange: ordena linhas por colunas
+
+&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/arrange.png" width="60%" /&gt;
+---
+
+
+## Uso básico
+      arrange(data, coluna)
+&lt;small&gt;
+
+```r
+congressistas %&gt;%
+  # filtra pelas linhas
+  filter(total_mandatos &gt;= 3) %&gt;% 
+  # seleciona
+  select(sg_casa, nome_eleitoral, sg_partido, uf, idade) %&gt;%
+  # ordena de forma crescente
+  arrange(idade)
+```
+
+```
+## # A tibble: 164 × 5
+##    sg_casa nome_eleitoral        sg_partido    uf    idade
+##    &lt;chr&gt;   &lt;chr&gt;                 &lt;chr&gt;         &lt;chr&gt; &lt;dbl&gt;
+##  1 CD      Alexandre Leite       DEM           SP       32
+##  2 CD      Hugo Motta            REPUBLICANOS  PB       32
+##  3 CD      Domingos Neto         PSD           CE       33
+##  4 CD      Fernando Coelho Filho DEM           PE       37
+##  5 CD      Bruna Furlan          PSDB          SP       38
+##  6 CD      Guilherme Mussi       PP            SP       38
+##  7 CD      Jhonatan de Jesus     REPUBLICANOS  RR       38
+##  8 CD      Glauber Braga         PSOL          RJ       39
+##  9 CD      Leonardo Picciani     MDB           RJ       41
+## 10 CD      Aureo Ribeiro         SOLIDARIEDADE RJ       42
+## # … with 154 more rows
+```
+
+
+---
+
+## Arrange: decrescente    
+&lt;small&gt;
+
+```r
+congressistas %&gt;%
+  # filtra pelas linhas
+  filter(total_mandatos&gt;=3) %&gt;% 
+  # seleciona
+  select(sg_casa, nome_eleitoral, sg_partido, uf, idade) %&gt;%
+  # ordena em valores descrecentes
+  arrange(desc(idade))
+```
+
+```
+## # A tibble: 164 × 5
+##    sg_casa nome_eleitoral       sg_partido uf    idade
+##    &lt;chr&gt;   &lt;chr&gt;                &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt;
+##  1 CD      Luiza Erundina       PSOL       SP       86
+##  2 CD      Mauro Lopes          MDB        MG       85
+##  3 SF      Maria do Carmo Alves DEM        SE       80
+##  4 CD      Benedita da Silva    PT         RJ       79
+##  5 CD      Elcione Barbalho     MDB        PA       76
+##  6 CD      Luciano Bivar        PSL        PE       76
+##  7 SF      Alvaro Dias          PODEMOS    PR       76
+##  8 SF      Jader Barbalho       MDB        PA       76
+##  9 CD      Gastão Vieira        PROS       MA       75
+## 10 CD      Gonzaga Patriota     PSB        PE       75
+## # … with 154 more rows
+```
+
+---
+
+
+## Mutate: adiciona uma nova coluna 
+
+&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/mutate.png" width="60%" /&gt;
+
+---
+
+## Uso básico
+    mutate(data, nome_nova_coluna=valores_nova_coluna)
+&lt;small&gt;
+
+```r
+congressistas %&gt;%
+  # cria variável com nome, partido e uf
+  mutate(parlamentar = paste(nome_eleitoral, " ", "(", sg_partido, "/", uf, ")", sep = "")) %&gt;%
+  #seleciona para visualizar
+  select(casa, parlamentar) 
+```
+
+```
+## # A tibble: 594 × 2
+##    casa   parlamentar              
+##    &lt;chr&gt;  &lt;chr&gt;                    
+##  1 camara Abílio Santana (PL/BA)   
+##  2 camara Abou Anni (PSL/SP)       
+##  3 camara Acácio Favacho (PROS/AP) 
+##  4 camara Adolfo Viana (PSDB/BA)   
+##  5 camara Adriana Ventura (NOVO/SP)
+##  6 camara Adriano do Baldy (PP/GO) 
+##  7 camara Aécio Neves (PSDB/MG)    
+##  8 camara Aelton Freitas (PL/MG)   
+##  9 camara Afonso Florence (PT/BA)  
+## 10 camara Afonso Hamm (PP/RS)      
+## # … with 584 more rows
+```
+
+---
+
+## Condicionais
+&lt;small&gt;
+
+```r
+congressistas %&gt;%
+  # cria variável usando condicionais
+  mutate(status = ifelse(total_mandatos &gt;= 2, "reeleito", "novato"), 
+  # concatena nova variável com cidade
+         parlamentar = paste(nome_eleitoral, " ", "(", sg_partido, "/", uf, ")",
+                             sep = "")) %&gt;%
+  #selectiona
+  select(casa, parlamentar, status, everything())
+```
+
+```
+## # A tibble: 594 × 26
+##    casa   parlamentar   status      id sg_casa cpf   nome_civil   nome_eleitoral
+##    &lt;chr&gt;  &lt;chr&gt;         &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;        &lt;chr&gt;         
+##  1 camara Abílio Santa… novato  204554 CD      3660… JOSE ABILIO… Abílio Santana
+##  2 camara Abou Anni (P… novato  204521 CD      8496… PAULO SERGI… Abou Anni     
+##  3 camara Acácio Favac… novato  204379 CD      7428… ACÁCIO DA S… Acácio Favacho
+##  4 camara Adolfo Viana… novato  204560 CD      8012… ADOLFO VIAN… Adolfo Viana  
+##  5 camara Adriana Vent… novato  204528 CD      1251… ADRIANA MIG… Adriana Ventu…
+##  6 camara Adriano do B… novato  121948 CD      5074… ADRIANO ANT… Adriano do Ba…
+##  7 camara Aécio Neves … reelei…  74646 CD      6672… AÉCIO NEVES… Aécio Neves   
+##  8 camara Aelton Freit… reelei… 141372 CD      3617… AELTON JOSÉ… Aelton Freitas
+##  9 camara Afonso Flore… reelei… 160508 CD      1773… AFONSO BAND… Afonso Floren…
+## 10 camara Afonso Hamm … reelei… 136811 CD      3704… JOSÉ ALFONS… Afonso Hamm   
+## # … with 584 more rows, and 18 more variables: data_nascimento &lt;date&gt;,
+## #   uf &lt;chr&gt;, sg_partido &lt;chr&gt;, partido &lt;chr&gt;, ideologia &lt;chr&gt;, situacao &lt;chr&gt;,
+## #   condicao_eleitoral &lt;chr&gt;, sexo &lt;chr&gt;, escolaridade &lt;chr&gt;, email &lt;chr&gt;,
+## #   naturalidade &lt;chr&gt;, telefone &lt;chr&gt;, legislatura &lt;dbl&gt;, url_foto &lt;chr&gt;,
+## #   total_mandatos &lt;dbl&gt;, ocupacao &lt;chr&gt;, cor_raca &lt;chr&gt;, idade &lt;dbl&gt;
+```
+
+## Operações Matemáticas. 
+
+
+```r
+congressistas %&gt;%
+  # média da idade 
+  mutate(media_idade=mean(idade)) %&gt;%
+  # seleciona
+  select(idade, media_idade)
+```
+
+```
+## # A tibble: 594 × 2
+##    idade media_idade
+##    &lt;dbl&gt;       &lt;dbl&gt;
+##  1    56        52.9
+##  2    54        52.9
+##  3    37        52.9
+##  4    40        52.9
+##  5    52        52.9
+##  6    52        52.9
+##  7    61        52.9
+##  8    59        52.9
+##  9    60        52.9
+## 10    59        52.9
+## # … with 584 more rows
+```
+
+
+---
+
+# Group_by + Summarize. 
+
+&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/group_by.png" width="60%" /&gt;
+---
+
+
+## Group_by
+
+O **primeiro passo** é agrupar o banco de dados de acordo com a variável de nosso interesse. 
+&lt;small&gt;
+
+```r
+congressistas %&gt;%
+  # agrupando por casa do congresso 
+  group_by(casa) 
+```
+
+```
+## # A tibble: 594 × 24
+## # Groups:   casa [2]
+##        id casa   sg_casa cpf    nome_civil  nome_eleitoral data_nascimento uf   
+##     &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;          &lt;date&gt;          &lt;chr&gt;
+##  1 204554 camara CD      36607… JOSE ABILI… Abílio Santana 1965-02-13      BA   
+##  2 204521 camara CD      84965… PAULO SERG… Abou Anni      1966-11-06      SP   
+##  3 204379 camara CD      74287… ACÁCIO DA … Acácio Favacho 1983-09-28      AP   
+##  4 204560 camara CD      80123… ADOLFO VIA… Adolfo Viana   1981-02-02      BA   
+##  5 204528 camara CD      12519… ADRIANA MI… Adriana Ventu… 1969-03-06      SP   
+##  6 121948 camara CD      50746… ADRIANO AN… Adriano do Ba… 1969-09-06      GO   
+##  7  74646 camara CD      66728… AÉCIO NEVE… Aécio Neves    1960-03-10      MG   
+##  8 141372 camara CD      36179… AELTON JOS… Aelton Freitas 1961-12-15      MG   
+##  9 160508 camara CD      17734… AFONSO BAN… Afonso Floren… 1960-10-15      BA   
+## 10 136811 camara CD      37040… JOSÉ ALFON… Afonso Hamm    1962-04-25      RS   
+## # … with 584 more rows, and 16 more variables: sg_partido &lt;chr&gt;, partido &lt;chr&gt;,
+## #   ideologia &lt;chr&gt;, situacao &lt;chr&gt;, condicao_eleitoral &lt;chr&gt;, sexo &lt;chr&gt;,
+## #   escolaridade &lt;chr&gt;, email &lt;chr&gt;, naturalidade &lt;chr&gt;, telefone &lt;chr&gt;,
+## #   legislatura &lt;dbl&gt;, url_foto &lt;chr&gt;, total_mandatos &lt;dbl&gt;, ocupacao &lt;chr&gt;,
+## #   cor_raca &lt;chr&gt;, idade &lt;dbl&gt;
+```
+
+**IMPORTANTE**: 0 `group_by` somente agrupa o banco de dados. É como se tivéssemos diversos mini-bancos de dados na memória do R. 
+
+A partir disso, podemos usar `summarize` para calcular valores de nosso interesse neste subgrupos. 
+
+---
+
+# Summarize.
+
+&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/summarize.png" width="60%" /&gt;
+
+---
+
+
+## Uso básico
+    summarize(dados_agrupados, nome_nova_variavel=valores_calculados)
+&lt;small&gt;
+
+```r
+congressistas %&gt;%
+  # Somente congressistas titulares da vaga 
+  filter(condicao_eleitoral=="Titular") %&gt;%
+  # agrupando por ideologia
+  group_by(ideologia) %&gt;%
+  # Somando os mandatos .
+  summarise(qtd_mandatos = sum(total_mandatos))
+```
+
+```
+## # A tibble: 3 × 2
+##   ideologia qtd_mandatos
+##   &lt;chr&gt;            &lt;dbl&gt;
+## 1 Centro             315
+## 2 Direita            457
+## 3 Esquerda           364
+```
+    
+Perceba: **o `summarize` transforma múltiplas linhas em uma para cada subgrupo**
+
+
+---
+
+## Exemplos de operações com summarize
+
+- min(x) - minimo de x.
+- max(x) - máximo de x.
+- mean(x) - média de x.
+- median(x) - mediana de x.
+- quantile(x, p) - quantile de x.
+- sd(x) - desvio padrão de x.
+- var(x) - variancia de x.
+- n(x) - número de casos de x
+
+Tem muitas outras...
 
 
 
 ---
-## Dados de parlamentares
+class: inverse, middle, center
+# Outras funções úteis
 
-&lt;svg viewBox="0 0 640 512" style="position:relative;display:inline-block;top:.1em;height:3em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"&gt;&lt;/path&gt;&lt;/svg&gt;
+---
 
-&lt;small&gt;
+
+## Count: contar por grupos 
+
 
 ```r
-library(tidyverse)
+congressistas %&gt;%
+  # Quantas entradas para cada partido
+  count(sg_partido)
+```
 
-congressistas &lt;- read_delim(
-  "https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
-  delim = ";", escape_double = FALSE, trim_ws = TRUE)
+```
+## # A tibble: 24 × 2
+##    sg_partido     n
+##    &lt;chr&gt;      &lt;int&gt;
+##  1 AVANTE         8
+##  2 CIDADANIA     10
+##  3 DEM           34
+##  4 MDB           47
+##  5 NOVO           8
+##  6 PATRIOTA       6
+##  7 PCdoB          8
+##  8 PDT           28
+##  9 PL            45
+## 10 PODEMOS       21
+## # … with 14 more rows
+```
+
+---
+
+## Slice: selecionar por posição das linhas 
+
+
+```r
+congressistas %&gt;%
+  slice(1:9)
+```
+
+```
+## # A tibble: 9 × 24
+##       id casa   sg_casa cpf    nome_civil   nome_eleitoral data_nascimento uf   
+##    &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;  &lt;chr&gt;        &lt;chr&gt;          &lt;date&gt;          &lt;chr&gt;
+## 1 204554 camara CD      36607… JOSE ABILIO… Abílio Santana 1965-02-13      BA   
+## 2 204521 camara CD      84965… PAULO SERGI… Abou Anni      1966-11-06      SP   
+## 3 204379 camara CD      74287… ACÁCIO DA S… Acácio Favacho 1983-09-28      AP   
+## 4 204560 camara CD      80123… ADOLFO VIAN… Adolfo Viana   1981-02-02      BA   
+## 5 204528 camara CD      12519… ADRIANA MIG… Adriana Ventu… 1969-03-06      SP   
+## 6 121948 camara CD      50746… ADRIANO ANT… Adriano do Ba… 1969-09-06      GO   
+## 7  74646 camara CD      66728… AÉCIO NEVES… Aécio Neves    1960-03-10      MG   
+## 8 141372 camara CD      36179… AELTON JOSÉ… Aelton Freitas 1961-12-15      MG   
+## 9 160508 camara CD      17734… AFONSO BAND… Afonso Floren… 1960-10-15      BA   
+## # … with 16 more variables: sg_partido &lt;chr&gt;, partido &lt;chr&gt;, ideologia &lt;chr&gt;,
+## #   situacao &lt;chr&gt;, condicao_eleitoral &lt;chr&gt;, sexo &lt;chr&gt;, escolaridade &lt;chr&gt;,
+## #   email &lt;chr&gt;, naturalidade &lt;chr&gt;, telefone &lt;chr&gt;, legislatura &lt;dbl&gt;,
+## #   url_foto &lt;chr&gt;, total_mandatos &lt;dbl&gt;, ocupacao &lt;chr&gt;, cor_raca &lt;chr&gt;,
+## #   idade &lt;dbl&gt;
+```
+
+---
+
+## rowid_to_column() : criar id para linhas
+
+
+```r
+congressistas %&gt;% 
+  rowid_to_column() %&gt;%
+  select(1:2, 4:6)
+```
+
+```
+## # A tibble: 594 × 5
+##    rowid     id sg_casa cpf         nome_civil                  
+##    &lt;int&gt;  &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt;                       
+##  1     1 204554 CD      36607606504 JOSE ABILIO SILVA DE SANTANA
+##  2     2 204521 CD      8496582841  PAULO SERGIO ABOU ANNI      
+##  3     3 204379 CD      74287028287 ACÁCIO DA SILVA FAVACHO NETO
+##  4     4 204560 CD      80123848504 ADOLFO VIANA DE CASTRO NETO 
+##  5     5 204528 CD      12519851813 ADRIANA MIGUEL VENTURA      
+##  6     6 121948 CD      50746553153 ADRIANO ANTÔNIO AVELAR      
+##  7     7  74646 CD      66728983791 AÉCIO NEVES DA CUNHA        
+##  8     8 141372 CD      36179140634 AELTON JOSÉ DE FREITAS      
+##  9     9 160508 CD      17734150500 AFONSO BANDEIRA FLORENCE    
+## 10    10 136811 CD      37040642034 JOSÉ ALFONSO EBERT HAMM     
+## # … with 584 more rows
 ```
 
 
 
+
 ---
-class: center, middle
+class: middle, center
 # Obrigado!
 
 &lt;center&gt;
