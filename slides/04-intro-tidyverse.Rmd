@@ -130,6 +130,7 @@ Tibbles são exatamente iguais aos data.frames em sua estrutura básica.  No ent
 
 --
 .pull-left[
+<small>
 ```{r}
 
 # Classe do Banco de Dados mtcars
@@ -157,7 +158,7 @@ tibble(a=c("Daniel", "Marcelino"),
 ## Pipe
 
 .pull-left[
-```{r echo=FALSE, out.width="60%"}
+```{r echo=FALSE, out.width="50%"}
 knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/pipe.jpg")
 
 ```
@@ -211,7 +212,7 @@ x %>%
 
 **Exemplo:**
 
-```{r eval=FALSE, out.width="30%"}
+```{r eval=FALSE, out.width="20%"}
 sample(1:1000, 500, replace=TRUE) %>%
   density() %>% # funcao 1
   plot() # função 2 
@@ -221,7 +222,7 @@ sample(1:1000, 500, replace=TRUE) %>%
 
 **2. O input sempre pode ser omitido, ou representados pelo atalho `.`**
 
-```{r}
+```{r, out.width="40%"}
 sample(1:1000, 500, replace=TRUE) %>%
   density(.) %>% # funcao 1.
   plot(.) # função 2. 
@@ -229,9 +230,9 @@ sample(1:1000, 500, replace=TRUE) %>%
 
 ---
 
-**3. Os resultados do pipe não são salvos imediatamente. Você precisa atribuir à um novo objeto** 
+**3. Os resultados do pipe não são salvos imediatamente. Você precisa atribuir a um novo objeto** 
 
-```{r}
+```{r, out.width="38%"}
 grafico <- sample(1:1000, 500, replace=TRUE) %>%
               density(.) %>% # funcao 1.
               plot(.) # função 2. 
@@ -249,8 +250,9 @@ class: middle, center, inverse
 ## Introdução ao dplyr
 
 Sua lógica é simples: suas funções fazem exatamente o que seus nomes descrevem (**verb based language**). Estas são as funções mais úteis do `dplyr`:
-<small>
+
 .pull-left[
+<small>
 - `select()`: selecionar colunas.
 
 - `filter()`: filtrar o banco de dados por linhas.
@@ -265,7 +267,7 @@ Sua lógica é simples: suas funções fazem exatamente o que seus nomes descrev
 ]
 
 .pull-right[
-
+<small>
 Todas essas funções seguem as mesmas características:
 
 - O input é sempre um banco de dados. 
@@ -301,6 +303,8 @@ Todas essas funções seguem as mesmas características:
 
 ---
 ## Dados de parlamentares
+
+`r icons::icon_style(icons::fontawesome("laptop-code"), scale = 3)`
 
 <small>
 ```{r}
