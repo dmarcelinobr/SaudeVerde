@@ -66,6 +66,7 @@ O `tidyverse` é uma família de pacotes desenvolvidosde forma integrada e compa
 
 O objetivo do `tidyverse` é prover um conjunto integrado de funções para uso em Ciência de Dados. Estes são os principais pacotes do `tidyverse`:
 
+.pull-left[
 - `dplyr`: para manipulação de dados.
 
 - `ggplot2`: para visualização de dados.
@@ -73,13 +74,16 @@ O objetivo do `tidyverse` é prover um conjunto integrado de funções para uso 
 - `tidyr`: para preparar seus dados para análise. 
 
 - `purrr`: para otimizar seu código e para programação funcional.
+]
 
+
+.pull-right[
 - `readr`: para abrir e organizar os dados. 
 
 - `stringr`: para manipulação de objetos de texto. 
 
 - `forcats`: para manipulação da classe fatores. 
-
+]
 ---
 
 ## Vantagens do Tidyverse 

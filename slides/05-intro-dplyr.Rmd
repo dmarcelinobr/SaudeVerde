@@ -1,0 +1,153 @@
+---
+title: "Manipulação de Banco de Dados"
+subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
+author: "Daniel Marcelino <br> Brasília"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+      ratio: '16:9'
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(message=FALSE, warning = FALSE, error = FALSE, cache = TRUE)
+
+``` 
+
+
+## Uso básico
+
+<small>
+```{r}
+library(dplyr)
+library(readr)
+
+congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+```
+
+
+```{r}
+congressistas %>% # Dados
+  select(sigla_casa, nome_eleitoral, uf, sg_partido) # colunas
+```
+
+
+---
+
+## Reordenando colunas
+<small>
+```{r}
+congressistas %>% # Dados
+  # seleciona colunas
+  select(uf, nome_eleitoral, sg_partido, sigla_casa) # colunas
+```
+
+---
+
+
+## Renomeando colunas
+<small>
+```{r}
+
+congressistas %>% 
+  # seleciona colunas com novos nomes. 
+  select(NAME=nome_civil,
+         AGE=idade, 
+         PROFISSAO=ocupacao, 
+         DISTRICT=uf, 
+         GENDER=sexo) # colunas
+```
+
+
+---
+
+
+## Salvando novo danco de dados 
+<small>
+```{r}
+congressistas_sub <- congressistas %>% # Dados
+                  # seleciona colunas com novos nomes. 
+                  select(NAME=nome_civil,
+                         AGE=idade, 
+                         PROFISSAO=ocupacao, 
+                         DISTRICT=uf, 
+                         GENDER=sexo) # colunas
+```
+
+---
+
+## Outros atalhos para uso do `select` 
+
+- `contains()` - Extrai colunas que contêm determinado texto.
+
+- `starts_with()` - Extrai colunas que inicia com determinado texto.
+
+- `ends_with()` - Extrai colunas que termina com determinado texto. 
+
+- `everything()` - Extrai todas as colunas restantes.
+
+
+---
+
+
+**Exemplos**
+
+```{r}
+congressistas %>%
+  # seleciona colunas onde sg_ aparece
+  select(contains("sg_"))
+```
+
+
+---
+**Exemplos**
+
+```{r}
+congressistas %>%
+  # seleciona colunas que terminam com eleitoral e 
+  # todas as outras colunas restantes
+  select(ends_with("eleitoral"), everything())
+```
+
+
+
+
+---
+## Dados de parlamentares
+
+`r icons::icon_style(icons::fontawesome("laptop-code"), scale = 3)`
+
+<small>
+```{r}
+library(tidyverse)
+
+congressistas <- read_delim(
+  "https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
+  delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+```
+
+
+
+---
+class: center, middle
+# Obrigado!
+
+<center>
+`r icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), scale = 1, fill = "#A70000")` [dmarcelino@live.com](mailto:dmarcelino@live.com) 
+
+`r icons::icon_style(icons::fontawesome("twitter", style = "brands"), scale = 1, fill = "#A70000")` [@dmarcelinobr](https://twitter.com/dmarcelinobr) 
+
+`r icons::icon_style(icons::fontawesome("linkedin", style = "brands"), scale = 1, fill = "#A70000")`
+[dmarcelinobr](https://www.linkedin.com/in/dmarcelinobr/) 
+
+`r icons::icon_style(icons::fontawesome("github", style = "brands"), scale = 1, fill = "#A70000")`
+[dmarcelinobr](http://github.com/dmarcelinobr) 

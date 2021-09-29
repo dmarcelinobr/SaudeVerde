@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Intro ao Tidyverse: Manipulação de Banco de Dados</title>
+    <title>Manipulação de Banco de Dados</title>
     <meta charset="utf-8" />
     <meta name="author" content="Daniel Marcelino   Brasília" />
     <meta name="date" content="2021-09-29" />
@@ -12,7 +12,7 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Intro ao Tidyverse: Manipulação de Banco de Dados
+# Manipulação de Banco de Dados
 ## Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI
 ### Daniel Marcelino <br> Brasília
 ### 2021-09-29
@@ -23,329 +23,194 @@ class: center, middle, inverse, title-slide
 
 
 
----
+## Uso básico
 
-## Expectativa para a semana
-
-1. Manipulação de Bancos de Dados (dplyr)
-
-2. Dados Tidy (tidyr)
-
-3. Visualização (ggplot)
-
----
-
-## O problema dos 80%
-80% do nosso trabalho com dados consiste em colocar nossos dados no formato correto...
-
-&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/80-problem.png" width="540" style="display: block; margin: auto;" /&gt;
-
-
----
-
-## Manipulação de bancos de dados
-
- Este processo envolve...
-
-- manipular variáveis
-
-- juntar diferentes bancos de dados
-
-- reformatar dados
-
-- limpeza... 
-
-Para todas esta tarefas, usaremos os pacotes da família `tidyverse`
-
----
-
-## Tidyverse
-
-O `tidyverse` é uma família de pacotes desenvolvidosde forma integrada e compartilhando uma mesma filosofia de design, gramática e estruturas de dados subjacentes.
-
-O objetivo do `tidyverse` é prover um conjunto integrado de funções para uso em Ciência de Dados. Estes são os principais pacotes do `tidyverse`:
-
-.pull-left[
-- `dplyr`: para manipulação de dados.
-
-- `ggplot2`: para visualização de dados.
-
-- `tidyr`: para preparar seus dados para análise. 
-
-- `purrr`: para otimizar seu código e para programação funcional.
-]
-
-
-.pull-right[
-- `readr`: para abrir e organizar os dados. 
-
-- `stringr`: para manipulação de objetos de texto. 
-
-- `forcats`: para manipulação da classe fatores. 
-]
----
-
-## Vantagens do Tidyverse 
-
-- O `tidyverse` facilita substancialmente as tarefas de análise de dados quando comparado com códigos do R básico. 
-
-- Aumenta substancialmente quão legível seu código parece.
-
-- Manipulação, visualização e modelagem estão integradas no tidyverse. 
-
-- É amplamente utilizado. Portanto, você precisá aprender para ler códigos de outros colegas.
-
-
-
----
-class:middle, center
-
-# Introdução ao Tidyverse
-
----
-## Instalação
-
-
-```r
-install.packages("tidyverse")
-```
-
-
-```r
-library(tidyverse)
-```
-
-
----
-
-## Tibbles
-
-
-O objeto fundamental do `tidyverse` são bancos de dados.
-
-O `tidyverse` usa objetos da classe "tibbles" para definir seus bancos de dados ao invés do tradicional data.frame que aprendemos semana passada. 
-
-Tibbles são exatamente iguais aos data.frames em sua estrutura básica.  No entanto, tibbles possuem alguns ajustes - mais visuais -  para facilitar seu uso. 
-
----
-
-## Criando Tibbles
-
---
-.pull-left[
 &lt;small&gt;
 
 ```r
-# Classe do Banco de Dados mtcars
-class(mtcars)
+library(dplyr)
+library(readr)
+
+congressistas &lt;- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
 ```
 
-```
-## [1] "data.frame"
-```
 
-```r
-# Converte para tibbles
-mtcars_tib &lt;- as_tibble(mtcars)
-mtcars_tib
-```
-
-```
-## # A tibble: 32 × 11
-##      mpg   cyl  disp    hp  drat    wt  qsec    vs    am  gear  carb
-##    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-##  1  21       6  160    110  3.9   2.62  16.5     0     1     4     4
-##  2  21       6  160    110  3.9   2.88  17.0     0     1     4     4
-##  3  22.8     4  108     93  3.85  2.32  18.6     1     1     4     1
-##  4  21.4     6  258    110  3.08  3.22  19.4     1     0     3     1
-##  5  18.7     8  360    175  3.15  3.44  17.0     0     0     3     2
-##  6  18.1     6  225    105  2.76  3.46  20.2     1     0     3     1
-##  7  14.3     8  360    245  3.21  3.57  15.8     0     0     3     4
-##  8  24.4     4  147.    62  3.69  3.19  20       1     0     4     2
-##  9  22.8     4  141.    95  3.92  3.15  22.9     1     0     4     2
-## 10  19.2     6  168.   123  3.92  3.44  18.3     1     0     4     4
-## # … with 22 more rows
-```
-]
-
---
-
-.pull-right[
 
 ```r
-tibble(a=c("Daniel", "Marcelino"), 
-       b=c("nome", "sobrenome"))
+congressistas %&gt;% # Dados
+  select(sigla_casa, nome_eleitoral, uf, sg_partido) # colunas
 ```
 
 ```
-## # A tibble: 2 × 2
-##   a         b        
-##   &lt;chr&gt;     &lt;chr&gt;    
-## 1 Daniel    nome     
-## 2 Marcelino sobrenome
+## # A tibble: 594 × 4
+##    sigla_casa nome_eleitoral   uf    sg_partido
+##    &lt;chr&gt;      &lt;chr&gt;            &lt;chr&gt; &lt;chr&gt;     
+##  1 CD         Abílio Santana   BA    PL        
+##  2 CD         Abou Anni        SP    PSL       
+##  3 CD         Acácio Favacho   AP    PROS      
+##  4 CD         Adolfo Viana     BA    PSDB      
+##  5 CD         Adriana Ventura  SP    NOVO      
+##  6 CD         Adriano do Baldy GO    PP        
+##  7 CD         Aécio Neves      MG    PSDB      
+##  8 CD         Aelton Freitas   MG    PL        
+##  9 CD         Afonso Florence  BA    PT        
+## 10 CD         Afonso Hamm      RS    PP        
+## # … with 584 more rows
 ```
-
-]
 
 
 ---
 
-## Pipe
-
-.pull-left[
-&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/pipe.jpg" width="50%" /&gt;
-]
-
-.pull-right[
-
-O uso de pipes `%&gt;%` é uma peça fundamental no funcionamento dos pacotes do `tidyverse`. As principais vantagens do pipe:
-
-- Concatenar as funções do seu código. 
-
-- Evitar objetos intermediários.
-
-- Tornar os códigos mais intuitivos. 
-
-- Evita múltiplos parentesis. 
-]
----
-
-### O R funciona de dentro para fora:
-
-
-```r
-# R
-x &lt;- c(1:10)
-round(exp(sqrt(mean(x))), 1)
-```
-
-```
-## [1] 10.4
-```
-
-### O Pipe
-
-
-```r
-x %&gt;%
-  mean() %&gt;%
-  sqrt() %&gt;%
-  exp() %&gt;%
-  round(1) 
-```
-
-```
-## [1] 10.4
-```
-
----
-## Notas importantes sobre os pipes
-
-**1. Os pipes sempre devem ser usados para conectar funções e seus outputs**
-
-
-```r
-# Não rode este código.
-x %&gt;%
-  funcao1(arg1=x) %&gt;%
-  funcao2(arg=output_da_funcao1)
-```
-
-**Exemplo:**
-
-
-```r
-sample(1:1000, 500, replace=TRUE) %&gt;%
-  density() %&gt;% # funcao 1
-  plot() # função 2 
-```
-
----
-
-**2. O input sempre pode ser omitido, ou representados pelo atalho `.`**
-
-
-```r
-sample(1:1000, 500, replace=TRUE) %&gt;%
-  density(.) %&gt;% # funcao 1.
-  plot(.) # função 2. 
-```
-
-&lt;img src="04-intro-tidyverse_files/figure-html/unnamed-chunk-10-1.png" width="40%" /&gt;
-
----
-
-**3. Os resultados do pipe não são salvos imediatamente. Você precisa atribuir a um novo objeto** 
-
-
-```r
-grafico &lt;- sample(1:1000, 500, replace=TRUE) %&gt;%
-              density(.) %&gt;% # funcao 1.
-              plot(.) # função 2. 
-```
-
-&lt;img src="04-intro-tidyverse_files/figure-html/unnamed-chunk-11-1.png" width="38%" /&gt;
-
-
-
----
-class: middle, center, inverse
-
-# Manipulação de dados com dplyr
-
----
-
-## Introdução ao dplyr
-
-Sua lógica é simples: suas funções fazem exatamente o que seus nomes descrevem (**verb based language**). Estas são as funções mais úteis do `dplyr`:
-
-.pull-left[
+## Reordenando colunas
 &lt;small&gt;
-- `select()`: selecionar colunas.
 
-- `filter()`: filtrar o banco de dados por linhas.
+```r
+congressistas %&gt;% # Dados
+  # seleciona colunas
+  select(uf, nome_eleitoral, sg_partido, sigla_casa) # colunas
+```
 
-- `mutate()`: criar novas variáveis e alterar existentes.
+```
+## # A tibble: 594 × 4
+##    uf    nome_eleitoral   sg_partido sigla_casa
+##    &lt;chr&gt; &lt;chr&gt;            &lt;chr&gt;      &lt;chr&gt;     
+##  1 BA    Abílio Santana   PL         CD        
+##  2 SP    Abou Anni        PSL        CD        
+##  3 AP    Acácio Favacho   PROS       CD        
+##  4 BA    Adolfo Viana     PSDB       CD        
+##  5 SP    Adriana Ventura  NOVO       CD        
+##  6 GO    Adriano do Baldy PP         CD        
+##  7 MG    Aécio Neves      PSDB       CD        
+##  8 MG    Aelton Freitas   PL         CD        
+##  9 BA    Afonso Florence  PT         CD        
+## 10 RS    Afonso Hamm      PP         CD        
+## # … with 584 more rows
+```
 
-- `arrange()`: ordenar o banco de dados.
+---
 
-- `group_by()`: agrupar e fazer análiser nos subgrupos. 
 
-- `summarize()`: sumariza os dados por subgroups. 
-]
-
-.pull-right[
+## Renomeando colunas
 &lt;small&gt;
-Todas essas funções seguem as mesmas características:
 
-- O input é sempre um banco de dados. 
+```r
+congressistas %&gt;% 
+  # seleciona colunas com novos nomes. 
+  select(ID=cpf,
+         NAME=nome_civil,
+         AGE=idade, 
+         PROFISSAO=ocupacao, 
+         DISTRICT=uf, 
+         GENDER=sexo) # colunas
+```
 
-- O banco de dados é sempre o primeiro argumento. 
+```
+## # A tibble: 594 × 6
+##    ID          NAME                           AGE PROFISSAO      DISTRICT GENDER
+##    &lt;chr&gt;       &lt;chr&gt;                        &lt;dbl&gt; &lt;chr&gt;          &lt;chr&gt;    &lt;chr&gt; 
+##  1 36607606504 JOSE ABILIO SILVA DE SANTANA    56 EMPRESÁRIO     BA       M     
+##  2 8496582841  PAULO SERGIO ABOU ANNI          54 POLICIAL MILI… SP       M     
+##  3 74287028287 ACÁCIO DA SILVA FAVACHO NETO    37 VEREADOR       AP       M     
+##  4 80123848504 ADOLFO VIANA DE CASTRO NETO     40 DEPUTADO       BA       M     
+##  5 12519851813 ADRIANA MIGUEL VENTURA          52 ADMINISTRADOR  SP       F     
+##  6 50746553153 ADRIANO ANTÔNIO AVELAR          52 OUTROS         GO       M     
+##  7 66728983791 AÉCIO NEVES DA CUNHA            61 SENADOR        MG       M     
+##  8 36179140634 AELTON JOSÉ DE FREITAS          59 DEPUTADO       MG       M     
+##  9 17734150500 AFONSO BANDEIRA FLORENCE        60 DEPUTADO       BA       M     
+## 10 37040642034 JOSÉ ALFONSO EBERT HAMM         59 DEPUTADO       RS       M     
+## # … with 584 more rows
+```
 
-- Os argumentos seguintes acessão colunas dos bancos de dados diretamente, sem aspas. 
-
-- O output é sempre um novo banco de dados. 
-]
 
 ---
 
-**Algumas outras funções menos utilizadas**:
 
-- `count()`: contar número de observações por subgrupos.
+## Salvando novo danco de dados 
+&lt;small&gt;
 
-- `distinct()`: eliminar repetições.
-
-- `n():` conta quantas observações há em dados agrupados.
-
-- `sample_n():` Seleciona n amostras do seu banco de dadosl
-
-- `glimpse():` Fornece um sumário dos seus dados. 
-
-- `top_n():` Seleciona por linhas de acordo com o rank das variáveis.
-
-- `slice()`: filtra seu banco de dados por posições. 
+```r
+congressistas_sub &lt;- congressistas %&gt;% # Dados
+                  # seleciona colunas com novos nomes. 
+                  select(ID=cpf,
+                         NAME=nome_civil,
+                         AGE=idade, 
+                         PROFISSAO=ocupacao, 
+                         DISTRICT=uf, 
+                         GENDER=sexo) # colunas
+```
 
 ---
+
+## Outros atalhos para uso do `select` 
+
+- `contains()` - Extrai colunas que contêm determinado texto.
+
+- `starts_with()` - Extrai colunas que inicia com determinado texto.
+
+- `ends_with()` - Extrai colunas que termina com determinado texto. 
+
+- `everything()` - Extrai todas as colunas restantes.
+
+
+---
+
+
+**Exemplos**
+
+
+```r
+congressistas %&gt;%
+  # seleciona colunas onde sg_ aparece
+  select(contains("sg_"))
+```
+
+```
+## # A tibble: 594 × 1
+##    sg_partido
+##    &lt;chr&gt;     
+##  1 PL        
+##  2 PSL       
+##  3 PROS      
+##  4 PSDB      
+##  5 NOVO      
+##  6 PP        
+##  7 PSDB      
+##  8 PL        
+##  9 PT        
+## 10 PP        
+## # … with 584 more rows
+```
+
+
+```r
+congressistas %&gt;%
+  # seleciona colunas que terminam com eleitoral e 
+  # todas as outras colunas restantes
+  select(ends_with("eleitoral"), everything())
+```
+
+```
+## # A tibble: 594 × 24
+##    nome_eleitoral   condicao_eleitoral     id casa   sigla_casa cpf   nome_civil
+##    &lt;chr&gt;            &lt;chr&gt;               &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;     
+##  1 Abílio Santana   Titular            204554 camara CD         3660… JOSE ABIL…
+##  2 Abou Anni        Titular            204521 camara CD         8496… PAULO SER…
+##  3 Acácio Favacho   Titular            204379 camara CD         7428… ACÁCIO DA…
+##  4 Adolfo Viana     Titular            204560 camara CD         8012… ADOLFO VI…
+##  5 Adriana Ventura  Titular            204528 camara CD         1251… ADRIANA M…
+##  6 Adriano do Baldy Titular            121948 camara CD         5074… ADRIANO A…
+##  7 Aécio Neves      Titular             74646 camara CD         6672… AÉCIO NEV…
+##  8 Aelton Freitas   Efetivado          141372 camara CD         3617… AELTON JO…
+##  9 Afonso Florence  Titular            160508 camara CD         1773… AFONSO BA…
+## 10 Afonso Hamm      Titular            136811 camara CD         3704… JOSÉ ALFO…
+## # … with 584 more rows, and 17 more variables: data_nascimento &lt;date&gt;,
+## #   uf &lt;chr&gt;, sg_partido &lt;chr&gt;, partido &lt;chr&gt;, ideologia &lt;chr&gt;, situacao &lt;chr&gt;,
+## #   sexo &lt;chr&gt;, escolaridade &lt;chr&gt;, email &lt;chr&gt;, naturalidade &lt;chr&gt;,
+## #   telefone &lt;chr&gt;, legislatura &lt;dbl&gt;, url_foto &lt;chr&gt;, total_mandatos &lt;dbl&gt;,
+## #   ocupacao &lt;chr&gt;, cor_raca &lt;chr&gt;, idade &lt;dbl&gt;
+```
+
 
 
 
