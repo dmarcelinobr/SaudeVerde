@@ -1,0 +1,149 @@
+---
+title: "Iniciando com o tidyverve"
+subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
+author: "Daniel Marcelino <br> Brasília"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
+```
+
+
+## Banco de dados
+
+Neste exercícios, vamos carregar um banco de dados com os parlamentares ativos da Câmara e Senado. Portanto, execute o código abaixo para fazer o download dos bancos de dados. 
+
+```{r}
+library(tidyverse)
+
+congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+```
+
+```{r}
+glimpse(congressistas)
+```
+
+
+## Questão 1.
+
+Usando o banco de candidatos. 
+
+- Quantos deputados e senadores estão em exercício?
+
+```{r}
+congressistas %>% 
+  count(casa)
+
+
+congressistas %>% 
+  group_by(casa) %>%
+  summarize(Freq = n())
+```
+
+- Quantos partidos diferentes estão representados nas __duas__ Casas?
+
+```{r}
+
+congressistas %>% 
+  count(casa, partido)
+
+congressistas %>% 
+  count(partido, casa)
+
+```
+
+- Qual o número de deputados por Estado?
+
+```{r}
+
+congressistas %>%
+  filter(casa == "camara") %>%
+  count(uf)
+
+
+```
+
+
+
+## Questão 2
+
+Qual é a média de idade de deputados e senadores?
+
+```{r}
+congressistas %>%
+  group_by(casa) %>%
+  summarize(idade_media = mean(idade))
+```
+
+- Quem é o deputado mais novo e o mais velho?
+
+```{r}
+congressistas %>%
+  filter(casa == "camara") %>%
+  filter(idade == max(idade))
+
+congressistas %>%
+  filter(casa == "camara") %>%
+  filter(idade == min(idade))
+```
+
+- Quem é o senador mais novo e o mais velho?
+
+```{r}
+
+congressistas %>%
+  filter(casa == "senado") %>%
+  filter(idade == max(idade))
+
+congressistas %>%
+  filter(casa == "senado") %>%
+  filter(idade == min(idade))
+
+```
+
+
+## Questão 3 
+
+- Qual é a composição ideológica nas __duas__ Casas do Congresso? Use a variável `ideologia`.
+
+```{r}
+
+congressistas %>%
+  group_by(casa, ideologia) %>%
+  summarize(freq = n()) %>%
+  mutate(rel.freq = freq / sum(freq))
+```
+
+
+- Qual é a porcentagem de representantes do sexo masculino e feminino em cada Casa?
+
+```{r}
+congressistas %>%
+  count(casa, sexo) %>%
+  group_by(casa) %>%
+  mutate(rel.freq = n / sum(n))
+```
+
+
+- E a porcentagem de representantes por cor ou raça em cada Casa?
+
+```{r}
+
+congressistas %>%
+  group_by(casa, cor_raca) %>%
+  summarize(freq = n()) %>%
+  mutate(rel.freq = paste0(round(100 * freq / sum(freq), 0), "%"))
+```
+
+
+
+
+
+#### Até a próxima!
+
+
