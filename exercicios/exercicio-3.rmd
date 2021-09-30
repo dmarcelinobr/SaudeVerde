@@ -1,6 +1,5 @@
 ---
 title: "Iniciando com o tidyverse"
-subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
 author: "Daniel Marcelino <br> Brasília"
 output: html_document
 date: "`r Sys.Date()`"
@@ -8,13 +7,13 @@ date: "`r Sys.Date()`"
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, comment = "")
 ```
 
 
 ## Banco de dados
 
-Neste exercícios, vamos carregar um banco de dados com os parlamentares ativos da Câmara e Senado. Portanto, execute o código abaixo para fazer o download dos bancos de dados. 
+Nestes exercícios, vamos carregar um banco de dados com os parlamentares ativos da Câmara e Senado. Portanto, execute o código abaixo para fazer o download dos bancos de dados. 
 
 ```{r}
 library(tidyverse)
@@ -22,18 +21,20 @@ library(tidyverse)
 congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
     delim = ";", escape_double = FALSE, trim_ws = TRUE)
 
+```
 
+- Mostre aqui os dados que você carregou:
+```{r}
+# responda aqui
 ```
 
 ## Questão 1.
-
-Usando o banco de candidatos. 
 
 - Quantos deputados e senadores estão em exercício?
 
 ```{r}
 
-# responda aqui.
+# responda aqui
 
 ```
 
@@ -41,22 +42,20 @@ Usando o banco de candidatos.
 
 ```{r}
 
-# responda aqui.
-
+# responda aqui
 ```
 
 - Qual o número de deputados por Estado?
 
 ```{r}
-# responda aqui.
-
+# responda aqui
 ```
 
 
 
 ## Questão 2
 
-Qual é a média de idade de deputados e senadores?
+- Qual é a média de idade de deputados e senadores?
 
 ```{r}
 # responda aqui
@@ -66,12 +65,15 @@ Qual é a média de idade de deputados e senadores?
 
 ```{r}
 # responda aqui
+  
 ```
 
 - Quem é o senador mais novo e o mais velho?
 
 ```{r}
+
 # responda aqui
+# 
 ```
 
 
@@ -83,11 +85,12 @@ Qual é a média de idade de deputados e senadores?
 # responda aqui
 ```
 
-
 - Qual é a porcentagem de representantes do sexo masculino e feminino em cada Casa?
 
 ```{r}
+
 # responda aqui
+  
 ```
 
 

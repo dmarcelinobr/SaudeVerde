@@ -4,7 +4,7 @@
     <title>Manipulação de Banco de Dados</title>
     <meta charset="utf-8" />
     <meta name="author" content="Daniel Marcelino   Brasília" />
-    <meta name="date" content="2021-09-29" />
+    <meta name="date" content="2021-09-30" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <script src="libs/clipboard/clipboard.min.js"></script>
     <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
@@ -20,7 +20,7 @@ class: center, middle, inverse, title-slide
 # Manipulação de Banco de Dados
 ## Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI
 ### Daniel Marcelino <br> Brasília
-### 2021-09-29
+### 2021-09-30
 
 ---
 
@@ -107,14 +107,14 @@ congressistas %&gt;%
   # seleciona colunas com novos nomes. 
   select(NAME=nome_civil,
          AGE=idade, 
-         PROFISSAO=ocupacao, 
+         OCCUPATION=ocupacao, 
          DISTRICT=uf, 
          GENDER=sexo) # colunas
 ```
 
 ```
 ## # A tibble: 594 × 5
-##    NAME                           AGE PROFISSAO        DISTRICT GENDER
+##    NAME                           AGE OCCUPATION       DISTRICT GENDER
 ##    &lt;chr&gt;                        &lt;dbl&gt; &lt;chr&gt;            &lt;chr&gt;    &lt;chr&gt; 
 ##  1 JOSE ABILIO SILVA DE SANTANA    56 EMPRESÁRIO       BA       M     
 ##  2 PAULO SERGIO ABOU ANNI          54 POLICIAL MILITAR SP       M     
@@ -141,7 +141,7 @@ congressistas_sub &lt;- congressistas %&gt;% # Dados
                   # seleciona colunas com novos nomes. 
                   select(NAME=nome_civil,
                          AGE=idade, 
-                         PROFISSAO=ocupacao, 
+                         OCCUPATION=ocupacao, 
                          DISTRICT=uf, 
                          GENDER=sexo) # colunas
 ```
@@ -574,7 +574,7 @@ class: inverse, middle, center
 
 
 ## Count: contar por grupos 
-
+&lt;small&gt;
 
 ```r
 congressistas %&gt;%
@@ -599,10 +599,69 @@ congressistas %&gt;%
 ## # … with 14 more rows
 ```
 
+
+## Rename: renomear colunas 
+---
+&lt;small&gt;
+
+```r
+congressistas %&gt;% 
+rename(PARTY = sg_partido, HOUSE = casa)
+```
+
+```
+## # A tibble: 594 × 24
+##        id HOUSE  sg_casa cpf    nome_civil  nome_eleitoral data_nascimento uf   
+##     &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;          &lt;date&gt;          &lt;chr&gt;
+##  1 204554 camara CD      36607… JOSE ABILI… Abílio Santana 1965-02-13      BA   
+##  2 204521 camara CD      84965… PAULO SERG… Abou Anni      1966-11-06      SP   
+##  3 204379 camara CD      74287… ACÁCIO DA … Acácio Favacho 1983-09-28      AP   
+##  4 204560 camara CD      80123… ADOLFO VIA… Adolfo Viana   1981-02-02      BA   
+##  5 204528 camara CD      12519… ADRIANA MI… Adriana Ventu… 1969-03-06      SP   
+##  6 121948 camara CD      50746… ADRIANO AN… Adriano do Ba… 1969-09-06      GO   
+##  7  74646 camara CD      66728… AÉCIO NEVE… Aécio Neves    1960-03-10      MG   
+##  8 141372 camara CD      36179… AELTON JOS… Aelton Freitas 1961-12-15      MG   
+##  9 160508 camara CD      17734… AFONSO BAN… Afonso Floren… 1960-10-15      BA   
+## 10 136811 camara CD      37040… JOSÉ ALFON… Afonso Hamm    1962-04-25      RS   
+## # … with 584 more rows, and 16 more variables: PARTY &lt;chr&gt;, partido &lt;chr&gt;,
+## #   ideologia &lt;chr&gt;, situacao &lt;chr&gt;, condicao_eleitoral &lt;chr&gt;, sexo &lt;chr&gt;,
+## #   escolaridade &lt;chr&gt;, email &lt;chr&gt;, naturalidade &lt;chr&gt;, telefone &lt;chr&gt;,
+## #   legislatura &lt;dbl&gt;, url_foto &lt;chr&gt;, total_mandatos &lt;dbl&gt;, ocupacao &lt;chr&gt;,
+## #   cor_raca &lt;chr&gt;, idade &lt;dbl&gt;
+```
+
+&lt;small&gt;
+
+```r
+# Sem pipe 
+rename(congressistas, PARTY = sg_partido, HOUSE = casa)
+```
+
+```
+## # A tibble: 594 × 24
+##        id HOUSE  sg_casa cpf    nome_civil  nome_eleitoral data_nascimento uf   
+##     &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt;          &lt;date&gt;          &lt;chr&gt;
+##  1 204554 camara CD      36607… JOSE ABILI… Abílio Santana 1965-02-13      BA   
+##  2 204521 camara CD      84965… PAULO SERG… Abou Anni      1966-11-06      SP   
+##  3 204379 camara CD      74287… ACÁCIO DA … Acácio Favacho 1983-09-28      AP   
+##  4 204560 camara CD      80123… ADOLFO VIA… Adolfo Viana   1981-02-02      BA   
+##  5 204528 camara CD      12519… ADRIANA MI… Adriana Ventu… 1969-03-06      SP   
+##  6 121948 camara CD      50746… ADRIANO AN… Adriano do Ba… 1969-09-06      GO   
+##  7  74646 camara CD      66728… AÉCIO NEVE… Aécio Neves    1960-03-10      MG   
+##  8 141372 camara CD      36179… AELTON JOS… Aelton Freitas 1961-12-15      MG   
+##  9 160508 camara CD      17734… AFONSO BAN… Afonso Floren… 1960-10-15      BA   
+## 10 136811 camara CD      37040… JOSÉ ALFON… Afonso Hamm    1962-04-25      RS   
+## # … with 584 more rows, and 16 more variables: PARTY &lt;chr&gt;, partido &lt;chr&gt;,
+## #   ideologia &lt;chr&gt;, situacao &lt;chr&gt;, condicao_eleitoral &lt;chr&gt;, sexo &lt;chr&gt;,
+## #   escolaridade &lt;chr&gt;, email &lt;chr&gt;, naturalidade &lt;chr&gt;, telefone &lt;chr&gt;,
+## #   legislatura &lt;dbl&gt;, url_foto &lt;chr&gt;, total_mandatos &lt;dbl&gt;, ocupacao &lt;chr&gt;,
+## #   cor_raca &lt;chr&gt;, idade &lt;dbl&gt;
+```
+
 ---
 
 ## Slice: selecionar por posição das linhas 
-
+&lt;small&gt;
 
 ```r
 congressistas %&gt;%
@@ -632,7 +691,7 @@ congressistas %&gt;%
 ---
 
 ## rowid_to_column() : criar id para linhas
-
+&lt;small&gt;
 
 ```r
 congressistas %&gt;% 
@@ -658,6 +717,156 @@ congressistas %&gt;%
 ```
 
 
+
+---
+class: inverse, middle, center
+# Joins, ligações de bancos de dados
+
+---
+
+## Chaves (keys)
+
+As **chaves** são colunas/variáveis nos bancos de dados capazes de conectar diferentes tabelas no próprio banco de dados ou entre bancos de dados diferentes.  Estas **chaves** devem ser:
+
+- Completas. Nunca tenha missing values nas suas chaves. 
+
+- Únicas: cada observação deve possuir uma chave distinta. Evite sempre duplicações. 
+
+**Exemplo**: nos casos dos bancos de dados do TSE, usando o número do candidato e a unidade eleitoral é possível conectar os bancos de **candidatos** e **votação**. Da mesma forma, usando o número da zona eleitoral por município, conectar **votação** e **eleitorado**. Essas conexões são importantes para tonar as análises mais completas e complexas.
+
+
+---
+
+# Joins
+
+Inspirado na linguaguem **SQL**, o dplyr possui um conjunto de funções para conectar bancos de dados distintos. 
+
+Vamos criar dois bancos bem simples apenas para entendermos a lógica de como estes joins funcionam na prática. 
+&lt;small&gt;
+
+```r
+library(tidyverse)
+data1 &lt;- tibble(nome=c("A", "B", "C"), 
+                value=c(10, 20, 30)) 
+data2 &lt;- tibble(nome=c("A", "D", "C"), 
+                value2=c(10, 50, 30))
+```
+
+---
+
+## left_join()
+
+&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/left-join.gif" width="60%" style="display: block; margin: auto;" /&gt;
+
+&lt;small&gt;
+
+```r
+left_join(data1, data2)
+```
+
+```
+## # A tibble: 3 × 3
+##   nome  value value2
+##   &lt;chr&gt; &lt;dbl&gt;  &lt;dbl&gt;
+## 1 A        10     10
+## 2 B        20     NA
+## 3 C        30     30
+```
+
+---
+
+## inner_join()
+
+&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/inner-join.gif" width="60%" style="display: block; margin: auto;" /&gt;
+
+&lt;small&gt;
+
+
+```r
+inner_join(data1, data2)
+```
+
+```
+## # A tibble: 2 × 3
+##   nome  value value2
+##   &lt;chr&gt; &lt;dbl&gt;  &lt;dbl&gt;
+## 1 A        10     10
+## 2 C        30     30
+```
+
+---
+
+## full_join()
+
+&lt;img src="https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/full-join.gif" width="60%" style="display: block; margin: auto;" /&gt;
+
+&lt;small&gt;
+
+```r
+full_join(data1, data2)
+```
+
+```
+## # A tibble: 4 × 3
+##   nome  value value2
+##   &lt;chr&gt; &lt;dbl&gt;  &lt;dbl&gt;
+## 1 A        10     10
+## 2 B        20     NA
+## 3 C        30     30
+## 4 D        NA     50
+```
+
+
+---
+
+## Chaves distintas? Não tem problema!
+
+Em inúmeros casos, os bancos que precisamos conectar terá nomes diferentes. Este problema é fácil de resolver. É preciso adicionar o argumento dos nomes, e ajudar as funções joins a fazerem seu serviço. 
+
+&lt;small&gt;
+
+```r
+data3 &lt;- data2 %&gt;%
+          # alterando o nome
+          select(chave = nome, everything())
+# Join
+left_join(data1, data3, 
+          by=c("nome" = "chave")) # adicione argumento by.
+```
+
+```
+## # A tibble: 3 × 3
+##   nome  value value2
+##   &lt;chr&gt; &lt;dbl&gt;  &lt;dbl&gt;
+## 1 A        10     10
+## 2 B        20     NA
+## 3 C        30     30
+```
+
+---
+
+## Múltiplas chaves
+
+A lógica para __múltiplas chaves é semelhante__: precisamos específicar seus nomes na função by. 
+
+&lt;small&gt;
+
+```r
+data3 &lt;- data2 %&gt;%
+          # alterando o nome
+          select(nome, value = value2)
+
+left_join(data1, data3, by=c("nome", "value"))
+```
+
+```
+## # A tibble: 3 × 2
+##   nome  value
+##   &lt;chr&gt; &lt;dbl&gt;
+## 1 A        10
+## 2 B        20
+## 3 C        30
+```
 
 
 ---

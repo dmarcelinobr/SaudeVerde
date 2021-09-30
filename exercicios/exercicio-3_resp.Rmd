@@ -1,6 +1,5 @@
 ---
 title: "Iniciando com o tidyverve"
-subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
 author: "Daniel Marcelino <br> Brasília"
 output: html_document
 date: "`r Sys.Date()`"
@@ -8,13 +7,13 @@ date: "`r Sys.Date()`"
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, comment = "")
 ```
 
 
 ## Banco de dados
 
-Neste exercícios, vamos carregar um banco de dados com os parlamentares ativos da Câmara e Senado. Portanto, execute o código abaixo para fazer o download dos bancos de dados. 
+Nestes exercícios, vamos carregar um banco de dados com os parlamentares ativos da Câmara e Senado. Portanto, execute o código abaixo para fazer o download dos bancos de dados. 
 
 ```{r}
 library(tidyverse)

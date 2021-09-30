@@ -98,7 +98,7 @@ congressistas %>%
   # seleciona colunas com novos nomes. 
   select(NAME=nome_civil,
          AGE=idade, 
-         PROFISSAO=ocupacao, 
+         OCCUPATION=ocupacao, 
          DISTRICT=uf, 
          GENDER=sexo) # colunas
 ```
@@ -114,7 +114,7 @@ congressistas_sub <- congressistas %>% # Dados
                   # seleciona colunas com novos nomes. 
                   select(NAME=nome_civil,
                          AGE=idade, 
-                         PROFISSAO=ocupacao, 
+                         OCCUPATION=ocupacao, 
                          DISTRICT=uf, 
                          GENDER=sexo) # colunas
 ```
@@ -355,17 +355,34 @@ class: inverse, middle, center
 
 
 ## Count: contar por grupos 
-
+<small>
 ```{r}
 congressistas %>%
   # Quantas entradas para cada partido
   count(sg_partido)
 ```
 
+
+## Rename: renomear colunas 
+---
+<small>
+```{r}
+congressistas %>% 
+rename(PARTY = sg_partido, HOUSE = casa)
+```
+
+<small>
+```{r}
+# Sem pipe 
+rename(congressistas, PARTY = sg_partido, HOUSE = casa)
+
+
+```
+
 ---
 
 ## Slice: selecionar por posição das linhas 
-
+<small>
 ```{r}
 congressistas %>%
   slice(1:9)
@@ -374,7 +391,7 @@ congressistas %>%
 ---
 
 ## rowid_to_column() : criar id para linhas
-
+<small>
 ```{r}
 congressistas %>% 
   rowid_to_column() %>%
@@ -382,6 +399,113 @@ congressistas %>%
 ```
 
 
+
+---
+class: inverse, middle, center
+# Joins, ligações de bancos de dados
+
+---
+
+## Chaves (keys)
+
+As **chaves** são colunas/variáveis nos bancos de dados capazes de conectar diferentes tabelas no próprio banco de dados ou entre bancos de dados diferentes.  Estas **chaves** devem ser:
+
+- Completas. Nunca tenha missing values nas suas chaves. 
+
+- Únicas: cada observação deve possuir uma chave distinta. Evite sempre duplicações. 
+
+**Exemplo**: nos casos dos bancos de dados do TSE, usando o número do candidato e a unidade eleitoral é possível conectar os bancos de **candidatos** e **votação**. Da mesma forma, usando o número da zona eleitoral por município, conectar **votação** e **eleitorado**. Essas conexões são importantes para tonar as análises mais completas e complexas.
+
+
+---
+
+# Joins
+
+Inspirado na linguaguem **SQL**, o dplyr possui um conjunto de funções para conectar bancos de dados distintos. 
+
+Vamos criar dois bancos bem simples apenas para entendermos a lógica de como estes joins funcionam na prática. 
+<small>
+```{r}
+library(tidyverse)
+data1 <- tibble(nome=c("A", "B", "C"), 
+                value=c(10, 20, 30)) 
+data2 <- tibble(nome=c("A", "D", "C"), 
+                value2=c(10, 50, 30))
+```
+
+---
+
+## left_join()
+
+```{r echo=FALSE, out.width="60%", fig.align="center"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/left-join.gif")
+```
+
+<small>
+```{r}
+left_join(data1, data2)
+```
+
+---
+
+## inner_join()
+
+```{r echo=FALSE,out.width="60%", fig.align="center"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/inner-join.gif")
+```
+
+<small>
+
+```{r}
+inner_join(data1, data2)
+
+```
+
+---
+
+## full_join()
+
+```{r echo=FALSE,out.width="60%", fig.align="center"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/full-join.gif")
+```
+
+<small>
+```{r}
+full_join(data1, data2)
+
+```
+
+
+---
+
+## Chaves distintas? Não tem problema!
+
+Em inúmeros casos, os bancos que precisamos conectar terá nomes diferentes. Este problema é fácil de resolver. É preciso adicionar o argumento dos nomes, e ajudar as funções joins a fazerem seu serviço. 
+
+<small>
+```{r}
+data3 <- data2 %>%
+          # alterando o nome
+          select(chave = nome, everything())
+# Join
+left_join(data1, data3, 
+          by=c("nome" = "chave")) # adicione argumento by.
+```
+
+---
+
+## Múltiplas chaves
+
+A lógica para __múltiplas chaves é semelhante__: precisamos específicar seus nomes na função by. 
+
+<small>
+```{r}
+data3 <- data2 %>%
+          # alterando o nome
+          select(nome, value = value2)
+
+left_join(data1, data3, by=c("nome", "value"))
+```
 
 
 ---
