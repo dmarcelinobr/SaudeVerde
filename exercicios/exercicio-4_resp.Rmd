@@ -1,0 +1,148 @@
+---
+title: "Manipulação de banco de dados com dplyr"
+author: "Daniel Marcelino <br> Brasília"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, comment = "")
+```
+
+
+## Banco de dados
+
+Para realizar estes exercícios, vamos carregar novamente o banco de dados com os parlamentares ativos na Câmara e Senado. 
+
+```{r}
+library(tidyverse)
+
+congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+
+```
+
+
+## Questão 1
+
+- Usando a função `select`, gere um novo data frame com apenas 5 colunas/variáveis de seu interesse e apenas com os membros da Câmara:
+
+```{r}
+tab1 <- congressistas %>% 
+  filter(sg_casa == "CD") %>%
+  select(id, nome_eleitoral, uf, sg_partido, sexo)  
+ 
+# head e tail
+tab1 
+```
+
+
+- Repita o mesmo procedimento, mas selecione as colunas usando as suas posições no banco de dados ao invés de seus nomes: 
+```{r}
+congressistas %>% 
+  filter(sg_casa == "CD") %>%
+  select(1, 5, 8:9, 14)  
+```
+
+
+- Usando o banco original, selecione apenas as colunas que contenham _sg_ no nome:
+
+```{r}
+
+congressistas %>%
+  select(contains("sg_"))
+```
+
+
+- Usando os mesmos dados, selecione apenas as colunas que começando com _nome_ ou terminando com _eleitoral_:
+
+```{r}
+
+congressistas %>%
+  select(starts_with("nome") |ends_with("eleitoral"))
+```
+
+
+## Questão 2
+
+- Crie uma nova tabela com todos deputados e senadores de primeiro mandato, mantendo as seguintes colunas: _sg_casa_, _nome_eleitoral_, _sg_partido_, _idade_. Por fim, ordene seus dados por ordem crescente de idade: 
+
+```{r}
+
+tab2 <- congressistas %>%
+  filter(total_mandatos==1) %>%
+  select(sg_casa, nome_eleitoral, sg_partido, idade) %>%
+  arrange(idade)
+
+
+tab2
+```
+
+
+- Agora ordene a tabela por ordem descrescente de idade:
+```{r}
+
+tab2 %>% arrange(desc(idade))
+
+```
+
+
+
+## Questão 3
+
+- Faça ums tabela/lista apenas com os senadores, contendo o _id_ e _nome_, mas incluindo (gerando/mutate) a informação do partido e uf ao nome. 
+
+```{r}
+
+tab3 <- congressistas %>%
+  filter(casa == "senado") %>%
+  mutate(nome =
+           paste(nome_eleitoral, " ", "(", sg_partido, "/", uf, ")",
+                 sep = "")) %>%
+  select(id, nome)
+  
+```
+
+
+- Gere uma nova coluna no banco original chamada de _status_ para indicar se o parlamentar é _novato_ ou _reeleito_, selecione a sigla da Casa, o nome político e a variável _status_ que você criou: 
+
+```{r}
+
+congressistas <- congressistas %>%
+  mutate(status = ifelse(total_mandatos >= 2, "reeleito", "novato"))
+
+congressistas %>% select(sg_casa, nome_eleitoral, status)
+```
+
+
+
+- Quantos parlamentares são reeleitos e novatos em cada Casa?
+- O que isso representa em termos de taxa ou porcentagem?
+
+```{r}
+
+congressistas %>% 
+  group_by(casa, status) %>%
+  summarise(freq = n()) %>%
+  mutate(rel.freq = freq / sum(freq))
+
+```
+
+
+
+```{r}
+library(knitr)
+
+congressistas %>% 
+  group_by(casa, status) %>%
+  summarise(freq = n()) %>%
+  mutate(rel.freq = freq / sum(freq)) %>%
+  kable()
+
+```
+
+
+#### Até a próxima!
+
+
