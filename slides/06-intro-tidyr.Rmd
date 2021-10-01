@@ -1,0 +1,241 @@
+---
+title: "Manipulação de Banco de Dados" 
+subtitle: "Introduçõa do tidyr"
+author: "Daniel Marcelino <br> Brasília"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+      ratio: '16:9'
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(message=FALSE, warning = FALSE, error = FALSE, cache = TRUE)
+
+``` 
+
+
+```{r xaringanthemer, include = FALSE}
+library(xaringanthemer)
+# #034c87
+xaringanthemer::style_mono_accent(
+  base_color = "#0A4A2D",
+  # primary_color = "#A70000",
+  #secondary_color = "#ff0000",
+  white_color = "white",
+  colors = c(
+    red = "#A70000",
+    purple = "#88398a",
+    orange = "#ff8811",
+    green = "#136f63",
+    blue = "#4B4FFF",
+    white = "#FFFFFF",
+    black = "#181818"
+  ),
+  header_font_google = google_font("Roboto Condensed"),
+  text_font_google   = google_font("Roboto Condensed", "300", "300i"),
+  code_font_google   = google_font("Ubuntu Mono"),
+  text_font_size = "30px",
+  code_font_size = "30px",
+  )
+
+xaringanExtra::use_share_again()
+```
+
+
+
+## Introdução.
+
+- Nós já fizemos nossa primeira imersão no uso de tidyverse para manipulação de banco de dados. Hoje daremos um novo passo. Especificamente, iremos aprender o conceito de banco de dados __tidy__, e como colocar nossos bancos de dados neste formato. 
+
+- Para aprender e praticar sobre bancos de dados tidy, usaremos o pacote `tidyr`.
+
+- O nome `tidyverse` vem do conceito de `tidy` data. Todos os pacotes que discutimos até aqui, e os outros, sobretudo o `ggplot` para visualização, são construídos em torno do conceito de dados em formato `tidy`. 
+
+---
+
+
+## Tidy data
+
+As três propriedades mais importantes que definem um banco de dados `tidy` são:
+
+- Cada coluna é uma variável 
+
+- Cada linha é uma observação
+
+- Cada valor em uma linha
+
+Vamos ver estas regras visualmente:
+
+```{r echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/tidy-1.png")
+```
+
+???
+__Estas duas simples definições trazem diversas vantagens:
+
+- Uma forma consistente para organizar nossos bancos de dados. 
+
+- Salvar uma variável por coluna facilita operações de manipulação (R trabalha melhor com vetores em coluna). 
+
+- Integra com outros pacotes do `tidyverse`__
+
+
+---
+
+## Tidy vs Untidy
+
+
+.pull-left[
+- Dados untidy são em geral chamados de banco de dados abertos (wide em inglês).
+
+- Na maioria dos casos, os dados possuem uma única variável espalhada por diversas colunas
+
+]
+
+.pull-right[
+
+```{r echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/untidy.png")
+```
+
+]
+---
+
+## Exemplo untidy
+
+<tiny>
+```{r}
+library(tidyverse)
+
+wide <- tibble(
+  pais=c("São Paulo", "Rio de Janeiro", "Espírito Santo", "Minas Gerais"), 
+  ano_2010= c("Geraldo Alckmin", "Sérgio Cabral", "Renato Casagrande", "Antônio Anastasia"), 
+  ano_2014=c("Geraldo Alckmin", "Fernando Pezão", "Paulo Hartung","Fernando Pimentel"),
+  ano_2018=c("João Doria", "Wilson Witzel", "Renato Casagrande", "Romeu Zema"))
+
+print(wide)
+```
+
+---
+
+## tidyr
+
+Vamos usar `tidyr` para tranformar nossos dados de um formato untidy -> tidy, e vice-versa. 
+
+### pivot_longer (várias colunas -> uma longa coluna)
+
+```{r echo=FALSE, out.width="80%", fig.align="center"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/gather.png")
+```
+
+
+---
+## Uso básico
+
+A função `pivot_longer` possui três inputs principais:
+
+- `cols`: as variáveis que você pretende empilhar.
+- `names_to`: nome da colunas para a nova variável. 
+- `values_to`: nome da coluna para os valores da nova variável. 
+
+<tiny>
+```{r}
+wide %>%
+  pivot_longer(cols=c(ano_2010, ano_2014, ano_2018), 
+               names_to="governador_ano", 
+               values_to="governador")
+```
+
+
+---
+
+
+## Mais um exemplo
+```{r}
+tab <- tibble(uf=c("DF", "GO", "MT", "MS"),
+       i_2010 = c(5, 1, 2, 3), 
+       i_2014 = c(10, 9, 9, 6),
+       i_2018 = c(0, 1, 2,9))
+tab 
+```
+
+
+
+```{r}
+tab %>%
+  pivot_longer(cols = c(starts_with("i")), 
+               names_to="t", 
+               values_to="valores")
+```
+
+
+
+---
+### pivot_wider (abrindo uma colunas -> várias)
+
+
+```{r echo=FALSE, out.width="80%", fig.align="center"}
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/spread.png")
+```
+
+---
+
+## Uso básico
+
+A função `pivot_wider` possui dois inputs principais:
+
+- `names_from`: nome da coluna com variáveis que será aberta. 
+- `values_from`: nome da coluna  com valores que será aberta. 
+
+
++ Ambas as funções pivot possuem diversos outros argumentos que são interessantes de explorar na documentação e exemplos. 
+
+---
+
+```{r}
+covid <- tibble(pais=c("Brasil", "Brasil",  "Argentina", "Argentina"),
+       ano = c(2020, 2020, 2020, 2020), 
+       covid = c("Casos", "Vacinas", "Casos", "Vacinas"), 
+       numero= c(10500000, 6535363, 2100000, 1800000))
+
+covid
+```
+
+
+---
+
+## Tidying
+
+```{r}
+covid
+# tidying
+# 
+covid %>%
+  pivot_wider(names_from=covid, 
+              values_from=numero)
+```
+
+
+
+
+---
+class: middle, center
+# Obrigado :)
+
+<center>
+`r icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), scale = 1, fill = "#A70000")` [dmarcelino@live.com](mailto:dmarcelino@live.com) 
+
+`r icons::icon_style(icons::fontawesome("twitter", style = "brands"), scale = 1, fill = "#A70000")` [@dmarcelinobr](https://twitter.com/dmarcelinobr) 
+
+`r icons::icon_style(icons::fontawesome("linkedin", style = "brands"), scale = 1, fill = "#A70000")`
+[dmarcelinobr](https://www.linkedin.com/in/dmarcelinobr/) 
+
+`r icons::icon_style(icons::fontawesome("github", style = "brands"), scale = 1, fill = "#A70000")`
+[dmarcelinobr](http://github.com/dmarcelinobr) 
