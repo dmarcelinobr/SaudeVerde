@@ -8,7 +8,6 @@ date: "`r Sys.Date()`"
 
 
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -23,6 +22,7 @@ knitr::opts_chunk$set(
   fig.retina = 2,
   out.width = "95%"
 )
+
 Sys.setlocale("LC_ALL","pt_BR.UTF-8")
 ```
 
@@ -35,6 +35,8 @@ Vamos carregar três bancos de dados para os próximos exercícios: o dos parlam
 ### Parlamentares
 ```{r}
 library(tidyverse)
+library(readr)
+
 
 congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/dados/brutos/congressistas_atuais.csv", 
     delim = ";", escape_double = FALSE, trim_ws = TRUE)
@@ -72,30 +74,34 @@ lista.candidatos <- grep(pattern="consulta_cand_2018_", lista.arquivos, value=TR
 # Excluindo Brasil
 lista.candidatos = lista.candidatos[!lista.candidatos == "consulta_cand_2018_BRASIL.csv"]
 
+lista.candidatos = lista.candidatos[!lista.candidatos == "consulta_cand_2018_BR.csv"]
+
 print(lista.candidatos)
 ```
 
 
 ## Loop para ler e empilhar os dados de candidaturas
 ```{r}
-consulta_cand_2018 = NULL
+# consulta_cand_2018 <- NULL
 
-# consulta_cand_2018 <- tibble::tibble()
+consulta_cand_2018 <- tibble::tibble()
 
-library(readr)
 for(i in lista.candidatos){
   cat("\n carregando bases ",i,"\n")
   eval(parse(text=paste0("dados_prov = read_delim('",i,"',
                          ';', escape_double = FALSE,
                          col_names = TRUE,
                          locale = locale(encoding = 'WINDOWS-1252'),
+                        col_types = cols(NR_PROTOCOLO_CANDIDATURA = col_character()), 
                          trim_ws = TRUE)")))
-  consulta_cand_2018 = rbind(consulta_cand_2018, dados_prov)
+  
+  consulta_cand_2018 = bind_rows(consulta_cand_2018, dados_prov)
 }
 
 ```
 
 
+    
 
 
 ## Dados de votação
@@ -123,31 +129,35 @@ lista.arquivos <-list.files(file.path(getwd()))
 print(lista.arquivos)
 
 #criando uma lista para pegar somente os documentos de votação
-lista.candidatos <- grep(pattern="votacao_candidato_munzona_2018_", lista.arquivos, value=TRUE)
+lista.votacao <- grep(pattern="votacao_candidato_munzona_2018_", lista.arquivos, value=TRUE)
 
 # Excluindo Brasil
-lista.candidatos = lista.candidatos[!lista.candidatos ==  "votacao_candidato_munzona_2018_BRASIL.csv"]
+lista.votacao = lista.votacao[!lista.votacao ==  "votacao_candidato_munzona_2018_BRASIL.csv"]
 
-print(lista.candidatos)
+lista.votacao = lista.votacao[!lista.votacao ==  "votacao_candidato_munzona_2018_BR.csv"]
+
+
+print(lista.votacao)
 ```
 
 
 
 ## Loop para ler e empilhar os dados de votação
 ```{r}
-votacao_candidato_2018 = NULL
+# votacao_candidato_2018 <- NULL
 
-# consulta_cand_2018 <- tibble::tibble()
+votacao_candidato_2018 <- tibble::tibble()
 
-library(readr)
-for(i in lista.candidatos){
+for(i in lista.votacao){
   cat("\n carregando bases ",i,"\n")
   eval(parse(text=paste0("dados_prov = read_delim('",i,"',
                          ';', escape_double = FALSE,
                          col_names = TRUE,
                          locale = locale(encoding = 'WINDOWS-1252'),
+                         col_types = cols(CD_MUNICIPIO = col_character(),
+                         NR_PROTOCOLO_CANDIDATURA = col_character()), 
                          trim_ws = TRUE)")))
- votacao_candidato_2018 = rbind(votacao_candidato_2018, dados_prov)
+ votacao_candidato_2018 = bind_rows(votacao_candidato_2018, dados_prov)
 }
 
 ```
@@ -159,33 +169,106 @@ for(i in lista.candidatos){
 
 ## Questão 1
 
--  Vamos criar um novo banco de dados, mantendo apenas os candidatos a deputado federal:
+-  Vamos criar um novo banco de dados mantendo apenas os candidatos que concorreram a deputado federal:
+
 
 ```{r}
-# responda aqui
+# passo 1:
+
+dados_deputados <-  consulta_cand_2018 %>% 
+  filter(DS_CARGO == "DEPUTADO FEDERAL") 
+
+dim(consulta_cand_2018)
+
+dim(dados_deputados)
 ```
 
 
 
-- Vamos somar os votos do banco de dados em seguida vamos plugar essa informação na tabela de deputados:
+- Vamos somar os votos do banco de dados em seguida vamos __plugar essa informação na tabela de deputados__ e depois na __tabela de parlamentares ativos__:
 
 ```{r}
-# responda aqui
+# passo 2:
+
+votacao_deputados <-  votacao_candidato_2018 %>% 
+  mutate(DS_CARGO = str_to_upper(DS_CARGO)) %>% 
+  filter(DS_CARGO == "DEPUTADO FEDERAL") 
+
+dim(votacao_candidato_2018)
+
+dim(votacao_deputados)
+```
+
+```{r}
+# passo 3:
+
+tab_1 <- votacao_deputados %>% 
+  group_by(SG_UF, NM_URNA_CANDIDATO, NR_CANDIDATO, SG_PARTIDO, SQ_CANDIDATO) %>%
+  summarise(VOTOS_TOTAIS =  sum(QT_VOTOS_NOMINAIS)) %>% ungroup()
 
 ```
+
+
+```{r}
+# mesmo resultado, mas sem mensagem chata:
+
+tab_1a <- votacao_deputados %>% 
+  group_by(SG_UF, NM_URNA_CANDIDATO, NR_CANDIDATO, SG_PARTIDO, SQ_CANDIDATO) %>%
+  summarise(VOTOS_TOTAIS =  sum(QT_VOTOS_NOMINAIS), .groups = 'drop')
+
+```
+
+
+
+
+
+```{r}
+# passo 4:
+
+resultado_join <- left_join(dados_deputados %>%
+                               select(NR_CPF_CANDIDATO, SQ_CANDIDATO) %>%
+                               distinct(NR_CPF_CANDIDATO, SQ_CANDIDATO), 
+                             tabela1, 
+                             by = c("SQ_CANDIDATO" = "SQ_CANDIDATO"))
+
+resultado_join
+
+```
+
+
+
+```{r}
+# by = c("a" = "b", "c" = "d") ligará x$a ao y$b e x$c ao y$d.
+# passo 5:
+
+resultado  <- left_join(congressistas, resultado_join %>% 
+                          select(SQ_CANDIDATO, VOTOS_TOTAIS) ,
+            by = c("cpf" = "NR_CPF_CANDIDATO"))
+
+```
+
+
+```{r}
+# O que deu certo e o que deu errado
+resultado %>% 
+  select(id, casa, cpf, nome_eleitoral, SQ_CANDIDATO, VOTOS_TOTAIS)
+```
+
 
 
 - Qual a percentagem de votos que cada deputado recebeu no seu estado?
 
 ```{r}
-# responda aqui
+
+
 ```
 
 
 - Agora, qual a porcentagem de votos que cada deputado obteve em relação ao total do seu partido no estado?
 
 ```{r}
-# responda aqui
+
+
 ```
 
 
