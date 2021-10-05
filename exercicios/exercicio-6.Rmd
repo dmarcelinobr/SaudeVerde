@@ -1,0 +1,57 @@
+---
+title: "Manipulação de banco de dados com tidyr"
+subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
+author: "Daniel Marcelino <br> Brasília"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  comment = "",
+  echo = FALSE,
+  cache = FALSE,
+  fig.align = "center",
+  fig_width = 8.75,
+  fig_height = 6.45,
+  fig.retina = 2,
+  out.width = "95%"
+)
+
+Sys.setlocale("LC_ALL","pt_BR.UTF-8")
+```
+
+
+## Questão 1
+
+- Usando os dados de votações e orientações:
+
+
+```{r}
+
+ano = 2021
+
+  url <-
+    paste0(
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-", ano, ".csv")
+  
+orientacoes <- read_delim(url)
+```
+
+
+
+```{r}
+
+library(tidyr)
+library(dplyr)
+
+
+orientacoes %>% 
+ pivot_wider(names_from = siglaBancada, values_from = orientacao)
+```
+
