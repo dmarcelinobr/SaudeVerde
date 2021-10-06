@@ -110,14 +110,13 @@ knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-
 
 ## Exemplo untidy
 
-<tiny>
+<small>
 ```{r}
 library(tidyverse)
-
 wide <- tibble(
-  pais=c("São Paulo", "Rio de Janeiro", "Espírito Santo", "Minas Gerais"), 
+  uf=c("São Paulo", "Rio de Janeiro", "Espírito Santo", "Minas Gerais"), 
   ano_2010= c("Geraldo Alckmin", "Sérgio Cabral", "Renato Casagrande", "Antônio Anastasia"), 
-  ano_2014=c("Geraldo Alckmin", "Fernando Pezão", "Paulo Hartung","Fernando Pimentel"),
+  ano_2014=c("Geraldo Alckmin", "Fernando Pezão", "Paulo Hartung", "Fernando Pimentel"),
   ano_2018=c("João Doria", "Wilson Witzel", "Renato Casagrande", "Romeu Zema"))
 
 print(wide)
@@ -145,8 +144,8 @@ A função `pivot_longer` possui três inputs principais:
 - `names_to`: nome da colunas para a nova variável. 
 - `values_to`: nome da coluna para os valores da nova variável. 
 
-<tiny>
-```{r}
+<small>
+```{r, eval=FALSE}
 wide %>%
   pivot_longer(cols=c(ano_2010, ano_2014, ano_2018), 
                names_to="governador_ano", 
@@ -155,26 +154,50 @@ wide %>%
 
 
 ---
+## Uso básico
 
-
-## Mais um exemplo
-```{r}
-tab <- tibble(uf=c("DF", "GO", "MT", "MS"),
-       i_2010 = c(5, 1, 2, 3), 
-       i_2014 = c(10, 9, 9, 6),
-       i_2018 = c(0, 1, 2,9))
-tab 
+<small>
+```{r, echo=FALSE}
+wide %>%
+  pivot_longer(cols=c(ano_2010, ano_2014, ano_2018), 
+               names_to="governador_ano", 
+               values_to="governador")
 ```
 
 
 
+---
+
+
+## Mais um exemplo
+
+<small>
 ```{r}
+tab <- tibble(uf=c("DF", "GO", "MT", "MS"),
+       y_2010 = c(5, 1, 2, 3), 
+       y_2014 = c(10, 9, 9, 6),
+       y_2018 = c(0, 1, 2,9))
+tab 
+```
+
+<small>
+```{r, eval=FALSE}
 tab %>%
-  pivot_longer(cols = c(starts_with("i")), 
+  pivot_longer(cols = c(starts_with("y")), 
                names_to="t", 
                values_to="valores")
 ```
 
+
+---
+## Resultado 
+<small>
+```{r, echo=FALSE}
+tab %>%
+  pivot_longer(cols = c(starts_with("y")), 
+               names_to="t", 
+               values_to="valores")
+```
 
 
 ---
@@ -199,24 +222,24 @@ A função `pivot_wider` possui dois inputs principais:
 
 ---
 
+<small>
 ```{r}
-covid <- tibble(pais=c("Brasil", "Brasil",  "Argentina", "Argentina"),
+# Números fictícios
+covid <- tibble(uf=c("SP", "SP", "RJ", "RJ"),
        ano = c(2020, 2020, 2020, 2020), 
        covid = c("Casos", "Vacinas", "Casos", "Vacinas"), 
-       numero= c(10500000, 6535363, 2100000, 1800000))
+       numero= c(305000, 653530, 210000, 180000))
 
-covid
+print(covid)
 ```
 
 
 ---
 
 ## Tidying
-
+<small>
 ```{r}
-covid
 # tidying
-# 
 covid %>%
   pivot_wider(names_from=covid, 
               values_from=numero)
