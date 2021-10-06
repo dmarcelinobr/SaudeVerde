@@ -1,6 +1,6 @@
 ---
 title: "Manipulação de Banco de Dados" 
-subtitle: "Introduçõa do tidyr"
+subtitle: "Introdução bancos de dados tidy com o pacote tidyr"
 author: "Daniel Marcelino <br> Brasília"
 date: "`r Sys.Date()`"
 output:
