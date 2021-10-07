@@ -29,10 +29,17 @@ Sys.setlocale("LC_ALL","pt_BR.UTF-8")
 
 ## Questão 1
 
-- Usando os dados de votações e orientações:
+- Construir um pequeno script para carregar o arquivo de orientação de votações na Câmara:
 
 
 ```{r}
+library(tidyverse)
+library(jsonlite); 
+library(httr)
+library(XML)
+
+
+rm(list = ls())
 
 ano = 2021
 
@@ -41,17 +48,67 @@ ano = 2021
       "https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-", ano, ".csv")
   
 orientacoes <- read_delim(url)
+
+
 ```
 
+
+ - Carregando vários anos de uma mesma legislatura
+ 
+```{r}
+
+# responda aqui
+
+```
+
+ 
+```{r}
+# responda aqui
+
+```
+
+
+
+- Unsando o pacote tidyr e a função __pivot_wider__, construa uma tabela com indicação de orientação de cada partido. Cada partido deverá ter sua coluna.
+
+```{r}
+# responda aqui
+```
+
+
+
+- Escrever uma código para automatizar o processo de pegar informações de votações de proposições para os anos da legislatura atual
+
+
+```{r}
+# responda aqui
+```
+
+
+- Escrever uma código para automatizar o processo de pegar votações de proposições votadas nos anos da legislatura atual
+
+
+```{r}
+# responda aqui
+```
+
+
+## Questão 2
+
+-  Escrever uma função para pegar a orientação de bancada  utilizando o id da votação na Câmara
 
 
 ```{r}
 
-library(tidyr)
-library(dplyr)
-
-
-orientacoes %>% 
- pivot_wider(names_from = siglaBancada, values_from = orientacao)
+# responda aqui
 ```
+
+
+-  Escrever uma função para pegar os votos das votações utilizando o id da votação na Câmara
+
+```{r}
+
+# responda aqui
+```
+
 
