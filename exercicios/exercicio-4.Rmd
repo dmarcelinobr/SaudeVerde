@@ -32,12 +32,20 @@ congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curs
 ```{r}
 # responda aqui
 
+tab1 <- congressistas %>% 
+  filter(sg_casa == "CD") %>%
+  select(id, nome_eleitoral, uf, sg_partido, sexo)
+
+tab1
 ```
+
 
 
 - Repita o mesmo procedimento, mas selecione as colunas usando as suas posições no banco de dados ao invés de seus nomes: 
 ```{r}
-
+congressistas %>% 
+  filter(sg_casa == "CD") %>%
+  select(1, 6, 8:9, 14)
 ```
 
 
@@ -46,6 +54,8 @@ congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curs
 
 ```{r}
 
+congressistas %>%
+  select(contains("sg"))
 # responda aqui
 ```
 
@@ -53,6 +63,9 @@ congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curs
 - Usando os mesmos dados, selecione apenas as colunas que começando com _nome_ e terminando com _eleitoral_:
 
 ```{r}
+congressistas %>%
+  select(starts_with("nome"), ends_with("eleitoral") )
+
 
 # responda aqui
 ```
@@ -64,14 +77,20 @@ congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curs
 
 ```{r}
 
-# responda aqui
+tab2 <- congressistas %>% 
+  filter(total_mandatos == 1) %>%
+  select(sg_casa, nome_eleitoral, sg_partido, idade) %>%
+  arrange(idade)
+  
+tab2
 ```
 
 
 - Agora ordene a tabela por ordem descrescente de idade:
 ```{r}
 
-# responda aqui
+arrange(tab2, desc(idade))
+
 ```
 
 
@@ -82,7 +101,12 @@ congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curs
 
 ```{r}
 
-# responda aqui
+tab3 <- congressistas %>% 
+  filter(sg_casa =="SF") %>%
+  mutate(nome = paste(nome_eleitoral, " ", "(", sg_partido, "-", uf, ")", sep="")) %>%
+  select(id, nome) %>% print()
+  
+
 ```
 
 
@@ -91,15 +115,38 @@ congressistas <- read_delim("https://raw.githubusercontent.com/dmarcelinobr/curs
 
 ```{r}
 
+congressistas <- congressistas %>%
+  mutate(status = ifelse(total_mandatos > 1, "reeleito", "novato"))
+
+congressistas %>% select(sg_casa, nome_eleitoral, status)
+  
 
 ```
 
 
 
 - Quantos parlamentares são reeleitos e novatos em cada Casa?
--O que isso representa em porcentagem?
+- O que isso representa em porcentagem?
 
 ```{r}
+congressistas %>% 
+  group_by(casa, status) %>%
+  summarise(freq = n()) %>%
+  mutate(rel.freq = freq/sum(freq))
+  
+```
+
+## Tabela final 
+
+```{r, echo=FALSE}
+library(knitr)
+
+congressistas %>% 
+  group_by(casa, status) %>%
+  summarise(freq = n()) %>%
+  mutate(rel.freq = freq/sum(freq)) %>%
+  kable()
+
 
 ```
 

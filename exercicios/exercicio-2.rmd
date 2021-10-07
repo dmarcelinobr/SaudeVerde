@@ -27,6 +27,7 @@ d <- data.frame(name=c("seu nome"),
 
 
 d[d$name=="seu nome",  ]
+
 ```
 
 
@@ -76,10 +77,36 @@ proposicoes2 <-  read.csv2(path, sep=";")
 
 Limpe a base de dados, mantendo apenas as linhas que não contêm `NA` na coluna `idDeputadoAutor`. 
 
+```{r}
+dim(proposicoes2)
+```
 
 ```{r}
-#Responda aqui
+proposicoes_sub <-  proposicoes2[!is.na(proposicoes2$idDeputadoAutor), ]
+
+dim(proposicoes_sub)
 ```
+
+
+```{r}
+proposicoes_sub_sub <- proposicoes2[!is.na(proposicoes2$idDeputadoAutor) & 
+                                      !is.na(proposicoes2$siglaPartidoAutor),]
+```
+
+
+```{r}
+porps_sub =  proposicoes2[complete.cases(proposicoes2), ]
+
+dim(porps_sub)
+```
+
+```{r}
+
+porps_sub2 = na.omit(proposicoes2)
+
+dim(porps_sub2)
+```
+
 
 
 ## Questão 6
@@ -88,7 +115,11 @@ Agora crie um novo diretório chamado `processados` e salve a tabela que você l
 
 
 ```{r}
-#Responda aqui
+
+dir.create("./dados/processados", recursive = T)
+
+write.csv2(proposicoes_sub, "./dados/processados/proposicoesAutores_sub.csv", row.names = FALSE)
+
 ```
 
 

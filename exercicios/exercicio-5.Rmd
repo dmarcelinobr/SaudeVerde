@@ -173,14 +173,7 @@ for(i in lista.votacao){
 
 
 ```{r}
-# passo 1:
-
-dados_deputados <-  consulta_cand_2018 %>% 
-  filter(DS_CARGO == "DEPUTADO FEDERAL") 
-
-dim(consulta_cand_2018)
-
-dim(dados_deputados)
+# responda aqui
 ```
 
 
@@ -188,34 +181,16 @@ dim(dados_deputados)
 - Vamos somar os votos do banco de dados em seguida vamos __plugar essa informação na tabela de deputados__ e depois na __tabela de parlamentares ativos__:
 
 ```{r}
-# passo 2:
-
-votacao_deputados <-  votacao_candidato_2018 %>% 
-  mutate(DS_CARGO = str_to_upper(DS_CARGO)) %>% 
-  filter(DS_CARGO == "DEPUTADO FEDERAL") 
-
-dim(votacao_candidato_2018)
-
-dim(votacao_deputados)
+# responda aqui
 ```
 
 ```{r}
-# passo 3:
-
-tab_1 <- votacao_deputados %>% 
-  group_by(SG_UF, NM_URNA_CANDIDATO, NR_CANDIDATO, SG_PARTIDO, SQ_CANDIDATO) %>%
-  summarise(VOTOS_TOTAIS =  sum(QT_VOTOS_NOMINAIS)) %>% ungroup()
-
+# responda aqui
 ```
 
 
 ```{r}
-# mesmo resultado, mas sem mensagem chata:
-
-tab_1a <- votacao_deputados %>% 
-  group_by(SG_UF, NM_URNA_CANDIDATO, NR_CANDIDATO, SG_PARTIDO, SQ_CANDIDATO) %>%
-  summarise(VOTOS_TOTAIS =  sum(QT_VOTOS_NOMINAIS), .groups = 'drop')
-
+# responda aqui
 ```
 
 
@@ -223,35 +198,20 @@ tab_1a <- votacao_deputados %>%
 
 
 ```{r}
-# passo 4:
-
-resultado_join <- left_join(dados_deputados %>%
-                               select(NR_CPF_CANDIDATO, SQ_CANDIDATO) %>%
-                               distinct(NR_CPF_CANDIDATO, SQ_CANDIDATO), 
-                             tabela1, 
-                             by = c("SQ_CANDIDATO" = "SQ_CANDIDATO"))
-
-resultado_join
+# responda aqui
 
 ```
 
 
 
 ```{r}
-# by = c("a" = "b", "c" = "d") ligará x$a ao y$b e x$c ao y$d.
-# passo 5:
-
-resultado  <- left_join(congressistas, resultado_join %>% 
-                          select(SQ_CANDIDATO, VOTOS_TOTAIS) ,
-            by = c("cpf" = "NR_CPF_CANDIDATO"))
+# responda aqui
 
 ```
 
 
 ```{r}
-# O que deu certo e o que deu errado
-resultado %>% 
-  select(id, casa, cpf, nome_eleitoral, SQ_CANDIDATO, VOTOS_TOTAIS)
+# responda aqui
 ```
 
 
@@ -260,6 +220,7 @@ resultado %>%
 
 ```{r}
 
+# responda aqui
 
 ```
 
@@ -268,7 +229,8 @@ resultado %>%
 
 ```{r}
 
-
+# responda aqui
+  
 ```
 
 
@@ -285,6 +247,7 @@ resultado %>%
 
 ```{r}
 # responda aqui
+
 ```
 
 - Una apenas os dados da região sudeste e sul
@@ -292,11 +255,6 @@ resultado %>%
 ```{r}
 # responda aqui
 ```
-
-
-
-
-
 
 
 #### Até a próxima!
