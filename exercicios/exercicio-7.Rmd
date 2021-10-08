@@ -1,0 +1,140 @@
+---
+title: "Manipulação de banco de dados de APIs"
+subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
+author: "Daniel Marcelino <br> Brasília"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  comment = "",
+  echo = FALSE,
+  cache = FALSE,
+  fig.align = "center",
+  fig_width = 8.75,
+  fig_height = 6.45,
+  fig.retina = 2,
+  out.width = "95%"
+)
+
+Sys.setlocale("LC_ALL","pt_BR.UTF-8")
+```
+
+
+
+
+## Questão 1
+
+- Vamos o utilizar o que já aprendemos sobre APIs para acessar o endpoint de senadores
+
+
+```{r}
+# https: /  / legis.senado.leg.br / dadosabertos / senador /  %7Bcodigo% 7D
+
+# https: /  / legis.senado.leg.br / dadosabertos / senador / lista / afastados
+
+# https: /  / legis.senado.leg.br / dadosabertos / senador / lista / legislatura / 55
+
+# https: /  / legis.senado.leg.br / dadosabertos / senador /  %7Bcodigo% 7D /  historico
+
+# https: /  / legis.senado.leg.br / dadosabertos / senador / 7Bcodigo / mandatos
+```
+
+
+```{r}
+
+rm(list = ls())
+
+library(tidyverse)
+library(jsonlite) # json
+library(httr)
+library(xml2)
+library(XML)
+
+
+
+base_url = "https://legis.senado.leg.br"
+senadores = "/dadosabertos/senador/lista"
+filtro = "/atual"
+
+
+ url <- paste0(base_url, senadores, filtro)
+  
+ 
+print(url)
+
+
+resp <- httr::GET(url, httr::accept_xml())
+
+
+
+status_code <- 500
+  while (status_code != 200) {
+    try(resp <- httr::GET(url, httr::accept_xml()))
+    status_code <- httr::status_code(resp)
+  }
+
+
+```
+  
+
+
+## Questão 2
+
+- Vamos o utilizar escrever um códico para buscar algumas indormações sobre as matérias em tramitação no Senado
+
+-- Versão Json
+
+```{r}
+
+
+url = paste0('https://legis.senado.leg.br/dadosabertos/materia/', id)
+
+status_code <- 500
+  while (status_code != 200) {
+    try(resp <- httr::GET(url, httr::accept_json()))
+    status_code <- httr::status_code(resp)
+  }
+ 
+raw_json <-
+    httr::content(resp, type = "text", encoding = "UTF-8") %>%
+    jsonlite::fromJSON()
+
+
+
+```
+
+
+
+```{r}
+
+
+```
+
+
+-- Versão XML
+
+```{r}
+url = paste0('https://legis.senado.leg.br/dadosabertos/materia/', id)
+
+
+status_code <- 500
+  while (status_code != 200) {
+    try(resp <- httr::GET(url, httr::accept_xml()))
+    status_code <- httr::status_code(resp)
+  }
+ 
+xml <-
+    httr::content(resp, type = "text", encoding = "UTF-8") %>%
+    xml2::read_xml()
+
+
+```
+
+
