@@ -1,0 +1,307 @@
+---
+title: "Obtenção de Dados via APIs" 
+subtitle: "Introdução as APIs"
+author: "Daniel Marcelino <br> Brasília"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+      ratio: '16:9'
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(message=FALSE, warning = FALSE, error = FALSE, cache = TRUE, comment = "")
+
+``` 
+
+
+```{r xaringanthemer, include = FALSE}
+library(xaringanthemer)
+# #034c87
+xaringanthemer::style_mono_accent(
+  base_color = "#4c4137",
+  # primary_color = "#A70000",
+  #secondary_color = "#ff0000",
+  white_color = "white",
+  colors = c(
+    red = "#A70000",
+    purple = "#88398a",
+    orange = "#ff8811",
+    green = "#136f63",
+    blue = "#4B4FFF",
+    white = "#FFFFFF",
+    black = "#181818"
+  ),
+  header_font_google = google_font("Roboto Condensed"),
+  text_font_google   = google_font("Roboto Condensed", "300", "300i"),
+  code_font_google   = google_font("Ubuntu Mono"),
+  text_font_size = "30px",
+  code_font_size = "30px",
+  )
+
+xaringanExtra::use_share_again()
+```
+
+
+
+# Nossos planos para hoje
+
+1. Introdução a APIs. O que fazem? Onde vivem? O que comem?
+
+2. Acessando APIs via http. 
+    - Estudo de caso na API do Fogo Cruzado.
+    
+3. Exemplos de pacotes de R para acessar APIs 
+    - Fogo Cruzado
+    - Dados do Congresso (congressbr)
+    
+---
+
+# Introdução a APIs
+
+A sigla API corresponde ao termo em inglês “Application Programming Interface“. 
+
+A APIs são um repositório on-line construído para facilitar troca de informações entre usuários de dados e os portadores de determinados dados. 
+
+Ao fim, você acessa esse repositório como acessa qualquer site, via URLs. A diferença principal é que o retorno **não é um html** e um página na web, mas sim **dados**
+
+<br>
+
+- **Exemplo do Twitter. Como seria o Twitter sem API?**
+
+---
+
+## Usos de API
+
+Há duas formas principais em que nós acadêmicos comumente utilizamos APIs. 
+
+1. Acessar dados compartilhados por Empresas e ONGs. (Twitter, Câmara, Senado, Spotify, Yelp, NYT, Portal da Transparência, IPEA)
+
+2. Processar nossos dados em Algoritmos desenvolvidos por terceiros. (Perspective API)
+
+- Nosso foco será no primeiro tipo de APIs. 
+
+- Porém, podemos no decorrer do curso aprender mais sobre o uso de API para acessar modelos disponíveis na internet. 
+
+---
+
+## Uso de API para acesso à dados
+
+Em seu formato mais simples, uma API é somente uma url. Veja o exemplo abaixo: 
+
+`http://meusite.com/key?param_1;param_2`
+
+Principais elementos:
+ 
+- **http://meusite.com/**: a base da API, chamado nas documentações de end-point. 
+
+- **key**: as credenciais que muitos sites pedem - nem todos, como veremos. 
+
+- **?param_1;param_2** parametros, ou filtros para refinar a busca da API. 
+
+Para acessar a API utilizarmos o pacote `httr`. E para limpar, usaremos diversas das funções do `tidyverse` e `jsonlite`. 
+
+---
+
+## Uso simple de APIs
+
+Vamos iniciar com um exemplo de API onde não precisamos solicitar senha de acesso. Começaremos com a API da [Câmara dos Deputados](https://dadosabertos.camara.leg.br/api/). 
+
+### Primeiro passo: encontre as endpoints
+
+Abra o site e leia a documentação. Os endpoints contêm o tipo de informação que a API disponibiliza. 
+
+### Segundo passo: procure filtros
+
+- versões
+- status
+- tipos 
+
+### Terceiro passo: acesse via GET
+
+---
+
+### Exemplo com GET
+<small>
+```{r}
+library(tidyverse)
+library(httr) 
+library(jsonlite)
+
+# Acesse a API
+endpoint = "https://dadosabertos.camara.leg.br/api/"
+
+acesso = GET(endpoint)
+
+# O que é este arquivo?
+class(acesso) 
+```
+
+---
+
+## Quarto passo: acesse os dados via content
+<small>
+```{r}
+# Veja os elementos
+acesso
+# content(acesso)
+```
+
+
+---
+
+## Filtros da API
+
+Na [documentação](https://dadosabertos.camara.leg.br/swagger/api.html#api), indica-se que há 6 endpoints principais para a API: proposições, id, autores, temas, tramitações, votações, relacionadas etc  
+
+Vamos começar pelo endpoint proposicoes, um fácil que não exige filtros. Abre este link da [documentação](https://api.fogocruzado.org.br/docs/1.0/cities)
+
+<small>
+```{r}
+# Passo 1. Crie a Url
+base_url <- "https://dadosabertos.camara.leg.br/api/v2"
+proposicoes <- "/proposicoes"
+api <- paste0(base_url, proposicoes)
+print(api) # somente um endereço de site
+```
+
+---
+
+### GET Request
+
+Para solicitar os dados de uma API
+<small>
+```{r}
+# Passo 2: Acesse a API
+response <- GET(api)
+
+# Qual o resultado?
+response
+```
+
+---
+
+## Limpando Resultado
+
+O retorno da API é um arquivo em JSON - que é um tipo mais eficiente para salvar arquivos grandes - e possui status 200 - que significa seu acesso funcionou. 
+
+```{r}
+# Converter para um json
+proposicoes_cd <- content(response, as="text", encoding = "UTF-8")
+```
+
+
+```{r columns, eval = T, echo = F, fig.align="center", out.width=740}
+
+knitr::include_graphics("https://raw.githubusercontent.com/dmarcelinobr/curso_r-cni/main/slides/figs/json-exemplo.png")
+```
+
+
+---
+## Limpando JSONS
+<small>
+```{r}
+# Limpando Jsons
+output <- fromJSON(proposicoes_cd) %>% 
+                      .[["dados"]] %>%
+                   tibble::as_tibble()
+output
+```
+
+---
+## API com filtros
+
+Todas as APIs de verdade possuem parâmetros para filtrar os acessos. 
+
+Filtros são adicionados como uma query de filtros na função GET. Estes filtros devem ser solicitados de acordo com a documentação da API. 
+
+Vejamos [aqui](https://dadosabertos.camara.leg.br/api/v2/proposicoes/) alguns exemplos
+
+---
+
+## Exemplo de filtros
+<small>
+```{r}
+base_url <- "https://dadosabertos.camara.leg.br/api/v2"
+proposicoes <- "/proposicoes"
+sigla <- "?siglaTipo="
+api <- paste0(base_url, proposicoes, sigla)
+print(api)
+```
+
+<small>
+```{r}
+query_list <- list(sigla="PEC") # Cria query
+# GET
+response <- GET(api)
+output <- jsonlite::fromJSON(
+  httr::content(response, as="text", encoding = "UTF-8")) %>%
+  .[["dados"]] %>%
+  tibble::as_tibble()
+```
+
+---
+
+## Resultado do filtro
+<small>
+```{r}
+
+output
+```
+
+
+---
+
+## Escrever o endpoint _inteiro_
+
+<small>
+```{r}
+base_url <- "https://dadosabertos.camara.leg.br/api/v2"
+proposicoes <- "/proposicoes"
+filtro <- "?siglaTipo=PEC&ano=2021"
+api <- paste0(base_url, proposicoes, filtro)
+print(api)
+```
+
+```{r}
+# GET
+response <- GET(api)
+output <- jsonlite::fromJSON(
+  httr::content(response, as="text", encoding = "UTF-8")) %>%
+  .[["dados"]] %>%
+  tibble::as_tibble()
+```
+
+---
+
+## Resultado com filtros para sigla e ano 
+
+<small>
+```{r}
+output
+```
+
+
+
+---
+class: center, middle
+# Obrigado!
+
+<center>
+`r icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), scale = 1, fill = "#A70000")` [dmarcelino@live.com](mailto:dmarcelino@live.com) 
+
+`r icons::icon_style(icons::fontawesome("twitter", style = "brands"), scale = 1, fill = "#A70000")` [@dmarcelinobr](https://twitter.com/dmarcelinobr) 
+
+`r icons::icon_style(icons::fontawesome("linkedin", style = "brands"), scale = 1, fill = "#A70000")`
+[dmarcelinobr](https://www.linkedin.com/in/dmarcelinobr/) 
+
+`r icons::icon_style(icons::fontawesome("github", style = "brands"), scale = 1, fill = "#A70000")`
+[dmarcelinobr](http://github.com/dmarcelinobr) 
+
+

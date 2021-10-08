@@ -1,0 +1,267 @@
+---
+title: "Manipulação de banco de dados com tidyr"
+subtitle: "Scrapping e manipulação de dados em R <br> Confederação Nacional da Indústria - CNI"
+author: "Daniel Marcelino <br> Brasília"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  comment = "",
+  echo = TRUE,
+  cache = FALSE,
+  eval = FALSE,
+  fig.align = "center",
+  fig_width = 8.75,
+  fig_height = 6.45,
+  fig.retina = 2,
+  out.width = "95%"
+)
+
+Sys.setlocale("LC_ALL","pt_BR.UTF-8")
+```
+
+
+## Questão 1
+
+- Construir um pequeno script para carregar o arquivo de orientação de votações na Câmara:
+
+
+```{r}
+
+rm(list = ls())
+
+ano = 2021
+
+  url <-
+    paste0(
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-", ano, ".csv")
+  
+orientacoes <- read_delim(url)
+
+
+```
+
+
+ - Carregando vários anos de uma mesma legislatura
+ 
+```{r}
+## modo tradicional 
+anos = 2019:2021
+
+dados <- as_tibble()
+
+for(ano in anos) {
+  
+  url <- paste0(
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-", ano, ".csv")
+  
+dat <-  read_delim(url)
+  
+dados_orientacoes <- bind_rows(dados, dat)
+  
+  print(ano)
+}
+
+```
+
+ 
+```{r}
+## modo mapped 
+# anos <- c(2019, 2020, 2021)
+anos = 2019:2021
+
+
+ler_orientacoes <- function(ano){
+  library(readr)
+  url <- paste0(
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesOrientacoes/csv/votacoesOrientacoes-", ano, ".csv")
+
+dados <- read_delim(url)
+return(dados)
+}
+
+
+orientacoes <- purrr::map_df(anos, ~{
+                           ler_orientacoes(.x)
+                           })
+
+```
+
+
+
+- Unsando o pacote tidyr e a função __pivot_wider__, construa uma tabela com indicação de orientação de cada partido. Cada partido deverá ter sua coluna.
+
+```{r}
+library(tidyverse)
+library(jsonlite); 
+library(httr)
+library(XML)
+
+# mutate(sigla_bancada = stringr::str_replace_all(sigla_bancada, "^GOV.$", "Governo")) %>%
+      
+orientacoes_trans <- orientacoes %>% 
+  dplyr::mutate(idProposicao = stringr::str_extract(idVotacao, ".+?(?=-)")) %>%
+ pivot_wider(names_from = siglaBancada, values_from = orientacao) %>%
+ dplyr::left_join(orientacoes %>%  
+                    select(-uriVotacao, -uriBancada, -siglaOrgao, -descricao), by = 'idVotacao')
+
+
+```
+
+
+
+- Escrever uma código para automatizar o processo de pegar informações de votações de proposições para os anos da legislatura atual
+
+```{r}
+
+# anos <- c(2019, 2020, 2021)
+anos = 2019:2021
+
+ler_votcaoes <- function(ano){
+  library(readr)
+  url <- paste0(
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesProposicoes/csv/votacoesProposicoes-", ano, ".csv")
+
+dados <- read_delim(url)
+return(dados)
+}
+
+
+votacoes <- purrr::map_df(anos, ~{
+                           ler_votcaoes(.x)
+                           })
+
+```
+
+
+- Escrever uma código para automatizar o processo de pegar votações de proposições votadas nos anos da legislatura atual
+
+```{r}
+
+# anos <- c(2019, 2020, 2021)
+anos = 2019:2021
+
+ler_votos <- function(ano){
+  library(readr)
+  url <- paste0(
+     "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-", ano, ".csv")
+
+dados <- read_delim(url)
+return(dados)
+}
+
+
+votos <- purrr::map_df(anos, ~{
+                           ler_votos(.x)
+                           })
+
+```
+
+
+
+## Questão 2
+
+
+-  Escrever uma função para pegar a orientação de bancada  utilizando o id da votação na Câmara
+
+```{r}
+
+pega_orientacoes <- function(id) {
+  url <-
+    paste0("https://dadosabertos.camara.leg.br/api/v2/votacoes/",
+           id,
+           "/orientacoes/")
+  
+  status_code <- 500
+  while (status_code != 200) {
+    try(resp <- httr::GET(url, httr::accept_json()))
+    status_code = httr::status_code(resp)
+  }
+  
+  parsed <-
+    httr::content(resp,  type = "text", encoding = "UTF-8") %>%
+    jsonlite::fromJSON() %>% .[["dados"]]
+  
+  if (!is.null(parsed) &
+      class(parsed) != "NULL" &
+      class(parsed) != "logical" & length(parsed) != 0) {
+    dados <- parsed %>%
+      dplyr::transmute(
+        idVotacao = id,
+        id = stringr::str_extract(id, ".+?(?=-)"),
+        codPartidoBloco = codPartidoBloco,
+        siglaPartidoBloco = siglaPartidoBloco,
+        orientacaoVoto = orientacaoVoto
+      )
+    
+    
+    dados <- dados %>%
+      dplyr::mutate(orientacaoVoto = stringi::stri_trans_general(orientacaoVoto, "Latin-ASCII")) %>%
+      dplyr::mutate(siglaPartidoBloco = stringi::stri_trans_general(siglaPartidoBloco, "Latin-ASCII")) %>%
+      dplyr::select(id, idVotacao, siglaPartidoBloco, orientacaoVoto)
+    
+    dados %>% tidyr::pivot_wider(names_from = siglaPartidoBloco, values_from = orientacaoVoto) %>%
+      left_join(dados %>% select(-id), by = 'idVotacao')
+    
+  } else {
+    dados <- tibble()
+    dados
+  }
+}
+
+
+pega_orientacoes("2285889-126")
+```
+
+
+
+-  Escrever uma função para pegar os votos das votações utilizando o id da votação na Câmara
+
+```{r}
+
+pega_votacoes <- function(id) {
+  
+  url <-
+    paste0("https://dadosabertos.camara.leg.br/api/v2/votacoes/",
+           id,
+           "/votos/")
+  
+  status_code <- 500
+  while (status_code != 200) {
+    try(resp <- httr::GET(url, httr::accept_json()))
+    status_code = httr::status_code(resp)
+  }
+  
+  parsed <-
+    httr::content(resp, type = "text", encoding = "UTF-8") %>%
+    jsonlite::fromJSON() %>% .[["dados"]]
+  
+  
+  if (!is.null(parsed) || !is.na(parsed)) {
+    parsed %>%
+      dplyr::transmute(
+        id = id,
+        dataRegistroVoto = dataRegistroVoto,
+        idLegislatura = deputado_$idLegislatura,
+        idDeputado =  deputado_$id,
+        nomeDeputado = deputado_$nome,
+        siglaPartido = deputado_$siglaPartido,
+        siglaUf = deputado_$siglaUf,
+        tipoVoto = tipoVoto
+      )
+  } else {
+    return(NULL)
+  }
+}
+
+
+pega_votacoes("2285889-126")
+```
+
